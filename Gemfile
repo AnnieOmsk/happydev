@@ -7,6 +7,7 @@ gem 'haml-rails'
 gem 'json'
 gem 'libv8', '~> 3.11.8'
 gem 'therubyracer', '0.11.0beta5'
+gem 'quiet_assets'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
