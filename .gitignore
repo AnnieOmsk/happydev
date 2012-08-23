@@ -11,6 +11,9 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+config/database.yml
+log/*
+.rvmrc
 
 # YARD artifacts
 .yardoc
