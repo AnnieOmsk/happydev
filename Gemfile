@@ -8,6 +8,7 @@ gem 'json'
 gem 'libv8', '~> 3.11.8'
 gem 'therubyracer', '0.11.0beta5'
 gem 'quiet_assets'
+gem 'devise', '~> 2.1.2'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

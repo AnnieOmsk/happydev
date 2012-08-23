@@ -25,12 +25,23 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand(href="#") Happydev
+          %a.brand(href="/") Happydev
           .container.nav-collapse
-            %ul.nav
+            -# %ul.nav
               %li= link_to "Link 1", "/path1"
               %li= link_to "Link 2", "/path2"
               %li= link_to "Link 3", "/path3"
+            
+            %ul.nav{:class => "pull-right"}
+              - if user_signed_in?
+                %li
+                  = link_to 'Выйти', destroy_user_session_path, :method => :delete
+              - else
+                %li
+                  = link_to 'Зарегаться', new_user_registration_path
+                %li
+                  = link_to 'Войти', new_user_session_path
+      
 
     .container
 
@@ -40,7 +51,7 @@
             = bootstrap_flash
             = yield
           .span3
-            .well.sidebar-nav
+            -# .well.sidebar-nav
               %h3 Sidebar
               %ul.nav.nav-list
                 %li.nav-header Sidebar
@@ -48,7 +59,7 @@
                 %li= link_to "Link 2", "/path2"
                 %li= link_to "Link 3", "/path3"
     
-      %footer
+      -# %footer
         %p &copy; Company 2012
     /
       Javascripts
