@@ -1,0 +1,23 @@
+.container {
+  .devise-session {
+    margin: 0 auto;
+    width: 540px;
+
+    .form-actions {
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.signin-rememberable {
+  input {
+    float: left;
+  }
+
+  label {
+    margin-left: 10px;
+    float: left;
+  }
+}
