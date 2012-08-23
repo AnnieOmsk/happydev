@@ -12,7 +12,7 @@ test/tmp
 test/version_tmp
 tmp
 config/database.yml
-log/*
+log/*.log
 .rvmrc
 
 # YARD artifacts

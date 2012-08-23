@@ -24,3 +24,11 @@ group :development do
 end
 
 gem 'jquery-rails'
+
+gem 'capistrano'
+gem 'capistrano-ext'
+gem 'rvm-capistrano', '>= 1.1.0'
+
+group :production do
+  gem 'unicorn'
+end
