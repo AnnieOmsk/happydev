@@ -1,0 +1,10 @@
+development:
+  mailchimp:
+    api_key: 9b98484528f3f824d34df46c8672a168-us5
+    list_id: da461e7340
+
+production:
+  mailchimp:
+    api_key: 2b25ec06f724c27a6b57a795fc5d1f37-us5
+    list_id: 30503cd22e
+

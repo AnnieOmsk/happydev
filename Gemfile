@@ -10,6 +10,7 @@ gem 'therubyracer', '0.11.0beta5'
 gem 'quiet_assets'
 gem 'devise', '~> 2.1.2'
 gem 'simple_form', '~> 2.0.2'
+gem 'hominid'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

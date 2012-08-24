@@ -5,7 +5,12 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
-  # attr_accessible :title, :body
+  
+  after_create :subscribe_to_mailchimp
+
+  def subscribe_to_mailchimp
+    @mailchimp = Mailchimp.new
+    @mailchimp.subscribe_to_list(email)
+  end
 end
