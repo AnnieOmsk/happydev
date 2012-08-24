@@ -26,7 +26,8 @@ namespace :deploy do
   end
 
   task :sql_symlink do
-    run "ln -nfs #{shared_path}/config/database.yml #{current_path}/config/database.yml"
+    # run "ln -nfs #{shared_path}/config/database.yml #{current_path}/config/database.yml"
+    run "ln -nfs #{shared_path}/config/database.yml #{latest_release}/config/database.yml"
   end
 
   namespace :assets do
@@ -66,7 +67,8 @@ namespace :unicorn do
   end
 end
 
-after 'deploy:update', 'deploy:sql_symlink', 'unicorn:restart', 'deploy:cleanup'
+before 'deploy:assets:precompile', 'deploy:sql_symlink'
+after 'deploy:update', 'unicorn:restart', 'deploy:cleanup'
 # deploy:migrate
 
 # require './config/boot'
