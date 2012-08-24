@@ -7,4 +7,5 @@ production:
   mailchimp:
     api_key: 2b25ec06f724c27a6b57a795fc5d1f37-us5
     list_id: 30503cd22e
+    list_id_7bits_friends: 9c2718348c
 
