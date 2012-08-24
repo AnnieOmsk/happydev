@@ -13,6 +13,7 @@ gem 'devise',                     '~> 2.1.2'
 gem 'simple_form',                '~> 2.0.2'
 gem 'hominid',                    '~> 3.0.5'
 gem 'russian',                    '~> 0.6.0'
+gem 'activemerchant', :require => 'active_merchant'
 
 group :assets do
   gem 'sass-rails',               '~> 3.2.3'
