@@ -63,6 +63,7 @@
       = render :partial => 'layouts/header'
 
     .container
+      %br
       = bootstrap_flash
       %br
       - unless controller.controller_name == 'home' && controller.action_name == 'index'
