@@ -424,6 +424,9 @@ footer input[type=submit].btn {
 		font-style:italic;
 		margin:0 0 10px 0;
 	}
+	.speaker .speaker-position a {
+		color:#aaa;
+	}
 	.speaker .speaker-networks {
 		float:right;
 	}
