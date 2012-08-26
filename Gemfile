@@ -25,6 +25,7 @@ end
 
 group :development do
   gem 'thin',                     '~> 1.4.1'
+  gem 'debugger'
 end
 
 gem 'capistrano'
