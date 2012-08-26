@@ -1,9 +1,9 @@
 = simple_form_for(@payment, :url => payment_path(@payment), :html => { :class => 'form-horizontal' }) do |f|
-  = f.input :amount
+  -# = f.input :amount
   -# = f.input :user_id
   
   = f.association :events,
-                  :collection => @events.map {|e| [e.full_name, e.id]},
+                  :collection => [ @events.first ],
                   :checked => @events.first.id,
                   :as => :check_boxes, 
                   :label => 'Я хочу принять участие в:'

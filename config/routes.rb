@@ -3,7 +3,7 @@ Happydev::Application.routes.draw do
 
   devise_for :users
 
-  resource :payment, :only => [:new, :create] do
+  resource :payment, :only => [:new, :create, :show] do
     # get :demopage, :on => :collection, :as => :payment_demopage
   end
 
