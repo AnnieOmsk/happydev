@@ -1,0 +1,49 @@
+.container
+  .row
+    .span2
+      %h3 Коротко:
+      %ul
+        %li
+          %a{:href => "#", :title => ""} Студентам
+        %li
+          %a{:href => "#", :title => ""} Our work
+        %li
+          %a{:href => "#", :title => ""} About us
+    .span2
+      %br
+      %br
+      %ul
+        %li
+          %a{:href =>"#", :title => ""} Pricing
+        %li
+          %a{:href =>"#", :title => ""} Explore
+        %li
+          %a{:href =>"#", :title => ""} Contact
+    .span4.social-networks
+      %h3 Следуй за нами
+            
+      %a{:href => "#", :title => "Follow us on Facebook", :class => "icon-facebook"}
+      %a{:href => "#", :title => "Follow us on Twitter", :class => "icon-twitter"}
+      <!-- <a href="#" title="Follow us on Google Plus" class="icon-google-plus"></a>
+      <a href="#" title="Follow us on Google Plus" class="icon-github"></a>
+      <a href="#" title="Follow us on Google Plus" class="icon-pinterest"></a> -->
+    .span4
+      %h3 Подписка
+      %p
+      %form
+        %input{:type => "text", :placeholder => "Ваш E-mail"}
+        %input{:type => "submit", :class => "btn", :value => "Ok"}
+
+#footer-extra
+  .container
+    .row
+      .span4
+        &copy; 2012 Happiness Driven Development
+      .span4
+        %i.icon-phone
+        &nbsp; 
+        == +79095350073, +79083103381
+      .span4
+        %i.icon-envelope
+        &nbsp; 
+        == org@happydev.ru

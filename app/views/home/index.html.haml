@@ -1,0 +1,95 @@
+#content.container
+  .row.hero-unit
+    .span9
+      %p
+        <!-- Первая <b style="color:#dd0000;">большая IT-конферениция</b> в Омске<br/> для <span style="color:#043A6B">разработчиков</span>, <span style="color:#52026E">дизайнеров</span> и <span style="color:#6B9B00">менеджеров</span><br/><br/> -->
+        Первая
+        %b{:style =>"color:#dd0000;"} большая IT-конферениция
+        в Омске
+        %br
+        для разработчиков, дизайнеров и менеджеров
+        %br
+        %br
+        <!-- Обсудим: <span style="color:#043A6B">разработка и технологии</span>, <span style="color:#52026E">дизайн и юзабилити</span>, <span style="color:#6B9B00">управление</span><br/> -->
+        %b{:style => "color:#FF7800;"}29 сентября
+        в конгресс-холле "Континент"
+    .span3
+      <!-- <h3 class="ac">FREE<small> for Solo plan</small></h3> -->
+      %p.ac
+        - if user_signed_in?
+          = link_to 'Перейти в профиль', edit_user_registration_path, :class => 'btn btn-large btn-primary'
+        - else
+          = link_to 'Регистрация', new_user_registration_path, :class => 'btn btn-large btn-primary'
+
+#carousel.carousel.slide{:rel => "carousel"}
+
+  .carousel-inner
+    .active.item
+      %h1{:style => "width:950px;position:absolute;top:50px;text-align:center;left:50%;margin-left:-480px;line-height:1.2em;font-weight:800;color:#fff;font-size:98px;"} HAPPINESS DRIVEN DEVELOPMENT
+      <!-- ОСОЗНАНИЕ ⦁ ЗДРАВЫЙ СМЫСЛ ⦁ КОМПЕТЕНТНОСТЬ -->
+      = image_tag "city.jpg"
+  <!-- <h2 style="width:950px;position:absolute;top:280px;text-align:center;left:50%;margin-left:-480px;line-height:1.2em;font-weight:800;color:#fff;font-size:34px;">СТАРТАП ⦁ ПРОДУКТ ⦁ ФАБРИКА ПРОЕКТОВ</h2> -->
+
+  <!-- <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a> -->
+
+#content.container
+  .row.hero-unit
+    .span12
+      %h1 На нашей конференции выступят только те докладчики, которые смогут прежде чем рассказывать «как», рассказать «зачем»:
+
+  #selected-speakers
+    .row
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/filippov.jpg"
+        %h3.speaker-name
+          %a{:href => "http://nikfilippov.moikrug.ru/"} Никита Филиппов
+        %span.speaker-position Scrumtrek
+        , Москва
+      
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/krivitsky.jpg"
+        %h3.speaker-name
+          %a{:href => "http://www.krivitsky.com"} Алексей Кривицкий
+        %span.speaker-position Scrum Guides
+        , Киев
+      
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/volkov.jpg"
+        %h3.speaker-name
+          %a{:href => "http://leonidvolkov.ru"} Леонид Волков
+        %span.speaker-position IT-Прожектор
+        , Екатеринбург
+
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/podorozhny.jpg"
+        %h3.speaker-name Юрий Подорожный
+        %span.speaker-position AnyVoid
+        , Москва
+  %hr
+  .row.hero-unit
+    .span12
+      %h1 Мы хотим повысить уровень осмысленности у всех участников процесса разработки. Три секции задают главное - контекст:
+  
+  .sections{:style => "font-size:1.3em"}
+    .row
+      .span4
+        %h2{:style => "color:#043A6B"} Стартапы
+        %p Здесь мы хотели бы обсудить то, как работа в стартапе отражается на принятии решений в разработке, управлении и дизайне. Какие задачи нужно решать в первую очередь, чем можно пренебречь.
+        %p
+          %a{:class => "", :href => "#"} Read more &raquo;
+      .span4
+        %h2{:style =>"color:#52026E"} Продуктовая разработка
+        %p На этой секции мы рассмотрим вопросы зрелых продуктов с клиентской базой. Например, поддержка пользователей, работа под нагрузками, развитие продукта.
+        %p
+          %a{:class =>"", :href => "#"} Read more &raquo;
+      .span4
+        %h2{:style => "color:#6B9B00"} Фабрика проектов
+        %p Эта секция посвящена опыту веб-студий и аутсорс-компаний, у кого работа с проектами поставлена на поток.
+        %p
+          %a{:class =>"", :href => "#"} Read more &raquo;
+  
