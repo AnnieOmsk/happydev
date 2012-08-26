@@ -11,7 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120823155648) do
+ActiveRecord::Schema.define(:version => 20120826051346) do
+
+  create_table "events", :force => true do |t|
+    t.string   "name"
+    t.integer  "price"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "master"
+  end
+
+  create_table "events_payments", :id => false, :force => true do |t|
+    t.integer "payment_id"
+    t.integer "event_id"
+  end
+
+  add_index "events_payments", ["event_id"], :name => "index_events_payments_on_event_id"
+  add_index "events_payments", ["payment_id"], :name => "index_events_payments_on_payment_id"
+
+  create_table "payments", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "amount"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "payments", ["user_id"], :name => "index_payments_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

@@ -1,0 +1,11 @@
+= simple_form_for(@payment, :url => payment_path(@payment), :html => { :class => 'form-horizontal' }) do |f|
+  = f.input :amount
+  -# = f.input :user_id
+  
+  = f.association :events,
+                  :collection => @events,
+                  :as => :check_boxes, 
+                  :label => 'Я хочу принять участие в:'
+
+  .form-actions
+    = f.submit 'Готово', :class => 'btn-primary'

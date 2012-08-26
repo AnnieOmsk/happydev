@@ -1,10 +1,27 @@
-class PaymentController < ApplicationController
+# encoding: utf-8
+class PaymentsController < ApplicationController
   include ActiveMerchant::Billing::Integrations
 
   skip_before_filter :verify_authenticity_token
+  
+  before_filter :authenticate_user!, :only => [:new, :create]
+  before_filter :create_notification, :only => [:success, :fail]
+  before_filter :find_payment, :only => [:result, :success, :fail]
+  
+  def new
+    @payment = current_user.build_payment
+    @events = Event.all
+  end
 
-  before_filter :create_notification, :except => :paid
-  before_filter :find_payment
+  def create
+    @payment = current_user.build_payment(params[:payment])
+    if @payment.save
+      flash[:notice] = 'Иииииихааааааааа! сохранено'
+    else
+      flash[:notice] = 'Ошибка :('
+    end
+    redirect_to edit_user_registration_path
+  end
 
   # Robokassa call this action after transaction
   def result
