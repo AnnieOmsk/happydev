@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require payments
 //= require twitter/bootstrap
 //= require_tree .

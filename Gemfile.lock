@@ -68,6 +68,9 @@ GEM
     eventmachine (0.12.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    gon (4.0.0)
+      actionpack (>= 2.3.0)
+      json
     haml (3.1.7)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -190,6 +193,7 @@ DEPENDENCIES
   capistrano-ext
   coffee-rails (~> 3.2.1)
   devise (~> 2.1.2)
+  gon
   haml-rails (~> 0.3.4)
   hominid (~> 3.0.5)
   jquery-rails (~> 2.1.1)

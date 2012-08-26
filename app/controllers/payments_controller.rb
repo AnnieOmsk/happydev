@@ -11,6 +11,7 @@ class PaymentsController < ApplicationController
   def new
     @payment = current_user.build_payment
     @events = Event.all
+    gon.event_prices = @events.map { |e| [e.id, e.price] }
   end
 
   def create

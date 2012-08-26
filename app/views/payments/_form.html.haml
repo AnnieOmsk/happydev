@@ -3,9 +3,15 @@
   -# = f.input :user_id
   
   = f.association :events,
-                  :collection => @events,
+                  :collection => @events.map {|e| [e.full_name, e.id]},
+                  :checked => @events.first.id,
                   :as => :check_boxes, 
                   :label => 'Я хочу принять участие в:'
+
+  #price.control-group
+    %label.control-label Цена
+    .controls
+      == 2000
 
   .form-actions
     = f.submit 'Готово', :class => 'btn-primary'
