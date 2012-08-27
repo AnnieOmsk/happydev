@@ -14,4 +14,9 @@ class Payment < ActiveRecord::Base
     self.paid = true
     save
   end
+
+  def update_amount!(value)
+    self.amount = value
+    save
+  end
 end

@@ -35,7 +35,7 @@ class PaymentsController < ApplicationController
   # Если всё окей, робокассе отправляется успешный ответ.
   def result
     @notification = Robokassa::Notification.new(request.raw_post, :secret => 'bdjyygrygbvvhlg2012')
-    if @notification.acknowledge && @notification.gross == @payment.amount
+    if @notification.acknowledge && @notification.gross == @payment.current_price
       render :text => @notification.success_response
     else
       head :bad_request
@@ -47,6 +47,7 @@ class PaymentsController < ApplicationController
   # обновляем payment в базе, ставя ему paid = true
   def success
     if @notification.acknowledge && !@payment.paid
+      @payment.update_amount!(@notification.gross)
       @payment.approve!
       redirect_to payment_path, :notice => 'Success payment'  
     else
