@@ -1,25 +1,16 @@
 .navbar
   .navbar-inner
     .container
-      %a.btn.btn-navbar{:data => { :toggle => "collapse", :target => ".nav-collapse"} }
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
+      / %a.btn.btn-navbar{:data => { :toggle => "collapse", :target => ".nav-collapse"} }
+      /   %span.icon-bar
+      /   %span.icon-bar
+      /   %span.icon-bar
+      -unless current_page?(" ")
         %a.brand{:href => "/"}
-          == #<b>Happy</b>Dev
-        .nav-collapse.fr
-          %ul.nav
-            <!-- <li class="active"><a href="index.html">Home</a></li> -->
-            %li
-              %a{:href => "about.html"} О конференции
-            <!-- <li><a>Программа</a></li> -->
-            %li
-              %a{:href =>"speakers.html"}Докладчикам
-            %li
-              %a{:href => "sponsors.html"}Спонсорам
-            %li
-              %a{:href => "place.html"}Как добраться
-            <!-- <li><a href="faq.html">FAQ</a></li> -->
-            <!-- <li><a href="alt.html">Alt</a></li> -->
-            <!-- <li><a href="contact.html">Contact</a></li> -->
-            <!-- <li><button class="btn btn-primary">Sign In</button></li> -->
+          == #HappyDev<sup style="color:lightgray;font-size:0.6em">beta</sup>
+          <!-- <li class="active"><a href="index.html">Home</a></li> -->
+          <!-- <li><a>Программа</a></li> -->
+          <!-- <li><a href="faq.html">FAQ</a></li> -->
+          <!-- <li><a href="alt.html">Alt</a></li> -->
+          <!-- <li><a href="contact.html">Contact</a></li> -->
+          <!-- <li><button class="btn btn-primary">Sign In</button></li> -->

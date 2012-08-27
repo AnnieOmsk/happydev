@@ -1,8 +1,9 @@
 #content.container
   .row.hero-unit
-    .span3{:style => 'border-right:1px solid #000;'}
-      .registration-big-status Регистрация
     .span3
+      -#{:style => 'border-right:1px solid #000;'}
+      .registration-big-status Регистрация
+    -#.span3
       .registration-big-status{:style => 'margin-left:20px;'} Оплата
 
 #content.container
@@ -15,11 +16,11 @@
         = f.input :password, :label => 'Введите пароль:', :required => true
         = f.input :password_confirmation, :label => 'Подтвердите:', :required => true
         / = f.input :student, :label => 'Я студент', :as => :boolean
-        = f.input :company, :label => 'Компания / ВУЗ:'
+        = f.input :company, :label => 'Компания:'
         = f.input :city, :label => 'Город:'
-        = f.input :professional, :label => 'Специализация:'
+        = f.input :professional, :label => 'Любимая специализация:'
 
         .form-actions
           %button{:type => "submit", :class => "btn btn-primary"}
             = t('Готово')
-          .back_button{:style => 'display:inline; margin-left:10px;'}= link_to "Back", :back
+          -# .back_button{:style => 'display:inline; margin-left:10px;'}= link_to "Back", :back

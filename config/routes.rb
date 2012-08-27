@@ -13,6 +13,9 @@ Happydev::Application.routes.draw do
     # get :demopage, :on => :collection, :as => :payment_demopage
   end
 
+  match '/about/requisites' => 'home#requisites'
+  match '/about' => 'home#about'
+
   scope 'payment' do
     match 'result'    => 'payments#result',    :as => :payment_result # to handle Robokassa push request
     match 'success' => 'payments#success', :as => :payment_success # to handle Robokassa success redirect
