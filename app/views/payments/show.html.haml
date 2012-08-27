@@ -1,31 +1,30 @@
-%legend Оплата конфы
+#show-payment
+  %legend Оплата конфы
 
-- if @payment.paid?
-  %h3 Ураа, вы уже на полпути к #HappyDev 2012!
+  - if @payment.paid?
+    %h3 Ураа, вы уже на полпути к #HappyDev 2012!
 
-  %p Вы оплатили:
-  
-  %ul
-    - for event in @payment.events
-      %li= event.full_name
+    %p Вы оплатили:
+    
+    %ul
+      - for event in @payment.events
+        %li= event.full_name
 
-  %h3 Оплачена сумма: #{ @payment.amount } рублей
+    %h3 Оплачена сумма: #{ @payment.amount } рублей
 
-- else
-  %h3 Вы хотите оплатить:
+  - else
+    %h3 Вы хотите оплатить:
 
-  %ul
-    - for event in @payment.events
-      %li= event.full_name
+    %ul
+      - for event in @payment.events
+        %li= event.full_name
 
-  %h3 Итого к оплате: #{ @payment.current_price } рублей
-  %br
-  %h3 Способы оплаты:
-  .row
-    .span4
-      = image_tag 'robokassa.jpg'
-    .span4
-      = payment_service_for @payment.id, 'AnnieOmsk', :amount =>  @payment.current_price, :service => :robokassa, :secret => 'dkhtdkjhpbkcp,2012' do |s|
-        = submit_tag "Перейти к оплате через ROBOX", :class => 'btn btn-primary'
-  
-      
+    %h3 Итого к оплате: #{ @payment.current_price } рублей
+    %br
+    %h3 Способы оплаты:
+    .row
+      .span4
+        = image_tag 'robokassa.jpg'
+      .span4#payment-button
+        = payment_service_for @payment.id, 'AnnieOmsk', :amount =>  @payment.current_price, :service => :robokassa, :secret => 'dkhtdkjhpbkcp,2012' do |s|
+          = submit_tag "Перейти к оплате через ROBOX", :class => 'btn btn-primary'

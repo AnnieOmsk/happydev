@@ -15,8 +15,13 @@ class Payment < ActiveRecord::Base
     save
   end
 
-  def update_amount!(value)
-    self.amount = value
+  def update_expected_amount!
+    self.expected_amount = current_price
+    save
+  end
+  
+  def update_paid_amount!(value)
+    self.paid_amount = value
     save
   end
 end

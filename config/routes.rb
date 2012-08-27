@@ -4,6 +4,7 @@ Happydev::Application.routes.draw do
   devise_for :users
 
   resource :payment, :only => [:new, :create, :show] do
+    post :update_amount
     # get :demopage, :on => :collection, :as => :payment_demopage
   end
 

@@ -4,11 +4,12 @@ class PaymentsController < ApplicationController
 
   skip_before_filter :verify_authenticity_token
   
-  before_filter :authenticate_user!, :only => [:new, :create, :show]
+  before_filter :authenticate_user!, :only => [:new, :create, :show, :update_amount]
   before_filter :create_notification, :only => [:success, :fail]
-  before_filter :find_payment, :only => [:show, :result, :success, :fail]
+  before_filter :find_payment, :only => [:show, :result, :success, :fail, :update_amount]
  
   def new
+    redirect_to payment_path if current_user.payment
     @payment = current_user.build_payment
     @events = Event.all
     gon.event_prices = @events.map { |e| [e.id, e.price] }
@@ -35,7 +36,7 @@ class PaymentsController < ApplicationController
   # Если всё окей, робокассе отправляется успешный ответ.
   def result
     @notification = Robokassa::Notification.new(request.raw_post, :secret => 'bdjyygrygbvvhlg2012')
-    if @notification.acknowledge && @notification.gross == @payment.current_price
+    if @notification.acknowledge && @notification.gross == @payment.expected_amount
       render :text => @notification.success_response
     else
       head :bad_request
@@ -47,7 +48,7 @@ class PaymentsController < ApplicationController
   # обновляем payment в базе, ставя ему paid = true
   def success
     if @notification.acknowledge && !@payment.paid
-      @payment.update_amount!(@notification.gross)
+      @payment.update_paid_amount!(@notification.gross)
       @payment.approve!
       redirect_to payment_path, :notice => 'Success payment'  
     else
@@ -63,6 +64,11 @@ class PaymentsController < ApplicationController
   end
   
   def demopage
+  end
+
+  def update_amount
+    @payment.update_expected_amount!
+    render :json => @payment
   end
 
   private
