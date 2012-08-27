@@ -6,7 +6,7 @@ class PaymentsController < ApplicationController
   
   before_filter :authenticate_user!, :only => [:new, :create, :show, :update_amount]
   before_filter :create_notification, :only => [:success, :fail]
-  before_filter :find_payment, :only => [:show, :result, :success, :fail, :update_amount]
+  before_filter :find_payment, :only => [:show, :success, :fail, :update_amount]
  
   def new
     redirect_to payment_path if current_user.payment
@@ -36,6 +36,7 @@ class PaymentsController < ApplicationController
   # Если всё окей, робокассе отправляется успешный ответ.
   def result
     @notification = Robokassa::Notification.new(request.raw_post, :secret => 'bdjyygrygbvvhlg2012')
+    @payment = Payment.find(@notification.item_id)
     if @notification.acknowledge && @notification.gross == @payment.expected_amount
       render :text => @notification.success_response
     else
