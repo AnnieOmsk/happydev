@@ -20,8 +20,7 @@
         = f.input :city, :label => 'Город:'
         = f.input :professional,
                   :collection => ['Разработка', 'Дизайн', 'Управление'],
-                  :label => 'Любимая специализация:',
-                  :include_blank => false
+                  :label => 'Любимая специализация:'
 
         .form-actions
           %button{:type => "submit", :class => "btn btn-primary"}
