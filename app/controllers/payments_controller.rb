@@ -7,7 +7,7 @@ class PaymentsController < ApplicationController
   before_filter :authenticate_user!, :only => [:new, :create, :show]
   before_filter :create_notification, :only => [:success, :fail]
   before_filter :find_payment, :only => [:show, :result, :success, :fail]
-  
+ 
   def new
     @payment = current_user.build_payment
     @events = Event.all
@@ -27,18 +27,24 @@ class PaymentsController < ApplicationController
   def show
   end
 
-  # Робокасса вызывает этот метод после успешной оплаты.
-  # Нужно проверить правильность контрольной суммы и отправить робокассе, что все окей
+  # Робокасса вызывает этот метод после успешной оплаты, перед тем, как вызвать success url.
+  # Запрос производится после получения робокассой денег.
+  # Запрос верен, если:
+  # 1) Контрольная сумма верна
+  # 2) Сумма платежа равна запрошенной сумме
+  # Если всё окей, робокассе отправляется успешный ответ.
   def result
     @notification = Robokassa::Notification.new(request.raw_post, :secret => 'bdjyygrygbvvhlg2012')
-    if @notification.acknowledge
+    if @notification.acknowledge && @notification.gross == @payment.amount
       render :text => @notification.success_response
     else
       head :bad_request
     end
   end
 
-  # Robokassa redirect user to this action if it’s all ok
+  # В случае успешного платежа покупатель переходит по этому адресу
+  # Если контрольная сумма верна и заказ ещё не помечен как оплаченный, то
+  # обновляем payment в базе, ставя ему paid = true
   def success
     if @notification.acknowledge && !@payment.paid
       @payment.approve!
@@ -48,7 +54,8 @@ class PaymentsController < ApplicationController
     end
   end
 
-  # Robokassa redirect user to this action if it’s not
+  
+  # В случае отказа от исполнения платежа Покупатель перенаправляется по данному адресу
   def fail
     flash[:error] = 'Вы отменили оплату'
     redirect_to payment_path
