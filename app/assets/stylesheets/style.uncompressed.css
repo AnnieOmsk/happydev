@@ -2,7 +2,7 @@
 /*	Twitter Bootstrap */
 /* --------------------------------------------------------	*/
 
-@import url("bootstrap/bootstrap.min.css");
+/* @import url("bootstrap/bootstrap.min.css"); */
 
 /* --------------------------------------------------------	*/
 /*	Base */
@@ -22,6 +22,9 @@ body {
 	border-top:5px solid #E0E8EA;
 }
 
+small {
+  font-size: 0.7em !important;
+}
 
 /* --------------------------------------------------------	*/
 /*	Buttons	*/
@@ -169,6 +172,13 @@ footer input[type=submit].btn {
 	}
 	#footer-extra i {
 		color:#AFDBEA;
+	}
+
+	#footer-extra a {
+		color:#999
+	}
+	#footer-extra a:hover {
+		color:#fff;
 	}
 
 /* --------------------------------------------------------	*/
@@ -403,7 +413,7 @@ footer input[type=submit].btn {
 
 
 /* --------------------------------------------------------	*/
-/*	Our team */
+/*	Speakers */
 /* --------------------------------------------------------	*/
 
 	.speaker {

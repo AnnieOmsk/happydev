@@ -21,3 +21,25 @@
     float: left;
   }
 }
+
+.registration-big-status {
+  display: inline-block;
+  padding: 20px 20px 20px;
+  margin-bottom: 0;
+  font-size: 25px;
+  line-height: 18px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+}
+
+form#new_user {
+  .control-label {
+    width: 180px;
+  }
+
+  .controls {
+    margin-left: 200px;
+  }
+}

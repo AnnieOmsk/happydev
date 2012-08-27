@@ -51,6 +51,7 @@ class PaymentsController < ApplicationController
     if @notification.acknowledge && !@payment.paid
       @payment.update_paid_amount!(@notification.gross)
       @payment.approve!
+      Mailer.send_success_payment_notification(current_user.email).deliver!
       redirect_to payment_path, :notice => 'Success payment'  
     else
       head :bad_request

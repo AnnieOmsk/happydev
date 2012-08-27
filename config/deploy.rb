@@ -32,6 +32,7 @@ namespace :deploy do
 
   namespace :assets do
     task :precompile do
+      # run "cd #{current_path}; rake assets:precompile RAILS_ENV=#{rails_env}"
       run "ln -nfs #{shared_path}/assets/ #{current_path}/public/"
       run <<-EOF
         FROM=`cat #{previous_release}/REVISION` &&

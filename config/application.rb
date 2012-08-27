@@ -56,7 +56,7 @@ module Happydev
     # Enable the asset pipeline
     config.assets.enabled = true
 
-    config.assets.precompile += ['devise.css']
+    config.assets.precompile += ['devise.css', 'style.uncompressed.css']
     
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'

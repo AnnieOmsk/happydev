@@ -1,11 +1,28 @@
-.devise-session
-  = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :class => "form-horizontal" }) do |f|
-    -# = devise_error_messages!
-    %legend= t 'Зарегаться'
-    = f.input :email, :required => true, :autofocus => true
-    = f.input :password, :required => true
-    = f.input :password_confirmation, :required => true
+#content.container
+  .row
+    .span3
+      -#{:style => 'border-right:1px solid #000;'}
+      .registration-big-status Регистрация
+    -#.span3
+      .registration-big-status{:style => 'margin-left:20px;'} Оплата
 
-    .form-actions
-      %button{:type => "submit", :class => "btn btn-primary"}
-        = t('Готово')
+#content.container
+  .row
+    .span12
+      = simple_form_for(resource, :as => resource_name, :url => registration_path(resource), :html => { :class => "form-horizontal" }) do |f|
+        -# = devise_error_messages!
+        = f.input :name, :label => 'Имя Фамилия', :required => true, :autofocus => true
+        = f.input :email, :label => 'Электронный адрес:', :required => true
+        = f.input :password, :label => 'Введите пароль:', :required => true
+        = f.input :password_confirmation, :label => 'Подтвердите:', :required => true
+        / = f.input :student, :label => 'Я студент', :as => :boolean
+        = f.input :company, :label => 'Компания:'
+        = f.input :city, :label => 'Город:'
+        = f.input :professional,
+                  :collection => ['Разработка', 'Дизайн', 'Управление'],
+                  :label => 'Любимая специализация:'
+
+        .form-actions
+          %button{:type => "submit", :class => "btn btn-primary"}
+            = t('Готово')
+          -# .back_button{:style => 'display:inline; margin-left:10px;'}= link_to "Back", :back
