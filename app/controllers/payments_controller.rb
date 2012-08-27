@@ -9,10 +9,13 @@ class PaymentsController < ApplicationController
   before_filter :find_payment, :only => [:show, :success, :fail, :update_amount]
  
   def new
-    redirect_to payment_path if current_user.payment
-    @payment = current_user.build_payment
-    @events = Event.all
-    gon.event_prices = @events.map { |e| [e.id, e.price] }
+    if current_user.payment
+      redirect_to payment_path
+    else
+      @payment = current_user.build_payment
+      @events = Event.all
+      gon.event_prices = @events.map { |e| [e.id, e.price] }
+    end
   end
 
   def create
