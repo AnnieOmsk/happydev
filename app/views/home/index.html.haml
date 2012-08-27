@@ -15,7 +15,8 @@
     .span3
       %p.ac
         - if user_signed_in?
-          = link_to 'Перейти в профиль', edit_user_registration_path, :class => 'btn btn-large btn-primary'
+          -#= link_to 'Перейти в профиль', edit_user_registration_path, :class => 'btn btn-large btn-primary'
+          Вы зарегистрировались на HappyDev.
         - else
           = link_to 'Регистрация', new_user_registration_path, :class => 'btn btn-large btn-primary'
 
