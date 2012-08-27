@@ -33,3 +33,13 @@
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
 }
+
+form#new_user {
+  .control-label {
+    width: 180px;
+  }
+
+  .controls {
+    margin-left: 200px;
+  }
+}

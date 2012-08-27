@@ -1,5 +1,5 @@
 #content.container
-  .row.hero-unit
+  .row
     .span3
       -#{:style => 'border-right:1px solid #000;'}
       .registration-big-status Регистрация
@@ -7,18 +7,20 @@
       .registration-big-status{:style => 'margin-left:20px;'} Оплата
 
 #content.container
-  .row.hero-unit
+  .row
     .span12
       = simple_form_for(resource, :as => resource_name, :url => registration_path(resource), :html => { :class => "form-horizontal" }) do |f|
         -# = devise_error_messages!
-        = f.input :name, :label => 'Как вас зовут?', :required => true, :autofocus => true
+        = f.input :name, :label => 'Имя Фамилия', :required => true, :autofocus => true
         = f.input :email, :label => 'Электронный адрес:', :required => true
         = f.input :password, :label => 'Введите пароль:', :required => true
         = f.input :password_confirmation, :label => 'Подтвердите:', :required => true
         / = f.input :student, :label => 'Я студент', :as => :boolean
         = f.input :company, :label => 'Компания:'
         = f.input :city, :label => 'Город:'
-        = f.input :professional, :label => 'Любимая специализация:'
+        = f.input :professional,
+                  :collection => ['Разработка', 'Дизайн', 'Управление'],
+                  :label => 'Любимая специализация:'
 
         .form-actions
           %button{:type => "submit", :class => "btn btn-primary"}

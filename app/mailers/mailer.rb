@@ -9,4 +9,9 @@ class Mailer < Devise::Mailer
          :subject => "Привет от HappyDev")
   end
 
+  def send_success_payment_notification(*content)
+    mail(:to => content[0],
+         :subject => 'Успешный заказ!')
+  end
+
 end

@@ -9,7 +9,9 @@ class User < ActiveRecord::Base
   has_one :payment
   
   validates :name, :presence => true
+  validates :professional, :presence => true
   validates :email, :presence => true, :uniqueness => true
+
 
   after_create :subscribe_to_mailchimp, :deliver_notification
 
