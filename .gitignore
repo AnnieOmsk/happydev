@@ -14,6 +14,8 @@ tmp
 config/database.yml
 log/*.log
 .rvmrc
+*.swp
+
 
 # YARD artifacts
 .yardoc
