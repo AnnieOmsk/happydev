@@ -40,7 +40,7 @@ class PaymentsController < ApplicationController
   def result
     @notification = Robokassa::Notification.new(request.raw_post, :secret => 'bdjyygrygbvvhlg2012')
     @payment = Payment.find(@notification.item_id)
-    if @notification.acknowledge && @notification.gross.to_i == @payment.expected_amount
+    if @notification.acknowledge && @notification.gross.to_i == @payment.current_price
       render :text => @notification.success_response
     else
       head :bad_request
