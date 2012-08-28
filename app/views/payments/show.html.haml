@@ -10,7 +10,7 @@
       - for event in @payment.events
         %li= event.full_name
 
-    %h3 Оплачена сумма: #{ @payment.amount } рублей
+    %h3 Оплачена сумма: #{ @payment.current_price } рублей
 
   - else
     %h3 Вы хотите оплатить:
