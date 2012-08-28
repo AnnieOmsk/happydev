@@ -6,7 +6,7 @@ class Mailer < Devise::Mailer
   # Send notification on mail user
   def send_notification(*content)
     mail(:to => content[0],
-         :subject => "Мы зарегистрировали вас на конференицю HappyDev")
+         :subject => "Мы зарегистрировали вас на конференцию HappyDev")
   end
 
   def send_success_payment_notification(*content)
