@@ -224,7 +224,7 @@ footer input[type=submit].btn {
 	color:#222;
 }
 .navbar .nav > li.active > a {
-	background-image:url(../img/navbar-active-item.png);
+	/*background-image:url(navbar-active-item.png);*/
 	background-position:center bottom;
 	background-repeat:no-repeat;	
 }
