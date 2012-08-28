@@ -15,6 +15,7 @@ gem 'hominid',                    '~> 3.0.5'
 gem 'russian',                    '~> 0.6.0'
 gem 'activemerchant', :require => 'active_merchant'
 gem 'gon'
+gem 'airbrake'
 
 gem 'rdiscount'
 
