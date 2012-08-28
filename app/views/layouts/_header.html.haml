@@ -5,12 +5,16 @@
       /   %span.icon-bar
       /   %span.icon-bar
       /   %span.icon-bar
-      -unless current_page?(" ")
-        %a.brand{:href => "/"}
-          == #<b>Happy</b>Dev
-          <!-- <li class="active"><a href="index.html">Home</a></li> -->
-          <!-- <li><a>Программа</a></li> -->
-          <!-- <li><a href="faq.html">FAQ</a></li> -->
-          <!-- <li><a href="alt.html">Alt</a></li> -->
-          <!-- <li><a href="contact.html">Contact</a></li> -->
-          <!-- <li><button class="btn btn-primary">Sign In</button></li> -->
+      -unless current_page?("/")
+        %a.brand{:href => "/"}== #<b>Happy</b>Dev
+      -else
+        .brand== #<b>Happy</b>Dev
+
+      .nav-collapse.fr
+        %ul.nav
+          <li class="active"><a href="about.html">О конференции</a></li>
+      <!-- <li><a>Программа</a></li> -->
+      <!-- <li><a href="faq.html">FAQ</a></li> -->
+      <!-- <li><a href="alt.html">Alt</a></li> -->
+      <!-- <li><a href="contact.html">Contact</a></li> -->
+      <!-- <li><button class="btn btn-primary">Sign In</button></li> -->
