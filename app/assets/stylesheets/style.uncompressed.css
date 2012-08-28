@@ -12,9 +12,9 @@
 ::selection { background: #FC9362; color: #fff; text-shadow: none; }
 :focus { outline-color: transparent!important; outline-style: none!important; }
 
-html {
-	background:#1C1C1C;
-}
+/*html {*/
+	/*background:#1C1C1C;*/
+/*}*/
 body {
 	font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	/*background:url(../img/body-top.png) #fff repeat-x;
