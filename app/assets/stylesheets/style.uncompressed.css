@@ -256,6 +256,7 @@ footer input[type=submit].btn {
 }
 
 .carousel-control {
+<<<<<<< HEAD
 	position: absolute;
 	top: 75px;
 	margin-top: -20px;
@@ -275,6 +276,28 @@ footer input[type=submit].btn {
 	-o-transition: all 0.2s;
 	-ms-transition: all 0.2s;
 	transition: all 0.2s;
+<<<<<<< HEAD
+=======
+=======
+    position: absolute;
+    top: 75px;
+    margin-top: -20px;
+    width: 52px;
+    height: 52px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+    border: 3px solid #fff;
+    line-height: 45px;
+    background: #888;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: .5;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
     font-size: 55px;
 }
 
