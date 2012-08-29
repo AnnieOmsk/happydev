@@ -254,38 +254,38 @@ footer input[type=submit].btn {
 .carousel {
 	position:relative;
 }
-.carousel-control 
-{
-	position:absolute;
-	top:50%;
-	margin-top:-20px;
-	-webkit-border-radius:2px;
-	-moz-border-radius:2px;
-	border-radius:2px;
-	border:0;
-	padding:6px;
-	line-height:0.4em;
 
-	background:#888;
-
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+.carousel-control {
+	position: absolute;
+	top: 75px;
+	margin-top: -20px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border: 0;
+	padding: 6px;
+	line-height: 0.4em;
+	background: #888;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
-	opacity:1;
-
+	opacity: 1;
 	-webkit-transition:all 0.2s;
 	-moz-transition:all 0.2s;
 	-o-transition:all 0.2s;
 	-ms-transition:all 0.2s;
 	transition:all 0.2s;	
 }
+
 .carousel-control:hover{
 	background:#0081CC;	
-} 
-.carousel-control.left {
-	left:0px;
 }
+
+.carousel-control.left {
+	left: 0;
+}
+
 .carousel-control.right {
-	right:0px;
+	right: 40px;
 }
 
 #macbook_carousel {
