@@ -259,14 +259,13 @@ footer input[type=submit].btn {
 	position: absolute;
 	top: 75px;
 	margin-top: -20px;
-    width: 40px;
-    height: 40px;
+    width: 52px;
+    height: 52px;
 	-webkit-border-radius: 38px;
 	-moz-border-radius: 38px;
 	border-radius: 38px;
 	border: 3px solid #fff;
-	padding: 6px;
-	line-height: 29px;
+    line-height: 75%;
 	background: #888;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 	filter: alpha(opacity=50);
@@ -276,6 +275,7 @@ footer input[type=submit].btn {
 	-o-transition: all 0.2s;
 	-ms-transition: all 0.2s;
 	transition: all 0.2s;
+    font-size: 55px;
 }
 
 .carousel-control:hover {
