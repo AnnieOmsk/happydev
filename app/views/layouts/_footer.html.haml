@@ -8,7 +8,7 @@
           %a{:href => "/about/requisites"} Реквизиты 
         %li
           %a{:href => "http://arvd.ru/page/view?id=15", :title => "Конгресс-холл Экспоцентра"} Место проведения
-    .span2
+    .span7
       #fb-root
       %script(type="text/javascript")
         <script>(function(d, s, id) {
@@ -25,6 +25,25 @@
         Tweet
       %script(type="text/javascript")
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+
+      %script{:type => 'text/javascript', :src => 'http://userapi.com/js/api/openapi.js?52'}
+      %script(type="text/javascript")
+        VK.init({apiId: API_ID, onlyWidgets: true});
+      #vk_like
+      %script(type="text/javascript")
+        VK.Widgets.Like("vk_like", {type: "mini", height: 24});
+
+      .g-plusone{:'data-size' => 'medium', :'data-annotation' => 'inline', :'data-width' => '120'}
+      %script(type="text/javascript")
+        (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+
+
+
     -#.span2
       
       %ul
