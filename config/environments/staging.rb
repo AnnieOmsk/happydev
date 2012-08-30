@@ -50,7 +50,10 @@ Happydev::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = { :host => 'office.7bits.it:21780' }
+  config.action_mailer.default_url_options = {
+    :host => 'office.7bits.it',
+    :port => 21780
+  }
 
   # Enable threaded mode
   # config.threadsafe!
