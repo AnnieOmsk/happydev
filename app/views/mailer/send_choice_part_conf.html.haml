@@ -3,5 +3,5 @@
   %ul
     - @content[:events].each do |event|
       %li= event.name
-%p= "Вам выслан счет на общую сумму #{@content[:amount]}."
+%p= "Вам выслан счет на общую сумму #{Russian.p(@content[:amount], 'рубль', 'рубля', 'рублей'}."
 %p= "Счет действителен до #{@content[:expired_at].to_time}."
