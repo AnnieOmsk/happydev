@@ -41,7 +41,7 @@
 
     .container
       %br
-      -# = bootstrap_flash
+      = bootstrap_flash
       %br
       - unless controller.controller_name == 'home' && controller.action_name == 'index'
         = yield
