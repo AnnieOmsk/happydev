@@ -1,5 +1,5 @@
 Happydev::Application.routes.draw do
-  # resources :events
+  resources :events
 
   devise_for :users, :skip => [:sessions, :password, :registrations], :path => "registration", :path_names => { :sign_up => "new", :sign_in => 'login', :sign_out => 'logout' } do
     get 'registration/new' => 'devise/registrations#new', :as => 'new_user_registration'
