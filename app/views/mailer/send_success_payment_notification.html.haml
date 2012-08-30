@@ -1,1 +1,25 @@
-Ура! Вы только что успешно оплатили участие HappyDev
+#show-payment
+  - if @invoice.invoice_events.all?{|e| e.paid?}
+    %h3 Ураа, вы уже на полпути к #HappyDev 2012!
+
+    %p Вы оплатили:
+    
+    %ul
+      - for event in @invoice.events
+        %li= event.full_name
+
+    %h3 Оплачена сумма: #{ @invoice.amount } рублей
+
+  - else
+    %h3 Вы частично оплатили свое участие на #HappyDev 2012!
+
+    %ul
+      - for ie in @invoice.invoice_events
+        %li
+          = ie.event.full_name
+          &nbsp;
+          - if ie.paid?
+            (paid)
+
+    %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } рублей
+    %h3 Общая сумма: #{ @invoice.amount } рублей

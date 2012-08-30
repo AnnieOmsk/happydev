@@ -9,8 +9,9 @@ Happydev::Application.routes.draw do
     # get 'registration/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'
   end
 
-  resource :payment, :only => [:new, :create, :show] do
-    post :update_amount
+  resources :payment
+
+  resource :invoice, :only => [:new, :create, :show] do
     # get :demopage, :on => :collection, :as => :payment_demopage
   end
 

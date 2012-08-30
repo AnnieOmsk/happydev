@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120828175305) do
+ActiveRecord::Schema.define(:version => 20120829185120) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20120828175305) do
     t.datetime "start_at"
     t.datetime "end_at"
     t.string   "place"
+    t.integer  "priority"
   end
 
   create_table "events_payments", :id => false, :force => true do |t|
@@ -49,6 +50,7 @@ ActiveRecord::Schema.define(:version => 20120828175305) do
     t.datetime "expired_at"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "code"
   end
 
   add_index "invoices", ["user_id"], :name => "index_invoices_on_user_id"

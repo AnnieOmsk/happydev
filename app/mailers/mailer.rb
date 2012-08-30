@@ -10,8 +10,19 @@ class Mailer < Devise::Mailer
   end
 
   def send_success_payment_notification(*content)
+    @invoice = content[1]
     mail(:to => content[0],
          :subject => 'Успешный заказ!')
+  end
+
+  def send_choice_part_conf(*content)
+    tmp = {}
+    tmp[:events] = content[1]
+    tmp[:amount] = content[2]
+    tmp[:expired_at] = content[3]
+    @content = tmp
+    mail(:to => content[0],
+         :subject => 'Ваш заказ на конференцию HappyDev.')
   end
 
 end
