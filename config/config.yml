@@ -2,14 +2,26 @@ development:
   mailchimp:
     api_key: 9b98484528f3f824d34df46c8672a168-us5
     list_id: da461e7340
+  robokassa:
+    login: 'sharipov'
+    secret1: 'iddqdkfa83'   # for notification method
+    secret2: 'robox1212'
+
+staging:
+  mailchimp:
+    api_key: 9b98484528f3f824d34df46c8672a168-us5
+    list_id: da461e7340
+  robokassa:
+    login: 'sharipov'
+    secret1: 'iddqdkfa83'   # for notification method
+    secret2: 'robox1212'
 
 production:
   mailchimp:
     api_key: 2b25ec06f724c27a6b57a795fc5d1f37-us5
     list_id: 30503cd22e
     list_id_7bits_friends: 9c2718348c
-
-staging:
-  mailchimp:
-    api_key: 9b98484528f3f824d34df46c8672a168-us5
-    list_id: da461e7340
+  robokassa:
+    login: 'AnnieOmsk'
+    secret1: 'dkhtdkjhpbkcp,2012'   # for notification method
+    secret2: 'bdjyygrygbvvhlg2012'

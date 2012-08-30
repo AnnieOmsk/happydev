@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
 
   attr_accessible :email, :name, :student, :company, :city, :professional, :password, :password_confirmation, :remember_me
 
-  has_one :payment
+  has_one :invoice
   
   validates :name, :presence => true
   validates :professional, :presence => true
