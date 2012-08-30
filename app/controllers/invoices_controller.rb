@@ -25,7 +25,7 @@ class InvoicesController < ApplicationController
       @invoice = current_user.build_invoice(params[:invoice])
       @invoice.amount = @invoice.events.map(&:price).inject(:+)     # write overall price
       @invoice.expired_at = 3.day.from_now
-      @invoice.code = rand(10 ** 10)                                # Only digits!!!!! (SecureRandom.hex(8))
+      @invoice.code = SecureRandom.random_number(1000000000)
       if @invoice.save
         if @invoice.invoice_events
           @invoice.invoice_events.map { |e| e.paid = false; e.save }   # setup events' paid field = false
