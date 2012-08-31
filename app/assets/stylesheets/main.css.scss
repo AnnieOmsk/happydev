@@ -1,3 +1,11 @@
+.carousel-inner {
+  height: 235px;
+}
+
+.under-carousel {
+  padding-top:15px !important;
+}
+
 .social-panel-on-footer {
   padding-top: 12px !important;
 
@@ -16,5 +24,9 @@
 
   #___plusone_0 {
     width:72px !important;
+  }
+
+  .vk-like iframe{
+    width: 94px !important;
   }
 }
