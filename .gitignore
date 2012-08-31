@@ -15,7 +15,7 @@ config/database.yml
 log/*.log
 .rvmrc
 *.swp
-
+.rbenv-version
 
 # YARD artifacts
 .yardoc

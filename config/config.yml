@@ -6,6 +6,10 @@ development:
     login: 'sharipov'
     secret1: 'iddqdkfa83'   # for notification method
     secret2: 'robox1212'
+  facebook:
+    AppID: 521885384495458
+  vkontakte:
+    AppID: 3104899
 
 staging:
   mailchimp:
@@ -15,6 +19,10 @@ staging:
     login: 'sharipov'
     secret1: 'iddqdkfa83'   # for notification method
     secret2: 'robox1212'
+  facebook:
+    AppID: 521885384495458
+  vkontakte:
+    AppID: 3104899
 
 production:
   mailchimp:
@@ -25,3 +33,7 @@ production:
     login: 'AnnieOmsk'
     secret1: 'dkhtdkjhpbkcp,2012'   # for notification method
     secret2: 'bdjyygrygbvvhlg2012'
+  facebook:
+    AppID: 494138303932424
+  vkontakte:
+    AppID: 3104781
