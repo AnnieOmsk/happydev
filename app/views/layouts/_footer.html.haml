@@ -1,6 +1,6 @@
 .container{:style=> "padding-left:20px"}
   .row
-    .span2
+    .span4
       %ul
         / %li
         /   %a{:href => "/about"} Организаторы
@@ -8,7 +8,42 @@
           %a{:href => "/about/requisites"} Реквизиты 
         %li
           %a{:href => "http://arvd.ru/page/view?id=15", :title => "Конгресс-холл Экспоцентра"} Место проведения
-        
+    .span4.social-panel-on-footer
+      #fb-root
+      %script(type="text/javascript")
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+      .fb-like{:'data-href' => 'http://happydev.ru', :'data-layout' => 'button_count', :'data-width' => '350', :'data-show-faces' => 'false'}
+
+      %a.twitter-share-button{:href => 'https://twitter.com/share', :'data-url' => 'http://happydev.ru'}
+        Tweet
+      %script(type="text/javascript")
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+
+      %script{:type => 'text/javascript', :src => 'http://userapi.com/js/api/openapi.js?52'}
+      %script(type="text/javascript")
+        VK.init({apiId: API_ID, onlyWidgets: true});
+      #vk_like
+      %script(type="text/javascript")
+        VK.Widgets.Like("vk_like", {type: "mini", height: 24});
+
+      .g-plusone{:'data-size' => 'medium', :'data-annotation' => 'inline', :'data-width' => '120'}
+      %script(type="text/javascript")
+        (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+
+
+
     -#.span2
       
       %ul
