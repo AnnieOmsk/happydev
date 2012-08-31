@@ -5,6 +5,8 @@
       /   %span.icon-bar
       /   %span.icon-bar
       /   %span.icon-bar
+      .logo
+        %img{:src => "/assets/small_logo.png", :style => "display:none;"}
       -unless current_page?("/")
         %a.brand{:href => "/"}== #<b>Happy</b>Dev
       -else
