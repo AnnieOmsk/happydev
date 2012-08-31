@@ -10,7 +10,7 @@
       - for event in @invoice.events
         %li= event.full_name
 
-    %h3 Оплачена сумма: #{ @invoice.amount } рублей
+    %h3 Оплачена сумма: #{ @invoice.amount} руб.
 
   - else
     - if @invoice.payments.empty?
@@ -27,10 +27,13 @@
             (paid)
 
     - if @invoice.payments.empty?
-      %h3 Итого к оплате: #{ @invoice.amount } рублей
+      - if @invoice.discount_status
+        %h3 Итого к оплате со скидкой: #{ @invoice.amount } руб.
+      - else
+        %h3 Итого к оплате: #{ @invoice.amount } руб.
     - else
-      %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } рублей
-      %h3 Общая сумма: #{ @invoice.amount } рублей
+      %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } руб.
+      %h3 Общая сумма: #{ @invoice.amount } руб.
 
     %br
     %h3 Способы оплаты:
