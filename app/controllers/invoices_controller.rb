@@ -19,19 +19,17 @@ class InvoicesController < ApplicationController
   end
 
   def create
-    if params[:invoice]["event_ids"].all?{ |i| i.blank? }   # if events not selected
+    if params[:invoice]["event_ids"].all?{ |i| i.blank? }    # if events not selected
       redirect_to new_invoice_path
     else
-      @invoice = current_user.build_invoice(params[:invoice])
-      @invoice.amount = @invoice.events.map(&:price).inject(:+)     # write overall price
-      @invoice.expired_at = 3.day.from_now
-      @invoice.code = Time.now.to_i + current_user.id
+      @invoice = Invoice.drafting_invoice(current_user, params[:invoice], params[:promocode])
       if @invoice.save
-        if @invoice.invoice_events
-          @invoice.invoice_events.map { |e| e.paid = false; e.save }   # setup events' paid field = false
-        end
         Mailer.send_choice_part_conf(current_user.email, @invoice.events, @invoice.amount, @invoice.expired_at).deliver!
-        flash[:notice] = "Заказ добавлен. Теперь вы можете оплатить его"
+        if @invoice.discount_status
+          flash[:notice] = "Ура, вы получили скидку!!! Заказ добавлен и вы можете его оплатить."
+        else
+          flash[:notice] = "Заказ добавлен. Теперь вы можете оплатить его"
+        end
       else
         flash[:notice] = 'Ошибка при регистрации'
       end

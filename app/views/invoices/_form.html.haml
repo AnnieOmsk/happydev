@@ -1,6 +1,10 @@
 = simple_form_for(@invoice, :url => invoice_path(@invoice), :html => { :class => 'form-horizontal' }) do |f|
-  -# = f.input :user_id
-  
+  .control-group
+    .control-label
+      Промокод:
+    .controls
+      = text_field_tag :promocode
+
   = f.association :events,
                   :collection => @events,
                   :as => :check_boxes, 

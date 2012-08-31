@@ -12,5 +12,11 @@ Event.create(:name => "Конференция HappyDev",
              :start_at => "2012-09-29 10:00",
              :end_at => "2012-09-30 18:00",
              :price => 2)
+
 Event.create(:name => "Обед",
-             :price => 4)
+             :price => 4,
+             :discount => false)
+
+Promocode.delete_all
+Promocode.create(:discount_value => 10,
+                 :number => "hajsdh23hjhsdf97hdghfhnhjshadioquwe")
