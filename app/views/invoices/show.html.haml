@@ -27,10 +27,7 @@
             (paid)
 
     - if @invoice.payments.empty?
-      - if @invoice.discount_status
-        %h3 Итого к оплате со скидкой: #{ @invoice.amount } руб.
-      - else
-        %h3 Итого к оплате: #{ @invoice.amount } руб.
+      %h3 Итого к оплате: #{ @invoice.amount } руб.
     - else
       %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } руб.
       %h3 Общая сумма: #{ @invoice.amount } руб.
