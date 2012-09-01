@@ -1,4 +1,5 @@
 development:
+  domain: http://localhost:3001
   mailchimp:
     api_key: 9b98484528f3f824d34df46c8672a168-us5
     list_id: da461e7340
@@ -8,10 +9,12 @@ development:
     secret2: 'robox1212'
   facebook:
     AppID: 521885384495458
+    admins: 100001720278298
   vkontakte:
     AppID: 3104899
 
 staging:
+  domain: http://office.7bits.it:21780
   mailchimp:
     api_key: 9b98484528f3f824d34df46c8672a168-us5
     list_id: da461e7340
@@ -21,10 +24,12 @@ staging:
     secret2: 'robox1212'
   facebook:
     AppID: 521885384495458
+    admins: 100001720278298
   vkontakte:
     AppID: 3104899
 
 production:
+  domain: http://happydev.ru
   mailchimp:
     api_key: 2b25ec06f724c27a6b57a795fc5d1f37-us5
     list_id: 30503cd22e
@@ -35,5 +40,6 @@ production:
     secret2: 'bdjyygrygbvvhlg2012'
   facebook:
     AppID: 494138303932424
+    admins: 100001720278298
   vkontakte:
     AppID: 3104781
