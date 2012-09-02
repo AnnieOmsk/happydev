@@ -1,0 +1,9 @@
+%p
+  Вы выбрали:
+  %ul
+    - @content[:events].each do |event|
+      %li= event.name
+
+- amount = @content[:amount]
+%p= "Вам выслан счет на общую сумму #{amount} #{Russian.p(amount, 'рубль', 'рубля', 'рублей')}."
+%p= "Счет действителен до #{@content[:expired_at].to_time}."

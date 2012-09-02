@@ -3,6 +3,13 @@
   %head
     %meta(charset="utf-8")
     %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+    %meta{:property => "og:image", :content => "#{APP_CONFIG['domain']}/assets/happydev_logo.png"}
+    %meta{:property => "og:title", :content => "Omsk IT-conference HappyDev"}
+    %meta{:property => "og:type", :content => "website"}
+    %meta{:property => "fb:app_id", :content => APP_CONFIG['facebook']['AppID']}
+    %meta{:property => "fb:admins", :content => APP_CONFIG['facebook']['admins']}
+    %meta{:property => "og:url", :content => APP_CONFIG['domain']}
+    %meta{:property => "og:description", :content => "First big IT-conference in Omsk - Happydev"}
     -#%meta(name="viewport" content="width=device-width, initial-scale=1.0")
     %title= content_for?(:title) ? yield(:title) : "HappyDev"
     = csrf_meta_tags
@@ -41,7 +48,7 @@
 
     .container
       %br
-      -# = bootstrap_flash
+      = bootstrap_flash
       %br
       - unless controller.controller_name == 'home' && controller.action_name == 'index'
         = yield

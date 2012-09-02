@@ -32,19 +32,7 @@ namespace :deploy do
 
   namespace :assets do
     task :precompile do
-      # run "cd #{current_path}; rake assets:precompile RAILS_ENV=#{rails_env}"
-      run "ln -nfs #{shared_path}/assets/ #{current_path}/public/"
-      run <<-EOF
-        FROM=`cat #{previous_release}/REVISION` &&
-        echo '>>>>>>>>>>>>>>>>>>>>>>>>>>>> FROM:'
-        echo $FROM &&
-        TO=`cat #{release_path}/REVISION` &&
-        echo '>>>>>>>>>>>>>>>>>>>>>>>>>>>> TO:'
-        echo $TO &&
-        cd #{shared_path}/cached-copy &&
-        STATUS=`git log ${FROM}..${TO} -- app/assets vendor/assets | wc -l | sed 's/^ *//g'` &&
-        if [ $STATUS -eq 0 ]; then echo "No assets changed. Skipping compilation..."; else cd #{current_path} && rake assets:precompile RAILS_ENV=#{rails_env}; fi
-      EOF
+      run "cd #{current_path}; rake assets:precompile RAILS_ENV=#{rails_env}"
     end
   end
 end

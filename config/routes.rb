@@ -1,5 +1,5 @@
 Happydev::Application.routes.draw do
-  # resources :events
+  resources :events
 
   devise_for :users, :skip => [:sessions, :password, :registrations], :path => "registration", :path_names => { :sign_up => "new", :sign_in => 'login', :sign_out => 'logout' } do
     get 'registration/new' => 'devise/registrations#new', :as => 'new_user_registration'
@@ -9,8 +9,9 @@ Happydev::Application.routes.draw do
     # get 'registration/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'
   end
 
-  resource :payment, :only => [:new, :create, :show] do
-    post :update_amount
+  resources :payment
+
+  resource :invoice, :only => [:new, :create, :show] do
     # get :demopage, :on => :collection, :as => :payment_demopage
   end
 

@@ -1,82 +1,115 @@
-.row
-  %article.speaker.span3
-    .speaker-avatar
-      = image_tag "speakers/filippov.jpg", :class => 'thumbnail'
-    %h3.speaker-name
-      %a{:href => "http://scrumtrek.ru/company/team/"} Никита Филиппов
-    %span.speaker-position
-      %a{:href => 'http://scrumtrek.ru/'} Scrumtrek
-    , Москва
+#carousel.row.carousel.slide
+  .carousel-inner
+    .item.active
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/filippov.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://scrumtrek.ru/company/team/"} Никита Филиппов
+        %span.speaker-position
+          %a{:href => 'http://scrumtrek.ru/'} Scrumtrek
+        , Москва
 
-  %article.speaker.span3
-    .speaker-avatar
-      = image_tag "speakers/krivitsky.jpg", :class => 'thumbnail'
-    %h3.speaker-name
-      %a{:href => "http://resume.krivitsky.com"} Алексей Кривицкий
-    %span.speaker-position
-      %a{:href => 'http://www.scrumguides.com/'} Scrum Guides
-    , Киев
-    / .speaker-bio
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/krivitsky.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://resume.krivitsky.com"} Алексей Кривицкий
+        %span.speaker-position
+          %a{:href => 'http://www.scrumguides.com/'} Scrum Guides
+        , Киев
+        / .speaker-bio
 
-  %article.speaker.span3
-    .speaker-avatar
-      = image_tag "speakers/volkov.jpg", :class => 'thumbnail'
-    %h3.speaker-name
-      %a{:href => "http://leonidvolkov.ru/obo_mne/"} Леонид Волков
-    %span.speaker-position Прожектор Венчурз
-    , Екатеринбург
-    / .speaker-bio
-      
-      
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/volkov.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://leonidvolkov.ru/obo_mne/"} Леонид Волков
+        %span.speaker-position Прожектор Венчурз
+        , Екатеринбург
+        / .speaker-bio
 
-  %article.speaker.span3
-    .speaker-avatar
-      = image_tag "speakers/pavlova.jpg", :class => 'thumbnail'
-    %h3.speaker-name
-      %a{:href => "http://www.pavlova.cc/"} Ольга Павлова
-    %span.speaker-position
-      КБ "Собака @Павлова"
-    , Питер
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/pavlova.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://www.pavlova.cc/"} Ольга Павлова
+        %span.speaker-position
+          КБ "Собака @Павлова"
+        , Питер
 
+    .item
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/podorozhny.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://yurypodorozhnyy.moikrug.ru/"} Юрий Подорожный
+        %span.speaker-position
+          %a{:href => "http://www.anyvoid.ru/"} Any Void
+        , Москва
 
-  %article.speaker.span3
-    .speaker-avatar
-      = image_tag "speakers/podorozhny.jpg", :class => 'thumbnail'
-    %h3.speaker-name
-      %a{:href => "http://yurypodorozhnyy.moikrug.ru/"} Юрий Подорожный
-    %span.speaker-position
-      %a{:href => "http://www.anyvoid.ru/"} AnyVoid
-    , Москва
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/koss.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://nocorp.me/"} Саша Косс
+        %span.speaker-position
+          %a{:href => "http://evilmartians.ru/"} Evil Martians
+        , Омск/Бангкок
 
-  %article.speaker.span3
-    .speaker-avatar
-      = image_tag "speakers/koss.jpg", :class => 'thumbnail'
-    %h3.speaker-name
-      %a{:href => "http://nocorp.me/"} Саша Косс
-    %span.speaker-position
-      %a{:href => "http://evilmartians.ru/"} Evil Martians
-    , Омск/Тайланд
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/byndyu.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://byndyu.ru/"} Александр Бындю
+        %span.speaker-position
+          %a{:href => "http://soft.byndyu.ru/"} Byndyusoft
+        , Челябинск
 
-  %article.speaker.span3
-    .speaker-avatar
-      = image_tag "speakers/byndyu.jpg", :class => 'thumbnail'
-    %h3.speaker-name
-      %a{:href => "http://byndyu.ru/"} Александр Бындю
-    %span.speaker-position
-      %a{:href => "http://soft.byndyu.ru/"} Byndyusoft
-    , Челябинск
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/chistyakov.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://alexclear.moikrug.ru/"} Александр Чистяков
+        %span.speaker-position
+          %a{:href => "http://www.kupikupon.ru/"} Купи Купон
+        , Питер
 
-  %article.speaker.span3
-    .speaker-avatar
-      = image_tag "speakers/chistyakov.jpg", :class => 'thumbnail'
-    %h3.speaker-name
-      %a{:href => "http://alexclear.moikrug.ru/"} Александр Чистяков
-    %span.speaker-position
-      %a{:href => "http://www.kupikupon.ru/"} Купи Купон
-    , Питер
+    .item
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/nepomhyashchih.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://anton-nix.livejournal.com/"} Антон Непомнящих
+        %span.speaker-position
+          %a{:href => "http://issart.com/"} ИСС-Арт
+        , Омск
 
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/polikarpov.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://artpolikarpov.moikrug.ru/"} Артем Поликарпов
+        %span.speaker-position
+          %a{:href => "http://artgorbunov.ru/"} Бюро Артема Горбунова
+        , Боровичи
 
--# .row
--#   .span9
--#     %p.ac
--#       А так же другие не менее интересные докладчики из Питера, Челябинска, Новосибирска и, конечно же, Омска
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/sirotkin.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://www.telamon.ru/"} Яков Сироткин
+        %span.speaker-position
+          %a{:href => "http://spbau.ru/"} СПбАУ, лаборатория алгоритмической биологии
+        , Питер
+
+      %article.speaker.span3
+        .speaker-avatar
+          = image_tag "speakers/treskin.jpg", :class => 'thumbnail'
+        %h3.speaker-name
+          %a{:href => "http://maxtreskin.moikrug.ru/"} Максим Трескин
+        %span.speaker-position
+          Metachord
+        , Новосибирск
+  %a.left.carousel-control{:href => "#carousel", :data => {:slide => "prev"}} &lsaquo;
+  %a.right.carousel-control{:href => "#carousel", :data => {:slide => "next"}} &rsaquo;

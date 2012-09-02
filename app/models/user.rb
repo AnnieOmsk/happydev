@@ -4,14 +4,13 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable, :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :email, :name, :student, :company, :city, :professional, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :name, :student, :company, :city, :professional, :password, :password_confirmation, :remember_me, :promocode
 
-  has_one :payment
-  
+  has_one :invoice
+
   validates :name, :presence => true
   validates :professional, :presence => true
   validates :email, :presence => true, :uniqueness => true
-
 
   after_create :subscribe_to_mailchimp, :deliver_notification
 
@@ -22,5 +21,10 @@ class User < ActiveRecord::Base
 
   def deliver_notification
     Mailer.send_notification(email).deliver!
+  end
+
+  def save_promocode(code)
+    self.promocode = code
+    self.save
   end
 end

@@ -4,12 +4,19 @@
 
 %p
   %strong= model_class.human_attribute_name(:name) + ':'
-  %br
   = @event.name
 %p
   %strong= model_class.human_attribute_name(:price) + ':'
-  %br
   = @event.price
+%p
+  %strong= model_class.human_attribute_name(:start_at) + ':'
+  = @event.start_at
+%p
+  %strong= model_class.human_attribute_name(:end_at) + ':'
+  = @event.end_at
+%p
+  %strong= model_class.human_attribute_name(:place) + ':'
+  = @event.place
 
 .form-actions
   = link_to t('.back', :default => t("helpers.links.back")), events_path, :class => 'btn'

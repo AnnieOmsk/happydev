@@ -2,6 +2,9 @@
   = f.input :name
   = f.input :master
   = f.input :price
+  = f.input :start_at, :discard_year => true, :input_html => { :class => 'datepicker' }
+  = f.input :end_at, :discard_year => true, :input_html => { :class => 'datepicker' }
+  = f.input :place
   .form-actions
     = f.button :submit, :class => 'btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), events_path, :class => 'btn'

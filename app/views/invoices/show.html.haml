@@ -1,0 +1,45 @@
+#show-payment
+  %legend Оплата участия на HappyDev
+
+  - if @invoice.invoice_events.all?{|e| e.paid?}
+    %h3 Ураа, вы уже на полпути к #HappyDev 2012!
+
+    %p Вы оплатили:
+    
+    %ul
+      - for event in @invoice.events
+        %li= event.full_name
+
+    %h3 Оплачена сумма: #{ @invoice.amount} руб.
+
+  - else
+    - if @invoice.payments.empty?
+      %h3 Вы хотите оплатить:
+    - else
+      %h3 Вы частично оплатили свое участие на #HappyDev 2012!
+
+    %ul
+      - for ie in @invoice.invoice_events
+        %li
+          = ie.event.full_name
+          &nbsp;
+          - if ie.paid?
+            (paid)
+
+    - if @invoice.payments.empty?
+      - if @invoice.discount_status
+        %h3 Итого к оплате со скидкой: #{ @invoice.amount } руб.
+      - else
+        %h3 Итого к оплате: #{ @invoice.amount } руб.
+    - else
+      %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } руб.
+      %h3 Общая сумма: #{ @invoice.amount } руб.
+
+    %br
+    %h3 Способы оплаты:
+    .row
+      .span4
+        = image_tag 'robokassa.jpg'
+      .span4#payment-button
+        = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
+          = submit_tag "Перейти к оплате через ROBOX", :class => 'btn btn-primary'
