@@ -16,6 +16,8 @@ Happydev::Application.routes.draw do
   end
 
   match '/about/requisites' => 'home#requisites'
+  match '/programme' => 'home#program'
+  match '/program' => 'home#program'
   match '/about' => 'home#about'
 
   scope 'payment' do

@@ -1,0 +1,246 @@
+%style
+  :sass
+    #program td
+      width: 33%
+      min-height: 50px
+      padding: 5px
+      margin: 2px
+      font-size: 1.4em
+
+      .common
+        background-color: #dddddd
+
+      .startup
+        background-color: #009999
+      .product
+        background-color: #62DA97
+      .factory
+        background-color: #F87085
+
+
+    .speeches
+
+      ul.startup .speech-title
+        color: #9D0019
+      ul.product .speech-title
+        color: #007241
+      ul.factory .speech-title
+        color: #130873
+      ul.common .speech-title
+        color: #A67800
+      ul
+        li
+          list-style: none
+          margin-bottom: 10px
+
+          .speaker-name
+            font-size: 1.4em
+
+          .speech-title
+            font-size: 1.2em  
+            
+
+
+
+
+#content.container
+
+  %h1 Доклады
+
+  .speeches
+
+    %h2 Общие
+
+    %ul.common
+      %li
+        .speaker-name Яков Сироткин
+        .speech-title Автобус не придет
+      %li
+        .speaker-name Алексей Кривицкий
+        .speech-title Новейшая история менеджмента. От эры стагнации к периоду ренессанса
+
+    %h2 Стартапы
+
+    %ul.startup
+      %li
+        .speaker-name Максим Трескин 
+        .speech-title Как начиналось Erlyvideo, от бутстрапа до продукта
+      %li
+        .speaker-name Юрий Подорожный
+        .speech-title Книга вслух - от стартапа до продукта
+      %li
+        .speaker-name Рамиль Шайхутдинов
+        .speech-title Почему я не люблю слово "стартап"
+      %li
+        .speaker-name Леонид Волков
+        .speech-title Зачем стартапу деньги?
+
+    %h2 Продуктовая разработка
+    %ul.product
+      %li
+        .speaker-name Ольга Павлова
+        .speech-title Технологии вовлечения заказчика в процессы визуализации интерфейсов
+      %li
+        .speaker-name Александр Кудымов
+        .speech-title Путь самурая от скрама до канбана
+      %li
+        .speaker-name Александр Кудымов
+        .speech-title Счастье и эмоции в интерфейсах
+      %li
+        .speaker-name Максим Гуртовенко
+        .speech-title Эволюция архитектуры проекта за 10 лет
+      %li
+        .speaker-name Александр Чистяков
+        .speech-title Большой веб-проект: развитие, рост, проблемы, решения с точки зрения отдела эксплуатации
+
+    %h2 Фабрика проектов
+    %ul.factory
+      %li
+        .speaker-name Артем Поликарпов
+        .speech-title Технолог - тоже дизайнер
+      %li
+        .speaker-name Саша Косс
+        .speech-title Легкий способ бросить писать плохой код
+      %li
+        .speaker-name Анна Тарасенко
+        .speech-title Война миров: Хипстеры против Enterprise
+      %li
+        .speaker-name Александр Бындю
+        .speech-title Agile в условиях управления аутсорсинговой компанией
+
+
+
+  -#%table#program
+    %tr
+      %td{:colspan => 3}
+        .speaker-name Алексей Кривицкий      
+        .speech-title Новейшая история менеджмента. От эры стагнации к периоду ренессанса
+
+    %tr
+      %td.startup
+        .speaker-name Трескин 
+        .speech-title Как начиналось Erlyvideo, от бутстрапа до продукта
+
+      %td.product
+        .speaker-name Павлова
+        .speech-title Технологии вовлечения заказчика в процессы визуализации интерфейсов
+
+      %td.factory
+        .speaker-name Поликарпов
+        .speech-title Технолог - тоже дизайнер
+
+
+    %tr
+      %td.startup
+        .speaker-name Подорожный
+        .speech-title Книга вслух - от стартапа до продукта
+
+      %td.product
+        .speaker-name Кудымов
+        .speech-title Путь самурая от скрама до канбана
+
+      %td.factory
+        .speaker-name ?
+        .speech-title 
+
+    %tr
+      %td.startup
+        .speaker-name Шайхутдинов
+        .speech-title Зачем стартапу деньги
+
+      %td.product
+        .speaker-name ?
+        .speech-title 
+
+      %td.factory
+        .speaker-name 
+        .speech-title 
+
+    %tr
+      %td{:colspan => 3}
+        .speech.common 
+        .speaker-name Шапиро
+        
+        
+
+    %tr
+      %td.startup
+        .speaker-name Волков
+        .speech-title Зачем стартапу деньги?
+
+      %td{:rowspan => 2}.product
+        .speaker-name Кудымов
+        .speech-title Счастье и эмоции в интерфейсах
+
+      %td.factory
+        .speaker-name Саша Косс
+        .speech-title Легкий способ бросить писать плохой код
+
+    %tr
+      %td.startup
+        .speaker-name Никита Филиппов
+        .speech-title 
+
+      /%td.product
+      /  .speaker-name 
+      /  .speech-title 
+
+      %td.factory
+        .speaker-name Тамтэк
+        .speech-title 
+
+    %tr
+      %td.startup
+        .speaker-name
+        .speech-title 
+
+      %td.product
+        .speaker-name 
+        .speech-title 
+
+      %td.factory
+        .speaker-name 
+        .speech-title 
+
+    %tr
+      .span12.speech.common
+        .speaker-name 
+
+    %tr
+      %td.startup
+        .speaker-name
+        .speech-title 
+
+      %td.product
+        .speaker-name 
+        .speech-title 
+
+      %td.factory
+        .speaker-name 
+        .speech-title 
+
+    %tr
+      %td.startup
+        .speaker-name
+        .speech-title 
+
+      %td.product
+        .speaker-name 
+        .speech-title 
+
+      %td.factory
+        .speaker-name 
+        .speech-title 
+
+    %tr
+      %td.startup
+        .speaker-name
+        .speech-title 
+
+      %td.product
+        .speaker-name 
+        .speech-title 
+
+      %td.factory
+        .speaker-name 
+        .speech-title 

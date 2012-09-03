@@ -1,8 +1,8 @@
 #show-payment
   - if @invoice.invoice_events.all?{|e| e.paid?}
-    %h3 Ураа, вы уже на полпути к #HappyDev 2012!
+    %h3 Ураа, ты уже на полпути к #HappyDev 2012!
 
-    %p Вы оплатили:
+    %p Ты оплатил:
     
     %ul
       - for event in @invoice.events
@@ -11,7 +11,7 @@
     %h3 Оплачена сумма: #{ @invoice.amount } рублей
 
   - else
-    %h3 Вы частично оплатили свое участие на #HappyDev 2012!
+    %h3 Ты частично оплатил свое участие на #HappyDev 2012!
 
     %ul
       - for ie in @invoice.invoice_events
