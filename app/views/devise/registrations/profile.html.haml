@@ -1,0 +1,17 @@
+%legend Ваш кабинет
+%p
+  Спасибо что решили пойти на нашу конференцию. Здесь вы можете просмотреть список выбранных и оплаченных пунктов конференции.
+
+%p
+  - if @invoice
+    %ul
+      - @invoice.invoice_events.each do |ie|
+        %li
+          = ie.event.full_name
+          - if ie.paid?
+            = " (<strong>Оплачено</strong>)".html_safe 
+    %p
+      = link_to 'Оплатить', invoice_path
+  - else
+    = link_to ' Выбрать и оплатить', invoice_path
+

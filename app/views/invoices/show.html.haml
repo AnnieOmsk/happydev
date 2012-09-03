@@ -22,9 +22,8 @@
       - for ie in @invoice.invoice_events
         %li
           = ie.event.full_name
-          &nbsp;
           - if ie.paid?
-            (paid)
+            = " (<strong>Оплачено</strong>)".html_safe 
 
     - if @invoice.payments.empty?
       %h3 Итого к оплате: #{ @invoice.amount } руб.
