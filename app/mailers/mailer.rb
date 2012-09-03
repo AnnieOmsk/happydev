@@ -1,12 +1,12 @@
 # encoding: utf-8
 class Mailer < Devise::Mailer
   # helper :application # gives access to all helpers defined within `application_helper`.
-  default :from => "HappyDev org@happydev.ru"
+  default :from => "HappyDev <org@happydev.ru>"
 
   # Send notification on mail user
   def send_notification(*content)
     mail(:to => content[0],
-         :subject => "Мы зарегистрировали вас на конференцию HappyDev")
+         :subject => "Мы зарегистрировали тебя на конференцию HappyDev")
   end
 
   def send_success_payment_notification(*content)
@@ -22,7 +22,7 @@ class Mailer < Devise::Mailer
     tmp[:expired_at] = content[3]
     @content = tmp
     mail(:to => content[0],
-         :subject => 'Ваш заказ на конференцию HappyDev.')
+         :subject => 'Твой заказ на конференцию HappyDev.')
   end
 
 end

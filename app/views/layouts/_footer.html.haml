@@ -8,6 +8,8 @@
           %a{:href => "/about/requisites"} Реквизиты 
         %li
           %a{:href => "http://arvd.ru/page/view?id=15", :title => "Конгресс-холл Экспоцентра"} Место проведения
+        -if current_user
+          %li= link_to 'Выход', destroy_user_session_path, :method => :DELETE
     .span7.social-panel-on-footer
       -unless Rails.env == 'development'
         #fb-root
@@ -56,25 +58,6 @@
         %script(type="text/javascript")
           VK.Widgets.Like("vk_like", {type: "mini", height: 20});
 
-    -#.span2
-      
-      %ul
-        %li
-          %a{:href =>"#", :title => ""} Докладчикам
-        %li
-          %a{:href =>"#", :title => ""} Участникам
-        %li
-          %a{:href =>"#", :title => ""} Спонсорам
-    -#.span4
-      %h3 Подписка
-      %p Если тебе лень регистрироваться, но ты хочешь получать новости и анонсы:
-      %form
-        %input{:type => "text", :placeholder => "E-mail"}
-        %input{:type => "submit", :class => "btn", :value => "Oк"}
-      
-    -#.span4.social-networks
-      %h3 Следуй за нами
-      %a{:href => "http://twitter.com/_happydev", :title => "Follow us on Twitter", :class => "icon-twitter"}
 
 #footer-extra
   .container{:style=> "padding-left:20px"}

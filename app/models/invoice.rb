@@ -64,9 +64,9 @@ class Invoice < ActiveRecord::Base
   def self.set_flash_message_include_promocode(promocode)
     promo_name = Promocode.find_by_number(promocode).name
     if promo_name == "FROM_FRIEND"
-      return "Спасибо вам большое за дополнительную сумму. Вы настоящий друг! Заказ добавлен и вы можете его оплатить."
+      return "Спасибо тебе большое за дополнительную сумму. Ты настоящий друг!"
     else
-      return "Ура, вы получили скидку!!! Заказ добавлен и вы можете его оплатить."
+      return "Ура, ты получил скидку!!!"
     end
   end
 end
