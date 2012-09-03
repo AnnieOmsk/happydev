@@ -6,7 +6,7 @@
       = text_field_tag :promocode
 
   = f.association :events,
-                  :collection => @events,
+                  :collection => @events.collect{|e| [e.full_name, e.id]},
                   :as => :check_boxes, 
                   :label => 'Я оплачиваю:'
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120831060041) do
+ActiveRecord::Schema.define(:version => 20120901165339) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20120831060041) do
     t.datetime "updated_at",                         :null => false
     t.integer  "code"
     t.boolean  "discount_status", :default => false
+    t.string   "promocode"
   end
 
   add_index "invoices", ["user_id"], :name => "index_invoices_on_user_id"
@@ -69,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20120831060041) do
     t.string   "number"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "name"
   end
 
   create_table "users", :force => true do |t|

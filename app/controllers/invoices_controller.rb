@@ -26,7 +26,7 @@ class InvoicesController < ApplicationController
       if @invoice.save
         Mailer.send_choice_part_conf(current_user.email, @invoice.events, @invoice.amount, @invoice.expired_at).deliver!
         if @invoice.discount_status
-          flash[:notice] = "Ура, вы получили скидку!!! Заказ добавлен и вы можете его оплатить."
+          flash[:notice] = Invoice.set_flash_message_include_promocode(params[:promocode])
         else
           flash[:notice] = "Заказ добавлен. Теперь вы можете оплатить его"
         end

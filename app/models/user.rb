@@ -22,9 +22,4 @@ class User < ActiveRecord::Base
   def deliver_notification
     Mailer.send_notification(email).deliver!
   end
-
-  def save_promocode(code)
-    self.promocode = code
-    self.save
-  end
 end

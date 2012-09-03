@@ -22,15 +22,11 @@
       - for ie in @invoice.invoice_events
         %li
           = ie.event.full_name
-          &nbsp;
           - if ie.paid?
-            (paid)
+            = " (<strong>Оплачено</strong>)".html_safe 
 
     - if @invoice.payments.empty?
-      - if @invoice.discount_status
-        %h3 Итого к оплате со скидкой: #{ @invoice.amount } руб.
-      - else
-        %h3 Итого к оплате: #{ @invoice.amount } руб.
+      %h3 Итого к оплате: #{ @invoice.amount } руб.
     - else
       %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } руб.
       %h3 Общая сумма: #{ @invoice.amount } руб.
