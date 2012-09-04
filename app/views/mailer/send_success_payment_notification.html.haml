@@ -1,22 +1,24 @@
 #show-payment
   - if @invoice.invoice_events.all?{|e| e.paid?}
-    %h3 Ураа, ты уже на полпути к #HappyDev 2012!
+    %p 
+      Привет, друг.
+      %br
+      Ура, мы получили твой платеж, и рады поздравить тебя с вступлением в ряды участников HappyDev. Большое тебе спасибо!
+      %br
+      Все детали платежа доступны <a href="http://happydev.ru/invoice">по этой ссылке</a>.
 
-    %p Ты оплатил:
-    
-    %ul
-      - for event in @invoice.events
-        %li= event.full_name
 
-    -if @invoice.promocode && promocode = Promocode.find_by_name(@invoice.promocode)
-      -if promocode<0
-        %p Твоя скидка: #{promocode.discount_value}%
-      -else
-        %p Спасибо за дополнительные #{promocode.discount_value}%, друг
+    %h3 Что нужно делать сейчас?
 
-    %h3 Оплачена сумма: #{ @invoice.amount } рублей
+    %ol
+      %li Следить за обновлениями <a href="http://twitter.com/_happydev">в твиттере</a>
+      %li Периодически заглядывать на сайт <a href="http://happydev.ru">happydev.ru</a> 
+      %li Приглашать друзей :)
 
-    %p До встречи на конференции! Мы пришлем дополнительное информационное письмо с деталями.
+    -unless @invoice.user.city =~ /^Omsk|^Омск/
+      %p Информация о проезде и проживании для иногородних появится на сайте в ближайшее время.
+
+    %p По всем вопросам не стесняйся обращаться по контактам внизу. Будем рады помочь.
 
   - else
     %h3 Ты частично оплатил свое участие на #HappyDev 2012!
@@ -29,13 +31,17 @@
           - if ie.paid?
             (paid)
 
-    %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } рублей
-    %h3 Общая сумма: #{ @invoice.amount } рублей
+    %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } из #{ @invoice.amount } рублей
+    
+    %p На самом деле этого не должно было случиться. Пожалуйста ответь нам на это письмо и расскажи что пошло не так.
 
 
-
-
-  %p{:style => 'color:#ccc'}
-    Твой секретный код оплаты на всякий случай:
-    %b= @invoice.code
-
+%p{:style => 'color:#aaa'}
+  Твой секретный код оплаты на всякий случай:
+  %b= @invoice.code
+  
+%p 
+  С уважением, организаторы HappyDev.<br/>
+  Сайт: <a href="http://happydev.ru">happydev.ru</a><br/>
+  Почта: <a href="mailto:org@happydev.ru">org@happydev.ru</a><br/>
+  Телефоны: +7 (909) 535-00-73, +7 (908) 310-33-81
