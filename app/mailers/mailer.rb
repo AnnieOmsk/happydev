@@ -25,9 +25,4 @@ class Mailer < Devise::Mailer
          :subject => 'Твой заказ на конференцию HappyDev.')
   end
 
-  def reset_password_instructions(record)
-    # raise 'bbbaaa'.inspect
-    devise_mail(record, :reset_password_instructions)
-  end
-
 end
