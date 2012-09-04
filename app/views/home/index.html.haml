@@ -22,8 +22,8 @@
       .span4
         %div
           - if user_signed_in?
-            -if user.invoice && user.invoice.payments.any?
-              %p Участие оплачено
+            -if current_user.invoice && current_user.invoice.payments.any?
+              %p Участие оплачено. <br/><a href="http://happydev.ru/invoice">Детали платежа</a>
             -else
               %p= link_to 'Оплатить участие', pay_path
             / Мы вас записали
