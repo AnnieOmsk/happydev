@@ -8,7 +8,15 @@
       - for event in @invoice.events
         %li= event.full_name
 
+    -if @invoice.promocode && promocode = Promocode.find_by_name(@invoice.promocode)
+      -if promocode<0
+        %p Твоя скидка: #{promocode.discount_value}%
+      -else
+        %p Спасибо за дополнительные #{promocode.discount_value}%, друг
+
     %h3 Оплачена сумма: #{ @invoice.amount } рублей
+
+    %p До встречи на конференции! Мы пришлем дополнительное информационное письмо с деталями.
 
   - else
     %h3 Ты частично оплатил свое участие на #HappyDev 2012!
@@ -23,3 +31,11 @@
 
     %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } рублей
     %h3 Общая сумма: #{ @invoice.amount } рублей
+
+
+
+
+  %p{:style => 'color:#ccc'}
+    Твой секретный код оплаты на всякий случай:
+    %b= @invoice.code
+
