@@ -13,7 +13,7 @@
         -# = devise_error_messages!
         = f.input :name, :label => 'Имя Фамилия', :required => true, :autofocus => true
         = f.input :email, :label => 'Электронный адрес:', :required => true
-        = f.input :password, :label => 'Введите пароль:', :required => true
+        = f.input :password, :label => 'Пароль:', :required => true
         / = f.input :password_confirmation, :label => 'Подтвердите:', :required => true
         / = f.input :student, :label => 'Я студент', :as => :boolean
         = f.input :company, :label => 'Компания:'
@@ -24,5 +24,5 @@
 
         .form-actions
           %button{:type => "submit", :class => "btn btn-primary"}
-            = t('Готово')
+            = t('Все правильно')
           -# .back_button{:style => 'display:inline; margin-left:10px;'}= link_to "Back", :back

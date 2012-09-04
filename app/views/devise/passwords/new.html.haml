@@ -1,8 +1,10 @@
-%h2 Forgot your password?
-= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
-  = f.error_notification
-  .form-inputs
-    = f.input :email, :required => true
-  .form-actions
-    = f.button :submit, "Send me reset password instructions"
-= render "devise/shared/links"
+.devise-session
+
+  = simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post, :class => "form-horizontal" }) do |f|
+    = devise_error_messages!
+    %legend Восстановление пароля
+    = f.input :email, :required => true, :label => 'Электронный адрес'
+    .form-actions
+      = f.button :submit, "Пришлите мне письмо с инструкцией"
+      = render "devise/shared/links"
+
