@@ -1,7 +1,7 @@
 # encoding: utf-8
 class InvoicesController < ApplicationController
-  include HttpAuthenticable
-  before_filter :authenticate
+  # include HttpAuthenticable
+  # before_filter :authenticate
 
   before_filter :authenticate_user!, :only => [:new, :create, :show]
   before_filter :find_invoice, :only => [:new, :show, :success, :fail]

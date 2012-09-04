@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
-  include HttpAuthenticable
-  before_filter :authenticate
+  # include HttpAuthenticable
+  # before_filter :authenticate
 
   def index
     @events = Event.all

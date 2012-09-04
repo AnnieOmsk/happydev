@@ -14,7 +14,7 @@ class Invoice < ActiveRecord::Base
 
   def check_invoice_events_paid
     overall_pay_amount = payments.map(&:amount).sum
-    return if invoice_events.not_paid && overall_pay_amount < invoice_events.not_paid.map(&:event).map(&:price).min
+    return if invoice_events.not_paid && overall_pay_amount <= invoice_events.not_paid.map(&:event).map(&:price).min
 
     invoice_events.sort_by{ |i| i.event.priority }.each do |ie|
       if ie.paid?
@@ -28,7 +28,7 @@ class Invoice < ActiveRecord::Base
           overall_pay_amount = check_and_set_paid(ie, overall_pay_amount)
         end
       end
-      break if invoice_events.all_paid? || (invoice_events.not_paid && overall_pay_amount < invoice_events.not_paid.map(&:event).map(&:price).min)
+      break if invoice_events.all_paid? || (invoice_events.not_paid && overall_pay_amount <= invoice_events.not_paid.map(&:event).map(&:price).min)
     end
   end
 
