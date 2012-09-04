@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
 
   def subscribe_to_mailchimp
     @mailchimp = Mailchimp.new
+    #TODO send names to mailchimp too!!
     @mailchimp.subscribe_to_list(email)
   end
 

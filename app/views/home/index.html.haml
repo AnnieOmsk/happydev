@@ -22,8 +22,9 @@
       .span4
         %div
           - if user_signed_in?
-            %p
+            -#%p
               = link_to 'Оплатить участие', pay_path
+            Мы вас записали
           - else
             = link_to 'Регистрация', new_user_registration_path, :class => 'btn btn-large btn-primary'
             %div{:style => "display:inline;margin-left:5px;"}
