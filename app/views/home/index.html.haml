@@ -29,8 +29,9 @@
             / Мы вас записали
           - else
             = link_to 'Регистрация', new_user_registration_path, :class => 'btn btn-large btn-primary'
+
             %div{:style => "display:inline;margin-left:5px;"}
-              = link_to 'Уже зарегистрирован?', new_user_session_path
+              = link_to 'Вход', new_user_session_path, :class => 'btn btn-large btn-success'
 
 
 -#carousel.carousel.slide{:rel => "carousel"}
