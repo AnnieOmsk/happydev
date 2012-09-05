@@ -10,6 +10,8 @@ Happydev::Application.routes.draw do
     # delete 'registration' => 'devise/registrations#destroy', :as => 'user_registration'
   end
 
+
+
   resources :payment
 
   resource :invoice, :only => [:new, :create, :show] do
@@ -20,6 +22,8 @@ Happydev::Application.routes.draw do
   match '/programme' => 'home#program'
   match '/program' => 'home#program'
   match '/about' => 'home#about'
+  match '/oferta' => 'home#oferta'
+  match '/pay' => 'home#payment'
 
   match '/invoices/new' => 'invoices#new', :as => :pay
 

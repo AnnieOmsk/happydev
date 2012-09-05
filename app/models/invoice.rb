@@ -6,7 +6,9 @@ class Invoice < ActiveRecord::Base
   has_many :invoice_events, :dependent => :destroy
   has_many :events, :through => :invoice_events
 
-  attr_accessible :event_ids, :discount_status, :promocode
+  attr_accessible :event_ids, :discount_status, :promocode, :oferta
+
+  validates_acceptance_of :oferta, :message => "Условия оферты должны быть приняты"
 
   def all_invoice_events_paid?
     invoice_events.all?{ |e| e.paid? }
@@ -25,7 +27,6 @@ class Invoice < ActiveRecord::Base
       else
         if ie.event.priority == 0                       # if conference
           overall_pay_amount = check_and_set_paid(ie, overall_pay_amount)
-
         elsif ie.event.priority == 1                  # if lunch
           overall_pay_amount = check_and_set_paid(ie, overall_pay_amount)
         else                                          # if master-class

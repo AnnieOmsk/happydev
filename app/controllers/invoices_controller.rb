@@ -27,13 +27,19 @@ class InvoicesController < ApplicationController
         # Mailer.send_choice_part_conf(current_user.email, @invoice.events, @invoice.amount, @invoice.expired_at).deliver!
         if @invoice.discount_status
           flash[:notice] = Invoice.set_flash_message_include_promocode(params[:promocode])
+
         else
           # flash[:notice] = "Заказ добавлен. Теперь ты можешь оплатить его"
+          redirect_to invoice_path
         end
       else
-        flash[:notice] = 'Ошибка при регистрации'
+        @events = Event.all
+        gon_hash = {}
+        @events.each { |e| gon_hash[e.id] = e.price }
+        gon.event_prices = gon_hash
+        render(:action => :new) && return
       end
-      redirect_to invoice_path
+      redirect_to invoice_path      
     end
   end
 
