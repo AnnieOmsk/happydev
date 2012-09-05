@@ -29,11 +29,10 @@ class InvoicesController < ApplicationController
         # Mailer.send_choice_part_conf(current_user.email, @invoice.events, @invoice.amount, @invoice.expired_at).deliver!
         if @invoice.discount_status
           flash[:notice] = Invoice.set_flash_message_include_promocode(params[:promocode])
-
         else
           # flash[:notice] = "Заказ добавлен. Теперь ты можешь оплатить его"
-          redirect_to invoice_path
         end
+        redirect_to invoice_path
       else
         @events = Event.all
         gon_hash = {}
