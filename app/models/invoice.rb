@@ -10,6 +10,7 @@ class Invoice < ActiveRecord::Base
 
   validates :oferta, :inclusion => { :in => [true], :message => "Условия оферты должны быть приняты" }
 
+
   def all_invoice_events_paid?
     invoice_events.all?{ |e| e.paid? }
   end
