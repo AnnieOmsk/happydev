@@ -8,7 +8,7 @@ class Invoice < ActiveRecord::Base
 
   attr_accessible :event_ids, :discount_status, :promocode, :oferta
 
-  validates_acceptance_of :oferta, :message => "Условия оферты должны быть приняты"
+  validates :oferta, :inclusion => { :in => [true], :message => "Условия оферты должны быть приняты" }
 
   def all_invoice_events_paid?
     invoice_events.all?{ |e| e.paid? }

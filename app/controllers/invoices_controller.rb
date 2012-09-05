@@ -23,7 +23,9 @@ class InvoicesController < ApplicationController
       redirect_to new_invoice_path
     else
       @invoice = Invoice.drafting_invoice(current_user, params[:invoice], params[:promocode])
+
       if @invoice.save
+
         # Mailer.send_choice_part_conf(current_user.email, @invoice.events, @invoice.amount, @invoice.expired_at).deliver!
         if @invoice.discount_status
           flash[:notice] = Invoice.set_flash_message_include_promocode(params[:promocode])
@@ -39,7 +41,7 @@ class InvoicesController < ApplicationController
         gon.event_prices = gon_hash
         render(:action => :new) && return
       end
-      redirect_to invoice_path      
+      # redirect_to invoice_path
     end
   end
 
