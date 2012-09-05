@@ -28,7 +28,7 @@ class PaymentsController < ApplicationController
     @invoice = current_user.invoice
     if @notification.acknowledge && !@invoice.all_invoice_events_paid?
       payment = @invoice.payments.create(:amount => @notification.gross.to_i)
-      @invoice.check_invoice_events_paid
+      @invoice.mark_invoice_events_paid
       Mailer.send_success_payment_notification(current_user.email, @invoice).deliver!
       flash[:notice] = 'Оплата прошла успешно.'
       redirect_to invoice_path

@@ -12,9 +12,12 @@ class Invoice < ActiveRecord::Base
     invoice_events.all?{ |e| e.paid? }
   end
 
-  def check_invoice_events_paid
+  def mark_invoice_events_paid
+    # все платежи
     overall_pay_amount = payments.map(&:amount).sum
-    return if invoice_events.not_paid && overall_pay_amount <= invoice_events.not_paid.map(&:event).map(&:price).min
+
+    # если есть неоплаченные invoice events и сумма оплаты меньше цены минимального неоплаченного эвента
+    return if invoice_events.not_paid && overall_pay_amount < invoice_events.not_paid.map(&:price_with_discount).min
 
     invoice_events.sort_by{ |i| i.event.priority }.each do |ie|
       if ie.paid?
@@ -22,23 +25,27 @@ class Invoice < ActiveRecord::Base
       else
         if ie.event.priority == 0                       # if conference
           overall_pay_amount = check_and_set_paid(ie, overall_pay_amount)
+
         elsif ie.event.priority == 1                  # if lunch
           overall_pay_amount = check_and_set_paid(ie, overall_pay_amount)
         else                                          # if master-class
           overall_pay_amount = check_and_set_paid(ie, overall_pay_amount)
         end
       end
-      break if invoice_events.all_paid? || (invoice_events.not_paid && overall_pay_amount <= invoice_events.not_paid.map(&:event).map(&:price).min)
+      # если нет неоплаченных invoice events или сумма оплаты меньше цены минимального неоплаченного эвента
+      break if invoice_events.all_paid? || (invoice_events.not_paid && overall_pay_amount < invoice_events.not_paid.map(&:price_with_discount).min)
     end
   end
 
   private
   def check_and_set_paid(ie, overall_amount)
-    if overall_amount >= ie.event.price
+    price = ie.price_with_discount
+
+    if overall_amount >= price
       ie.paid = true
       ie.save
     end
-    overall_amount -= ie.event.price
+    overall_amount -= price
   end
 
   def self.drafting_invoice(user, options, promocode)
