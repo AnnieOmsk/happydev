@@ -15,6 +15,10 @@ class User < ActiveRecord::Base
 
   after_create :subscribe_to_mailchimp, :deliver_notification
 
+  def paid?
+    invoice.all_invoice_events_paid? if invoice
+  end
+
   def subscribe_to_mailchimp
     @mailchimp = Mailchimp.new
     #TODO send names to mailchimp too!!
