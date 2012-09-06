@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
   validates :professional, :presence => true
   validates :email, :presence => true, :uniqueness => true
 
+  before_create :split_name
   after_create :subscribe_to_mailchimp, :deliver_notification
 
   def paid?
@@ -21,11 +22,17 @@ class User < ActiveRecord::Base
 
   def subscribe_to_mailchimp
     @mailchimp = Mailchimp.new
-    #TODO send names to mailchimp too!!
-    @mailchimp.subscribe_to_list(email)
+    @mailchimp.subscribe_to_list(email, first_name, last_name)
   end
 
   def deliver_notification
     Mailer.send_notification(email).deliver!
+  end
+  
+  # split user name to first_name and last_name
+  # if user enter only one first_name, last_name will be nil
+  def split_name
+    array = name.split
+    self.first_name, self.last_name = array
   end
 end
