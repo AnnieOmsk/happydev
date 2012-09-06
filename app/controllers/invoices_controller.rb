@@ -23,6 +23,7 @@ class InvoicesController < ApplicationController
       redirect_to new_invoice_path
     else
       @invoice = Invoice.drafting_invoice(current_user, params[:invoice], params[:promocode])
+      @invoice.reserve_user_id = current_user.id
 
       if @invoice.save
 
