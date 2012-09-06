@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   validates :professional, :presence => true
   validates :email, :presence => true, :uniqueness => true
 
-  before_create :split_name
+  before_create :split_name!
   after_create :subscribe_to_mailchimp, :deliver_notification
 
   def paid?
@@ -31,7 +31,7 @@ class User < ActiveRecord::Base
   
   # split user name to first_name and last_name
   # if user enter only one first_name, last_name will be nil
-  def split_name
+  def split_name!
     array = name.split
     self.first_name, self.last_name = array
   end
