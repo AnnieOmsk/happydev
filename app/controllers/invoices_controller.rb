@@ -7,15 +7,15 @@ class InvoicesController < ApplicationController
   before_filter :find_invoice, :only => [:new, :show, :success, :fail]
 
   def new
-    # if @invoice
-    #   redirect_to invoice_path
-    # else
+    if @invoice
+      redirect_to invoice_path
+    else
       @invoice = current_user.build_invoice
       @events = Event.all
       gon_hash = {}
       @events.each { |e| gon_hash[e.id] = e.price }
       gon.event_prices = gon_hash
-    # end
+    end
   end
 
   def create
