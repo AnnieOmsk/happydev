@@ -3,8 +3,9 @@ class Mailchimp
     @hominid = Hominid::API.new(APP_CONFIG['mailchimp']['api_key'])
   end
 
-  def subscribe_to_list(email)
-    @hominid.list_subscribe(APP_CONFIG['mailchimp']['list_id'], email, {}, 'html', false, true, true, false)
+  def subscribe_to_list(email, first_name, last_name = nil)
+    names = {'FNAME' => first_name, 'LNAME' => last_name }.delete_if { |_, value| value.nil? }
+    @hominid.list_subscribe(APP_CONFIG['mailchimp']['list_id'], email, names, 'html', false, true, true, false)
   rescue Hominid::APIError
     Rails.logger.fatal ">>> Mailchimp API Error while sending email to #{email}"
   end
