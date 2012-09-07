@@ -5,12 +5,12 @@ Happydev::Application.routes.draw do
     get 'registration/new' => 'devise/registrations#new', :as => 'new_user_registration'
     post 'registration' => 'devise/registrations#create', :as => 'user_registration'
     get 'registration/profile' => 'registrations#profile', :as => 'user_profile'
-    # get '                 registration/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'
+    # get 'registration/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'
     # put 'registration' => 'devise/registrations#update', :as => 'user_registration'
     # delete 'registration' => 'devise/registrations#destroy', :as => 'user_registration'
   end
 
-  resource :invoice, :only => [:new, :create, :show] do
+  resource :invoice, :only => [:new, :create, :show, :edit, :update] do
     # get :demopage, :on => :collection, :as => :payment_demopage
   end
 

@@ -1,4 +1,4 @@
-= simple_form_for(@invoice, :url => invoice_path(@invoice), :html => { :class => 'form-horizontal' }) do |f|
+= simple_form_for(@invoice, :url => invoice_path, :html => { :class => 'form-horizontal invoice_check_boxes' }) do |f|
 
   = f.association :events,
                   :collection => @events.collect{|e| [e.full_name, e.id]},
@@ -6,11 +6,8 @@
                   :label => 'Я оплачиваю:'
 
 
-  #promocode.control-group
-    .control-label
-      У меня есть промокод:
-    .controls
-      = text_field_tag :promocode
+  #promocode
+    = f.input :promocode, :label => "У меня есть промокод:"
 
   = f.input :oferta, :label => "С условиями <a href='/oferta' target='blank'>Публичной оферты</a> ознакомлен и согласен"
 
