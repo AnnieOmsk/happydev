@@ -8,7 +8,7 @@ class Invoice < ActiveRecord::Base
 
   attr_accessible :event_ids, :discount_status, :promocode, :oferta
 
-  validates :oferta, :inclusion => { :in => [true], :message => "Условия оферты должны быть приняты" }, :on => :create
+  validates_acceptance_of :oferta, :accept => true, :message => "Условия оферты должны быть приняты" #:inclusion => { :in => [true], :message => "Условия оферты должны быть приняты" }, :on => :create
 
 
   def all_invoice_events_paid?
@@ -39,6 +39,24 @@ class Invoice < ActiveRecord::Base
     end
   end
 
+  def self.drafting_invoice(user, options)
+    invoice = user.build_invoice(options)
+    invoice.checking_and_counting_amount
+    invoice.expired_at = 3.day.from_now
+    invoice.code = Time.now.to_i + user.id
+    invoice
+  end
+
+  def checking_and_counting_amount
+    if self.promocode.blank? || !Promocode.all.map(&:number).include?(self.promocode)
+      self.discount_status = false
+      self.amount = self.events.map(&:price).inject(:+)
+    else
+      self.discount_status = true
+      self.amount = counting_amount_with_discount(self)
+    end
+  end
+
   private
   def check_and_set_paid(ie, overall_amount)
     price = ie.price_with_discount
@@ -50,23 +68,9 @@ class Invoice < ActiveRecord::Base
     overall_amount -= price
   end
 
-  def self.drafting_invoice(user, options, promocode)
-    invoice = user.build_invoice(options)
-    if promocode.blank? || !Promocode.all.map(&:number).include?(promocode)
-      invoice.amount = invoice.events.map(&:price).inject(:+)
-    else
-      invoice.discount_status = true
-      invoice.promocode = promocode
-      invoice.amount = counting_amount_with_discount(invoice, user, promocode)
-    end
-    invoice.expired_at = 3.day.from_now
-    invoice.code = Time.now.to_i + user.id
-    invoice
-  end
-
-  def self.counting_amount_with_discount(invoice, user, promocode)
+  def counting_amount_with_discount(invoice)
     tmp_amount = invoice.events.select{|e| e.discount != false }.map(&:price).inject(:+) || 0
-    tmp_amount = tmp_amount + (tmp_amount * (Promocode.find_by_number(promocode).discount_value/100.0))   # can handle +50% and -10%
+    tmp_amount = tmp_amount + (tmp_amount * (Promocode.find_by_number(invoice.promocode).discount_value/100.0))   # can handle +50% and -10%
     tmp_amount += invoice.events.select{|e| e.discount == false }.map(&:price).inject(:+) || 0
   end
 
