@@ -30,7 +30,7 @@ Happydev::Application.routes.draw do
   scope 'payment' do
     match 'result'    => 'payments#result',    :as => :payment_result # to handle Robokassa push request
     match 'success' => 'payments#success', :as => :payment_success # to handle Robokassa success redirect
-    match 'fail'    => 'payments#fail',    :as => :payment_fail # to handle Robokassa fail redirect
+    get 'fail'    => 'payments#fail',    :as => :payment_fail # to handle Robokassa fail redirect
   end  
 
   get "home/index"
