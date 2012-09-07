@@ -29,12 +29,6 @@ namespace :deploy do
     # run "ln -nfs #{shared_path}/config/database.yml #{current_path}/config/database.yml"
     run "ln -nfs #{shared_path}/config/database.yml #{latest_release}/config/database.yml"
   end
-
-  namespace :assets do
-    task :precompile do
-      run "cd #{current_path}; rake assets:precompile RAILS_ENV=#{rails_env}"
-    end
-  end
 end
 
 # after "deploy:setup" do
@@ -58,6 +52,7 @@ end
 
 before 'deploy:assets:precompile', 'deploy:sql_symlink'
 after 'deploy:update', 'unicorn:restart', 'deploy:cleanup'
+after 'deploy:rollback', 'deploy:assets:precompile', 'unicorn:restart'
 # deploy:migrate
 
 # require './config/boot'
