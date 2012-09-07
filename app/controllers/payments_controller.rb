@@ -3,6 +3,7 @@ class PaymentsController < ApplicationController
   include ActiveMerchant::Billing::Integrations
 
   skip_before_filter :verify_authenticity_token
+  before_filter :authenticate_user!, :only => [:success, :fail]
   before_filter :create_notification, :only => [:success, :fail]
 
 
