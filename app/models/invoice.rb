@@ -71,7 +71,7 @@ class Invoice < ActiveRecord::Base
   end
 
   def self.set_flash_message_include_promocode(promocode)
-    promo_name = Promocode.find_by_number(promocode).name resque nil
+    promo_name = Promocode.find_by_number(promocode).name rescue nil
     if promo_name == "FROM_FRIEND"
       return "Спасибо тебе большое за дополнительную сумму. Ты настоящий друг!"
     else

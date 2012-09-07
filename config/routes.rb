@@ -10,10 +10,6 @@ Happydev::Application.routes.draw do
     # delete 'registration' => 'devise/registrations#destroy', :as => 'user_registration'
   end
 
-
-
-  resources :payment
-
   resource :invoice, :only => [:new, :create, :show] do
     # get :demopage, :on => :collection, :as => :payment_demopage
   end
