@@ -20,6 +20,10 @@ class Invoice < ActiveRecord::Base
     self.robox_flag = true
     self.save
   end
+  
+  def remaining_amount
+    amount - payments.map(&:amount).sum
+  end
 
   def marked_as_moved_to_robokassa?
     robox_flag
