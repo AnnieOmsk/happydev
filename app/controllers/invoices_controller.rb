@@ -19,20 +19,26 @@ class InvoicesController < ApplicationController
     if params[:invoice]["event_ids"].all?{ |i| i.blank? }               # if events not selected
       redirect_to new_invoice_path
     else
-      @invoice = Invoice.drafting_invoice(current_user, params[:invoice])
-      @invoice.reserve_user_id = current_user.id
-
-      if @invoice.save
-        # Mailer.send_choice_part_conf(current_user.email, @invoice.events, @invoice.amount, @invoice.expired_at).deliver!
-        if @invoice.discount_status
-          flash[:notice] = Invoice.set_flash_message_include_promocode(params[:promocode])
-        else
-          # flash[:notice] = "Заказ добавлен. Теперь ты можешь оплатить его"
-        end
+      
+      if current_user.invoice && current_user.invoice.marked_as_moved_to_robokassa?
         redirect_to invoice_path
       else
-        @events = get_all_events
-        render(:action => :new) && return
+
+        @invoice = Invoice.drafting_invoice(current_user, params[:invoice])
+        @invoice.reserve_user_id = current_user.id
+
+        if @invoice.save
+          # Mailer.send_choice_part_conf(current_user.email, @invoice.events, @invoice.amount, @invoice.expired_at).deliver!
+          if @invoice.discount_status
+            flash[:notice] = Invoice.set_flash_message_include_promocode(params[:promocode])
+          else
+            # flash[:notice] = "Заказ добавлен. Теперь ты можешь оплатить его"
+          end
+          redirect_to invoice_path
+        else
+          @events = get_all_events
+          render(:action => :new) && return
+        end
       end
     end
   end

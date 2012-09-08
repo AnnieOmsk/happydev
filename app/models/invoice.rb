@@ -21,6 +21,10 @@ class Invoice < ActiveRecord::Base
     self.save
   end
 
+  def marked_as_moved_to_robokassa?
+    robox_flag
+  end
+
   def mark_invoice_events_paid
     # все платежи
     overall_pay_amount = payments.map(&:amount).sum
