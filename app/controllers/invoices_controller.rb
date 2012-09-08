@@ -70,9 +70,6 @@ class InvoicesController < ApplicationController
     end
   end
 
-  def demopage
-  end
-
   private
 
   def find_invoice
