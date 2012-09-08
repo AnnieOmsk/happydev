@@ -22,7 +22,7 @@ class PaymentsController < ApplicationController
       if @invoice
         @invoice.payments.create(:amount => @notification.gross.to_i)
         @invoice.mark_invoice_events_paid
-        # @invoice.mark_freeze!
+        # TODO: @invoice.mark_freeze!
 
         if @invoice.user
           Mailer.send_success_payment_notification(@invoice.user.email, @invoice).deliver!
@@ -42,7 +42,6 @@ class PaymentsController < ApplicationController
   # В случае успешного платежа покупатель переходит по этому адресу
   def success
     if @notification.acknowledge
-      @invoice = current_user.invoice
       flash[:notice] = 'Оплата прошла успешно.'
       redirect_to invoice_path
     else
