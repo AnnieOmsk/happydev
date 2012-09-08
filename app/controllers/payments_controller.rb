@@ -26,6 +26,7 @@ class PaymentsController < ApplicationController
 
         if @invoice.user
           Mailer.send_success_payment_notification(@invoice.user.email, @invoice).deliver!
+          render :text => @notification.success_response
         else
           logger.error "> Not found user for invoice: #{@notification.item_id}"
           head :bad_request
