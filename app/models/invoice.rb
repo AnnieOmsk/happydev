@@ -14,6 +14,12 @@ class Invoice < ActiveRecord::Base
   def all_invoice_events_paid?
     invoice_events.all?{ |e| e.paid? }
   end
+  
+  # mark invoice as gone to robokassa when user clicks on button
+  def mark_as_gone_to_robokassa!
+    self.robox_flag = true
+    self.save
+  end
 
   def mark_invoice_events_paid
     # все платежи

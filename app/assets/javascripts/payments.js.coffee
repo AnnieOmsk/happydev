@@ -1,10 +1,14 @@
 jQuery ->
-  # $('#new_payment textbox').change ->
-    # alert('click')
+  $('#show-payment #payment-button input').click (event) ->
+    event.preventDefault()
+    data = { }
+    url = '/invoice/move_to_robokassa'
+    $.ajax url,
+      type: 'PUT'
+      dataType: 'html',
+      # error: (jqXHR, textStatus, errorThrown) ->
+      #   alert 'error'
+      success: (data, textStatus, jqXHR) ->
+        # alert 'success'
+        $('#show-payment #payment-button form').submit()
 
-  # $('#show-payment #payment-button input').click (event) ->
-  #   event.preventDefault()
-  #   data = { }
-  #   url = '/payment/update_amount'
-  #   $.post url, (data) ->
-  #     $('#show-payment #payment-button form').submit()
