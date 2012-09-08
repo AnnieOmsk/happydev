@@ -9,7 +9,7 @@
       - for event in @invoice.events
         %li= event.full_name
 
-    %h3 Оплачена сумма: #{ @invoice.amount} руб.
+    %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } руб.
 
   - else
     - if @invoice.payments.empty?
