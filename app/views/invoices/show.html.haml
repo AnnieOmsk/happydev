@@ -32,12 +32,21 @@
 
     %br
     %h3 Способы оплаты:
-    .row
+    .row.payment_type{:style => "margin-top:5px;margin-bottom:15px;"}
       .span4
-        = image_tag 'robokassa.jpg'
-      .span5
+        = check_box_tag :clearing
+        Безналичный расчет
+    .row
+      .span2
         #payment-back-button{:style => "float:left;margin-right:20px;"}
           = link_to "Назад", edit_invoice_path, :class => 'btn'
-        #payment-button
+      .payment_content
+        .span2
+          = image_tag 'robokassa.jpg'
+        .span4
+          #payment-button
           = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.remaining_amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
             = submit_tag "Оплатить через робокассу (#{@invoice.remaining_amount} руб.)", :class => 'btn btn-primary'
+      .payment_content{:style => "display:none;"}
+        .span9
+          = "Пожалуйста, скачайте <a href='#{APP_CONFIG[:domain]}/docs/HappyDev_12_agreement.doc'>образец договора</a>, заполните все выделенные фрагменты, кроме номера договора и вышлите на адрес <a href = 'mailto:org@happydev.ru'>org@happydev.ru </a>. В ответ мы выставим Вам счет. После зачисления средств на наш расчетный счет статус Вашей регистрации изменится на 'Оплачено'.".html_safe
