@@ -9,13 +9,18 @@ class PaymentsController < ApplicationController
 
   # Робокасса вызывает этот метод после успешной оплаты, перед тем, как вызвать success url.
   # Запрос производится после получения робокассой денег.
-  # Запрос верен, если:
-  # 1) Контрольная сумма верна
-  # 2) Сумма платежа равна запрошенной сумме
   # Если всё окей, робокассе отправляется успешный ответ.
   def result
     @notification = Robokassa::Notification.new(request.raw_post, :secret => APP_CONFIG['robokassa']['secret2'])
+
     if @notification.acknowledge
+      @invoice = Invoice.find_by_code(@notification.item_id)
+
+      @invoice.payments.create(:amount => @notification.gross.to_i)
+      @invoice.mark_invoice_events_paid
+      # TODO: @invoice.mark_freeze!
+
+      Mailer.send_success_payment_notification(@invoice.user.email, @invoice).deliver!
       render :text => @notification.success_response
     else
       head :bad_request
@@ -23,14 +28,8 @@ class PaymentsController < ApplicationController
   end
 
   # В случае успешного платежа покупатель переходит по этому адресу
-  # Если контрольная сумма верна и заказ ещё не помечен как оплаченный, то
-  # обновляем payment в базе, ставя ему paid = true
   def success
-    @invoice = current_user.invoice
-    if @notification.acknowledge && !@invoice.all_invoice_events_paid?
-      payment = @invoice.payments.create(:amount => @notification.gross.to_i)
-      @invoice.mark_invoice_events_paid
-      Mailer.send_success_payment_notification(current_user.email, @invoice).deliver!
+    if @notification.acknowledge
       flash[:notice] = 'Оплата прошла успешно.'
       redirect_to invoice_path
     else
