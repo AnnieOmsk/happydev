@@ -1,0 +1,127 @@
+.b-members__title {
+    float: left;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: normal;
+}
+
+.b-members__title-small {
+    font-size: 18px;
+    display: block;
+}
+
+.b-members__title-big {
+    letter-spacing: 3px;
+}
+
+.b-members__logos {
+    width: 730px;
+    float: right;
+}
+
+.b-members__logo {
+    margin: 0 0 0 25px;
+}
+
+.b-members__logo:first-child {
+    margin: 0;
+}
+
+/* Carousel */
+
+.b-members__carousel {
+    margin: 0 20px 0 0;
+    position: relative;
+}
+
+.b-members__carousel .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.b-members__carousel .item {
+    display: none;
+    width: 700px;
+    position: relative;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+}
+
+.b-members__carousel .active,
+.b-members__carousel .next,
+.b-members__carousel .prev {
+    display: block;
+}
+
+.b-members__carousel .active {
+    left: 0;
+}
+
+.b-members__carousel .next,
+.b-members__carousel .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.b-members__carousel .next {
+    left: 100%;
+}
+
+.b-members__carousel .prev {
+    left: -100%;
+}
+
+.b-members__carousel .next.left,
+.b-members__carousel .prev.right {
+    left: 0;
+}
+
+.b-members__carousel .active.left {
+    left: -100%;
+}
+
+.b-members__carousel .active.right {
+    left: 100%;
+}
+
+.b-members__carousel-control {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 17px;
+    height: 33px;
+    margin-top: -20px;
+    background: url(arrows.png);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 111;
+}
+
+.b-members__carousel-control.left {
+    left: -40px;
+}
+
+.b-members__carousel-control.right {
+    right: -20px;
+    left: auto;
+    background-position: -17px 0;
+}
+
+.b-members__carousel-control:hover {
+    text-decoration: none;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.b-members__carousel .carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+}

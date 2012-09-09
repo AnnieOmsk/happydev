@@ -1,0 +1,11 @@
+.b-twitter {
+    width: 220px;
+    float: right;
+}
+
+.b-twitter__title {
+    font-family: Tahoma, Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    color: #4a5257;
+}

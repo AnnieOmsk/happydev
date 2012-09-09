@@ -1,0 +1,181 @@
+.b-reporters {
+    position: relative;
+}
+
+.b-reporters__count {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 64px;
+    height: 72px;
+    background: url(person.png);
+}
+
+.b-reporters__count-number {
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    color: #333;
+    font-size: 48px;
+    line-height: 31px;
+    font-style: normal;
+}
+
+.b-reporters__title {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.b-reporters__title-text {
+    color: #3f495f;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.b-reporters__person {
+    margin-left: 60px;
+    float: left;
+    width: 190px;
+}
+
+.b-reporters__person:first-child {
+    margin: 0;
+}
+
+.b-reporters__persons {
+    margin: 60px 0 0;
+}
+
+.b-reporters__person-name {
+    color: #000;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.b-reporters__person-theme-link,
+.b-reporters__person-theme-link:visited {
+    color: #3362ae;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.b-reporters__person-theme-link:hover {
+    color: #5f9cff;
+}
+
+.b-reporters__person-company {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.b-reporters__person-company,
+.b-reporters__person-company-link {
+    color: #79868d;
+}
+
+.b-reporters__person-company-link:hover {
+    color: #515d63;
+}
+
+/* Carousel */
+
+.b-reporters__carousel {
+    position: relative;
+}
+
+.b-reporters__carousel .carousel-inner {
+    position: relative;
+    width: 950px;
+    overflow: hidden;
+}
+
+.b-reporters__carousel .item {
+    display: none;
+    width: 950px;
+    position: relative;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+}
+
+.b-reporters__carousel .active,
+.b-reporters__carousel .next,
+.b-reporters__carousel .prev {
+    display: block;
+}
+
+.b-reporters__carousel .active {
+    left: 0;
+}
+
+.b-reporters__carousel .next,
+.b-reporters__carousel .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.b-reporters__carousel .next {
+    left: 100%;
+}
+
+.b-reporters__carousel .prev {
+    left: -100%;
+}
+
+.b-reporters__carousel .next.left,
+.b-reporters__carousel .prev.right {
+    left: 0;
+}
+
+.b-reporters__carousel .active.left {
+    left: -950px;
+}
+
+.b-reporters__carousel .active.right {
+    left: 950px;
+}
+
+.b-reporters__carousel-control {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 31px;
+    height: 59px;
+    margin-top: -20px;
+    background: url(arrows.png);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 111;
+}
+
+.b-reporters__carousel-control.left {
+    left: -90px;
+}
+
+.b-reporters__carousel-control.right {
+    right: -10px;
+    left: auto;
+    background-position: -31px 0;
+}
+
+.b-reporters__carousel-control:hover {
+    text-decoration: none;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.b-reporters__carousel .carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+}
