@@ -23,16 +23,19 @@ namespace :db do
 
           [0,1].each do |priority|
             cur_event = Event.find_by_priority(priority)
-
-            # break unless overall_pay_amount >= cur_event.price
+            cur_price = 0
 
             if !invoice.promocode.blank? && Promocode.all.map(&:number).include?(invoice.promocode) && cur_event.discount   # Если промокод есть
               promo = Promocode.find_by_number(invoice.promocode)
               puts "Введен промокод #{promo.name}(#{promo.discount_value}%) для '#{cur_event.name}'"
-              overall_pay_amount -= cur_event.price + (cur_event.price * (Promocode.find_by_number(invoice.promocode).discount_value/100.0))
+              cur_price = cur_event.price + (cur_event.price * (promo.discount_value/100.0))
             else                                                                                      # Если промокода нет
-              overall_pay_amount -= cur_event.price
+              cur_price = cur_event.price
             end
+
+            break if overall_pay_amount < cur_price
+            overall_pay_amount -= cur_price
+
             invoice.events << cur_event
             ie = invoice.invoice_events.last
             ie.paid = true
