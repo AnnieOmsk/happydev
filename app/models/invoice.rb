@@ -14,7 +14,13 @@ class Invoice < ActiveRecord::Base
   def all_invoice_events_paid?
     invoice_events.all?{ |e| e.paid? }
   end
-
+  
+  # mark invoice if select clearing settlement
+  def mark_select_clearing(state)
+    self.clearing = state
+    self.save
+  end
+  
   def mark_invoice_events_paid
     # все платежи
     overall_pay_amount = payments.map(&:amount).sum

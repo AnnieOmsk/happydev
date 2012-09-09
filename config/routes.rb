@@ -11,7 +11,7 @@ Happydev::Application.routes.draw do
   end
 
   resource :invoice, :only => [:new, :create, :show] do
-    # get :demopage, :on => :collection, :as => :payment_demopage
+    put :clearing
   end
 
   match '/about/requisites' => 'home#requisites'

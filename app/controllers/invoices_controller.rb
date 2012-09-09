@@ -3,8 +3,8 @@ class InvoicesController < ApplicationController
   # include HttpAuthenticable
   # before_filter :authenticate
 
-  before_filter :authenticate_user!, :only => [:new, :create, :show]
-  before_filter :find_invoice, :only => [:new, :show, :success, :fail]
+  before_filter :authenticate_user!, :except => :delete
+  before_filter :find_invoice, :only => [:new, :show, :clearing]
 
   def new
     if @invoice
@@ -51,7 +51,14 @@ class InvoicesController < ApplicationController
     end
   end
 
-  def demopage
+  def clearing
+    if params[:state]
+      if @invoice.mark_select_clearing(params[:state])
+        render :text => 'success', :status => 200
+      else
+        render :text => 'error', :status => 500
+      end
+    end
   end
 
   private

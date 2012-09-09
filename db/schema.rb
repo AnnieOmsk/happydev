@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120906162311) do
+ActiveRecord::Schema.define(:version => 20120909064336) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -56,6 +56,8 @@ ActiveRecord::Schema.define(:version => 20120906162311) do
     t.string   "promocode"
     t.boolean  "oferta",          :default => false
     t.integer  "reserve_user_id"
+    t.boolean  "robox_flag",      :default => false
+    t.boolean  "clearing",        :default => false
   end
 
   add_index "invoices", ["user_id"], :name => "index_invoices_on_user_id"
