@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/b-head/b-head.css" afterPath="$PROJECT_DIR$/design/blocks/b-head/b-head.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/b-sections/b-sections.css" afterPath="$PROJECT_DIR$/design/blocks/b-sections/b-sections.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/index.html" afterPath="$PROJECT_DIR$/design/index.html" />
     </list>
     <ignored path="Happydev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,30 +62,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scrollspy-run.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design/blocks/b-head/scrollspy-run.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/design/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+            <state line="96" column="44" selection-start="4646" selection-end="4646" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../hd/index.html">
+      <file leaf-file-name="b-sections.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/design/blocks/b-sections/b-sections.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="49" selection-start="8387" selection-end="8387" vertical-scroll-proportion="-99.375">
-              <folding>
-                <marker date="1347201696000" expanded="true" signature="1149:1443" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="b-head.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/design/blocks/b-head/b-head.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="21" selection-start="2362" selection-end="2362" vertical-scroll-proportion="0.25029796">
+            <state line="1" column="22" selection-start="43" selection-end="43" vertical-scroll-proportion="0.017605634">
               <folding />
             </state>
           </provider>
@@ -107,6 +98,8 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.uncompressed.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
         <option value="$PROJECT_DIR$/design/blocks/b-head/b-head.css" />
+        <option value="$PROJECT_DIR$/design/index.html" />
+        <option value="$PROJECT_DIR$/design/blocks/b-sections/b-sections.css" />
       </list>
     </option>
   </component>
@@ -143,9 +136,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -155,6 +145,9 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -592,9 +585,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="8" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="31" column="8" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/main.js.coffee">
@@ -612,25 +603,31 @@
         <state line="0" column="22" selection-start="22" selection-end="28" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design/blocks/b-head/scrollspy-run.js">
+    <entry file="file://$PROJECT_DIR$/design/blocks/b-head/b-head.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="68" column="21" selection-start="2362" selection-end="2362" vertical-scroll-proportion="0.017878426" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../hd/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="49" selection-start="8387" selection-end="8387" vertical-scroll-proportion="-99.375">
-          <folding>
-            <marker date="1347201696000" expanded="true" signature="1149:1443" placeholder="..." />
-          </folding>
+        <state line="159" column="49" selection-start="8387" selection-end="8387" vertical-scroll-proportion="0.018404908" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/blocks/b-head/scrollspy-run.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="44" selection-start="4646" selection-end="4646" vertical-scroll-proportion="-11.25">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design/blocks/b-head/b-head.css">
+    <entry file="file://$PROJECT_DIR$/design/blocks/b-sections/b-sections.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="21" selection-start="2362" selection-end="2362" vertical-scroll-proportion="0.25029796">
+        <state line="1" column="22" selection-start="43" selection-end="43" vertical-scroll-proportion="0.017605634">
           <folding />
         </state>
       </provider>
