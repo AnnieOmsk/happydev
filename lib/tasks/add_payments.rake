@@ -39,6 +39,7 @@ namespace :db do
           end
         end
         if overall_pay_amount == 0
+          puts "Отправка письма пользователю #{_email}"
           ## Отправка на почту подтверждения об оплате 
           Mailer.send_success_payment_notification(invoice.user.email, invoice).deliver!
         else
