@@ -12,3 +12,6 @@ jQuery ->
         $('#amount').html(overall += gon.event_prices[$(this).val()])
       else
         $('#amount').html(overall -= gon.event_prices[$(this).val()])
+
+  $('.payment_type input').click ->
+    $('.payment_content').toggle();
