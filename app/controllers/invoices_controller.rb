@@ -4,7 +4,7 @@ class InvoicesController < ApplicationController
   # before_filter :authenticate
 
   before_filter :authenticate_user!, :except => :delete
-  before_filter :find_invoice, :only => [:new, :show, :edit, :update, :move_to_robokassa]
+  before_filter :find_invoice, :only => [:new, :show, :edit, :update, :move_to_robokassa, :clearing]
 
   def new
     if @invoice
@@ -81,6 +81,16 @@ class InvoicesController < ApplicationController
       render :text => 'success', :status => 200
     else
       render :text => 'error', :status => 500
+    end
+  end
+
+  def clearing
+    if params[:state]
+      if @invoice.mark_select_clearing(params[:state])
+        render :text => 'success', :status => 200
+      else
+        render :text => 'error', :status => 500
+      end
     end
   end
 

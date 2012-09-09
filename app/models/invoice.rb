@@ -20,6 +20,12 @@ class Invoice < ActiveRecord::Base
     self.robox_flag = true
     self.save
   end
+
+  # mark invoice if select clearing settlement
+  def mark_select_clearing(state)
+    self.clearing = state
+    self.save
+  end
   
   def remaining_amount
     amount - payments.map(&:amount).sum

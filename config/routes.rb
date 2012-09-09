@@ -12,6 +12,7 @@ Happydev::Application.routes.draw do
 
   resource :invoice, :only => [:new, :create, :show, :edit, :update] do
     put :move_to_robokassa
+    put :clearing
   end
 
   match '/about/requisites' => 'home#requisites'
