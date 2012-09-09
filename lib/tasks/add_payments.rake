@@ -24,7 +24,7 @@ namespace :db do
           [0,1].each do |priority|
             cur_event = Event.find_by_priority(priority)
 
-            break unless overall_pay_amount >= cur_event.price
+            # break unless overall_pay_amount >= cur_event.price
 
             if !invoice.promocode.blank? && Promocode.all.map(&:number).include?(invoice.promocode) && cur_event.discount   # Если промокод есть
               promo = Promocode.find_by_number(invoice.promocode)
