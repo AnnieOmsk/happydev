@@ -2,92 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-comments/person-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-comments/person-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-comments/photo-frame.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-comments/tail-quote.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-foot/a2design-copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-foot/like-btns.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-head/like-btns.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-logo/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-members/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-members/cms-magazine-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-members/dominion-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-members/hh-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-members/revision-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-organizers/7bits-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-organizers/a2design-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-organizers/euromed-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-organizers/nissan-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-organizers/peugeot-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-organizers/renault-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-organizers/stolnik-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-organizers/vavilon-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-organizers/zefir-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-programm/time.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-reporters/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-reporters/person.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-reporters/reporter_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-reporters/reporter_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-reporters/reporter_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-reporters/reporter_4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/conf-img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/line-gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/price-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/rubl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/title-l-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/title-r-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-twitter/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-venue/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/fonts/PTS55F-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/fonts/PTS55F-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/fonts/PTS55F-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/fonts/pfdintextcondpro-bold_0-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/fonts/pfdintextcondpro-bold_0-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/fonts/pfdintextcondpro-bold_0-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/fonts/pfdintextcondpro-regular_0-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/fonts/pfdintextcondpro-regular_0-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/fonts/pfdintextcondpro-regular_0-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/images/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-comments/b-comments.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-foot/b-foot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-head/b-head.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-head/b-head.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-head/scrollspy-run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-logo/b-logo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-main/b-main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-members/b-members-carousel-run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-members/b-members.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-organizers/b-organizers.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-page/b-page.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-programm/b-programm.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-programm/b-programm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-reporters/b-reporters.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-reporters/carousel-run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-reporters/carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-sections/b-sections.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-speaking/b-speaking.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/b-tikets.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/b-tikets.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/slider_run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-twitter/b-twitter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-venue/b-venue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/css/h5bp-begin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/css/h5bp-end.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/css/h5bp-normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/fonts/PTS55F-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/js/plugins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/js/vendor/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/js/vendor/carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/js/vendor/jquery-1.8.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/js/vendor/jquery.tools.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/js/vendor/modernizr-2.6.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/js/vendor/scrollspy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/l-page/l-page.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/b-head/b-head.css" afterPath="$PROJECT_DIR$/design/blocks/b-head/b-head.css" />
     </list>
     <ignored path="Happydev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -145,10 +60,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scrollspy-run.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scrollspy-run.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design/blocks/b-head/scrollspy-run.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../hd/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="49" selection-start="8387" selection-end="8387" vertical-scroll-proportion="-99.375">
+              <folding>
+                <marker date="1347201696000" expanded="true" signature="1149:1443" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b-head.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/design/blocks/b-head/b-head.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="21" selection-start="2362" selection-end="2362" vertical-scroll-proportion="0.25029796">
               <folding />
             </state>
           </provider>
@@ -171,6 +106,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.uncompressed.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
+        <option value="$PROJECT_DIR$/design/blocks/b-head/b-head.css" />
       </list>
     </option>
   </component>
@@ -235,6 +171,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="b-head" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,7 +435,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1032" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -462,7 +452,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973261" sideWeight="0.6708428" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973261" sideWeight="0.6708428" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -624,7 +614,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/design/blocks/b-head/scrollspy-run.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hd/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="49" selection-start="8387" selection-end="8387" vertical-scroll-proportion="-99.375">
+          <folding>
+            <marker date="1347201696000" expanded="true" signature="1149:1443" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/blocks/b-head/b-head.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="21" selection-start="2362" selection-end="2362" vertical-scroll-proportion="0.25029796">
           <folding />
         </state>
       </provider>

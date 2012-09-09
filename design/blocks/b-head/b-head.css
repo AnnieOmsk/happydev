@@ -66,6 +66,7 @@
     color: #000;
     font-weight: bold;
     text-shadow: 1px 1px 1px #fff;
+    letter-spacing: 1px;
 }
 
 .b-head__item_type_register .b-head__link {
@@ -79,6 +80,7 @@
     background: -ms-linear-gradient(top, #7aba00 0%,#246b00 100%); /* IE10+ */
     background: linear-gradient(to bottom, #7aba00 0%,#246b00 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7aba00', endColorstr='#246b00',GradientType=0 ); /* IE6-9 */
+    font-weight: bold;
 }
 
 .b-head__link-line {
