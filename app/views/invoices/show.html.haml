@@ -32,8 +32,10 @@
 
     %br
     %h3 Способы оплаты:
-    .row.payment_type{:style => "margin-top:5px;margin-bottom:15px;"}
-      .span4.clearing_type
+    .row.payment_type{:style => "margin-top:5px;margin-bottom:5px;"}
+      .span10
+        Для ИП и юридических лиц:
+      .span4.clearing_type{:style => "margin-top:5px; margin-left:35px;"}
         - if @invoice.clearing
           = check_box_tag :clearing, nil, true
         - else
@@ -44,12 +46,15 @@
         -# #payment-back-button{:style => "float:left;margin-right:20px;"}
         -#   = link_to "Назад", edit_invoice_path, :class => 'btn'
       .payment_content{:style => clearing?("robox", @invoice.clearing)}
-        .span2
-          = image_tag 'robokassa.jpg'
-        .span4
-          #payment-button
-          = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
-            = submit_tag "Оплатить через робокассу", :class => 'btn btn-primary'
+        .span11
+          Для физических лиц:
+        %div{:style => "margin-left:10px"}
+          .span2{:style => "margin-top:5px"}
+            = image_tag 'robokassa.jpg'
+          .span4
+            #payment-button
+            = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
+              = submit_tag "Оплатить через робокассу", :class => 'btn btn-primary'
       .payment_content{:style => clearing?("clearing", @invoice.clearing)}
         .span9
           = "Пожалуйста, скачайте <a href='#{APP_CONFIG[:domain]}/docs/HappyDev_12_agreement.doc'>образец договора</a>, заполните все выделенные фрагменты, кроме номера договора и вышлите на адрес <a href = 'mailto:org@happydev.ru'>org@happydev.ru </a>. В ответ мы выставим Вам счет. После зачисления средств на наш расчетный счет статус Вашей регистрации изменится на 'Оплачено'.".html_safe
