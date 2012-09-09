@@ -9,5 +9,5 @@ role :app,        host
 role :web,        host
 role :db,         host, :primary => true
 
-set :branch,    'develop'
+set :branch,    'robokassa_bug_fix'
 set :deploy_to, '$HOME/www/happydev'
