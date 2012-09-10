@@ -1,7 +1,13 @@
 .l-page_width_page {
-    width: 960px;
-    padding: 0 10px;
+    width: 980px;
     margin: auto;
+}
+
+@media (max-width: 1024px) {
+    .l-page_width_page {
+        width: 960px;
+        padding: 0 10px;
+    }
 }
 
 .l-page_bg_white {
