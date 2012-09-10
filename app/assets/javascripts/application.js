@@ -14,10 +14,10 @@
 //= require jquery_ujs
 //= require jquery.tools.min
 //= require payments
-//= require twitter/bootstrap
 //= require modernizr-2.6.1.min.js
 //= require scrollspy
 //= require carousel
+//= require bootstrap.min
 //= require blocks/b-programm/b-programm
 //= require blocks/b-tikets/slider_run
 //= require blocks/b-reporters/carousel-run
