@@ -1,10 +1,10 @@
-%footer.b-foot.l-page_width_page{:role => "contentinfo"}
+%footer.b-foot.l-page_width_page{:role => 'contentinfo'}
   %p.b-foot__copy
     \&copy; 2012 &laquo;HappyDev&raquo;
     %br/
     Все права защищены
   .b-foot__buttons
-    %img{:alt => "", :src => "blocks/b-foot/like-btns.png"}/
+    = image_tag 'blocks/b-foot/like-btns.png'
   .b-foot__powered-by
-    %a{:href => "http://a2design.ru"}
-      %img{:alt => "a2design", :src => "blocks/b-foot/a2design-copy.png"}/
+    %a{:href => 'http://a2design.ru'}
+      = image_tag 'blocks/b-foot/a2design-copy.png', :alt => 'a2design'
