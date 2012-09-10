@@ -18,6 +18,7 @@ gem 'gon'
 gem 'airbrake'
 
 gem 'rdiscount'
+gem 'compass-rails', '~> 1.0.1'
 
 group :assets do
   gem 'sass-rails',               '~> 3.2.3'

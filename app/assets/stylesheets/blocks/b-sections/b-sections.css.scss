@@ -1,0 +1,41 @@
+.b-sections__title {
+    margin: 5px 0 10px;
+    font-family: 'pf_din_text_cond_probold';
+    font-size: 36px;
+    font-weight: normal;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.b-sections__title-small {
+    display: block;
+    font-family: 'pf_din_text_cond_proregular';
+    font-size: 22px;
+    color: #333;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.b-sections__section {
+    margin: 0 0 0 55px;
+    width: 280px;
+    float: left;
+}
+
+.b-sections__section:first-child {
+    margin: 0;
+}
+
+.b-sections__section-title {
+    font-weight: normal;
+    color: #000;
+    font-size: 24px;
+}
+
+.b-sections__text {
+    font-size: 13px;
+    line-height: 19px;
+    color: #3f495f;
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,32 @@
+.b-foot {
+    position: relative;
+}
+
+.b-foot__copy,
+.b-foot__buttons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ie7 .b-foot__copy,
+.ie7 .b-foot__buttons {
+    display: inline;
+}
+
+.b-foot__copy {
+    font-size: 12px;
+    line-height: 17px;
+    color: #4a5257;
+    font-family: 'PT Sans';
+}
+
+.b-foot__buttons {
+    width: 790px;
+    text-align: center;
+}
+
+.b-foot__powered-by {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}

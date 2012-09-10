@@ -1,0 +1,30 @@
+.b-speaking {
+    margin: 65px 0 0;
+    position: relative;
+    padding: 25px;
+    border: 1px solid #85b0c6;
+}
+
+.b-speaking__title-inner {
+    position: absolute;
+    left: 0;
+    top: -22px;
+    right: 0;
+    text-align: center;
+}
+
+.b-speaking__title {
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+    font-weight: normal;
+    background: #f1f1f3;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.ie7 .b-speaking__title {
+    display: inline;
+}
