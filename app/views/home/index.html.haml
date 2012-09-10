@@ -47,7 +47,7 @@
         .b-comments__comment.clearfix
           .b-comments__person.clearfix
             .b-comments__person-photo
-              %img.b-comments__person-img{:alt => "Сергей Бережной", :src => "blocks/b-comments/person-1.png"}/
+              = image_tag "blocks/b-comments/person-1.png", :class => 'b-comments__person-img', :alt => "Сергей Бережной"
               %span.b-comments__person-frame
             .b-comments__content
               %h2.b-comments__person-name
@@ -61,7 +61,7 @@
                 \&laquo;популистской&raquo;, Это замечательное решение, которого давно ждет рынок:)
           .b-comments__person.clearfix
             .b-comments__person-photo
-              %img.b-comments__person-img{:alt => "Сергей Бережной", :src => "blocks/b-comments/person-2.png"}/
+              = image_tag "blocks/b-comments/person-2.png", :class => 'b-comments__person-img', :alt => "Сергей Бережной"
               %span.b-comments__person-frame
             .b-comments__content
               %h2.b-comments__person-name
@@ -76,7 +76,7 @@
       .b-twitter
         %h2.b-twitter__title
           \#HappyDev
-        %img.b-twitter__image{:alt => "#HappyDev", :src => "blocks/b-twitter/twitter.png"}/
+        = image_tag "blocks/b-twitter/twitter.png", :class => 'b-twitter__image', :alt => "#HappyDev"
     = render :partial => 'tickets'
     = render :partial => 'program'
     = render :partial => 'place'
