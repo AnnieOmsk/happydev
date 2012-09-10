@@ -126,6 +126,10 @@
     background: #fff;
 }
 
+.b-register__inputs-inner_state_errors .b-register__required {
+    color: #cc0000;
+}
+
 .b-register__text {
     width: 420px;
     margin: auto;
