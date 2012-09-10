@@ -57,6 +57,7 @@
     font-weight: normal;
 }
 
+
 .b-reporters__person-theme-link,
 .b-reporters__person-theme-link:visited {
     color: #3362ae;
@@ -65,8 +66,14 @@
     font-family: Arial, sans-serif;
 }
 
+.b-reporters__person-theme-link {
+    text-decoration: none;
+    border-bottom: 1px solid #B2CCF0;
+}
+
 .b-reporters__person-theme-link:hover {
-    color: #5f9cff;
+    color: #cc0000;
+    border-color: #F0B2B2;
 }
 
 .b-reporters__person-company {
@@ -123,11 +130,11 @@
 }
 
 .b-reporters__carousel .next {
-    left: 100%;
+    left: 950px;
 }
 
 .b-reporters__carousel .prev {
-    left: -100%;
+    left: -950px;
 }
 
 .b-reporters__carousel .next.left,

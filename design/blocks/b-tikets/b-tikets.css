@@ -98,6 +98,17 @@
     font-style: normal;
 }
 
+.b-tikets-price,
+.b-tikets__rubl-inner {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ie7 .b-tikets-price,
+.ie7 .b-tikets__rubl-inner {
+    display: inline;
+}
+
 .b-tikets__rubl-inner {
     position: relative;
 }

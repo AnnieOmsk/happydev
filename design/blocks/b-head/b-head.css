@@ -15,7 +15,9 @@
     background: -ms-linear-gradient(top, #fcfcfc 0%,#eaecee 100%); /* IE10+ */
     background: linear-gradient(to bottom, #fcfcfc 0%,#eaecee 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#eaecee',GradientType=0 ); /* IE6-8 */
-    box-shadow: 5px 0 13px rgba(58,49,141, .47);
+    -webkit-box-shadow: 5px 0 25px rgba(58, 89, 141, .47);
+    -moz-box-shadow: 5px 0 25px rgba(58, 89, 141, .47);
+    box-shadow: 5px 0 25px rgba(58, 89, 141, .47);
 }
 
 .ie7 .b-head,
@@ -28,21 +30,32 @@
 }
 
 .b-head__inner {
-    width: 980px;
-    margin: auto;
+    position: relative;
+}
+
+.b-head__register {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .b-head__nav {
     margin: 0;
     padding: 0;
-    float: left;
+    text-align: center;
 }
 
 .b-head__item {
-    float: left;
+    display: inline-block;
     margin: 0 0 0 25px;
     height: 42px;
     list-style: none;
+}
+
+.ie7 .b-head__item {
+    display: inline;
 }
 
 .b-head__item:first-child {
@@ -50,12 +63,14 @@
 }
 
 .b-head__link {
-    padding: 10px 0;
     position: relative;
     display: block;
     color: #415463;
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 1px;
+    line-height: 42px;
+    font-size: 16px;
 }
 
 .b-head__link:hover {
@@ -67,10 +82,11 @@
     font-weight: bold;
     text-shadow: 1px 1px 1px #fff;
     letter-spacing: 1px;
+    line-height: 43px;
 }
 
-.b-head__item_type_register .b-head__link {
-    padding: 10px 20px;
+.b-head__register .b-head__link {
+    padding: 0 20px;
     color: #fff;
     background: #7aba00; /* Old browsers */
     background: -moz-linear-gradient(top, #7aba00 0%, #246b00 100%); /* FF3.6+ */
@@ -80,7 +96,8 @@
     background: -ms-linear-gradient(top, #7aba00 0%,#246b00 100%); /* IE10+ */
     background: linear-gradient(to bottom, #7aba00 0%,#246b00 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7aba00', endColorstr='#246b00',GradientType=0 ); /* IE6-9 */
-    font-weight: bold;
+    font-family: 'pf_din_text_cond_probold';
+    text-shadow: 1px 1px 1px #246b00;
 }
 
 .b-head__link-line {
@@ -105,7 +122,9 @@
 .b-head__like-btns {
     margin: 0;
     padding: 0;
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .b-head__like-btns-item {

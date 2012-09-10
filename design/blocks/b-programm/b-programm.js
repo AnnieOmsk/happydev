@@ -29,7 +29,10 @@ $(function() {
     }
 
 
-    descLink.hover(function() {
-        $(this).addClass('selected').find(descObj).slideDown(200);
-    }, descLink.unSelected)
+//    descLink.hover(function() {
+//        var elem = $(this);
+//        setTimeout(function() {
+//            elem.addClass('selected').find(descObj).slideDown(200)
+//        }, 1000);
+//    }, descLink.unSelected)
 });
