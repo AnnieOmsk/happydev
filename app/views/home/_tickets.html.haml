@@ -22,15 +22,15 @@
           %a.b-tikets__gallery-nav-link 5
       .b-tikets__gallery-inner.items
         .b-tikets__gallery-item
-          %img{:alt => "", :src => "blocks/b-tikets/conf-img.png"}/
+          = image_tag "blocks/b-tikets/conf-img.png"
         .b-tikets__gallery-item
-          %img{:alt => "", :src => "blocks/b-tikets/conf-img.png"}/
+          = image_tag "blocks/b-tikets/conf-img.png"
         .b-tikets__gallery-item
-          %img{:alt => "", :src => "blocks/b-tikets/conf-img.png"}/
+          = image_tag "blocks/b-tikets/conf-img.png"
         .b-tikets__gallery-item
-          %img{:alt => "", :src => "blocks/b-tikets/conf-img.png"}/
+          = image_tag "blocks/b-tikets/conf-img.png"
         .b-tikets__gallery-item
-          %img{:alt => "", :src => "blocks/b-tikets/conf-img.png"}/
+          = image_tag "blocks/b-tikets/conf-img.png"
   .b-tikets__methods.clearfix
     .b-tikets__method.b-tikets__method_type_earliest
       .b-tikets__link.js-b-tikets__link{:href => "#"}
@@ -43,7 +43,7 @@
             %span.b-tikets__rubl-inner
               %i.b-tikets__rubl
                 руб.
-              %img.b-tikets__rubl-img{:alt => "", :src => "blocks/b-tikets/rubl.png"}/
+              = image_tag "blocks/b-tikets/rubl.png", :class => 'b-tikets__rubl-img'
           %span.b-tikets__pricing-date
             До 9 сентября
         .b-tikets__content
@@ -71,7 +71,7 @@
             %span.b-tikets__rubl-inner
               %i.b-tikets__rubl
                 руб.
-              %img.b-tikets__rubl-img{:alt => "", :src => "blocks/b-tikets/rubl.png"}/
+              = image_tag "blocks/b-tikets/rubl.png", :class => 'b-tikets__rubl-img'
           %span.b-tikets__pricing-date
             До 16 сентября
         .b-tikets__content
@@ -100,7 +100,8 @@
             %span.b-tikets__rubl-inner
               %i.b-tikets__rubl
                 руб.
-              %img.b-tikets__rubl-img{:alt => "", :src => "blocks/b-tikets/rubl.png"}/
+              = image_tag "blocks/b-tikets/rubl.png", :class => 'b-tikets__rubl-img'
+          %span.b-tikets__pricing-date
           %span.b-tikets__pricing-date
             До 23 сентября
         .b-tikets__content
