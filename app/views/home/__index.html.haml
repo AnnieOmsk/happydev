@@ -1,0 +1,83 @@
+#content.container
+  .hero-unit
+    .row
+      .span8
+        .row
+          .span8
+            %p
+              Первая
+              %b{:style =>"color:#dd0000;"} большая IT-конференция
+              в Омске
+              %br
+              для разработчиков, дизайнеров и менеджеров
+              %br
+              %br
+        .row
+          .span12
+            %p
+              %b{:style => "color:#FF7800;"} 29 сентября <a href="http://arvd.ru/page/view?id=15" target='_blank'>в конгресс-холле Экспоцентра</a>
+              (ул. 70 лет Октября, д. 25, к. 2)
+              %br
+              <small>Билет участника стоит <nobr>2200 руб. до 9 сентября</nobr>, <nobr><b>2700 руб.</b> до 16 сентября</nobr>, <nobr>3200 руб. до 23 сентября</nobr></small>
+      .span4
+        %div
+          - if user_signed_in?
+            -if current_user.invoice && current_user.invoice.payments.any?
+              %p Участие оплачено. <br/><a href="/invoice">Детали платежа</a>
+            -else
+              %p= link_to 'Оплатить участие', pay_path, :class => 'btn btn-large btn-primary'
+            / Мы вас записали
+          - else
+            = link_to 'Регистрация', new_user_registration_path, :class => 'btn btn-large btn-primary'
+
+            %div{:style => "display:inline;margin-left:5px;"}
+              = link_to 'Вход', new_user_session_path, :class => 'btn btn-large btn-success'
+
+
+-#carousel.carousel.slide{:rel => "carousel"}
+
+  -#.carousel-inner
+    .active.item
+      %h1{:style => "width:950px;position:absolute;top:50px;text-align:center;left:50%;margin-left:-480px;line-height:1.2em;font-weight:800;color:#fff;font-size:98px;"} HAPPINESS DRIVEN DEVELOPMENT
+      
+      = image_tag "city.jpg"
+  
+#content.container
+  .row.hero-unit
+    .span12
+      %h1 На нашей конференции выступят только те докладчики, которые смогут прежде чем рассказывать «как», рассказать «зачем». Вот часть из них:
+
+  #selected-speakers
+    = render :partial => 'speakers'
+
+
+  .row.hero-unit.under-carousel
+    .span12
+      %p Список докладов смотрите в <a href="/program">программе</a>. За обновлениями следите в <a href="http://twitter.com/_happydev" target="_blank">твиттере</a>. 
+
+  %hr
+  .row.hero-unit
+    .span12
+      %h1 Три секции задают главное - контекст докладов:
+  
+  .sections{:style => "font-size:1.3em"}
+    .row
+      .span4
+        %h2{:style => "color:#043A6B"} Стартапы
+        %p Здесь мы хотели бы обсудить то, как работа в стартапе отражается на принятии решений в разработке, управлении и дизайне. Какие задачи нужно решать в первую очередь, чем можно пренебречь.
+        -#%p
+          %a{:class => "", :href => "#"} Подробнее &raquo;
+      .span4
+        %h2{:style =>"color:#52026E"} Продуктовая разработка
+        %p На этой секции мы рассмотрим вопросы зрелых продуктов с клиентской базой. Например, поддержка пользователей, работа под нагрузками, развитие продукта.
+        -#%p
+          %a{:class =>"", :href => "#"} Подробнее &raquo;
+      .span4
+        %h2{:style => "color:#6B9B00"} Фабрика проектов
+        %p Эта секция посвящена опыту веб-студий и аутсорс-компаний, у кого работа с проектами поставлена на поток.
+        -#%p
+          %a{:class =>"", :href => "#"} Подробнее &raquo;
+
+
+
+  
