@@ -51,6 +51,7 @@ class Invoice < ActiveRecord::Base
 
     if overall_amount >= price
       ie.paid = true
+      ie.paid_amount = price
       ie.save
     end
     overall_amount -= price

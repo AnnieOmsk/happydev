@@ -10,6 +10,10 @@ class Event < ActiveRecord::Base
     [name, master, "#{price} рублей"].compact.join(', ')
   end
 
+  def full_name_without_price
+    [name, master].reject {|e| e.blank?}.join(', ')
+  end
+
   # Set priority for events
   def set_priority
     es = Event.all.map(&:priority)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120909064336) do
+ActiveRecord::Schema.define(:version => 20120910041320) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -37,9 +37,10 @@ ActiveRecord::Schema.define(:version => 20120909064336) do
   create_table "invoice_events", :force => true do |t|
     t.integer  "invoice_id"
     t.integer  "event_id"
-    t.boolean  "paid",       :default => false
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+    t.boolean  "paid",        :default => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+    t.integer  "paid_amount"
   end
 
   add_index "invoice_events", ["event_id"], :name => "index_invoice_events_on_event_id"

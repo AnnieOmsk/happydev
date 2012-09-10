@@ -6,8 +6,8 @@
     %p Ты оплатил:
     
     %ul
-      - for event in @invoice.events
-        %li= event.full_name
+      - for paid_event in @invoice.invoice_events
+        %li= "#{paid_event.event.full_name_without_price}, #{paid_event.paid_amount} руб."
 
     %h3 Оплачена сумма: #{ @invoice.amount} руб.
 
