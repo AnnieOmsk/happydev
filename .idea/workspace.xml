@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/blocks/b-register/b-register.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/b-head/b-head.css" afterPath="$PROJECT_DIR$/design/blocks/b-head/b-head.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/b-logo/b-logo.css" afterPath="$PROJECT_DIR$/design/blocks/b-logo/b-logo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/b-programm/b-programm.css" afterPath="$PROJECT_DIR$/design/blocks/b-programm/b-programm.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/b-programm/b-programm.js" afterPath="$PROJECT_DIR$/design/blocks/b-programm/b-programm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/b-reporters/b-reporters.css" afterPath="$PROJECT_DIR$/design/blocks/b-reporters/b-reporters.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/b-tikets/b-tikets.css" afterPath="$PROJECT_DIR$/design/blocks/b-tikets/b-tikets.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/css/main.css" afterPath="$PROJECT_DIR$/design/blocks/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/blocks/l-page/l-page.css" afterPath="$PROJECT_DIR$/design/blocks/l-page/l-page.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/index.html" afterPath="$PROJECT_DIR$/design/index.html" />
     </list>
     <ignored path="Happydev.iws" />
@@ -79,7 +69,7 @@
       <file leaf-file-name="register.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="64" selection-start="4206" selection-end="4206" vertical-scroll-proportion="-18.75">
+            <state line="87" column="64" selection-start="4206" selection-end="4206" vertical-scroll-proportion="24.375">
               <folding>
                 <marker date="1347278708000" expanded="true" signature="1149:1443" placeholder="..." />
               </folding>
@@ -132,21 +122,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-programm.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="b-programm.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design/blocks/b-programm/b-programm.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="68" selection-start="2547" selection-end="2547" vertical-scroll-proportion="0.61619717">
+            <state line="41" column="16" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/design/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="66" selection-start="4704" selection-end="4706" vertical-scroll-proportion="-7.9591837">
+            <state line="927" column="83" selection-start="60940" selection-end="60940" vertical-scroll-proportion="0.44177216">
               <folding>
-                <marker date="1347278884000" expanded="true" signature="1149:1443" placeholder="..." />
+                <marker date="1347281470000" expanded="true" signature="1149:1443" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -195,10 +185,10 @@
         <option value="$PROJECT_DIR$/design/blocks/b-logo/b-logo.css" />
         <option value="$PROJECT_DIR$/design/blocks/b-sections/b-sections.css" />
         <option value="$PROJECT_DIR$/design/blocks/l-page/l-page.css" />
-        <option value="$PROJECT_DIR$/design/index.html" />
         <option value="$PROJECT_DIR$/design/blocks/b-register/b-register.css" />
         <option value="$PROJECT_DIR$/design/blocks/b-reporters/b-reporters.css" />
         <option value="$PROJECT_DIR$/design/blocks/b-programm/b-programm.css" />
+        <option value="$PROJECT_DIR$/design/index.html" />
       </list>
     </option>
   </component>
@@ -959,28 +949,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="64" selection-start="4206" selection-end="4206" vertical-scroll-proportion="-18.75">
-          <folding>
-            <marker date="1347278708000" expanded="true" signature="1149:1443" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/design/blocks/l-page/l-page.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="18" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="66" selection-start="4704" selection-end="4706" vertical-scroll-proportion="-7.9591837">
-          <folding>
-            <marker date="1347278884000" expanded="true" signature="1149:1443" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,10 +977,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/design/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="64" selection-start="4206" selection-end="4206" vertical-scroll-proportion="24.375">
+          <folding>
+            <marker date="1347278708000" expanded="true" signature="1149:1443" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/design/blocks/b-programm/b-programm.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="68" selection-start="2547" selection-end="2547" vertical-scroll-proportion="0.61619717">
+        <state line="41" column="16" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="927" column="83" selection-start="60940" selection-end="60940" vertical-scroll-proportion="0.44177216">
+          <folding>
+            <marker date="1347281470000" expanded="true" signature="1149:1443" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
