@@ -1,12 +1,13 @@
 # encoding: utf-8
 namespace :db do
   desc 'add payment for user'
-  task :add_payment, [:email, :amount, :promocode] => :environment do |t, args| 
+  task :add_payment, [:email, :amount, :promocode, :old_amount] => :environment do |t, args|
     if args[:email].blank? || args[:amount].blank? || !user = User.find_by_email(args[:email])
       puts "Missing arguments email/amount or user with email '#{args[:email]}' not found :(."
     else
       _email, _amount = args[:email], args[:amount]
       _promocode = args[:promocode].blank? ? "" : args[:promocode]
+      _old_amount = args[:old_amount].blank? ? nil : args[:old_amount].to_i
 
       puts "Вы хотите добавить в базу оплату для пользователя #{_email} суммы #{_amount} с промокодом #{_promocode} [Y/n]"
       response = STDIN.getc
@@ -28,9 +29,17 @@ namespace :db do
             if !invoice.promocode.blank? && Promocode.all.map(&:number).include?(invoice.promocode) && cur_event.discount   # Если промокод есть
               promo = Promocode.find_by_number(invoice.promocode)
               puts "Введен промокод #{promo.name}(#{promo.discount_value}%) для '#{cur_event.name}'"
-              cur_price = cur_event.price + (cur_event.price * (promo.discount_value/100.0))
+              cur_price = if _old_amount && priority == 0
+                _old_amount + (_old_amount * (promo.discount_value/100.0))
+              else
+                cur_event.price + (cur_event.price * (promo.discount_value/100.0))
+              end
             else                                                                                      # Если промокода нет
-              cur_price = cur_event.price
+              cur_price = if _old_amount && priority == 0
+                _old_amount
+              else
+                cur_event.price
+              end
             end
 
             break if overall_pay_amount < cur_price
@@ -38,6 +47,7 @@ namespace :db do
 
             invoice.events << cur_event
             ie = invoice.invoice_events.last
+            ie.paid_amount = cur_price
             ie.paid = true
             if ie.save
               puts "Пользователь оплатил '#{ie.event.name}'"
