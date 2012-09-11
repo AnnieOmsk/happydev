@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120910041320) do
+ActiveRecord::Schema.define(:version => 20120911064331) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20120910041320) do
     t.string   "promocode"
     t.boolean  "oferta",          :default => false
     t.integer  "reserve_user_id"
+    t.boolean  "robox_flag",      :default => false
     t.boolean  "clearing",        :default => false
   end
 
@@ -90,14 +91,13 @@ ActiveRecord::Schema.define(:version => 20120910041320) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
-    t.string   "name",                                   :null => false
     t.string   "company"
     t.string   "city"
     t.string   "professional"
     t.boolean  "student"
     t.string   "promocode"
-    t.string   "first_name"
-    t.string   "last_name"
+    t.string   "first_name",             :default => "", :null => false
+    t.string   "last_name",              :default => "", :null => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -4,66 +4,63 @@
     .b-register__title-inner
       %h2.b-register__title
         Регистрация
-    %form{:action => "#"}
+    = form_for(resource, :as => resource_name, :url => registration_path(resource)) do |f|
       .clearfix
         .b-register__fields-inner
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
-                Имя
+                = f.label "Имя"
               %span.b-register__inputs-inner
-                %input.b-register__input_text{:type => "text", :value => ""}/
+                = f.text_field :first_name, :class => "b-register__input_text"
                 %span.b-register__required *
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
-                Фамилия
+                = f.label "Фамилия"
               %span.b-register__inputs-inner
-                %input.b-register__input_text{:type => "text", :value => ""}/
+                = f.text_field :last_name, :class => "b-register__input_text"
                 %span.b-register__required *
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
-                Пароль
+                = f.label "Пароль"
               %span.b-register__inputs-inner
-                %input.b-register__input_password{:type => "password", :value => ""}/
+                = f.password_field :password, :class => "b-register__input_password"
                 %span.b-register__required *
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
-                Повторите пароль
+                = f.label "Повторите пароль"
               %span.b-register__inputs-inner
-                %input.b-register__input_password{:type => "password", :value => ""}/
+                = f.password_field :password_confirmation, :class => "b-register__input_password"
                 %span.b-register__required *
         .b-register__fields-inner.b-register__fields-inner_float_right
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
-                Эл. почта
+                = f.label "Эл. почта"
               %span.b-register__inputs-inner.b-register__inputs-inner_state_errors
-                %input.b-register__input_email{:type => "email", :value => ""}/
+                = f.email_field :email, :class => "b-register__input_email"
                 %span.b-register__required *
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
-                Компания
+                = f.label "Компания"
               %span.b-register__inputs-inner
-                %input.b-register__input_text{:type => "text", :value => ""}/
+                = f.text_field :company, :class => "b-register__input_text"
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
-                Город
+                = f.label "Город"
               %span.b-register__inputs-inner
-                %input.b-register__input_text{:type => "password", :value => ""}/
+                = f.text_field :city, :class => "b-register__input_text"
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
-                Специализация
+                = f.label "Специализация"
               %span.b-register__inputs-inner
-                %select.b-register__select
-                  %option{:value => "0"} Дизайн
-                  %option{:value => "1"} Разработка
-                  %option{:value => "2"} Управление
+                = f.select :professional, [['Дизайн', 'Дизайн'],['Разработка', 'Разработка'], ['Управление', 'Управление']], { :include_blank => true }, :class => "b-register__select"
       %p.b-register__text.l-page_align_center
         Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласие с тем, что «Личные данные» будут использованы для изготовления бейджа.
       %p.l-page_align_center
