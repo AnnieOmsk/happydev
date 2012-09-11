@@ -75,7 +75,6 @@
 
 .b-head__link:hover {
     color: #333;
-    line-height: 43px;
 }
 
 .b-head__item_state_current .b-head__link {
@@ -86,6 +85,7 @@
 }
 
 .b-head__register .b-head__link {
+    padding: 0 20px;
     color: #fff;
     background: #7aba00; /* Old browsers */
     background: -moz-linear-gradient(top, #7aba00 0%, #246b00 100%); /* FF3.6+ */
