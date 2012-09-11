@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/register.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/register.js.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -76,10 +76,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-register.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="b-register.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="193" column="23" selection-start="5711" selection-end="5711" vertical-scroll-proportion="0.874851">
+            <state line="191" column="32" selection-start="5666" selection-end="5666" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.js.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/register.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="78" selection-start="194" selection-end="194" vertical-scroll-proportion="0.03521127">
               <folding />
             </state>
           </provider>
@@ -98,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/home/_place.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/vendor/assets/javascripts/scroll.js" />
@@ -114,6 +122,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/register.js.coffee.js" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/register.js.coffee" />
       </list>
     </option>
   </component>
@@ -886,13 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/register.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="82" selection-start="55" selection-end="92" vertical-scroll-proportion="0.017605634">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/scrollspy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1586" selection-end="1608" vertical-scroll-proportion="0.38732395">
@@ -979,7 +981,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="23" selection-start="5711" selection-end="5711" vertical-scroll-proportion="0.874851">
+        <state line="191" column="32" selection-start="5666" selection-end="5666" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/register.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="78" selection-start="194" selection-end="194" vertical-scroll-proportion="0.03521127">
           <folding />
         </state>
       </provider>
