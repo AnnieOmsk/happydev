@@ -5,7 +5,7 @@
         Программа
   %table.b-programm__table
     %tbody.b-programm__body
-      %tr.b-programm__row.b-programm__row_state_filled
+      %tr.b-programm__row
         %td.b-programm__column
           9:00
         %td.b-programm__column{:colspan => "3"}
@@ -13,7 +13,7 @@
             Регистрация
       
 
-      %tr.b-programm__row
+      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           10:00
         %td.b-programm__column{:colspan => "3"}
@@ -21,7 +21,7 @@
             Открытие конференции
       
 
-      %tr.b-programm__row.b-programm__row_state_filled
+      %tr.b-programm__row
         %td.b-programm__column
           10:25
         // Юрий Подорожный ======================================================
@@ -35,167 +35,116 @@
         // Данил Снитко ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            /=render :partial => "home/factory/snitko"
+            =render :partial => "home/factory/snitko"
+
+      %tr.b-programm__row
+        %td.b-programm__column
+          11:20
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
+            =render :partial => "home/startup/polykarpov"
+     
 
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           11:20
         // Рамиль Шайхутдинов ======================================================
         %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            /# =render :partial => "home/startup/shayhutdinov"
-            =render :partial => "home/startup/treskin"
-     
-
+          =render :partial => "home/startup/shayhutdinov"
+        %td.b-programm__column
+          =render :partial => "home/product/kudymov"
+        %td.b-programm__column
+          =render :partial => "home/factory/shapiro"
       %tr.b-programm__row
         %td.b-programm__column
-          11:20
-        //  ======================================================
+          11:50
         %td.b-programm__column
-          %p.b-programm__text
-            ?
-          %p.b-programm__theme
-            %a.b-programm__theme-link{:href => "#"} !
-        // Максим Трескин ======================================================
+          =render :partial => "home/startup/polykarpov"
         %td.b-programm__column
-          %p.b-programm__text
-            Максим Трескин
-          %p.b-programm__theme
-            %a.b-programm__theme-link{:href => "#"} Erly Video. Why Erly?
+          =render :partial => "home/product/kudzev"
         %td.b-programm__column
-          %p.b-programm__text
-            Алексей Кривицкий
-          %p.b-programm__theme
-            %a.b-programm__theme-link{:href => "#"} что-то там про ренессанс
+          =render :partial => "home/factory/savilov"
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          10:00-10:20
+          12:20
         %td.b-programm__column
-          %p.b-programm__text
-            Юрий Подорожный
-          %p.b-programm__theme
-            %a.b-programm__theme-link{:href => "#"} Как мы делали &laquo;Книгу вслух&raquo;
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            %p.b-programm__text
-              Юрий Подорожный
-            %p.b-programm__theme
-              %a.b-programm__theme-link{:href => "#"} Как мы делали &laquo;Книгу вслух&raquo;
-            .b-programm__desc.js-b-programm__desc
-              .b-programm__desc-time
-                %span.b-programm__desc-watch 10:00-10:20
-                Главный зал
-              .b-programm__desc-person
-                .b-programm__desc-person-info-inner.clearfix
-                  %img.b-programm__desc-photo{:alt => "Юрий Подорожный (Как мы делали &laquo;Книгу вслух&raquo;)", :src => "blocks/b-reporters/reporter_2.png"}/
-                  .b-programm__desc-person-info
-                    %h2.b-programm__desc-name
-                      Юрий Подорожный
-                    %p.b-programm__desc-theme
-                      %a.b-programm__desc-theme-link{:href => "index.html"} Как мы делали &laquo;Книгу вслух&raquo;
-                %p.b-programm__desc-text
-                  На примере отлаженной работы нашего продакшна я покажу,
-                  как можно объединить интересы девелоперов, маркетологов
-                  и сейлзов, учесть интересы потребителя, чтобы на выходе
-                  получить качественный и коммерчески успешный продукт.
-                  в последнюю минуту.
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            %p.b-programm__text
-              Юрий Подорожный
-            %p.b-programm__theme
-              %a.b-programm__theme-link{:href => "#"} Как мы делали &laquo;Книгу вслух&raquo;
-            .b-programm__desc.js-b-programm__desc
-              .b-programm__desc-time
-                %span.b-programm__desc-watch 10:00-10:20
-                Главный зал
-              .b-programm__desc-person
-                .b-programm__desc-person-info-inner.clearfix
-                  %img.b-programm__desc-photo{:alt => "Юрий Подорожный (Как мы делали &laquo;Книгу вслух&raquo;)", :src => "blocks/b-reporters/reporter_2.png"}/
-                  .b-programm__desc-person-info
-                    %h2.b-programm__desc-name
-                      Юрий Подорожный
-                    %p.b-programm__desc-theme
-                      %a.b-programm__desc-theme-link{:href => "index.html"} Как мы делали &laquo;Книгу вслух&raquo;
-                %p.b-programm__desc-text
-                  На примере отлаженной работы нашего продакшна я покажу,
-                  как можно объединить интересы девелоперов, маркетологов
-                  и сейлзов, учесть интересы потребителя, чтобы на выходе
-                  получить качественный и коммерчески успешный продукт.
-                  в последнюю минуту.
-      %tr.b-programm__row
-        %td.b-programm__column
-          10:00-10:20
-        %td.b-programm__column
-          %p.b-programm__text
-            Юрий Подорожный
-          %p.b-programm__theme
-            %a.b-programm__theme-link{:href => "#"} Как мы делали &laquo;Книгу вслух&raquo;
-        %td.b-programm__column
-          %p.b-programm__text
-            Юрий Подорожный
-          %p.b-programm__theme
-            %a.b-programm__theme-link{:href => "#"} Как мы делали &laquo;Книгу вслух&raquo;
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            %p.b-programm__text
-              Юрий Подорожный
-            %p.b-programm__theme
-              %a.b-programm__theme-link{:href => "#"} Как мы делали &laquo;Книгу вслух&raquo;
-            .b-programm__desc.js-b-programm__desc
-              .b-programm__desc-time
-                %span.b-programm__desc-watch 10:00-10:20
-                Главный зал
-              .b-programm__desc-person
-                .b-programm__desc-person-info-inner.clearfix
-                  %img.b-programm__desc-photo{:alt => "Юрий Подорожный (Как мы делали &laquo;Книгу вслух&raquo;)", :src => "blocks/b-reporters/reporter_2.png"}/
-                  .b-programm__desc-person-info
-                    %h2.b-programm__desc-name
-                      Юрий Подорожный
-                    %p.b-programm__desc-theme
-                      %a.b-programm__desc-theme-link{:href => "index.html"} Как мы делали &laquo;Книгу вслух&raquo;
-                %p.b-programm__desc-text
-                  На примере отлаженной работы нашего продакшна я покажу,
-                  как можно объединить интересы девелоперов, маркетологов
-                  и сейлзов, учесть интересы потребителя, чтобы на выходе
-                  получить качественный и коммерчески успешный продукт.
-                  в последнюю минуту.
-      
-
-      %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
-          10:00-10:20
-        %td.b-programm__column
-          %p.b-programm__text
-            Максим Трескин
-          %p.b-programm__theme
-            %a.b-programm__theme-link{:href => "#"} Erlyvideo. Why Erly?
-        %td.b-programm__column{:colspan => "2"}
-          %p.b-programm__text
-            Никита Филиппов
-          %p.b-programm__theme
-            %a.b-programm__theme-link{:href => "#"} Product Owner - самая бессмысленная роль, или как команды совместно создают проекты
-      
-      %tr.b-programm__row
-        %td.b-programm__column
-          10:00-10:20
+          =render :partial => "home/startup/treskin"
         %td.b-programm__column{:colspan => "3"}
-          %p.b-programm__text
+          =render :partial => "home/cross_section/filippov"
+      %tr.b-programm__row
+        %td.b-programm__column
+          13:00-14:00
+        %td.b-programm__column{:colspan => "3"}
+          %p.b-programm__column-title
             Обед
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          10:00-10:20
+          13:40-14:20
         %td.b-programm__column{:colspan => "3"}
-          %p.b-programm__text
+          %p.b-programm__column-title
             Конкурсы
+      %tr.b-programm__row
+        %td.b-programm__column
+          14:20-15:00
+        %td.b-programm__column{:colspan => "3"}
+          =render :partial => "home/cross_section/sirotkin"
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column
+          15:05
+        %td.b-programm__column{:rowspan => "2"}
+          =render :partial => "home/startup/volkov"
+        %td.b-programm__column{:rowspan => "2"}
+          =render :partial => "home/product/kudymov"
+        %td.b-programm__column
+          =render :partial => "home/factory/koss"
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column
+          15:50
+        %td.b-programm__column
+          =render :partial => "home/factory/yazovskiy"
       
       %tr.b-programm__row
         %td.b-programm__column
-          10:00-10:20
+          16:00
         %td.b-programm__column
-          %p.b-programm__text
-            Яков Сироткин
-          %p.b-programm__theme
-            %a.b-programm__theme-link{:href => "#"} Автобус не придет
+          =render :partial => "home/startup/filippov"
         %td.b-programm__column
+          ?
         %td.b-programm__column
+          =render :partial => "home/factory/tarasenko"
+      
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column
+          16:20-16:40
+        %td.b-programm__column{:colspan => "3"}
+          %p.b-programm__column-title
+            Полдник, конкурсы
+      %tr.b-programm__row
+        %td.b-programm__column
+          16:40
+        %td.b-programm__column
+          ?
+        %td.b-programm__column
+          =render :partial => "home/product/gurtovenko"
+        %td.b-programm__column
+          =render :partial => "home/factory/nepomnyashikh"
+      
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column
+          17:20
+        %td.b-programm__column{:rowspan => "2"}
+          =render :partial => "home/startup/volkov-pavlova"
+        %td.b-programm__column
+          =render :partial => "home/product/chistyakov"
+        %td.b-programm__column
+          =render :partial => "home/factory/byndy"
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column
+          18:40
+        %td.b-programm__column{:colspan => "3"}
+      
+      %tr.b-programm__row
+        %td.b-programm__column
+          18:50-19:00
+        %td.b-programm__column{:colspan => "3"}
+          Закрытие
