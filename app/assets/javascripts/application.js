@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.tools.min
+//= require bootstrap.min
 //= require payments
 //= require modernizr-2.6.1.min.js
 //= require scrollspy
