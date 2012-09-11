@@ -19,7 +19,7 @@
 //= require scrollspy
 //= require carousel
 //= require blocks/b-programm/b-programm
-//= require blocks/b-head/scrollspy-run
+
 //= require blocks/b-tikets/slider_run
 //= require blocks/b-reporters/carousel-run
 //= require blocks/b-members/b-members-carousel-run
