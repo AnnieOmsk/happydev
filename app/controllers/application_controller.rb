@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  layout 'design_2.0'
   protect_from_forgery
 
   private

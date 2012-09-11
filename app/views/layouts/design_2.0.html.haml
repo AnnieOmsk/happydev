@@ -53,7 +53,8 @@
         <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to
         better experience this site.</p>
       = render :partial => 'layouts/header'
-      = yield
+      .b-main{:role => "main"}
+        = yield
        
     /
       Javascripts

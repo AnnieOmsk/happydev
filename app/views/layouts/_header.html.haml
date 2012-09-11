@@ -1,9 +1,9 @@
 %header.b-head.js-b-head{:role => "banner"}
   .b-head__inner.l-page_width_page.clearfix
+    %menu.b-head__register
+      %li.b-head__item
+        = link_to "Регистрация", new_user_registration_path, :class => 'b-head__link'
     %menu.b-head__nav
-      %li.b-head__item.b-head__item_type_register
-        %a.b-head__link{:href => new_user_registration_path }
-          Регистрация
       %li.b-head__item
         %a.b-head__link{:href => "#{APP_CONFIG['domain']}#about"}
           О конференции

@@ -1,0 +1,71 @@
+.l-page_width_page.l-page_gap-bottom_50
+  = render :partial => 'layouts/logo'
+  %section.clearfix.b-register
+    .b-register__title-inner
+      %h2.b-register__title
+        Регистрация
+    %form{:action => "#"}
+      .clearfix
+        .b-register__fields-inner
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                Имя
+              %span.b-register__inputs-inner
+                %input.b-register__input_text{:type => "text", :value => ""}/
+                %span.b-register__required *
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                Фамилия
+              %span.b-register__inputs-inner
+                %input.b-register__input_text{:type => "text", :value => ""}/
+                %span.b-register__required *
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                Пароль
+              %span.b-register__inputs-inner
+                %input.b-register__input_password{:type => "password", :value => ""}/
+                %span.b-register__required *
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                Повторите пароль
+              %span.b-register__inputs-inner
+                %input.b-register__input_password{:type => "password", :value => ""}/
+                %span.b-register__required *
+        .b-register__fields-inner.b-register__fields-inner_float_right
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                Эл. почта
+              %span.b-register__inputs-inner
+                %input.b-register__input_email{:type => "email", :value => ""}/
+                %span.b-register__required *
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                Компания
+              %span.b-register__inputs-inner
+                %input.b-register__input_text{:type => "text", :value => ""}/
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                Город
+              %span.b-register__inputs-inner
+                %input.b-register__input_text{:type => "password", :value => ""}/
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                Специализация
+              %span.b-register__inputs-inner
+                %select.b-register__select
+                  %option{:value => "0"} Дизайн
+                  %option{:value => "1"} Разработка
+                  %option{:value => "2"} Управление
+      %p.b-register__text.l-page_align_center
+        Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласие с тем, что «Личные данные» будут использованы для изготовления бейджа.
+      %p.l-page_align_center
+        %input.b-register__input_submit{:type => "submit", :value => "Зарегистрироваться"}/
+= render :partial => 'layouts/footer'
