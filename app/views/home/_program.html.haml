@@ -1,4 +1,4 @@
-%section#programm.b-programm.l-page_gap-top_75
+%section#programm.b-programm.l-page_gap-top_25
   .l-page_align_center.b-programm__line
     .b-programm__title-inner
       %h2.b-programm__title
@@ -21,23 +21,67 @@
             Открытие конференции
       
 
-      %tr.b-programm__row
+      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           10:25
         // Юрий Подорожный ======================================================
         %td.b-programm__column{:rowspan => 2}
           .b-programm__content.js-b-programm__content
-            = render :partial => 'home/startup/podorozhny'
+            %p.b-programm__text
+              Юрий Подорожный
+            %p.b-programm__theme
+              %a.b-programm__theme-link{:href => "#"} Как мы делали &laquo;Книгу вслух&raquo;
+            .b-programm__desc.js-b-programm__desc
+              .b-programm__desc-time
+                %span.b-programm__desc-watch 10:00-10:20
+                Главный зал
+              .b-programm__desc-person
+                .b-programm__desc-person-info-inner.clearfix
+                  %img.b-programm__desc-photo{:alt => "Юрий Подорожный (Как мы делали &laquo;Книгу вслух&raquo;)", :src => "blocks/b-reporters/reporter_2.png"}/
+                  .b-programm__desc-person-info
+                    %h2.b-programm__desc-name
+                      Юрий Подорожный
+                    %p.b-programm__desc-theme
+                      %a.b-programm__desc-theme-link{:href => "index.html"} Как мы делали &laquo;Книгу вслух&raquo;
+                %p.b-programm__desc-text
+                  На примере отлаженной работы нашего продакшна я покажу,
+                  как можно объединить интересы девелоперов, маркетологов
+                  и сейлзов, учесть интересы потребителя, чтобы на выходе
+                  получить качественный и коммерчески успешный продукт.
+                  в последнюю минуту.
         // Ольга Павлова ======================================================              
         %td.b-programm__column{:rowspan => 2}
           .b-programm__content.js-b-programm__content
-            = render :partial => 'home/product/pavlova'
+            %p.b-programm__text
+              Ольга Павлова
+            %p.b-programm__theme
+              %a.b-programm__theme-link{:href => "#"} Как мы делали &laquo;Книгу вслух&raquo;
+            .b-programm__desc.js-b-programm__desc
+              .b-programm__desc-time
+                %span.b-programm__desc-watch 10:25-11:10
+                Главный зал
+              .b-programm__desc-person
+                .b-programm__desc-person-info-inner.clearfix
+                  %img.b-programm__desc-photo{:alt => "Юрий Подорожный (Как мы делали &laquo;Книгу вслух&raquo;)!!!!!!!!!!!!!!", :src => "blocks/b-reporters/reporter_3.png"}/
+                  .b-programm__desc-person-info
+                    %h2.b-programm__desc-name
+                      Ольга Павлова
+                    %p.b-programm__desc-theme
+                      %a.b-programm__desc-theme-link{:href => "#"} Product Owner - самая бессмысленная роль, или как команды совместно создают проекты!!!!!!!!!!
+                %p.b-programm__desc-text
+                  На примере отлаженной работы нашего продакшна я покажу,
+                  как можно объединить интересы девелоперов, маркетологов
+                  и сейлзов, учесть интересы потребителя, чтобы на выходе
+                  получить качественный и коммерчески успешный продукт.
+                  в последнюю минуту.!!!!!!!!
         // Данил Снитко ======================================================
         %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            = render :partial => 'home/product/pavlova'
-          
-      %tr.b-programm__row
+          %p.b-programm__text
+            Данил Снитко
+          %p.b-programm__theme
+            %a.b-programm__theme-link{:href => "#"} !!!!!!!!!!!!
+
+      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           11:20
         // Рамиль Шайхутдинов ======================================================
@@ -143,7 +187,7 @@
                   и сейлзов, учесть интересы потребителя, чтобы на выходе
                   получить качественный и коммерчески успешный продукт.
                   в последнюю минуту.
-      %tr.b-programm__row.b-programm__row_state_filled
+      %tr.b-programm__row
         %td.b-programm__column
           10:00-10:20
         %td.b-programm__column
@@ -182,7 +226,7 @@
                   в последнюю минуту.
       
 
-      %tr.b-programm__row
+      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           10:00-10:20
         %td.b-programm__column
