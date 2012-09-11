@@ -53,5 +53,12 @@
         VK.Widgets.Like("vk_like", {type: "mini", height: 20});
 
   .b-foot__powered-by
-    %a{:href => 'http://a2design.ru', :target => '_blank'}
-      = image_tag 'blocks/b-foot/a2design-copy.png', :alt => 'a2design'
+    -# %a{:href => 'http://a2design.ru', :target => '_blank'}
+    -#   = image_tag 'blocks/b-foot/a2design-copy.png', :alt => 'a2design'
+    %p.b-foot__powered-by-text
+      Красивый дизайн делают
+      %br
+      в студии
+      %a.b-foot__powered-by-link{:href => "http://a2design.ru", :target => '_blank'}
+        &laquo;А2 Дизайн&raquo;
+        %span.b-foot__powered-by-link-logo

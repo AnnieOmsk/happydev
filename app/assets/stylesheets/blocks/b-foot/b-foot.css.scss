@@ -1,4 +1,5 @@
 .b-foot {
+    padding: 0 0 10px;
     position: relative;
 }
 
@@ -26,7 +27,37 @@
 }
 
 .b-foot__powered-by {
+    padding: 0 70px 0 0;
     position: absolute;
     right: 0;
-    bottom: 15px;
+    top: 15px;
+}
+
+.b-foot__powered-by-text {
+    margin: 0;
+    font-family: "PT Sans";
+    font-size: 12px;
+    line-height: 17px;
+    color: #666;
+}
+
+.b-foot__powered-by-link {
+    color: #3362ae;
+}
+
+.b-foot__powered-by-link:hover {
+    color: #cc0000;
+}
+
+.b-foot__powered-by-link-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 30px;
+    background: url(a2design-copy.png);
+}
+
+.b-foot__powered-by-link:hover .b-foot__powered-by-link-logo {
+    background-position: 0 -30px;
 }
