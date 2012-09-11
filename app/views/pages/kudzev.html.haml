@@ -3,43 +3,50 @@
   .b-speaker
     %h1.b-speaker__theme-title.l-page_align_center
       Темная сторона продуктовой разработки
-    .b-speaker__time.l-page_align_center
-      %span.b-speaker__watch
+    .b-time.l-page_align_center
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
         10:25 - 10:45
-      Главный зал
-    %p.b-speaker__theme-about.l-page_align_center
-      Доклад об особенностях продуктовой разработки, скрытых от внешнего наблюдателя. <br/>Автор на собственном опыте работы в компании 2ГИС расскажет о работе<br/>
-      с внутренним заказчиком и об управлении продуктом и командой.
+      %span.b-time__text
+        Главный зал
+    -#%p.b-speaker__theme-about.l-page_align_center
+    -#  Доклад об особенностях продуктовой разработки, скрытых от внешнего наблюдателя. <br/>Автор на собственном опыте работы в компании 2ГИС расскажет о работе<br/>
+    -#  с внутренним заказчиком и об управлении продуктом и командой.
     .b-speaker__report-info.clearfix
       .b-speaker__left.l-page_float_left
         .b-speaker__photo
-          %img.b-speaker__img{:src => 'assets/blocks/b-speaker/photo-small.jpg', :alt => ''}
+          %img.b-speaker__img{:src => 'assets/speakers/kudzev.jpg', :alt => ''}
         %h2.b-speaker__title.b-speaker__title_type_normal
           Кудзев Артём
-        %ul.b-speaker__list.b-speaker__list_type_gray.l-page_width_230
+        %p.b-speaker__text.b-speaker__text_type_gray
+          %a.b-reporters__person-company-link{:href => '#'}> 2ГИС
+          , Новосибирск.
+        .b-speaker__text
+          %a.b-speaker__link{:href => 'http://kudzev.ru'}
+            http://kudzev.ru
+        %ul.b-speaker__likes.clearfix
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/kudzev'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_vk{:href => 'http://vk.com/kudzev'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_fb{:href => 'http://facebook.com/kudzev'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_hh{:href => '#'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_flamp{:href => 'http://user.flamp.ru/reviews/2879'}
+      .b-speaker__right.l-page_float_right
+        %h2.b-speaker__title
+          О докладчике
+        %ul.b-speaker__list
           %li.b-speaker__list-item
-            Заместитель директора департамента
-            R&D 2ГИС;
+            Заместитель директора департамента R&D 2ГИС;
           %li.b-speaker__list-item
             Программный директор конференции
             CodeFest;
           %li.b-speaker__list-item
             Организатор открытых встреч
             для разработчиков DevDay.
-      .b-speaker__right.l-page_float_right
-        %h2.b-speaker__title
-          О докладчике
-        %p.b-speaker__text
-          О них я и расскажу:
-        %ul.b-speaker__list
-          %li.b-speaker__list-item
-            Product team VS feature team VS &laquo;dev на 50% времени и frontend на 20%, test на 100%&raquo;.
-          %li.b-speaker__list-item
-            &laquo;Продакт все знает он нам напишет подробное ТЗ&raquo; VS прототипы и сплит-тестирование.
-          %li.b-speaker__list-item
-            Старожилы VS живчики.
-          %li.b-speaker__list-item
-            &laquo;Сначала сделаем, потом подумаем как зарабатывать&raquo;.
         %h2.b-speaker__title
           Описание
         %p.b-speaker__text
