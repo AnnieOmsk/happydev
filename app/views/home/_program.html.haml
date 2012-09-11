@@ -154,15 +154,18 @@
           .b-programm__content.js-b-programm__content
             =render :partial => "home/startup/volkov-pavlova"
         %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            =render :partial => "home/product/chistyakov"
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             =render :partial => "home/factory/byndy"
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           18:40
-        %td.b-programm__column{:colspan => "3"}
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
+            =render :partial => "home/product/chistyakov"
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
+            =render :partial => "home/factory/bush"
       
       %tr.b-programm__row
         %td.b-programm__column
