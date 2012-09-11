@@ -1,0 +1,103 @@
+.b-speaker__theme-title {
+    color: #333;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.b-speaker__watch {
+    margin: 0 30px 0 0;
+    display: inline-block;
+    padding: 0 0 0 30px;
+    background: url(time.png) no-repeat;
+}
+
+.b-speaker__theme-about {
+    color: #3f495f;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.b-speaker__report-info {
+    margin: 60px 0 0;
+}
+
+.b-speaker__left {
+    width: 280px;
+}
+
+.b-speaker__img {
+    max-width: 140px;
+}
+
+.b-speaker__title {
+    color: #000;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.b-speaker__title_type_normal {
+    text-transform: none;
+}
+
+.b-speaker__right {
+    width: 645px;
+}
+
+.b-speaker__right .b-speaker__title:first-child {
+    margin-top: 0;
+}
+
+.b-speaker__right .b-speaker__title {
+    margin-top: 40px;
+}
+
+.b-speaker__list {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #3f495f;
+    font-family: Arial, sans-serif;
+}
+
+.b-speaker__list-item {
+    margin: 0 0 10px;
+    padding: 0 0 0 20px;
+    list-style: none;
+    background: url(line.png) 0 8px no-repeat;
+}
+
+.b-speaker__list_type_gray .b-speaker__list-item {
+    background-image: url(line-gray.png);
+    background-position: 0 7px;
+    color: #666;
+}
+
+.b-speaker__list_type_gray {
+    color: #666;
+    font-size: 12px;
+}
+
+.b-speaker__text {
+    color: #3f495f;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.b-speaker__text_type_gray {
+    color: #666;
+}
+
+.b-speaker__invite {
+    padding: 15px;
+    background: #fff;
+}
+
+.b-speaker__invite-title {
+    margin: 3px 40px 0 0;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #000;
+}
