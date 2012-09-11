@@ -40,15 +40,10 @@
     position: relative;
     padding: 10px;
     color: #000;
-    border-bottom: 1px solid #f1f1f3;
 }
 
-.b-programm__body .b-programm__row:nth-child(2n+1) .b-programm__column {
+.b-programm__body .b-programm__row_state_filled .b-programm__column {
     background: #fbfbfb;
-}
-
-.b-programm__body .b-programm__row:hover .b-programm__column {
-    background: #fff;
 }
 
 .b-programm__text,
