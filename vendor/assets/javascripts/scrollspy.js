@@ -37,7 +37,7 @@
             || '') + ' .b-head__link'
         this.$body = $('body')
         this.refresh()
-        this.process()
+//        this.process()
     }
 
     ScrollSpy.prototype = {
