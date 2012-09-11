@@ -88,6 +88,7 @@ GEM
       activesupport (~> 3.0)
       haml (~> 3.0)
       railties (~> 3.0)
+    high_voltage (1.2.0)
     highline (1.6.13)
     hike (1.2.1)
     hominid (3.0.5)
@@ -210,6 +211,7 @@ DEPENDENCIES
   devise (~> 2.1.2)
   gon
   haml-rails (~> 0.3.4)
+  high_voltage
   hominid (~> 3.0.5)
   hpricot
   jquery-rails (~> 2.1.1)

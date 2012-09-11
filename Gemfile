@@ -16,6 +16,7 @@ gem 'russian',                    '~> 0.6.0'
 gem 'activemerchant', :require => 'active_merchant'
 gem 'gon'
 gem 'airbrake'
+gem 'high_voltage'
 
 gem 'rdiscount'
 gem 'hpricot'

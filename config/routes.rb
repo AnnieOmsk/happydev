@@ -22,6 +22,7 @@ Happydev::Application.routes.draw do
   match '/pay' => 'home#payment'
 
   match '/invoices/new' => 'invoices#new', :as => :pay
+  match '/speakers/:id(.:format)', :to => 'high_voltage/pages#show'
 
   scope 'payment' do
     match 'result'    => 'payments#result',    :as => :payment_result # to handle Robokassa push request
