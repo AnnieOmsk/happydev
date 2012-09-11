@@ -14,6 +14,8 @@
               %span.b-register__inputs-inner
                 = f.text_field :first_name, :class => "b-register__input_text"
                 %span.b-register__required *
+              %i.b-register__error
+                Необходимо ввести имя
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
@@ -21,6 +23,8 @@
               %span.b-register__inputs-inner
                 = f.text_field :last_name, :class => "b-register__input_text"
                 %span.b-register__required *
+              %i.b-register__error
+                Необходимо ввести фамилию
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
@@ -28,6 +32,8 @@
               %span.b-register__inputs-inner
                 = f.password_field :password, :class => "b-register__input_password"
                 %span.b-register__required *
+              %i.b-register__error
+                Ну хоть что-нибудь введите!
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
