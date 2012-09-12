@@ -34,7 +34,7 @@ $(function() {
         var elem = $(this);
 
         setTimeout(function() {
-            elem.addClass('selected').find(descObj).slideDown(200).delay(500)
+            elem.addClass('selected').find(descObj).slideDown(50)
         }, 0);
     }, descLink.unSelected
     )
