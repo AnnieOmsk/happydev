@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 .l-page_width_page.l-page_gap-bottom_50
   = render :partial => 'layouts/logo'
   %section.clearfix.b-register
@@ -15,7 +17,7 @@
                 = f.text_field :first_name, :class => "b-register__input_text"
                 %span.b-register__required *
               %i.b-register__error
-                Необходимо ввести имя
+                = error_messages_for :first_name, resource
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
@@ -24,7 +26,7 @@
                 = f.text_field :last_name, :class => "b-register__input_text"
                 %span.b-register__required *
               %i.b-register__error
-                Необходимо ввести фамилию
+                = error_messages_for :last_name, resource
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
@@ -33,7 +35,7 @@
                 = f.password_field :password, :class => "b-register__input_password"
                 %span.b-register__required *
               %i.b-register__error
-                Ну хоть что-нибудь введите!
+                = error_messages_for :password, resource
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
@@ -41,6 +43,8 @@
               %span.b-register__inputs-inner
                 = f.password_field :password_confirmation, :class => "b-register__input_password"
                 %span.b-register__required *
+              %i.b-register__error
+                = error_messages_for :password_confirmation, resource
         .b-register__fields-inner.b-register__fields-inner_float_right
           .b-register__fields
             %label.b-register__label
@@ -49,6 +53,8 @@
               %span.b-register__inputs-inner.b-register__inputs-inner_state_errors
                 = f.email_field :email, :class => "b-register__input_email"
                 %span.b-register__required *
+              %i.b-register__error
+                = error_messages_for :email, resource
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text

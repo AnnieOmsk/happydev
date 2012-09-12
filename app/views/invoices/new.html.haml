@@ -1,3 +1,46 @@
-%legend== Оплата участия на HappyDev
+.l-page_width_page.l-page_gap-bottom_50
+  = render :partial => 'layouts/logo'
+  %section.clearfix.b-register
+    .b-register__title-inner
+      %h2.b-register__title
+        Оплата участия на HappyDev
+    = simple_form_for(@invoice, :url => invoice_path(@invoice)) do |f|
+      .clearfix
+        .b-register__fields-inner
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label 'Я оплачиваю:'
+              %span.b-register__inputs-inner
+                -#= f.check_box :event_ids, {}, {}, @events.collect{ |e| [e.name, e.id] }
+                = f.association :events, :collection => @events.collect{|e| [e.full_name, e.id]}, :as => :check_boxes, :label => false
 
-= render :partial => "form"
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label "У меня есть промокод:"
+              %span.b-register__inputs-inner
+                = f.text_field :promocode, :class => "b-register__input_text"
+                -#= f.text_field :company, :class => "b-register__input_text"
+
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = "С условиями <a href='/oferta' target='blank'>Публичной оферты</a> ознакомлен и согласен".html_safe
+              %span.b-register__inputs-inner
+                = f.check_box :oferta
+
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label "Общая стоимость"
+              %span.b-register__inputs-inner
+                %strong
+                  %span#amount 0
+                  руб
+
+      %p.l-page_align_center
+        %input.b-register__input_submit{:type => "submit", :value => "Оплатить"}/
+
+-#= render :partial => "form"
+= render :partial => 'layouts/footer'
