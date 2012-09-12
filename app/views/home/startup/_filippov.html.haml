@@ -4,8 +4,12 @@
   %a.b-programm__theme-link{:href => "#"} Product Owner - самая бессмысленная роль: или как команды совместно создают проекты
 .b-programm__desc.js-b-programm__desc
   .b-programm__desc-time
-    %span.b-programm__desc-watch 16:00-16:20
-    Зеленый зал
+    .b-time
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        16:00 - 16:20
+      %span.b-time__text
+        Зеленый зал
   .b-programm__desc-person
     .b-programm__desc-person-info-inner.clearfix
       = image_tag 'speakers/filippov.jpg', :class => 'b-programm__desc-photo', :alt => "Никита Филиппов"

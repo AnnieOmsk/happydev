@@ -4,8 +4,12 @@
   %a.b-programm__theme-link{:href => "#"} Erlyvideo. Why Erly?&raquo;
 .b-programm__desc.js-b-programm__desc
   .b-programm__desc-time
-    %span.b-programm__desc-watch 12:20-13:10
-    Зеленый зал
+    .b-time
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        12:20 - 13:10
+      %span.b-time__text
+        Зеленый зал
   .b-programm__desc-person
     .b-programm__desc-person-info-inner.clearfix
       = image_tag 'speakers/treskin.jpg', :class => 'b-programm__desc-photo', :alt => "Максим Трескин Erlyvideo. Why Erly?"

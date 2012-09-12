@@ -4,8 +4,12 @@
   %a.b-programm__theme-link{:href => "/speakers/shapiro"} Инкрементальный дизайн в потоковой разработке. Метод прогрессивного джипега
 .b-programm__desc.js-b-programm__desc
   .b-programm__desc-time
-    %span.b-programm__desc-watch 11:20-11:40
-    ________ зал
+    .b-time
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        11:20 - 11:40
+      %span.b-time__text
+        ____ зал
   .b-programm__desc-person
     .b-programm__desc-person-info-inner.clearfix
       = image_tag 'speakers/shapiro_150px.jpg', :class => 'b-programm__desc-photo', :alt => "Андрей Шапиро"
