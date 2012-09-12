@@ -66,9 +66,38 @@
               структуре выступления просто покорило меня. Успеха вам!
               Уверен, у вас все получится отлично!
     .b-twitter
-      %h2.b-twitter__title
-        \#HappyDev
-      = image_tag "blocks/b-twitter/twitter.png", :class => 'b-twitter__image', :alt => "#HappyDev"
+      %script{:src => 'http://widgets.twimg.com/j/2/widget.js'}
+      %script(type="text/javascript")
+        new TWTR.Widget({
+        version: 2,
+        type: 'profile',
+        interval: 6000,
+        title: '#HappyDev',
+        width: 220,
+        height: 320,
+        theme: {
+        shell: {
+        background: '#f1f1f3',
+        color: '#4A5257'
+        },
+        tweets: {
+        background: '#fff',
+        color: '#1c1c1c',
+        links: '#3a6fcd'
+        }
+        },
+        features: {
+        scrollbar: false,
+        loop: true,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: true,
+        toptweets: true,
+        behavior: 'default'
+        }
+        }).render().setUser('@_HappyDev').start();
+
   = render :partial => 'tickets'
   = render :partial => 'program'
   = render :partial => 'place'
