@@ -29,11 +29,40 @@ $(function() {
     }
 
 
-//    descLink.hover(function() {
-//        var elem = $(this);
+    descLink.hover(function() {
+
+        var elem = $(this);
+
+        setTimeout(function() {
+            elem.addClass('selected').find(descObj).slideDown(200).delay(500)
+        }, 0);
+    }, descLink.unSelected
+    )
+
+//    descLink.showing = function() {
 //        setTimeout(function() {
-//            elem.addClass('selected').find(descObj).slideDown(200)
+//            descLink.addClass('selected').find(descObj).slideDown(50)
 //        }, 1000);
-//    }, descLink.unSelected)
+//    }
+//
+//    descLink.mouseenter(function() {
+//
+//        var timer;
+//
+//        var elem = $(this);
+//
+//        if(timer) {
+//            clearTimeout(timer);
+//            timer = null;
+//        }
+//
+//        timer = setTimeout(function() {
+//            elem.addClass('selected').find(descObj).slideDown(50);
+//        }, 0)
+//    });
+//
+//    descLink.mouseleave(function() {
+//        descLink.unSelected();
+//    });
 
 });

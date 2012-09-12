@@ -28,6 +28,16 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'als_rublregular';
+    src: url(font-path('rouble-webfont.eot')),
+         url(font-path('rouble-webfont.eot') + "?#iefix") format('embedded-opentype'),
+         url(font-path('rouble-webfont.woff')) format('woff'),
+         url(font-path('rouble-webfont.ttf'))  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .b-page {
     font-family: 'pf_din_text_cond_proregular';
     background: #f1f1f3;
