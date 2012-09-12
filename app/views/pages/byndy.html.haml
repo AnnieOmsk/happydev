@@ -1,0 +1,92 @@
+.l-page_width_page
+  = render :partial => 'layouts/logo'
+  .b-speaker
+    %h1.b-speaker__theme-title.l-page_align_center
+      Шаги на пути к созданию IT-компании
+    .b-time.l-page_align_center
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        17:20 - 18:40
+      %span.b-time__text
+        Главный зал
+    %p.b-speaker__theme-about.l-page_align_center
+      Доклад о поисках идеальной компании, о проблемах на этом пути и об опыте создания своей компании мечты
+    .b-speaker__report-info.clearfix
+      .b-speaker__left.l-page_float_left
+        .b-speaker__photo
+          = image_tag 'speakers/byndyu.jpg', :class => 'b-speaker__img', :alt => "Александр Бындю"
+        %h2.b-speaker__title.b-speaker__title_type_normal
+          Александр Бындю
+        %p.b-speaker__text.b-speaker__text_type_gray
+          %a.b-reporters__person-company-link{:href => 'http://soft.byndyu.ru/', :target => '_blank'} Byndyusoft
+          , Челябинск
+        .b-speaker__text
+          %a.b-speaker__link{:href => 'http://www.byndyu.ru/', :target => '_blank'}
+            http://www.byndyu.ru/
+        %ul.b-speaker__likes.clearfix
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/#!/alexanderbyndyu', :target => '_blank'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_vk{:href => 'http://vk.com/byndyu', :target => '_blank'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_fb{:href => 'http://www.facebook.com/alexander.byndyu', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_hh{:href => '#', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_flamp{:href => '#', :target => '_blank'}
+      .b-speaker__right.l-page_float_right
+        %h2.b-speaker__title
+          О докладчике
+        %p.b-speaker__text
+          Основатель компании ByndyuSoft 
+        %p.b-speaker__text
+          Специализируется на управлении IT проектами и проведении тренингов для программистов и менеджеров
+        %p.b-speaker__text
+          Консультирует IT-компании по вопросам архитектуры проекта или организации работы команды разработчиков, проводит тренинги по TDD
+        %p.b-speaker__text
+          Постоянный участник инженерного трека на AgileCamp от компании ScrumTrek
+        %p.b-speaker__text
+          Академия АйТи, Внештатный сотрудник
+        %p.b-speaker__text
+          Проведение курсов:
+          
+        %ul.b-speaker__list
+          %li.b-speaker__list-item
+            10266A: Programming in C# with Visual Studio 2010
+          %li.b-speaker__list-item
+            6461A: Visual Studio 2008- Windows Communication Foundation
+          %li.b-speaker__list-item
+            6462AK: Visual Studio 2008 Windows Workflow Foundation
+        %h2.b-speaker__title
+          Описание
+        %p.b-speaker__text
+          Докладчик расскажет об опыте работе в найме, нескольких лет консультирования IT-компаний, 
+          а также ответит на следующие вопросы, исходя из своего опыта:
+        %ul.b-speaker__list
+          %li.b-speaker__list-item
+            Откуда пришла идея создания собственного бизнеса и с какими трудностями столкнулась молодая компания?
+          %li.b-speaker__list-item
+            Как лучше устроить компанию, чтобы обеспечить быстрый рост?
+          %li.b-speaker__list-item
+            Как найти людей в компанию, которой всего несколько месяцев?
+          %li.b-speaker__list-item
+            Зачем ставить в основание ценности Agile?
+        .b-speaker__invite.clearfix
+          %span.b-speaker__invite-title.l-page_float_left
+            Пригласите друзей
+          .b-speaker__invite-likes.l-page_float_left
+            = image_tag 'blocks/b-speaker/likes-invite.png'
+        %h2.b-speaker__title
+          Презентация
+        .b-speaker__presentation
+          = image_tag 'blocks/b-speaker/present.png'
+        %h2.b-speaker__title
+          Видео доклада
+        .b-speaker__video
+          = image_tag 'blocks/b-speaker/vimeo.png'
+        %h2.b-speaker__title
+          Комментарии (84)
+        .b-speaker__presentation
+          = image_tag 'blocks/b-speaker/comments.png'
+
+  = render :partial => 'home/speakers_carousel'

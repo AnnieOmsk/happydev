@@ -1,0 +1,81 @@
+.l-page_width_page
+  = render :partial => 'layouts/logo'
+  .b-speaker
+    %h1.b-speaker__theme-title.l-page_align_center
+      The Future is Wild: Что произойдет с вашим проектом через 10 лет.
+    .b-time.l-page_align_center
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        16:40 - 17:20
+      %span.b-time__text
+        Главный зал
+    %p.b-speaker__theme-about.l-page_align_center
+      Этот доклад об архитектуре долгоживущих проектов. На примерах 
+      из своего опыта и опыта своих коллег автор расскажет о том, как 
+      изменяется архитектура проекта на протяжении десятков лет. 
+      Предполагаемые слушатели: слишком оптимистичные стартаперы,
+      разработчики и менеджеры долгоживущих проектов, аутсорсеры
+      рассчитывающие на долгие и плодотворные отношения с заказчиком.
+    .b-speaker__report-info.clearfix
+      .b-speaker__left.l-page_float_left
+        .b-speaker__photo
+          = image_tag 'speakers/gurtovenko.jpg', :class => 'b-speaker__img', :alt => "Максим Гуртовенко"
+        %h2.b-speaker__title.b-speaker__title_type_normal
+          Максим Гуртовенко
+        %p.b-speaker__text.b-speaker__text_type_gray
+          %a.b-reporters__person-company-link{:href => 'http://jarsoft.ru/', :target => '_blank'} JarSoft
+          , Новосибирск
+        -# .b-speaker__text
+        -#   %a.b-speaker__link{:href => '#', :target => '_blank'} #
+        %ul.b-speaker__likes.clearfix
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/ksarn1', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_vk{:href => '#', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_fb{:href => '#', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_hh{:href => '#', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_flamp{:href => '#', :target => '_blank'}
+      .b-speaker__right.l-page_float_right
+        %h2.b-speaker__title
+          О докладчике
+        %p.b-speaker__text
+          JarSoft, Software developer Пишет на Scala, Си++, Perl, Java и Python.
+        %p.b-speaker__text
+          Принимал участие в разработке биологических баз данных, банковского софта, 
+        %p.b-speaker__text
+          ГИС систем. Активный участник проекта OpenStreetMap.
+        %h2.b-speaker__title
+          Описание
+        %p.b-speaker__text
+          Прямая речь: "Мы все так или иначе разрабатываем софт. Некоторым из нас везет и их
+          продукт продолжает жить на протяжении десятков лет. Этот доклад об
+          архитектуре долгоживущих проектов. На примерах из своего опыта и опыта
+          своих коллег я расскажу о том как изменяется архитектура проекта на
+          протяжении десятков лет. Как небольшое решение, принятое на бегу много
+          лет назад, оборачивается крупными неприятностяим, как то, что в свое
+          время казалось неразрешимой проблемой, уходит на второй план. Мой
+          доклад поможет разработчикам научиться смотреть в будущее на годы
+          чтобы избегать проблем там, где их можно избежать, и минимизировать
+          риски там, где проблем избежать нельзя"
+        .b-speaker__invite.clearfix
+          %span.b-speaker__invite-title.l-page_float_left
+            Пригласите друзей
+          .b-speaker__invite-likes.l-page_float_left
+            = image_tag 'blocks/b-speaker/likes-invite.png'
+        %h2.b-speaker__title
+          Презентация
+        .b-speaker__presentation
+          = image_tag 'blocks/b-speaker/present.png'
+        %h2.b-speaker__title
+          Видео доклада
+        .b-speaker__video
+          = image_tag 'blocks/b-speaker/vimeo.png'
+        %h2.b-speaker__title
+          Комментарии (84)
+        .b-speaker__presentation
+          = image_tag 'blocks/b-speaker/comments.png'
+
+  = render :partial => 'home/speakers_carousel'

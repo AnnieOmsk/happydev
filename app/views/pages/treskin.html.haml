@@ -2,32 +2,31 @@
   = render :partial => 'layouts/logo'
   .b-speaker
     %h1.b-speaker__theme-title.l-page_align_center
-      Инкрементальный дизайн в потоковой разработке. Метод прогрессивного джипега
+      Erlyvideo. Why Erly?
     .b-time.l-page_align_center
       %span.b-time__icon
       %span.b-time__text.b-time__text_type_with-gap-out
-        11:20 - 11:40
+        12:20 - 13:10
       %span.b-time__text
         Главный зал
     %p.b-speaker__theme-about.l-page_align_center
-      Как укладываться в итерацию с дизайном, делая его быстро и качественно.
-      В бюро принято использоваться метод прогрессивного джипега и принцип ФФФ
-      (fix time, fix budget, flex scope). Как сделать так, чтобы они сработали на практике
+      Докладчик расскажет, почему для Erlyvideo был выбран Erlang, и почему он является
+      оптимальным выбором для создания гибкого и производительного видео-сервера
     .b-speaker__report-info.clearfix
       .b-speaker__left.l-page_float_left
         .b-speaker__photo
-          = image_tag 'speakers/shapiro.jpg', :class => 'b-speaker__img', :alt => "Андрей Шапиро"
+          = image_tag 'speakers/treskin.jpg', :class => 'b-speaker__img', :alt => "Максим Трескин"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Андрей Шапиро
+          Максим Трескин
         %p.b-speaker__text.b-speaker__text_type_gray
-          %a.b-reporters__person-company-link{:href => 'http://www.artgorbunov.ru/', :target => '_blank'} Дизайн-Бюро Артема Горбунова
-          , Челябинск
+          %a.b-reporters__person-company-link{:href => '#', :target => '_blank'} Metachord
+          , Новосибирск
         .b-speaker__text
-          %a.b-speaker__link{:href => 'http://andrew-shapiro.moikrug.ru/', :target => '_blank'}
-            http://andrew-shapiro.moikrug.ru/
+          %a.b-speaker__link{:href => 'http://maxtreskin.moikrug.ru/', :target => '_blank'}
+            http://maxtreskin.moikrug.ru/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
-            %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/xraizor', :target => '_blank'}
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/mtreskin', :target => '_blank'}
           -# %li.b-speaker__likes-item
           -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_vk{:href => '#', :target => '_blank'}
           -# %li.b-speaker__likes-item
@@ -39,17 +38,23 @@
       .b-speaker__right.l-page_float_right
         %h2.b-speaker__title
           О докладчике
+        %p.b-speaker__text
+          Metachord, Вольный каменщик
         %ul.b-speaker__list
           %li.b-speaker__list-item
-            Дизайн-бюро Артёма Горбунова, дизайнер
+            Евангелист Erlang            
           %li.b-speaker__list-item
-            Основное профессиональное занятие —  проектирование интерфейса приложений и сервисов
+            Главный тролль Ruby и Node.js на просторах Сибири
           %li.b-speaker__list-item
-            Организатор методологического кружка «Мекра» —
-            %a{:href => 'http://mekra.ru', :target => '_blank'} http://mekra.ru
+            Третий Erlang разработчик в России по мнению
+            %a{:href => 'http://roberto-aloi.com/languagesintheworld/', :target => '_blank'} http://roberto-aloi.com/languagesintheworld/
         %h2.b-speaker__title
           Описание
         %p.b-speaker__text
+          Для создания серверных приложений существует огромный выбор технологий: Java, C++, Erlang.
+          Как не потеряться и выбрать нужный инструмент, если хочется получить работающую, предсказуемую,
+          легко модифицируемую систему, способную обслуживать максимальное количество пользователей, 
+          вложив в её разработку минимум времени и денег? Ответ на этот вопрос вы получите, посетив доклад.
         .b-speaker__invite.clearfix
           %span.b-speaker__invite-title.l-page_float_left
             Пригласите друзей
