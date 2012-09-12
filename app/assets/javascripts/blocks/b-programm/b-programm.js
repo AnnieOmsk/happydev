@@ -28,41 +28,20 @@ $(function() {
         });
     }
 
-
     descLink.hover(function() {
 
         var elem = $(this);
 
-        setTimeout(function() {
-            elem.addClass('selected').find(descObj).slideDown(50)
-        }, 0);
-    }, descLink.unSelected
-    )
+        intervalElem = setTimeout(
 
-//    descLink.showing = function() {
-//        setTimeout(function() {
-//            descLink.addClass('selected').find(descObj).slideDown(50)
-//        }, 1000);
-//    }
-//
-//    descLink.mouseenter(function() {
-//
-//        var timer;
-//
-//        var elem = $(this);
-//
-//        if(timer) {
-//            clearTimeout(timer);
-//            timer = null;
-//        }
-//
-//        timer = setTimeout(function() {
-//            elem.addClass('selected').find(descObj).slideDown(50);
-//        }, 0)
-//    });
-//
-//    descLink.mouseleave(function() {
-//        descLink.unSelected();
-//    });
+            function() {
+                elem.addClass('selected').find(descObj).slideDown(200);
+            }, 800);
+
+        }, function() {
+            clearInterval(intervalElem);
+            descLink.unSelected();
+        }
+    )
 
 });
