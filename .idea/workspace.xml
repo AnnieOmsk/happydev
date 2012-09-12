@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/blocks/b-programm/time.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/blocks/b-speaker/photo-small.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/factory/_bush.html.haml" afterPath="$PROJECT_DIR$/app/views/home/factory/_bush.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/factory/_byndy.html.haml" afterPath="$PROJECT_DIR$/app/views/home/factory/_byndy.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/factory/_koss.html.haml" afterPath="$PROJECT_DIR$/app/views/home/factory/_koss.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/factory/_nepomnyashikh.html.haml" afterPath="$PROJECT_DIR$/app/views/home/factory/_nepomnyashikh.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/factory/_polykarpov.html.haml" afterPath="$PROJECT_DIR$/app/views/home/factory/_polykarpov.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/factory/_savilov.html.haml" afterPath="$PROJECT_DIR$/app/views/home/factory/_savilov.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/factory/_shapiro.html.haml" afterPath="$PROJECT_DIR$/app/views/home/factory/_shapiro.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/factory/_snitko.html.haml" afterPath="$PROJECT_DIR$/app/views/home/factory/_snitko.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/factory/_tarasenko.html.haml" afterPath="$PROJECT_DIR$/app/views/home/factory/_tarasenko.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/factory/_yazovskiy.html.haml" afterPath="$PROJECT_DIR$/app/views/home/factory/_yazovskiy.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/product/_gurtovenko.html.haml" afterPath="$PROJECT_DIR$/app/views/home/product/_gurtovenko.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/product/_kudymov.html.haml" afterPath="$PROJECT_DIR$/app/views/home/product/_kudymov.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/product/_kudzev.html.haml" afterPath="$PROJECT_DIR$/app/views/home/product/_kudzev.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/product/_pavlova.html.haml" afterPath="$PROJECT_DIR$/app/views/home/product/_pavlova.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/startup/_filippov.html.haml" afterPath="$PROJECT_DIR$/app/views/home/startup/_filippov.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/startup/_podorozhny.html.haml" afterPath="$PROJECT_DIR$/app/views/home/startup/_podorozhny.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/startup/_polykarpov.html.haml" afterPath="$PROJECT_DIR$/app/views/home/startup/_polykarpov.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/startup/_shayhutdinov.html.haml" afterPath="$PROJECT_DIR$/app/views/home/startup/_shayhutdinov.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/startup/_treskin.html.haml" afterPath="$PROJECT_DIR$/app/views/home/startup/_treskin.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/startup/_volkov-pavlova.html.haml" afterPath="$PROJECT_DIR$/app/views/home/startup/_volkov-pavlova.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/startup/_volkov.html.haml" afterPath="$PROJECT_DIR$/app/views/home/startup/_volkov.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/cross_section/_filippov.html.haml" afterPath="$PROJECT_DIR$/app/views/home/cross_section/_filippov.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/cross_section/_sirotkin.html.haml" afterPath="$PROJECT_DIR$/app/views/home/cross_section/_sirotkin.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -89,28 +67,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_polykarpov.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/startup/_polykarpov.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="15" selection-start="361" selection-end="361" vertical-scroll-proportion="-6.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_shayhutdinov.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/startup/_shayhutdinov.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="313" selection-end="313" vertical-scroll-proportion="-6.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_treskin.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/startup/_treskin.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.625">
+            <state line="9" column="13" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,7 +79,7 @@
       <file leaf-file-name="_volkov-pavlova.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/startup/_volkov-pavlova.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="12" selection-start="217" selection-end="217" vertical-scroll-proportion="-4.375">
+            <state line="7" column="12" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,7 +88,7 @@
       <file leaf-file-name="_volkov.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/startup/_volkov.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="15" selection-start="340" selection-end="340" vertical-scroll-proportion="-6.875">
+            <state line="11" column="15" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,7 +97,7 @@
       <file leaf-file-name="_chistyakov.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/product/_chistyakov.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="4" selection-start="260" selection-end="415" vertical-scroll-proportion="-3.75">
+            <state line="6" column="4" selection-start="260" selection-end="415" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,7 +106,7 @@
       <file leaf-file-name="_gurtovenko.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/product/_gurtovenko.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="15" selection-start="387" selection-end="387" vertical-scroll-proportion="-6.875">
+            <state line="6" column="4" selection-start="236" selection-end="391" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -155,7 +115,7 @@
       <file leaf-file-name="_kudymov.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/product/_kudymov.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="-5.0">
+            <state line="8" column="13" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,16 +124,34 @@
       <file leaf-file-name="_kudzev.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/product/_kudzev.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="12" selection-start="248" selection-end="248" vertical-scroll-proportion="-5.0">
+            <state line="8" column="12" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_pavlova.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_pavlova.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/product/_pavlova.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="248" selection-end="386" vertical-scroll-proportion="0.13011153">
+            <state line="15" column="25" selection-start="606" selection-end="606" vertical-scroll-proportion="-9.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_filippov.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/cross_section/_filippov.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="20" selection-start="335" selection-end="335" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sirotkin.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/home/cross_section/_sirotkin.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="20" selection-start="293" selection-end="293" vertical-scroll-proportion="0.16728625">
               <folding />
             </state>
           </provider>
@@ -192,8 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/home/factory/_savilov.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/home/factory/_shapiro.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/factory/_snitko.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/factory/_tarasenko.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/factory/_yazovskiy.html.haml" />
@@ -208,6 +184,8 @@
         <option value="$PROJECT_DIR$/app/views/home/product/_kudymov.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/product/_kudzev.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/product/_pavlova.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/home/cross_section/_filippov.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/home/cross_section/_sirotkin.html.haml" />
       </list>
     </option>
   </component>
@@ -244,6 +222,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -475,6 +463,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="factory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cross_section" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1039,9 +1053,6 @@
       <pane id="PackagesPane">
         <subPane />
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1049,13 +1060,13 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1097,24 +1108,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1148,6 +1141,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -1165,6 +1176,17 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -1191,17 +1213,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -1394,20 +1405,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/home/factory/_shapiro.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="351" selection-end="351" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/factory/_snitko.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="15" selection-start="246" selection-end="246" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/factory/_tarasenko.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="20" selection-start="316" selection-end="316" vertical-scroll-proportion="-5.625">
@@ -1438,70 +1435,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/startup/_polykarpov.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="15" selection-start="361" selection-end="361" vertical-scroll-proportion="-6.875">
+        <state line="11" column="15" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/startup/_shayhutdinov.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="313" selection-end="313" vertical-scroll-proportion="-6.25">
+        <state line="10" column="16" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/startup/_treskin.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.625">
+        <state line="9" column="13" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/startup/_volkov-pavlova.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="217" selection-end="217" vertical-scroll-proportion="-4.375">
+        <state line="7" column="12" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/startup/_volkov.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="15" selection-start="340" selection-end="340" vertical-scroll-proportion="-6.875">
+        <state line="11" column="15" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/product/_chistyakov.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="260" selection-end="415" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/product/_gurtovenko.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="15" selection-start="387" selection-end="387" vertical-scroll-proportion="-6.875">
+        <state line="6" column="4" selection-start="260" selection-end="415" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/product/_kudymov.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="-5.0">
+        <state line="8" column="13" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/product/_kudzev.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="12" selection-start="248" selection-end="248" vertical-scroll-proportion="-5.0">
+        <state line="8" column="12" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/product/_pavlova.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="248" selection-end="386" vertical-scroll-proportion="0.13011153">
+        <state line="15" column="25" selection-start="606" selection-end="606" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/product/_gurtovenko.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="236" selection-end="391" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/cross_section/_filippov.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="20" selection-start="335" selection-end="335" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/cross_section/_sirotkin.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="20" selection-start="293" selection-end="293" vertical-scroll-proportion="0.16728625">
           <folding />
         </state>
       </provider>
