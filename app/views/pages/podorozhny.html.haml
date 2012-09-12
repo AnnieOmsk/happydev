@@ -1,0 +1,138 @@
+.l-page_width_page
+  = render :partial => 'layouts/logo'
+  .b-speaker
+    %h1.b-speaker__theme-title.l-page_align_center
+      Как мы делали «Книгу вслух»
+    .b-time.l-page_align_center
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        10:00 - 11:10
+      %span.b-time__text
+        Главный зал
+    %p.b-speaker__theme-about.l-page_align_center
+      Рассказ о том, как создавалось приложение «Книга вслух» — магазин аудиокниг для платформы iOS,
+      имеющий 500 000 пользователей спустя год после запуска. Как авторы подходили к решению 
+      технических и интерфейсных задач, как планировали выпуск новых версий продукта, 
+      зачем несколько раз переписывали серверную часть и как набрали полмиллиона пользователей без рекламы.
+    .b-speaker__report-info.clearfix
+      .b-speaker__left.l-page_float_left
+        .b-speaker__photo
+          = image_tag 'speakers/podorozhny.jpg', :class => 'b-speaker__img', :alt => "Юрий Подорожный"
+        %h2.b-speaker__title.b-speaker__title_type_normal
+          Юрий Подорожный
+        %p.b-speaker__text.b-speaker__text_type_gray
+          %a.b-reporters__person-company-link{:href => 'http://www.anyvoid.ru/', :target => '_blank'}> Any Void
+          , Москва
+        .b-speaker__text
+          %a.b-speaker__link{:href => 'http://yurypodorozhnyy.moikrug.ru/', :target => '_blank'}
+            http://yurypodorozhnyy.moikrug.ru/
+        %ul.b-speaker__likes.clearfix
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/see_yu/', :target => '_blank'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_vk{:href => 'http://vkontakte.ru/id15564', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_fb{:href => '#', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_hh{:href => '#', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_flamp{:href => '#', :target => '_blank'}
+      .b-speaker__right.l-page_float_right
+        %h2.b-speaker__title
+          О докладчике
+        %ul.b-speaker__list
+          %li.b-speaker__list-item
+            Any Void, CEO
+          %li.b-speaker__list-item
+            Один из авторов «Книга вслух» — 300 000 пользователей через 6 месяцев после запуска,
+            стабильно входит в десятку самых кассовых приложений в категории «Книги» 
+          %li.b-speaker__list-item
+            Ведёт мастер-классы по iOS-разработке и интерфейсам для iPhone, участник Brainwashing 2012
+        %h2.b-speaker__title
+          Описание
+        %ul.b-speaker__list
+          %li.b-speaker__list-item
+            Постановка задачи и что из этого вышло. Зачем нужно делать книги для iPhone?
+          %li.b-speaker__list-item
+            Интерфейс приложения. Как уместить книгу в iPhone?
+          %li.b-speaker__list-item
+            Зоопарк технологий. Как это работает.
+          %li.b-speaker__list-item
+            Первый опыт. Почему Apple настойчиво попросили нас «прекратить спам» в App Store.
+            От отдельных приложений к магазину книг.
+          %li.b-speaker__list-item
+            Серверная часть. Какие изменения нам пришлось внести втечение первых 
+            3 месяцев жизни проекта, что было сделано правильно, а что нет.
+          %li.b-speaker__list-item
+            От iPhone к iPad. Какие изменения пришлось внести в логику приложения и интерфейс.
+          %li.b-speaker__list-item
+            Поддержка пользователей. Сбор статистики.
+          %li.b-speaker__list-item
+            Планирование новых версий продукта. Работа над ошибками.
+        .b-speaker__invite.clearfix
+          %span.b-speaker__invite-title.l-page_float_left
+            Пригласите друзей
+          .b-speaker__invite-likes.l-page_float_left
+            = image_tag 'blocks/b-speaker/likes-invite.png'
+        %h2.b-speaker__title
+          Презентация
+        .b-speaker__presentation
+          = image_tag 'blocks/b-speaker/present.png'
+        %h2.b-speaker__title
+          Видео доклада
+        .b-speaker__video
+          = image_tag 'blocks/b-speaker/vimeo.png'
+        %h2.b-speaker__title
+          Комментарии (84)
+        .b-speaker__presentation
+          = image_tag 'blocks/b-speaker/comments.png'
+
+
+  .b-reporters__persons.clearfix
+    .b-reporters__person
+      .b-reporters__person-photo
+        = image_tag "speakers/filippov.jpg", :class => "b-reporters__person-photo-img"
+      %h2.b-reporters__person-name
+        Никита Филиппов
+      %p.b-reporters__person-theme
+        %a.b-reporters__person-theme-link{:href => "#"}
+          \&laquo;Product Owner - самая бессмысленная роль, или как команды совместно создают проекты&raquo;
+      %p.b-reporters__person-company
+        %a.b-reporters__person-company-link{:href => 'http://scrumtrek.ru/', :target => '_blank'}> Scrumtrek
+        , Москва
+
+    .b-reporters__person
+      .b-reporters__person-photo
+        = image_tag "speakers/krivitsky.jpg", :class => "b-reporters__person-photo-img"
+      %h2.b-reporters__person-name
+        Алексей Кривицкий
+      %p.b-reporters__person-theme
+        %a.b-reporters__person-theme-link{:href => "#"}
+          \&laquo;Новейшая история менеджмента. От эры стагнации к периоду ренессанса&raquo;
+      %p.b-reporters__person-company
+        %a.b-reporters__person-company-link{:href => 'http://www.scrumguides.com/', :target => '_blank'}> Scrum Guides
+        , Киев
+
+    .b-reporters__person
+      .b-reporters__person-photo
+        = image_tag "speakers/volkov.jpg", :class => "b-reporters__person-photo-img"
+      %h2.b-reporters__person-name
+        Леонид Волков
+      %p.b-reporters__person-theme
+        %a.b-reporters__person-theme-link{:href => "#"}
+          \&laquo;Зачем стартапу деньги?&raquo;
+      %p.b-reporters__person-company
+        %span.speaker-position> Прожектор Венчурз
+        , Екатеринбург
+
+    .b-reporters__person
+      .b-reporters__person-photo
+        = image_tag "speakers/pavlova.jpg", :class => "b-reporters__person-photo-img"
+      %h2.b-reporters__person-name
+        Ольга Павлова
+      %p.b-reporters__person-theme
+        %a.b-reporters__person-theme-link{:href => "#"}
+          \&laquo;Технологии вовлечения заказчика в процессы визуализации интерфейсов&raquo;
+      %p.b-reporters__person-company
+        %span.speaker-position> КБ "Собака @Павлова"
+        , Питер
