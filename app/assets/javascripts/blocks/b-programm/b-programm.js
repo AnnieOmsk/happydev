@@ -28,12 +28,20 @@ $(function() {
         });
     }
 
+    descLink.hover(function() {
 
-//    descLink.hover(function() {
-//        var elem = $(this);
-//        setTimeout(function() {
-//            elem.addClass('selected').find(descObj).slideDown(200)
-//        }, 1000);
-//    }, descLink.unSelected)
+        var elem = $(this);
+
+        intervalElem = setTimeout(
+
+            function() {
+                elem.addClass('selected').find(descObj).slideDown(200);
+            }, 800);
+
+        }, function() {
+            clearInterval(intervalElem);
+            descLink.unSelected();
+        }
+    )
 
 });
