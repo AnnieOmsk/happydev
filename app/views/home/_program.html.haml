@@ -7,23 +7,26 @@
     %tbody.b-programm__body
       %tr.b-programm__row
         %td.b-programm__column
-          9:00
+          %p.b-programm__text
+            9:00
         %td.b-programm__column{:colspan => "3"}
-          %p.b-programm__column-title
+          %p.b-programm__text
             Регистрация
       
 
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          10:00
+          %p.b-programm__text
+            10:00
         %td.b-programm__column{:colspan => "3"}
-          %p.b-programm__column-title
+          %p.b-programm__text
             Открытие конференции
       
 
       %tr.b-programm__row
         %td.b-programm__column
-          10:25
+          %p.b-programm__text
+            10:25
         // Юрий Подорожный ======================================================
         %td.b-programm__column{:rowspan => 2}
           .b-programm__content.js-b-programm__content
@@ -39,7 +42,8 @@
 
       %tr.b-programm__row
         %td.b-programm__column
-          11:20
+          %p.b-programm__text
+            11:20
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             =render :partial => "home/factory/polykarpov"
@@ -47,7 +51,8 @@
 
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          11:20
+          %p.b-programm__text
+            11:20
         // Рамиль Шайхутдинов ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
@@ -60,7 +65,8 @@
             =render :partial => "home/factory/shapiro"
       %tr.b-programm__row
         %td.b-programm__column
-          11:50
+          %p.b-programm__text
+            11:50
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             =render :partial => "home/startup/polykarpov"
@@ -72,7 +78,8 @@
             =render :partial => "home/factory/savilov"
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          12:20
+          %p.b-programm__text
+            12:20
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             =render :partial => "home/startup/treskin"
@@ -81,26 +88,30 @@
             =render :partial => "home/cross_section/filippov"
       %tr.b-programm__row
         %td.b-programm__column
-          13:00-14:00
+          %p.b-programm__text
+            13:00-14:00
         %td.b-programm__column{:colspan => "3"}
-          %p.b-programm__column-title
+          %p.b-programm__text
             Обед
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          13:40-14:20
+          %p.b-programm__text
+            13:40-14:20
         %td.b-programm__column{:colspan => "3"}
-          %p.b-programm__column-title
+          %p.b-programm__text
             Конкурсы
       %tr.b-programm__row
         %td.b-programm__column
-          14:20-15:00
+          %p.b-programm__text
+            14:20-15:00
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             =render :partial => "home/cross_section/sirotkin"
         %td.b-programm__column{:colspan => "2"}
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          15:05
+          %p.b-programm__text
+            15:05
         %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
             =render :partial => "home/startup/volkov"
@@ -112,14 +123,16 @@
             =render :partial => "home/factory/koss"
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          15:50
+          %p.b-programm__text
+            15:50
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             =render :partial => "home/factory/yazovskiy"
       
       %tr.b-programm__row
         %td.b-programm__column
-          16:00
+          %p.b-programm__text
+            16:00
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             =render :partial => "home/startup/filippov"
@@ -131,13 +144,15 @@
       
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          16:20-16:40
+          %p.b-programm__text
+            16:20-16:40
         %td.b-programm__column{:colspan => "3"}
           %p.b-programm__column-title
             Полдник, конкурсы
       %tr.b-programm__row
         %td.b-programm__column
-          16:40
+          %p.b-programm__text
+            16:40
         %td.b-programm__column
           ?
         %td.b-programm__column
@@ -149,7 +164,8 @@
       
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          17:20
+          %p.b-programm__text
+            17:20
         %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
             =render :partial => "home/startup/volkov-pavlova"
@@ -159,7 +175,8 @@
             =render :partial => "home/factory/byndyu"
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
-          18:40
+          %p.b-programm__text
+            18:40
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             =render :partial => "home/product/chistyakov"
@@ -169,6 +186,8 @@
       
       %tr.b-programm__row
         %td.b-programm__column
-          18:50-19:00
+          %p.b-programm__text
+            18:50-19:00
         %td.b-programm__column{:colspan => "3"}
-          Закрытие
+          %p.b-programm__text
+            Закрытие

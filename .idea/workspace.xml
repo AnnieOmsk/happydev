@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_program.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_program.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -66,91 +67,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sirotkin.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/sirotkin.html.haml">
+      <file leaf-file-name="program.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/program.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="96" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.33333334">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="treskin.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/treskin.html.haml">
+      <file leaf-file-name="_program.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/home/_program.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="46" selection-start="2293" selection-end="2293" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.js.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-head/nav.js.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="31" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="b-programm.css.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="20" selection-start="671" selection-end="671" vertical-scroll-proportion="0.46931407">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="design_2.0.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/design_2.0.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="42" selection-start="1601" selection-end="1601" vertical-scroll-proportion="-11.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="47" selection-start="1049" selection-end="1049" vertical-scroll-proportion="-16.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="b-head.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-head/b-head.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="25" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="b-programm.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.js.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/bootstrap.js.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoice.js.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/invoice.js.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="192" column="12" selection-start="7220" selection-end="7220" vertical-scroll-proportion="0.9094203">
               <folding />
             </state>
           </provider>
@@ -169,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/pages/pavlova.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/podorozhny.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/polikarpov-factory.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/shayhutdinov.html.haml" />
@@ -185,6 +113,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-head/nav.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/_program.html.haml" />
       </list>
     </option>
   </component>
@@ -300,6 +229,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1286,20 +1255,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/pages/koss.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/kudzev.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-head/scrollspy-run.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1344,7 +1299,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-head/b-head.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="25" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
+        <state line="66" column="25" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.017878426">
           <folding />
         </state>
       </provider>
@@ -1372,14 +1327,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="47" selection-start="1049" selection-end="1049" vertical-scroll-proportion="-16.25">
+        <state line="26" column="47" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.4710145">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/design_2.0.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="42" selection-start="1601" selection-end="1601" vertical-scroll-proportion="-11.875">
+        <state line="34" column="42" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.3478261">
           <folding />
         </state>
       </provider>
@@ -1393,7 +1348,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="20" selection-start="671" selection-end="671" vertical-scroll-proportion="0.46931407">
+        <state line="41" column="20" selection-start="671" selection-end="671" vertical-scroll-proportion="0.45774648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/program.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/_program.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="12" selection-start="7220" selection-end="7220" vertical-scroll-proportion="0.9094203">
           <folding />
         </state>
       </provider>
