@@ -1,12 +1,12 @@
 jQuery ->
   overall = 0;
-  $('#new_invoice .check_boxes input').each ->
+  $('.new_invoice input.invoice_checkbox').each ->
     if gon.event_prices
       if $(this).is(':checked')
         overall += gon.event_prices[$(this).val()]
         $('#amount').html(overall)
 
-  $('#new_invoice .check_boxes input').change ->
+  $('.new_invoice input.invoice_checkbox').change ->
     if gon.event_prices
       if $(this).is(':checked')
         $('#amount').html(overall += gon.event_prices[$(this).val()])

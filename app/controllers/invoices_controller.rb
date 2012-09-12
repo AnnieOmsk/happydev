@@ -19,7 +19,7 @@ class InvoicesController < ApplicationController
   end
 
   def create
-    if params[:invoice]["event_ids"].all?{ |i| i.blank? }    # if events not selected
+    if !params[:invoice]["event_ids"] # && params[:invoice]["event_ids"].all?{ |i| i.blank? }    # if events not selected
       redirect_to new_invoice_path
     else
       @invoice = Invoice.drafting_invoice(current_user, params[:invoice], params[:promocode])

@@ -4,43 +4,45 @@
     .b-register__title-inner
       %h2.b-register__title
         Оплата участия на HappyDev
-    = simple_form_for(@invoice, :url => invoice_path(@invoice)) do |f|
+    = form_for(@invoice, :url => invoice_path(@invoice)) do |f|
       .clearfix
         .b-register__fields-inner
           .b-register__fields
-            %label.b-register__label
-              %span.b-register__label-text
+            .b-register__label
+              %span.b-register__label-text{:style => "vertical-align:top;width:140px;"}
                 = f.label 'Я оплачиваю:'
               %span.b-register__inputs-inner
-                -#= f.check_box :event_ids, {}, {}, @events.collect{ |e| [e.name, e.id] }
-                = f.association :events, :collection => @events.collect{|e| [e.full_name, e.id]}, :as => :check_boxes, :label => false
-
+                - @events.each do |event|
+                  .new_invoice{:style => "margin-bottom:4px;"}
+                    - if event.priority == 0
+                      = check_box_tag "invoice[event_ids][]", event.id, true, :disabled => true, :class => "invoice_checkbox"
+                      = hidden_field_tag "invoice[event_ids][]", event.id
+                    - else
+                      = check_box_tag "invoice[event_ids][]", event.id, false, :class => "invoice_checkbox"
+                    %span{:style => "font-size: 14px;"}= event.full_name
           .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text{:style => "width:140px;"}
+                = f.label "Общая стоимость:"
+              %span.b-register__inputs-inner
+                %strong
+                  %span#amount 0
+                  руб.
+
+        .b-register__fields-inner.b-register__fields-inner_float_right
+          .b-register__fields{:style => "margin-bottom:35px;"}
             %label.b-register__label
               %span.b-register__label-text
                 = f.label "У меня есть промокод:"
               %span.b-register__inputs-inner
-                = f.text_field :promocode, :class => "b-register__input_text"
-                -#= f.text_field :company, :class => "b-register__input_text"
-
+                = text_field_tag :promocode, nil, :class => "b-register__input_text"
           .b-register__fields
-            %label.b-register__label
-              %span.b-register__label-text
-                = "С условиями <a href='/oferta' target='blank'>Публичной оферты</a> ознакомлен и согласен".html_safe
-              %span.b-register__inputs-inner
-                = f.check_box :oferta
-
-          .b-register__fields
-            %label.b-register__label
-              %span.b-register__label-text
-                = f.label "Общая стоимость"
-              %span.b-register__inputs-inner
-                %strong
-                  %span#amount 0
-                  руб
+            %span.b-register__inputs-inner{:style => "width:20px;"}
+              = f.check_box :oferta
+            %span{:style => "font-size: 14px"}
+              = "С условиями <a href='/oferta' target='blank'>Публичной оферты</a> ознакомлен и согласен".html_safe
+            %i.b-register__error{:style => "margin-left:25px;"}
+              = error_messages_for :oferta, @invoice
 
       %p.l-page_align_center
         %input.b-register__input_submit{:type => "submit", :value => "Оплатить"}/
-
--#= render :partial => "form"
-= render :partial => 'layouts/footer'
