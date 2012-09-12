@@ -40,7 +40,11 @@
     position: relative;
     padding: 10px;
     color: #000;
-    vertical-align: middle;
+    vertical-align: top;
+}
+
+.b-programm__column-title {
+    margin: 0;
 }
 
 .b-programm__body .b-programm__row_state_filled .b-programm__column {
