@@ -148,6 +148,11 @@
     height: 20px;
 }
 
+.b-register__input_checkbox,
+.b-register__input_radio {
+    margin: 0 5px 0 0;
+}
+
 .b-register__required {
     position: absolute;
     right: 1px;
