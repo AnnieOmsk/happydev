@@ -19,10 +19,8 @@
     %meta{:property => "og:description", :content => "First big IT-conference in Omsk - Happydev"}
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "viewport"}/
-    / Place favicon.ico and apple-touch-icon.png in the root directory
-    %link{:href => "favicon.png", :rel => "shortcut icon", :type => "image/x-icon"}/
-    %link{:href => "favicon.png", :rel => "icon", :type => "image/x-icon"}/
-    -# %link{:href => "blocks/css/main.css", :rel => "stylesheet"}/
+    %link{:href => "/favicon.png", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %link{:href => "/favicon.png", :rel => "icon", :type => "image/x-icon"}/
     
     %title= content_for?(:title) ? yield(:title) : "HappyDev"
     = csrf_meta_tags
