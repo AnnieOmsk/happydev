@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_tickets.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/invoices/new.html.haml" afterPath="$PROJECT_DIR$/app/views/invoices/new.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
@@ -71,7 +71,7 @@
       <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/invoices/new.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="54" selection-start="5344" selection-end="5344" vertical-scroll-proportion="-26.458334">
+            <state line="114" column="35" selection-start="5808" selection-end="5808" vertical-scroll-proportion="-22.5">
               <folding />
             </state>
           </provider>
@@ -86,19 +86,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_tickets.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_tickets.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_tickets.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="38" selection-start="1718" selection-end="1738" vertical-scroll-proportion="-12.346939">
+            <state line="64" column="44" selection-start="2687" selection-end="2687" vertical-scroll-proportion="0.26774594">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="l-page.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="l-page.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="19" selection-start="703" selection-end="703" vertical-scroll-proportion="0.278169">
+            <state line="65" column="17" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/pages/pavlova.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/podorozhny.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/polikarpov-factory.html.haml" />
         <option value="$PROJECT_DIR$/app/views/pages/shapiro.html.haml" />
@@ -142,6 +141,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" />
         <option value="$PROJECT_DIR$/app/views/invoices/new.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
       </list>
     </option>
   </component>
@@ -1362,16 +1362,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_tickets.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="38" selection-start="1718" selection-end="1738" vertical-scroll-proportion="-12.346939">
+        <state line="91" column="27" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/invoices/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="27" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0">
+        <state line="114" column="35" selection-start="5808" selection-end="5808" vertical-scroll-proportion="-22.5">
           <folding />
         </state>
       </provider>
@@ -1383,16 +1383,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/invoices/new.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="54" selection-start="5344" selection-end="5344" vertical-scroll-proportion="-26.458334">
+        <state line="65" column="17" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/home/_tickets.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="19" selection-start="703" selection-end="703" vertical-scroll-proportion="0.278169">
+        <state line="64" column="44" selection-start="2687" selection-end="2687" vertical-scroll-proportion="0.26774594">
           <folding />
         </state>
       </provider>

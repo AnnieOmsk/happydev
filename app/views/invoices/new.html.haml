@@ -56,7 +56,6 @@
                 %span.b-register__inputs-inner
                   = select_tag "user[professional]", "<option>Дизайн</option><option>Разработка</option><option>Управление</option>".html_safe, :include_blank => true, :class => "b-register__select"
 
-    .l-page_width_page.l-page_gap-bottom_50
       %section.clearfix.b-register.b-register_style_green
         .b-register__title-inner
           %h2.b-register__title
@@ -113,9 +112,8 @@
               %a.b-link{:href => 'mailto:org@happydev.ru'}> org@happydev.ru
               \. В ответ мы выставим Вам счет. После зачисления средств на наш расчетный счет статус Вашей регистрации изменится на 'Оплачено'.
 
-    .l-page_width_page.l-page_gap-bottom_50
-      %section
-        .b-register__fields.l-page_align_center
+      %section.l-page_gap-top-out_50.l-page_align_center
+        %p
           %label.b-register__label_type_checkbox.l-page_align_left.l-page_display_inline
             = f.check_box :oferta, :class => 'b-register__input_checkbox'
             %span.b-register__label-text.b-register__label-text_width_auto.b-register__text_style_small
@@ -125,5 +123,5 @@
           %i.b-register__error
             = error_messages_for :oferta, @invoice
 
-      %p.l-page_align_center
-        %input.b-register__input_submit{:type => "submit", :value => "Зарегистрироваться"}/
+        %p.l-page_align_center
+          %input.b-register__input_submit{:type => "submit", :value => "Зарегистрироваться"}/
