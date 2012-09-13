@@ -3,19 +3,19 @@ class InvoicesController < ApplicationController
   # include HttpAuthenticable
   # before_filter :authenticate
 
-  before_filter :authenticate_user!, :except => :delete
-  before_filter :find_invoice, :only => [:new, :show, :clearing]
+  # before_filter :authenticate_user!, :except => :delete
+  before_filter :find_or_new_invoice, :only => [:new, :show, :clearing]
 
   def new
-    if @invoice
-      redirect_to invoice_path
-    else
-      @invoice = current_user.build_invoice
-      @events = Event.all
-      gon_hash = {}
-      @events.each { |e| gon_hash[e.id] = e.price }
-      gon.event_prices = gon_hash
-    end
+    # if @invoice.new_record?
+    # @invoice = current_user.build_invoice
+    @events = Event.all
+    gon_hash = {}
+    @events.each { |e| gon_hash[e.id] = e.price }
+    gon.event_prices = gon_hash
+    # else
+    #   redirect_to invoice_path
+    # end
   end
 
   def create
@@ -45,11 +45,11 @@ class InvoicesController < ApplicationController
     end
   end
 
-  def show
-    unless @invoice
-      redirect_to new_invoice_path
-    end
-  end
+  # def show
+  #   unless @invoice
+  #     redirect_to new_invoice_path
+  #   end
+  # end
 
   def clearing
     if params[:state]
@@ -63,7 +63,12 @@ class InvoicesController < ApplicationController
 
   private
 
-  def find_invoice
-    @invoice = current_user.invoice
+  def find_or_new_invoice
+    if current_user && current_user.invoice
+      @invoice = current_user.invoice
+    else
+      @user = User.new
+      @invoice = Invoice.new
+    end
   end
 end
