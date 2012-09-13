@@ -19,13 +19,11 @@
         .b-speaker__photo
           = image_tag 'speakers/treskin.jpg', :class => 'b-speaker__img', :alt => "Максим Трескин"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Максим Трескин
+          %a.b-speaker__link{:href => 'http://maxtreskin.moikrug.ru/', :target => '_blank'}
+            Максим Трескин
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => '#', :target => '_blank'}> Metachord
           , Новосибирск
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://maxtreskin.moikrug.ru/', :target => '_blank'}
-            http://maxtreskin.moikrug.ru/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/mtreskin', :target => '_blank'}
