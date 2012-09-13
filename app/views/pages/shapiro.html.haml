@@ -20,13 +20,11 @@
         .b-speaker__photo
           = image_tag 'speakers/shapiro.jpg', :class => 'b-speaker__img', :alt => "Андрей Шапиро"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Андрей Шапиро
+          %a.b-speaker__link{:href => 'http://andrew-shapiro.moikrug.ru/', :target => '_blank'}
+            Андрей Шапиро
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => 'http://www.artgorbunov.ru/', :target => '_blank'}> Дизайн-Бюро Артема Горбунова
           , Челябинск
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://andrew-shapiro.moikrug.ru/', :target => '_blank'}
-            http://andrew-shapiro.moikrug.ru/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/xraizor', :target => '_blank'}

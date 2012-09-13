@@ -17,13 +17,11 @@
         .b-speaker__photo
           = image_tag 'speakers/pavlova.jpg', :class => 'b-speaker__img', :alt => "Ольга Павлова"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Ольга Павлова
+          %a.b-speaker__link{:href => 'http://www.pavlova.cc/', :target => '_blank'}
+            Ольга Павлова
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => '#', :target => '_blank'}> КБ "Собака @Павлова"
           , Санкт-Петербург
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://www.pavlova.cc/', :target => '_blank'}
-            http://www.pavlova.cc/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'https://twitter.com/op', :target => '_blank'}

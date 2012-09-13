@@ -19,13 +19,11 @@
         .b-speaker__photo
           = image_tag 'speakers/danilsnitko_150px.jpg', :class => 'b-speaker__img', :alt => "Данил Снитко"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Данил Снитко
+          %a.b-speaker__link{:href => 'http://dsnitko.moikrug.ru/', :target => '_blank'}
+            Данил Снитко
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => 'http://punk-you.ru/', :target => '_blank'}> PUNK YOU
           , Барнаул
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://dsnitko.moikrug.ru/', :target => '_blank'}
-            http://dsnitko.moikrug.ru/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/kukalyakin', :target => '_blank'}

@@ -21,13 +21,11 @@
         .b-speaker__photo
           = image_tag 'speakers/podorozhny.jpg', :class => 'b-speaker__img', :alt => "Юрий Подорожный"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Юрий Подорожный
+          %a.b-speaker__link{:href => 'http://yurypodorozhnyy.moikrug.ru/', :target => '_blank'}
+            Юрий Подорожный
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => 'http://www.anyvoid.ru/', :target => '_blank'}> Any Void
           , Москва
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://yurypodorozhnyy.moikrug.ru/', :target => '_blank'}
-            http://yurypodorozhnyy.moikrug.ru/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/see_yu/', :target => '_blank'}

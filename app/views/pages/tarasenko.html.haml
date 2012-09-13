@@ -20,13 +20,11 @@
         .b-speaker__photo
           = image_tag 'speakers/tarasenko_150px.png', :class => 'b-speaker__img', :alt => "Анна Тарасенко"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Анна Тарасенко
+          %a.b-speaker__link{:href => 'http://tarasenkoanna2.moikrug.ru/', :target => '_blank'}
+            Анна Тарасенко
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => 'http://7bits.it', :target => '_blank'}> 7bits
           , Омск
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://tarasenkoanna2.moikrug.ru/', :target => '_blank'}
-            http://tarasenkoanna2.moikrug.ru/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/AnnieOmsk', :target => '_blank'}
