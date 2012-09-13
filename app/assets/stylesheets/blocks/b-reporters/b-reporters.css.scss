@@ -9,7 +9,7 @@
     top: 50px;
     width: 64px;
     height: 72px;
-    background: url(person.png);
+    background: image-url('blocks/b-reporters/person.png');
 }
 
 .b-reporters__count-number {
@@ -164,7 +164,7 @@
     width: 31px;
     height: 59px;
     margin-top: -20px;
-    background: url(b-reporters-arrows.png);
+    background: image-url('blocks/b-reporters/b-reporters-arrows.png');
     opacity: 0.5;
     filter: alpha(opacity=50);
     z-index: 111;

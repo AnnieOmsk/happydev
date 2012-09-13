@@ -58,11 +58,11 @@
     margin: 0 0 10px;
     padding: 0 0 0 20px;
     list-style: none;
-    background: url(line.png) 0 8px no-repeat;
+    background: image-url('blocks/b-speaker/line.png') 0 8px no-repeat;
 }
 
 .b-speaker__list_type_gray .b-speaker__list-item {
-    background-image: url(line-gray.png);
+    background-image: iamge-url('blocks/b-speaker/line-gray.png');
     background-position: 0 7px;
     color: #666;
 }

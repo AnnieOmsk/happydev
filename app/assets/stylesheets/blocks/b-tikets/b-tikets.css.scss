@@ -25,12 +25,12 @@
 
 .b-tikets__title-left {
     left: -11px;
-    background: url(title-l-bg.png);
+    background: image-url('blocks/b-tikets/title-l-bg.png');
 }
 
 .b-tikets__title-right {
     right: -11px;
-    background: url(title-r-bg.png);
+    background: image-url('blocks/b-tikets/title-r-bg.png');
 }
 
 .b-tikets__title-text {
@@ -77,7 +77,7 @@
     float: left;
     width: 113px;
     height: 40px;
-    background: url(price-bg.png) no-repeat;
+    background: image-url('blocks/b-tikets/price-bg.png') no-repeat;
     text-align: center;
     line-height: 40px;
 }
@@ -146,7 +146,7 @@
     margin: 0 0 5px;
     padding: 0 0 0 20px;
     list-style: none;
-    background: url(line.png) 0 9px no-repeat;
+    background: image-url('blocks/b-tikets/line.png') 0 9px no-repeat;
 }
 
 .b-tikets__method_type_earliest .b-tikets__method-title,
@@ -156,7 +156,7 @@
 }
 
 .b-tikets__method_type_earliest .b-tikets__content-item {
-    background-image: url(line-gray.png);
+    background-image: image-url('blocks/b-tikets/line-gray.png');
 }
 
 .b-tikets__buy {
