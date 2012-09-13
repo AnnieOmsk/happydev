@@ -5,12 +5,20 @@
     border: 1px solid #85b0c6;
 }
 
+.b-register_style_green {
+    border-color: #4b9800;
+}
+
 .b-register__title-inner {
     position: absolute;
     left: 0;
-    top: -22px;
+    top: -18px;
     right: 0;
     text-align: center;
+}
+
+.b-register_style_green .b-register__title-inner {
+    top: -16px;
 }
 
 .b-register__title {
@@ -23,6 +31,11 @@
     text-transform: uppercase;
     font-size: 30px;
     letter-spacing: 5px;
+}
+
+.b-register_style_green .b-register__title {
+    font-size: 26px;
+    color: #000;
 }
 
 .ie7 .b-register__title {
@@ -63,11 +76,16 @@
     width: 150px;
     font-size: 14px;
     color: #3f495f;
+    font-family: Arial, sans-serif;
 }
 
 .b-register__inputs-inner {
     width: 270px;
     position: relative;
+}
+
+.b-register__inputs-inner_type_small {
+    width: 195px;
 }
 
 .b-register__input_text,
@@ -84,6 +102,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .b-register__input_text:focus,
@@ -152,8 +171,8 @@
 .b-register__text {
     width: 420px;
     margin: auto;
-    color: #666;
-    font-size: 13px;
+    color: #3f495f;
+    font-size: 12px;
     line-height: 19px;
 }
 
@@ -194,3 +213,47 @@
     font-size: 12px;
 }
 
+.b-register__label_type_checkbox {
+    display: block;
+    margin: 0 0 15px;
+}
+
+.b-register__label_type_checkbox .b-register__input_checkbox,
+.b-register__label_type_checkbox .b-register__label-text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.b-register__label_valign_center .b-register__input_checkbox,
+.b-register__label_valign_center .b-register__label-text {
+    vertical-align: middle;
+}
+
+.b-register__label-text_width_340 {
+    width: 340px;
+}
+
+.b-register__label-text_width_auto {
+    width: auto;
+}
+
+.b-register__label-text_type_block {
+    display: block;
+    margin: 0 0 20px;
+}
+
+.b-register__total-title {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.b-register__line {
+    margin: 20px -25px;
+    border-top: 1px dotted #4b9800;
+}
+
+.b-register__text_style_small {
+    color: #000;
+    font-size: 13px;
+}

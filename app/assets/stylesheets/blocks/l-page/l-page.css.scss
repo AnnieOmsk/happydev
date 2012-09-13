@@ -42,6 +42,18 @@
     margin-right: 45px;
 }
 
+.l-page_gap-right-out_30 {
+    margin-right: 30px;
+}
+
+.l-page_gap-left-out_15 {
+    margin-left: 15px;
+}
+
+.l-page_gap-left-out_90 {
+    margin-left: 90px;
+}
+
 .l-page_gap-top-out_30 {
     margin-top: 30px;
 }
@@ -50,12 +62,25 @@
     text-align: center;
 }
 
+.l-page_align_left {
+    text-align: left;
+}
+
 .l-page_float_left {
     float: left;
 }
 
 .l-page_float_right {
     float: right;
+}
+
+.l-page_display_inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ie7 .l-page_display_inline {
+    display: inline;
 }
 
 .l-page_width_230 {

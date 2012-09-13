@@ -4,14 +4,14 @@ jQuery ->
     if gon.event_prices
       if $(this).is(':checked')
         overall += gon.event_prices[$(this).val()]
-        $('#amount').html(overall)
+        $('.js-amount').html(overall)
 
   $('.new_invoice input.invoice_checkbox').change ->
     if gon.event_prices
       if $(this).is(':checked')
-        $('#amount').html(overall += gon.event_prices[$(this).val()])
+        $('.js-amount').html(overall += gon.event_prices[$(this).val()])
       else
-        $('#amount').html(overall -= gon.event_prices[$(this).val()])
+        $('.js-amount').html(overall -= gon.event_prices[$(this).val()])
 
   $('.clearing_type input').click (event)->
     $('.payment_content').toggle();

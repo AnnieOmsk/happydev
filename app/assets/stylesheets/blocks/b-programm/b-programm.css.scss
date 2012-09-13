@@ -103,7 +103,7 @@
 //    z-index: 111;
 //}
 
-.b-programm__desc:not .b-programm__column-last:last-child {
+.b-programm__desc:not(.b-programm__column-last:last-child) {
     left: 0;
 }
 
