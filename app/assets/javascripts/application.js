@@ -16,7 +16,6 @@
 //= require bootstrap.min
 //= require payments
 //= require modernizr-2.6.1.min.js
-//= require scrollspy
 //= require carousel
 //= require blocks/b-programm/b-programm
 
@@ -24,4 +23,3 @@
 //= require blocks/b-reporters/carousel-run
 //= require blocks/b-members/b-members-carousel-run
 //= require plugins
-//= require_tree .

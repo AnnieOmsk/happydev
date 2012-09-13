@@ -1,4 +1,19 @@
-$('.b-head__nav .b-head__link').live('click',function(event) {
-    event.preventDefault();
-    $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top-50}, 1000);
+$(window).load(function() {
+  
+  anchor = window.location.hash;
+  
+  if(anchor != '') {
+    element = $('a[href="' + anchor + '"]');
+    scrollWithAnimation(element.attr('href'), 50, 0);
+  }
+  
+  $('.b-head__nav .b-head__link').bind('click', function(event){
+      event.preventDefault();
+      scrollWithAnimation($(this).attr('href'), 50, 1000);
+  });
+
+  function scrollWithAnimation(anchor, offset, delay) {
+    console.log($(anchor).offset().top)
+    $('html, body').animate({scrollTop: $(anchor).offset().top - offset}, delay);
+  };
 });

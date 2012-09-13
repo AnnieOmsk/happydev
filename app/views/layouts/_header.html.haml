@@ -5,27 +5,27 @@
         = link_to "Регистрация", new_user_registration_path, :class => 'b-head__link'
     %menu.b-head__nav
       %li.b-head__item{:style => "min-width: 125px;"}
-        %a.b-head__link{:href => "#about"}
+        %a.b-head__link{:href => root_path_with_anchor('about')}
           О конференции
           %span.b-head__link-line
       %li.b-head__item{:style => "min-width: 103px;"}
-        %a.b-head__link{:href => "#reports"}
+        %a.b-head__link{:href => root_path_with_anchor('reports')}
           Докладчики
           %span.b-head__link-line
       %li.b-head__item{:style => "min-width: 64px;"}
-        %a.b-head__link{:href => "#tikets"}
+        %a.b-head__link{:href => root_path_with_anchor('tikets')}
           Билеты
           %span.b-head__link-line
       %li.b-head__item{:style => "min-width: 94px;"}
-        %a.b-head__link{:href => "#programm"}
+        %a.b-head__link{:href => root_path_with_anchor('programm')}
           Программа
           %span.b-head__link-line
       %li.b-head__item{:style => "min-width: 53px;"}
-        %a.b-head__link{:href => "#venue"}
+        %a.b-head__link{:href => root_path_with_anchor('venue')}
           Место
           %span.b-head__link-line
       %li.b-head__item{:style => "min-width: 84px;"}
-        %a.b-head__link{:href => "#organizers"}
+        %a.b-head__link{:href => root_path_with_anchor('organizers')}
           Спонсоры
           %span.b-head__link-line
     %ul.b-head__like-btns
