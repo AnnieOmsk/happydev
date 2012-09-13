@@ -57,7 +57,6 @@ ActiveRecord::Schema.define(:version => 20120913063622) do
     t.string   "promocode"
     t.boolean  "oferta",          :default => false
     t.integer  "reserve_user_id"
-    t.boolean  "robox_flag",      :default => false
     t.string   "payment_type"
   end
 
