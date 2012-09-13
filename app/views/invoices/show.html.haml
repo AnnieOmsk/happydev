@@ -1,10 +1,28 @@
 .l-page_width_page.l-page_gap-bottom_50
   = render :partial => 'layouts/logo'
-  %section.clearfix.b-register
+  %section.clearfix.b-register{:style => "padding-top:15px;"}
     .b-register__title-inner
       %h2.b-register__title
         Оплата участия на HappyDev
     .clearfix
+      .l-page_display_inline.l-page_gap-right-out_45
+        %div
+          %ul
+            - for ie in @invoice.invoice_events
+              %li
+                = ie.event.full_name
+                - if ie.paid?
+                  = " (<strong>Оплачено</strong>)".html_safe 
+
+      .l-page_float_right.l-page_gap-right-out_45
+        .b-register__total
+          %h2.b-register__total-title
+            Общая стоимость
+          %span.b-price.b-price_type_early
+            %i.b-price__number.js-amount
+              = @invoice.amount
+            %span.b-price__rubl
+              a
       - if @invoice.invoice_events.all?{|e| e.paid?}
         %h3 Ураа, ты уже на полпути к #HappyDev 2012!
         %p Ты оплатил:
@@ -16,20 +34,8 @@
         %h3 Оплачена сумма: #{ @invoice.amount} руб.
 
       - else
-        - if @invoice.payments.empty?
-          %h3 Ты хочешь оплатить:
-        - else
-          %h3 Ты частично оплатил свое участие на #HappyDev 2012!
-
-        %ul
-          - for ie in @invoice.invoice_events
-            %li
-              = ie.event.full_name
-              - if ie.paid?
-                = " (<strong>Оплачено</strong>)".html_safe 
 
         - if @invoice.payments.empty?
-          %h3 Итого к оплате: #{ @invoice.amount } руб.
         - else
           %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } руб.
           %h3 Общая сумма: #{ @invoice.amount } руб.
@@ -56,6 +62,8 @@
           %a.b-link{:href => 'mailto:org@happydev.ru'}> org@happydev.ru
           \. В ответ мы выставим Вам счет. После зачисления средств на наш расчетный счет статус Вашей регистрации изменится на 'Оплачено'.
 
-    %p.l-page_align_center
-      = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
-        = submit_tag "Оплатить через робокассу", :class => 'b-register__input_submit'
+    / %p.l-page_align_center
+    %section.l-page_gap-top-out_50.l-page_align_center
+      %p
+        = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
+          = submit_tag "Оплатить через робокассу", :class => 'b-register__input_submit'
