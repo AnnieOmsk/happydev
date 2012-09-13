@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120913180750) do
+ActiveRecord::Schema.define(:version => 20120913181033) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -141,6 +141,21 @@ ActiveRecord::Schema.define(:version => 20120913180750) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "speeches", :force => true do |t|
+    t.string   "title"
+    t.text     "annotation"
+    t.text     "description"
+    t.integer  "speaker_id"
+    t.integer  "section_id"
+    t.integer  "specialization_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  add_index "speeches", ["section_id"], :name => "index_speeches_on_section_id"
+  add_index "speeches", ["speaker_id"], :name => "index_speeches_on_speaker_id"
+  add_index "speeches", ["specialization_id"], :name => "index_speeches_on_specialization_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

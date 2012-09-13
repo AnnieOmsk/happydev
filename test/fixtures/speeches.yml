@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  annotation: MyText
+  description: MyText
+  speaker: 
+  section: 
+  specialization: 
+
+two:
+  title: MyString
+  annotation: MyText
+  description: MyText
+  speaker: 
+  section: 
+  specialization: 
