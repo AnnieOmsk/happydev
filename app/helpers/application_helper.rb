@@ -25,6 +25,6 @@ module ApplicationHelper
   end
 
   def title(page_title)
-    content_for(:title) { '#HappyDev: ' + page_title }
+    content_for(:title) { page_title + " | HappyDev'12" }
   end
 end
