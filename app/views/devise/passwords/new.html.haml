@@ -4,17 +4,18 @@
     .b-register__title-inner
       %h2.b-register__title
         Восстановление пароля
-    = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
-      .clearfix
-        .b-register__fields-inner
-          .b-register__fields
-            %label.b-register__label
-              %span.b-register__label-text
-                = f.label "Электронный адрес"
-              %span.b-register__inputs-inner.b-register__inputs-inner_state_errors
-                = f.email_field :email, :class => "b-register__input_email"
-                %span.b-register__required *
-        = render "devise/shared/links"
+    .b-register__form
+      = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+        .clearfix
+          .b-register__fields-inner
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  = f.label "Электронный адрес"
+                %span.b-register__inputs-inner.b-register__inputs-inner_state_errors
+                  = f.email_field :email, :class => "b-register__input_email"
+                  %span.b-register__required *
+          = render "devise/shared/links"
 
-      %p.l-page_align_center
-        %input.b-register__input_submit{:type => "submit", :value => "Пришлите мне письмо с инструкцией"}/
+    %p.l-page_align_center
+      %input.b-register__input_submit{:type => "submit", :value => "Пришлите мне письмо с инструкцией"}/
