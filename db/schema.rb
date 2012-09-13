@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120913175050) do
+ActiveRecord::Schema.define(:version => 20120913175848) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -106,6 +106,28 @@ ActiveRecord::Schema.define(:version => 20120913175050) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "speakers", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "personal_url"
+    t.string   "twitter"
+    t.string   "facebook"
+    t.string   "vk"
+    t.string   "github"
+    t.string   "moikrug"
+    t.string   "slideshare"
+    t.text     "description"
+    t.integer  "city_id"
+    t.integer  "company_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "speakers", ["city_id"], :name => "index_speakers_on_city_id"
+  add_index "speakers", ["company_id"], :name => "index_speakers_on_company_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
