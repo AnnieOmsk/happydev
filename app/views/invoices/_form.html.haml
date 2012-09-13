@@ -1,35 +1,129 @@
-= form_for(@invoice, :url => invoice_path(@invoice)) do |f|
-  .clearfix
-    .b-register__fields-inner
-      .b-register__fields
-        %label.b-register__label
-          %span.b-register__label-text
-            = f.label 'Я оплачиваю:'
-          %span.b-register__inputs-inner
-            = f.check_box :event_ids
-      .b-register__fields
-        %label.b-register__label
-          %span.b-register__label-text
-            = f.label "У меня есть промокод:"
-          %span.b-register__inputs-inner
-            = text_field_tag :promocode
-            -#= f.text_field :company, :class => "b-register__input_text"
+= form_for(@invoice, :url => invoice_path(@invoice), :remote => true) do |f|
+  .l-page_width_page.l-page_gap-bottom_50
+    %section.clearfix.b-register
+      .b-register__title-inner
+        %h2.b-register__title
+          Регистрация на конференцию
+      = fields_for @user do |u|
+        .clearfix
+          .b-register__fields-inner
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  Имя
+                %span.b-register__inputs-inner
+                  = u.text_field :first_name, :class => "b-register__input_text"
+                  %span.b-register__required *
+                %i.b-register__error
+                  = error_messages_for :first_name, @user
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  Фамилия
+                %span.b-register__inputs-inner
+                  = u.text_field :last_name, :class => "b-register__input_text"
+                  %span.b-register__required *
+                %i.b-register__error
+                  = error_messages_for :last_name, @user
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  Город
+                %span.b-register__inputs-inner
+                  = u.text_field :city, :class => "b-register__input_text"
+          .b-register__fields-inner.b-register__fields-inner_float_right
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  Эл. почта
+                %span.b-register__inputs-inner
+                  = u.email_field :email, :class => "b-register__input_email"
+                  %span.b-register__required *
+                %i.b-register__error
+                  = error_messages_for :email, @user
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  Компания
+                %span.b-register__inputs-inner
+                  = u.text_field :company, :class => "b-register__input_text"
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  Специализация
+                %span.b-register__inputs-inner
+                  = u.select :professional, "<option>Дизайн</option><option>Разработка</option><option>Управление</option>".html_safe, :include_blank => true, :class => "b-register__select"
 
-      .b-register__fields
-        %label.b-register__label
-          %span.b-register__label-text
-            = "С условиями <a href='/oferta' target='blank'>Публичной оферты</a> ознакомлен и согласен".html_safe
-          %span.b-register__inputs-inner
-            = f.check_box :oferta
+    %section.clearfix.b-register.b-register_style_green
+      .b-register__title-inner
+        %h2.b-register__title
+          Я хочу оплатить
+      .clearfix
+        .l-page_display_inline.l-page_gap-right-out_45
+          - @events.each do |event|
+            .new_invoice
+              %label.b-register__label_type_checkbox
+                - if event.priority == "0"
+                  = check_box_tag "invoice[event_ids][]", event.id, true, :disabled => true, :class => "b-register__input_checkbox invoice_checkbox"
+                  = hidden_field_tag "invoice[event_ids][]", event.id
+                - else
+                  = check_box_tag "invoice[event_ids][]", event.id, @invoice.events.include?(event), :class => "b-register__input_checkbox invoice_checkbox invoice_checkbox"
+                %span.b-register__label-text.b-register__label-text_width_340
+                  = event.name_with_price
+                  %span.b-price__rubl.b-price__rubl_type_dark-blue
+                    a
+                    / %span{:style => "font-size: 14px;"}= event.name
+        .l-page_display_inline.l-page_gap-right-out_45
+          %label.b-register__label
+            %span.b-register__label-text.b-register__label-text_type_block
+              = f.label "У меня есть промокод"
+            %span.b-register__inputs-inner.b-register__inputs-inner_type_small
+              = f.text_field :promocode, :class => "b-register__input_text"
+        .l-page_float_right.l-page_gap-right-out_45
+          .b-register__total
+            %h2.b-register__total-title
+              Общая стоимость
+            %span.b-price.b-price_type_early
+              %i.b-price__number.js-amount
+                %span#amount 0
+              %span.b-price__rubl
+                a
+      .clearfix
+        .b-register__line
+        .l-page_float_left.l-page_gap-left-out_90
+          %label.b-register__label_type_checkbox.b-register__label_valign_center
+            = f.radio_button :payment_type, "robokassa", :checked => true, :class => "b-register__input_radio"
+            %span.b-register__label-text.b-register__label-text_width_auto.l-page_gap-right-out_30
+              %b
+                Robokassa
+            = image_tag 'robokassa.jpg'
+        .l-page_float_left.l-page_gap-left-out_90
+          %label.b-register__label_type_checkbox
+            = f.radio_button :payment_type, "clearing", :class => "b-register__input_radio"
+            %span.b-register__label-text.b-register__label-text_width_auto
+              %b
+                Безналичный расчет
+          %p.b-register__text.l-page_gap-left-out_20
+            Пожалуйста, скачайте &nbsp;
+            %a.b-link{:href => '#{APP_CONFIG[:domain]}/docs/HappyDev_12_agreement.doc'}>  образец договора
+            , заполните все выделенные фрагменты, кроме номера договора и вышлите на адрес &nbsp;
+            %a.b-link{:href => 'mailto:org@happydev.ru'}> org@happydev.ru
+            \. В ответ мы выставим Вам счет. После зачисления средств на наш расчетный счет статус Вашей регистрации изменится на 'Оплачено'.
 
-      .b-register__fields
-        %label.b-register__label
-          %span.b-register__label-text
-            = f.label "Общая стоимость"
-          %span.b-register__inputs-inner
-            %strong
-              %span#amount 0
-              руб
+    %section.l-page_gap-top-out_50.l-page_align_center
+      %p
+        %label.b-register__label_type_checkbox.l-page_align_left.l-page_display_inline
+          = f.check_box :oferta, :class => 'b-register__input_checkbox'
+          %span.b-register__label-text.b-register__label-text_width_auto.b-register__text_style_small
+            С условиями
+            %a.b-link{:href => '/oferta', :target => 'blank'} Публичной оферты
+            ознакомлен и согласен
+        %i.b-register__error
+          = error_messages_for :oferta, @invoice
 
-  %p.l-page_align_center
-    %input.b-register__input_submit{:type => "submit", :value => "Оплатить"}/
+      %p.l-page_align_center
+        = button_to "Зарегистрироваться", invoice_path, :class => "b-register__input_submit invoice_submit"
+        / %input.b-register__input_submit{:type => "submit", :value => "Зарегистрироваться"}/
+        -#= payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
+          = submit_tag "Оплатить через робокассу", :class => 'b-register__input_submit'
+

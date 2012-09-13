@@ -29,5 +29,5 @@ class User < ActiveRecord::Base
 
   def deliver_notification
     Mailer.send_notification(email).deliver!
-  end  
+  end
 end

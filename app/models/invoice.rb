@@ -57,21 +57,22 @@ class Invoice < ActiveRecord::Base
     overall_amount -= price
   end
 
-  def self.drafting_invoice(user, options, promocode)
+  def self.drafting_invoice(user, options, promocode = nil)
     invoice = user.build_invoice(options)
-    if promocode.blank? || !Promocode.all.map(&:number).include?(promocode)
+    if invoice.promocode.blank? || !Promocode.all.map(&:number).include?(invoice.promocode)
       invoice.amount = invoice.events.map(&:price).inject(:+)
     else
       invoice.discount_status = true
-      invoice.promocode = promocode
-      invoice.amount = counting_amount_with_discount(invoice, user, promocode)
+      # invoice.promocode = promocode
+      invoice.amount = counting_amount_with_discount(invoice, user)
     end
     invoice.expired_at = 3.day.from_now
     invoice.code = Time.now.to_i + user.id
     invoice
   end
 
-  def self.counting_amount_with_discount(invoice, user, promocode)
+  def self.counting_amount_with_discount(invoice, user, promocode = nil)
+    promocode ||= invoice.promocode
     tmp_amount = invoice.events.select{|e| e.discount != false }.map(&:price).inject(:+) || 0
     tmp_amount = tmp_amount + (tmp_amount * (Promocode.find_by_number(promocode).discount_value/100.0))   # can handle +50% and -10%
     tmp_amount += invoice.events.select{|e| e.discount == false }.map(&:price).inject(:+) || 0

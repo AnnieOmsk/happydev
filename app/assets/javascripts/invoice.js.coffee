@@ -13,18 +13,25 @@ jQuery ->
       else
         $('.js-amount').html(overall -= gon.event_prices[$(this).val()])
 
-  $('.clearing_type input').click (event)->
-    $('.payment_content').toggle();
-    if $(this).is(':checked')
-      state = true
-    else
-      state = false
-    url = '/invoice/clearing?state=' + state
-    $.ajax url,
-      type: 'PUT'
-      dataType: 'html',
-      # error: (jqXHR, textStatus, errorThrown) ->
-      #   alert 'error'
-      success: (data, textStatus, jqXHR) ->
-        # alert 'success'
-        # $('#show-payment #payment-button form').submit()
+  # $('.clearing_type input').click (event)->
+  #   $('.payment_content').toggle();
+  #   if $(this).is(':checked')
+  #     state = true
+  #   else
+  #     state = false
+  #   url = '/invoice/clearing?state=' + state
+  #   $.ajax url,
+  #     type: 'PUT'
+  #     dataType: 'html',
+  #     # error: (jqXHR, textStatus, errorThrown) ->
+  #     #   alert 'error'
+  #     success: (data, textStatus, jqXHR) ->
+  #       # alert 'success'
+  #       # $('#show-payment #payment-button form').submit()
+
+  $('#new_invoice')
+    .bind "ajax:success", ->
+      alert "Success"
+    .bind "ajax:error", (evt, xhr, status, error) ->
+      $("#invoices_new_form").html(xhr.responseText)
+
