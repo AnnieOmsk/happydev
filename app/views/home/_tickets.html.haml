@@ -83,8 +83,12 @@
             %li.b-tikets__content-item
               Кофе, чай, сладости и солености в течение всего дня.
         %p.b-tikets__buy
-          %a.b-tikets__buy-button{:href => pay_path}
-            Купить билет
+          -if current_user
+            %a.b-tikets__buy-button{:href => pay_path}
+              Купить билет
+          -else
+            %a.b-tikets__buy-button{:href => new_user_registration_path}
+              Купить билет
     .b-tikets__method.b-tikets__method_type_normal
       .b-tikets__link.js-b-tikets__link
         %h2.b-tikets__method-title
