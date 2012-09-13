@@ -1,0 +1,42 @@
+.b-price {
+    display: block;
+    width: 113px;
+    height: 40px;
+    background: url(price-bg.png) no-repeat;
+    text-align: center;
+    line-height: 40px;
+}
+
+.b-price_type_earliest {
+    background-position: 0 0;
+}
+
+.b-price_type_early {
+    background-position: 0 -40px;
+}
+
+.b-price_type_normal {
+    background-position: 0 -80px;
+}
+
+.b-price__number {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+}
+
+.b-price__rubl {
+    position: relative;
+    font-family: 'als_rublregular';
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.b-price__rubl_type_dark-blue {
+    color: #3f495f;
+    font-weight: normal;
+    font-size: 14px;
+}

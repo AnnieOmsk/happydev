@@ -4,8 +4,32 @@
     .b-register__title-inner
       %h2.b-register__title
         Оплата участия на HappyDev
+    .clearfix
+      .b-register__line
+      .l-page_float_left.l-page_gap-left-out_90
+        %label.b-register__label_type_checkbox.b-register__label_valign_center
+          = radio_button_tag :payment_type, "robokassa", :checked => true, :class => "b-register__input_radio"
+          %span.b-register__label-text.b-register__label-text_width_auto.l-page_gap-right-out_30
+            %b
+              Robokassa
+          = image_tag 'robokassa.jpg'
+      .l-page_float_left.l-page_gap-left-out_90
+        %label.b-register__label_type_checkbox
+          = radio_button_tag :payment_type, "clearing", :class => "b-register__input_radio"
+          %span.b-register__label-text.b-register__label-text_width_auto
+            %b
+              Безналичный расчет
+        %p.b-register__text.l-page_gap-left-out_20
+          Пожалуйста, скачайте &nbsp;
+          %a.b-link{:href => '#{APP_CONFIG[:domain]}/docs/HappyDev_12_agreement.doc'}>  образец договора
+          , заполните все выделенные фрагменты, кроме номера договора и вышлите на адрес &nbsp;
+          %a.b-link{:href => 'mailto:org@happydev.ru'}> org@happydev.ru
+          \. В ответ мы выставим Вам счет. После зачисления средств на наш расчетный счет статус Вашей регистрации изменится на 'Оплачено'.
 
-    #show-payment
+    %p.l-page_align_center
+      = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
+        = submit_tag "Оплатить через робокассу", :class => 'b-register__input_submit'
+
 
       - if @invoice.invoice_events.all?{|e| e.paid?}
         %h3 Ураа, ты уже на полпути к #HappyDev 2012!
@@ -35,32 +59,3 @@
         - else
           %h3 Оплачена сумма: #{ @invoice.payments.map(&:amount).sum } руб.
           %h3 Общая сумма: #{ @invoice.amount } руб.
-
-        %br
-        %h3 Способы оплаты:
-        .row.payment_type{:style => "margin-top:5px;margin-bottom:5px;"}
-          .span10
-            Для ИП и юридических лиц:
-          .span4.clearing_type{:style => "margin-top:5px; margin-left:35px;"}
-            - if @invoice.clearing
-              = check_box_tag :clearing, nil, true
-            - else
-              = check_box_tag :clearing
-            Безналичный расчет
-        .row
-          .span2
-            -# #payment-back-button{:style => "float:left;margin-right:20px;"}
-            -#   = link_to "Назад", edit_invoice_path, :class => 'btn'
-          .payment_content{:style => clearing?("robox", @invoice.clearing)}
-            .span11
-              Для физических лиц:
-            %div{:style => "margin-left:10px"}
-              .span2{:style => "margin-top:5px"}
-                = image_tag 'robokassa.jpg'
-              .span4
-                #payment-button
-                = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
-                  = submit_tag "Оплатить через робокассу", :class => 'b-register__input_submit'
-          .payment_content{:style => clearing?("clearing", @invoice.clearing)}
-            .span9
-              = "Пожалуйста, скачайте <a href='#{APP_CONFIG[:domain]}/docs/HappyDev_12_agreement.doc'>образец договора</a>, заполните все выделенные фрагменты, кроме номера договора и вышлите на адрес <a href = 'mailto:org@happydev.ru'>org@happydev.ru </a>. В ответ мы выставим Вам счет. После зачисления средств на наш расчетный счет статус Вашей регистрации изменится на 'Оплачено'.".html_safe

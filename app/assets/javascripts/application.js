@@ -23,3 +23,5 @@
 //= require blocks/b-reporters/carousel-run
 //= require blocks/b-members/b-members-carousel-run
 //= require plugins
+//= require invoice
+//= require register
