@@ -23,4 +23,8 @@ module ApplicationHelper
       root_path(:anchor => anchor)
     end
   end
+
+  def title(page_title)
+    content_for(:title) { '#HappyDev: ' + page_title }
+  end
 end

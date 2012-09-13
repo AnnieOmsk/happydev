@@ -50,19 +50,19 @@
         .b-speaker__invite.clearfix
           %span.b-speaker__invite-title.l-page_float_left
             Пригласите друзей
-          .b-speaker__invite-likes.l-page_float_left
-            = image_tag 'blocks/b-speaker/likes-invite.png'
+          .b-speaker__invite-likes.l-page_float_left.social-panel
+            = render :partial => 'layouts/social_links_panel'
+        -# %h2.b-speaker__title
+        -#   Презентация
+        -# .b-speaker__presentation
+        -#   = image_tag 'blocks/b-speaker/present.png'
+        -# %h2.b-speaker__title
+        -#   Видео доклада
+        -# .b-speaker__video
+        -#   = image_tag 'blocks/b-speaker/vimeo.png'
         %h2.b-speaker__title
-          Презентация
+          Комментарии
         .b-speaker__presentation
-          = image_tag 'blocks/b-speaker/present.png'
-        %h2.b-speaker__title
-          Видео доклада
-        .b-speaker__video
-          = image_tag 'blocks/b-speaker/vimeo.png'
-        %h2.b-speaker__title
-          Комментарии (84)
-        .b-speaker__presentation
-          = image_tag 'blocks/b-speaker/comments.png'
+          = render :partial => 'pages/disqus'
 
   = render :partial => 'home/speakers_carousel'
