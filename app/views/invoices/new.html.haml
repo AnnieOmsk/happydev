@@ -70,7 +70,7 @@
                     = check_box_tag "invoice[event_ids][]", event.id, true, :disabled => true, :class => "b-register__input_checkbox invoice_checkbox"
                     = hidden_field_tag "invoice[event_ids][]", event.id
                   - else
-                    = check_box_tag "invoice[event_ids][]", event.id, false, :class => "invoice_checkbox"
+                    = check_box_tag "invoice[event_ids][]", event.id, false, :class => "b-register__input_checkbox invoice_checkbox invoice_checkbox"
                   %span.b-register__label-text.b-register__label-text_width_340
                     = event.full_name
                     %span.b-price__rubl.b-price__rubl_type_dark-blue
@@ -100,17 +100,13 @@
                 %b
                   Robokassa
               = image_tag 'robokassa.jpg'
-              .span4
-                #payment-button
-                -#= payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
-                  = submit_tag "Оплатить через робокассу", :class => 'b-register__input_submit'
           .l-page_float_left.l-page_gap-left-out_90
             %label.b-register__label_type_checkbox
               = radio_button_tag "invoice[payment_type][]", "clearing", nil, :class => "b-register__input_radio"
               %span.b-register__label-text.b-register__label-text_width_auto
                 %b
                   Безналичный расчет
-            %p.b-register__text.l-page_gap-left-out_15
+            %p.b-register__text.l-page_gap-left-out_20
               Пожалуйста, скачайте &nbsp;
               %a.b-link{:href => '#{APP_CONFIG[:domain]}/docs/HappyDev_12_agreement.doc'}>  образец договора
               , заполните все выделенные фрагменты, кроме номера договора и вышлите на адрес &nbsp;
