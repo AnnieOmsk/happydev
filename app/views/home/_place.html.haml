@@ -2,17 +2,24 @@
   %h2.b-venue__title
     Место проведения
   .b-venue__map
-    %script{:charset => "utf-8", :src => "http://firmsonmap.api.2gis.ru/js/DGWidgetLoader.js", :type => "text/javascript"}
+    -# %script{:charset => "utf-8", :src => "http://firmsonmap.api.2gis.ru/js/DGWidgetLoader.js", :type => "text/javascript"}
     -# %script{:charset => "utf-8", :type => "text/javascript"} new DGWidgetLoader({"borderColor":"#a3a3a3","width":"100%","height":"400","wid":"398515700752a255c6f4ba03702e376e","pos":{"lon":"73.329632483741","lat":"54.975472313011","zoom":"15"},"opt":{"ref":"hidden","card":["name","contacts","payings"],"city":"omsk"},"org":[{"id":"282003257943504","hash":"A4Aduv0233G259886769G973e86a34585H2H8B5gcq558807G4557284831J361"}]});
 
 
-    %script{:charset => "utf-8", :type => "text/javascript"}
-      :plain
-        new DGWidgetLoader({"borderColor" :"#a3a3a3",
-          "width"       :"100%",
-          "height"      :"400",
-          "wid"         :"#{APP_CONFIG['2gis_map_id']}",
-          "pos"         :{"lon":"73.329632483741","lat":"54.975472313011","zoom":"15"},
-          "opt"         :{"ref":"hidden","card":["name","contacts","payings"],"city":"omsk"},
-          "org"         :[{"id":"282003257943504","hash":"A4Aduv0233G259886769G973e86a34585H2H8B5gcq558807G4557284831J361"}]
-          });
+    -# %script{:charset => "utf-8", :type => "text/javascript"}
+    -#   :plain
+    -#     new DGWidgetLoader({"borderColor" :"#a3a3a3",
+    -#       "width"       :"100%",
+    -#       "height"      :"400",
+    -#       "wid"         :"#{APP_CONFIG['2gis_map_id']}",
+    -#       "pos"         :{"lon":"73.329632483741","lat":"54.975472313011","zoom":"15"},
+    -#       "opt"         :{"ref":"hidden","card":["name","contacts","payings"],"city":"omsk"},
+    -#       "org"         :[{"id":"282003257943504","hash":"A4Aduv0233G259886769G973e86a34585H2H8B5gcq558807G4557284831J361"}]
+    -#       });
+    
+    #ymaps-map-id_134753110165585967103{:style => "width: 100%; height: 400px;"}
+    %div{:style => "width: 100%; text-align: right;"}
+      %a{:href =>"http://api.yandex.ru/maps/tools/constructor/?lang=ru-RU", :target => "_blank", :style => "color: #1A3DC1; font: 13px Arial,Helvetica,sans-serif;"} Создано с помощью инструментов Яндекс.Карт
+    %script{:type => "text/javascript"}
+      function fid_134753110165585967103(ymaps) {var map = new ymaps.Map("ymaps-map-id_134753110165585967103", {center: [73.32422514111155, 54.98028098927026], zoom: 15, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([73.32484869546488, 54.978905755399516], {balloonContent: "HappyDev"}, {preset: "twirl#lightblueDotIcon"}));};</script>
+    %script{:type =>"text/javascript", :src => "http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134753110165585967103"}
