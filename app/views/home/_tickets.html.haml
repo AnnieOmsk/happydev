@@ -36,11 +36,12 @@
         %h2.b-tikets__method-title
           Очень раннее бронирование
         .b-tikets__pricing.clearfix
-          %span.b-price
-            %i.b-price__number
-              2200
-            %span.b-price__rubl
-              a
+          .b-tikets__price-inner
+            .b-price.b-price_type_earliest
+              %i.b-price__number
+                2200
+              %span.b-price__rubl
+                a
           %span.b-tikets__pricing-date
             До 9 сентября
     .b-tikets__method.b-tikets__method_type_early.b-tikets__method_state_active
@@ -48,11 +49,12 @@
         %h2.b-tikets__method-title
           Раннее бронирование
         .b-tikets__pricing.clearfix
-          %span.b-price
-            %i.b-price__number
-              2700
-            %span.b-price__rubl
-              a
+          .b-tikets__price-inner
+            .b-price.b-price_type_early
+              %i.b-price__number
+                2700
+              %span.b-price__rubl
+                a
           %span.b-tikets__pricing-date
             До 16 сентября
         %p.b-tikets__buy
@@ -67,11 +69,11 @@
         %h2.b-tikets__method-title
           Обычная стоимость билета
         .b-tikets__pricing.clearfix
-          %span.b-price
-            %i.b-price__number
-              3200
-            %span.b-price__rubl
-              a
-          %span.b-tikets__pricing-date
+          .b-tikets__price-inner
+            .b-price.b-price_type_normal
+              %i.b-price__number
+                3200
+              %span.b-price__rubl
+                a
           %span.b-tikets__pricing-date
             До 23 сентября
