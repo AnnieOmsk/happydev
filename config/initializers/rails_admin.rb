@@ -148,7 +148,7 @@ RailsAdmin.config do |config|
     edit do
       field :name
       field :hall
-      field :description, :type => :text
+      field :description
     end
   end
   
