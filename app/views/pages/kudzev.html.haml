@@ -18,13 +18,11 @@
         .b-speaker__photo
           = image_tag 'speakers/kudzev_orig.jpg', :class => 'b-speaker__img'
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Кудзев Артём
+          %a.b-speaker__link{:href => 'http://kudzev.ru', :target => '_blank'}
+            Кудзев Артём
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => '2gis.ru', :target => '_blank'}> 2ГИС
           , Новосибирск.
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://kudzev.ru', :target => '_blank'}
-            http://kudzev.ru
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/kudzev', :target => '_blank'}
@@ -41,7 +39,7 @@
           О докладчике
         %ul.b-speaker__list
           %li.b-speaker__list-item
-            Заместитель директора департамента R&D 2ГИС;
+            Заместитель директора департамента R&D компании 2ГИС;
           %li.b-speaker__list-item
             Программный директор конференции
             CodeFest;

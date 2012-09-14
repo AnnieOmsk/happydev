@@ -19,13 +19,11 @@
         .b-speaker__photo
           = image_tag 'speakers/sirotkin.jpg', :class => 'b-speaker__img', :alt => "Яков Сироткин"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Яков Сироткин
+          %a.b-speaker__link{:href => 'http://www.telamon.ru/', :target => '_blank'}
+            Яков Сироткин
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => 'http://spbau.ru/', :target => '_blank'}> СПбАУ, лаборатория алгоритмической биологии
           , Санкт-Петербург
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://www.telamon.ru/', :target => '_blank'}
-            http://www.telamon.ru/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/yakov_sirotkin', :target => '_blank'}

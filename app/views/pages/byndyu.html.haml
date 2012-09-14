@@ -17,13 +17,11 @@
         .b-speaker__photo
           = image_tag 'speakers/byndyu.jpg', :class => 'b-speaker__img', :alt => "Александр Бындю"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Александр Бындю
+          %a.b-speaker__link{:href => 'http://www.byndyu.ru/', :target => '_blank'}
+            Александр Бындю
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => 'http://soft.byndyu.ru/', :target => '_blank'}> Byndyusoft
           , Челябинск
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://www.byndyu.ru/', :target => '_blank'}
-            http://www.byndyu.ru/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/#!/alexanderbyndyu', :target => '_blank'}

@@ -20,14 +20,6 @@
     float: right;
 }
 
-.b-members__logo {
-    margin: 0 0 0 25px;
-}
-
-.b-members__logo:first-child {
-    margin: 0;
-}
-
 /* Carousel */
 
 .b-members__carousel {
@@ -124,4 +116,23 @@
     bottom: 0;
     left: 0;
     padding: 15px;
+}
+
+.b-members__link {
+    margin: 0 0 0 25px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.b-members__link:first-child {
+    margin: 0;
+}
+
+.b-members__logo {
+    margin: 0 0 0 25px;
+}
+
+.b-members__logo:first-child {
+    margin: 0;
 }

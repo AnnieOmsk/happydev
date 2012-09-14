@@ -19,13 +19,11 @@
         .b-speaker__photo
           = image_tag 'speakers/polikarpov.jpg', :class => 'b-speaker__img', :alt => "Артем Поликапов"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Артем Поликапов
+          %a.b-speaker__link{:href => 'http://artpolikarpov.moikrug.ru/', :target => '_blank'}
+            Артем Поликапов
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => 'http://artgorbunov.ru/', :target => '_blank'}> Бюро Артема Горбунова
           , Боровичи
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://artpolikarpov.moikrug.ru/', :target => '_blank'}
-            http://artpolikarpov.moikrug.ru/
         %ul.b-speaker__likes.clearfix
           -# %li.b-speaker__likes-item
           -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/see_yu/', :target => '_blank'}
@@ -45,10 +43,10 @@
             Дизайн-бюро Артема Горбунова, Ведущий технолог
           %li.b-speaker__list-item
             Даёт еженедельные советы о разработке веб-интерфейсов:
-            %a{:href => 'http://artgorbunov.ru/bb/soviet/polikarpov-mitin', :target => '_blank'} http://artgorbunov.ru/bb/soviet/polikarpov-mitin
+            %a.b-link{:href => 'http://artgorbunov.ru/bb/soviet/polikarpov-mitin', :target => '_blank'} http://artgorbunov.ru/bb/soviet/polikarpov-mitin
           %li.b-speaker__list-item
             Работал над проектом «Запринтуй»:
-            %a{:href => 'http://zaprintui.ru/', :target => '_blank'} http://zaprintui.ru/
+            %a.b-link{:href => 'http://zaprintui.ru/', :target => '_blank'} http://zaprintui.ru/
         %h2.b-speaker__title
           Описание
         %p.b-speaker__text

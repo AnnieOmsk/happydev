@@ -19,12 +19,10 @@
         .b-speaker__photo
           = image_tag 'speakers/volkov.jpg', :class => 'b-speaker__img', :alt => "Леонид Волков"
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Леонид Волков
+          %a.b-speaker__link{:href => 'http://leonidvolkov.ru/obo_mne/', :target => '_blank'}
+            Леонид Волков
         %p.b-speaker__text.b-speaker__text_type_gray
           Прожектор Венчурз, Екатеринбург
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://leonidvolkov.ru/obo_mne/', :target => '_blank'}
-            http://leonidvolkov.ru/obo_mne/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/leonidvolkov', :target => '_blank'}
@@ -40,9 +38,9 @@
         %h2.b-speaker__title
           О докладчике
         %p.b-speaker__text
-          "Прожектор Венчурз", Основатель
-        %p.b-speaker__text
           Проработал почти 12 лет в фирме "СКБ Контур", которая сейчас является одной из пяти крупнейших софтверных компаний в России.
+        %p.b-speaker__text
+          Основал компанию "Прожектор Венчурз"
         %p.b-speaker__text
           Главное направление профессиональной деятельности - посевное финансирование и выращивание ИТ-стартапов
         %p.b-speaker__text

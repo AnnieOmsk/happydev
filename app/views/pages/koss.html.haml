@@ -21,13 +21,11 @@
         .b-speaker__photo
           = image_tag 'speakers/koss.jpg', :class => 'b-speaker__img'
         %h2.b-speaker__title.b-speaker__title_type_normal
-          Александр Косс
+          %a.b-speaker__link{:href => 'http://koss.nocorp.me/', :target => '_blank'}
+            Александр Косс
         %p.b-speaker__text.b-speaker__text_type_gray
           %a.b-reporters__person-company-link{:href => 'http://evilmartians.ru/', :target => '_blank'}> Злые марсиане
           , Бангкок
-        .b-speaker__text
-          %a.b-speaker__link{:href => 'http://koss.nocorp.me/', :target => '_blank'}
-            http://koss.nocorp.me/
         %ul.b-speaker__likes.clearfix
           %li.b-speaker__likes-item
             %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'https://twitter.com/kossnocorp', :target => '_blank'}
