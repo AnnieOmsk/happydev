@@ -172,7 +172,7 @@
           %p.b-programm__text
             16:40
         %td.b-programm__column
-          = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('startup-porka-part2'), :s => :speech
+          = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('startup-porka-part2'), :as => :speech
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             -# =render :partial => "home/product/gurtovenko"
@@ -189,7 +189,7 @@
         %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
             -# =render :partial => "home/startup/volkov-pavlova"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('startup-porka-part1'), :s => :speech
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('startup-porka-part1'), :as => :speech
         %td.b-programm__column
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
