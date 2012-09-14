@@ -29,11 +29,11 @@
         .b-register__total
           %h2.b-register__total-title
             Общая стоимость
-          %span.b-price.b-price_type_early
-            %i.b-price__number.js-amount
-              = @invoice.amount
-            %span.b-price__rubl
-              a
+            %span.b-price.b-price_type_early
+              %i.b-price__number.js-amount
+                = @invoice.amount
+              %span.b-price__rubl
+                a
       - unless @invoice.invoice_events.all?{|e| e.paid?}
         .clearfix
           .b-register__line
