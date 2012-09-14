@@ -56,8 +56,14 @@ namespace :unicorn do
   end
 end
 
+namespace :db do
+  task :backup do
+    run "mysqldump --opt -uhappydev -p12hdhad019182b21 happydev_staging | gzip -c > ~/backups/dump-happydev_staging-`date \"+%Y-%m-%d\"`.sql.gz"
+  end
+end
+
 before 'deploy:assets:precompile', 'deploy:sql_symlink'
-after 'deploy:update', 'unicorn:restart', 'deploy:cleanup'
+after 'deploy:update', 'unicorn:restart', 'deploy:cleanup'#, 'db:backup'
 # deploy:migrate
 
 # require './config/boot'

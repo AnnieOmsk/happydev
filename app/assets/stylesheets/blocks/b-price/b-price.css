@@ -4,7 +4,7 @@
     display: block;
     width: 113px;
     height: 40px;
-    background: url(price-bg.png) no-repeat;
+    background: image-url('blocks/b-price/price-bg.png') no-repeat;
     text-align: center;
     line-height: 40px;
 }
