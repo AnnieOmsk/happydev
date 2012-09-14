@@ -1,3 +1,4 @@
+#encoding: utf-8
 RailsAdmin.config do |config|
   require 'i18n'
   I18n.default_locale = :ru
@@ -108,6 +109,33 @@ RailsAdmin.config do |config|
       field :company
       field :city
       field :speeches
+    end
+
+    edit do
+      field :first_name
+      field :last_name
+      field :email
+      field :position do
+        label "Место работы"
+      end
+      field :company
+      field :city
+      field :phone
+      field :description, :rich_editor
+      field :speeches do
+        label "Доклады"
+      end
+      group :social_links do
+        field :personal_url do
+          label "Сайт или блог"
+        end
+        field :twitter
+        field :facebook
+        field :vk
+        field :github
+        field :moikrug
+        field :slideshare
+      end
     end
   end
   
