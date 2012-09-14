@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120914075020) do
+ActiveRecord::Schema.define(:version => 20120914120323) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -122,8 +122,9 @@ ActiveRecord::Schema.define(:version => 20120914075020) do
   create_table "sections", :force => true do |t|
     t.string   "name"
     t.string   "hall"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.text     "description"
   end
 
   create_table "speakers", :force => true do |t|
@@ -144,6 +145,7 @@ ActiveRecord::Schema.define(:version => 20120914075020) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
     t.string   "position"
+    t.string   "photo_url"
   end
 
   add_index "speakers", ["city_id"], :name => "index_speakers_on_city_id"

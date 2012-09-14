@@ -122,6 +122,7 @@ RailsAdmin.config do |config|
       field :city
       field :phone
       field :description, :rich_editor
+      field :photo_url
       field :speeches do
         label "Доклады"
       end
@@ -143,6 +144,11 @@ RailsAdmin.config do |config|
     list do
       field :name
       field :hall
+    end
+    edit do
+      field :name
+      field :hall
+      field :description
     end
   end
   
