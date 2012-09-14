@@ -76,48 +76,6 @@
 .b-tikets__price-inner {
     float: left;
     width: 113px;
-    height: 40px;
-    background: image-url('blocks/b-tikets/price-bg.png') no-repeat;
-    text-align: center;
-    line-height: 40px;
-}
-
-.b-tikets__method_type_early .b-tikets__price-inner {
-    background-position: 0 -40px;
-}
-
-.b-tikets__method_type_normal .b-tikets__price-inner {
-    background-position: 0 -80px;
-}
-
-.b-tikets-price {
-    color: #fff;
-    font-size: 22px;
-    font-weight: bold;;
-    font-family: Arial, sans-serif;
-    font-style: normal;
-}
-
-.b-tikets__rubl-inner {
-    position: relative;
-    font-family: 'als_rublregular';
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.b-tikets__rubl {
-    width: 1px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-
-.b-tikets__rubl-img {
-    vertical-align: text-top;
 }
 
 .b-tikets__pricing-date {
