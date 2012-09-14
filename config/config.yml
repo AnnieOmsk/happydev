@@ -20,9 +20,9 @@ staging:
     api_key: 9b98484528f3f824d34df46c8672a168-us5
     list_id: da461e7340
   robokassa:
-    login: 'sharipov'
-    secret1: 'iddqdkfa83'   # for notification method
-    secret2: 'robox1212'
+    login: 'EugeneTarasenko'
+    secret1: 'dkhtdkjhpbkcp,2012'   # for notification method
+    secret2: 'bdjyygrygbvvhlg2012'
   facebook:
     AppID: 521885384495458
     admins: 100001720278298
@@ -46,3 +46,9 @@ production:
   vkontakte:
     AppID: 3104781
   2gis_map_id: '398515700752a255c6f4ba03702e376e'
+
+# tmp:
+  # robokassa:
+  #   login: 'sharipov'
+  #   secret1: 'iddqdkfa83'   # for notification method
+  #   secret2: 'robox1212'
