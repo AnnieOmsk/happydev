@@ -44,36 +44,29 @@
 
 .b-speaker__right {
     width: 645px;
+}
 
-    .b-speaker__title:first-child {
-        margin-top: 0;
-    }
+.b-speaker__right .b-speaker__title:first-child {
+    margin-top: 0;
+}
 
-    .b-speaker__title {
-        margin-top: 40px;
-    }
+.b-speaker__right .b-speaker__title {
+    margin-top: 40px;
+}
 
-    p {
-        color: #3f495f;
-        font-family: Arial, sans-serif;
-        font-size: 13px;
-        line-height: 19px;
-    }
+.b-speaker__list {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #3f495f;
+    font-family: Arial, sans-serif;
+}
 
-    ul {
-        margin: 0;
-        padding: 0;
-        font-size: 13px;
-        color: #3f495f;
-        font-family: Arial, sans-serif;
-    }
-
-    li  {
-        margin: 0 0 10px;
-        padding: 0 0 0 20px;
-        list-style: none;
-        background: image-url('blocks/b-speaker/line.png') 0 8px no-repeat;
-    }
+.b-speaker__list-item {
+    margin: 0 0 10px;
+    padding: 0 0 0 20px;
+    list-style: none;
+    background: image-url('blocks/b-speaker/line.png') 0 8px no-repeat;
 }
 
 .b-speaker__list_type_gray .b-speaker__list-item {

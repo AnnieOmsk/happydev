@@ -26,8 +26,7 @@ Happydev::Application.routes.draw do
   match '/pay' => 'home#payment'
 
   match '/invoices/new' => 'invoices#new', :as => :pay
-  # match '/speakers/:id' => 'high_voltage/pages#show', :as => :static, :via => :get, :format => false
-  match '/speakers/:permalink' => 'speeches#show'
+  match '/speakers/:id' => 'high_voltage/pages#show', :as => :static, :via => :get, :format => false
 
   scope 'payment' do
     match 'result'    => 'payments#result',    :as => :payment_result # to handle Robokassa push request

@@ -122,7 +122,6 @@ RailsAdmin.config do |config|
       field :city
       field :phone
       field :description, :rich_editor
-      field :photo_url
       field :speeches do
         label "Доклады"
       end
