@@ -115,10 +115,10 @@ RailsAdmin.config do |config|
       field :first_name
       field :last_name
       field :email
-      field :position do
-        label "Место работы"
-      end
       field :company
+      field :position do
+        label "Должность"
+      end
       field :city
       field :phone
       field :description, :rich_editor
