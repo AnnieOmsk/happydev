@@ -58,7 +58,7 @@ end
 
 namespace :db do
   task :backup do
-    run "mysqldump --opt -uhappydev -p12hdhad019182b21 happydev_staging | gzip -c > ~/backups/dump-happydev_staging-`date \"%Y-%m-%d\"`.sql.gz"
+    run "mysqldump --opt -uhappydev -p12hdhad019182b21 happydev_staging | gzip -c > ~/backups/dump-happydev_staging-`date \"+%Y-%m-%d\"`.sql.gz"
   end
 end
 
