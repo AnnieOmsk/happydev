@@ -30,7 +30,7 @@
         // Юрий Подорожный ======================================================
         %td.b-programm__column{:rowspan => 2}
           .b-programm__content.js-b-programm__content
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('podorozhny'), :as => :speech
+            -# = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('podorozhny'), :as => :speech
         // Ольга Павлова ======================================================              
         %td.b-programm__column{:rowspan => 2}
           .b-programm__content.js-b-programm__content
@@ -82,8 +82,8 @@
             12:20
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/startup/treskin"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('treskin'), :as => :speech
+            =render :partial => "home/startup/treskin"
+            -# = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('treskin'), :as => :speech
         %td.b-programm__column{:colspan => "3"}
           .b-programm__content.js-b-programm__content
             =render :partial => "home/cross_section/filippov"
