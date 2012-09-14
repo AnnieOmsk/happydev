@@ -8,16 +8,15 @@
       .l-page_display_inline.l-page_gap-right-out_45
         %div
           - if @invoice.invoice_events.all?{|e| e.paid?}
-            %h3 Ураа, ты уже на полпути к #HappyDev 2012!
-            %p Ты оплатил:
-            
+            %h3{:style => "margin-top:25px;"} Ураа, ты уже на полпути к #HappyDev 2012!
             %ul
               - for paid_event in @invoice.invoice_events
-                %li= "#{paid_event.event.full_name_without_price}, #{paid_event.paid_amount} руб."
+                %li= "#{paid_event.event.full_name_without_price}, #{paid_event.paid_amount} руб. (<strong>Оплачено</strong>)".html_safe
 
-            %h3 Оплачена сумма: #{ @invoice.amount} руб.
+            / %h3 Оплачена сумма: #{ @invoice.amount} руб.
 
           - else
+            %h3{:style => "margin-top:25px;"} Вы хотите оплатить:
             %ul
               - for ie in @invoice.invoice_events
                 %li
@@ -25,7 +24,7 @@
                   - if ie.paid?
                     = " (<strong>Оплачено</strong>)".html_safe 
 
-      .l-page_float_right.l-page_gap-right-out_45
+      .l-page_float_right.l-page_gap-right-out_45{:style => "margin-top: 21px;"}
         .b-register__total
           %h2.b-register__total-title
             Общая стоимость

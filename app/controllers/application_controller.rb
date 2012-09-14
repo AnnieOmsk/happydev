@@ -11,6 +11,9 @@ class ApplicationController < ActionController::Base
     else
       pay_path
     end
+  end
 
+  def authenticate_admin!
+    redirect_to '/' unless current_user && current_user.admin?
   end
 end

@@ -59,7 +59,7 @@ module Happydev
 
     # Enable the asset pipeline
     config.assets.enabled = true
-    config.assets.precompile += ['devise.css', 'style.uncompressed.css', 'scrollspy.js', 'scroll.js']
+    config.assets.precompile += ['devise.css', 'style.uncompressed.css', 'scrollspy.js', 'scroll.js', 'bootstrap.min.js']
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     
     # Version of your assets, change this if you want to expire all your assets
