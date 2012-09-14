@@ -22,7 +22,7 @@
                 %span.b-register__inputs-inner
                   = f.password_field :password, :class => "b-register__input_password"
                   %span.b-register__required *
-      .b-register__actions.l-page_float_left
-        %input.b-register__input_submit{:type => "submit", :value => "Войти"}/
-      .b-register__forgot_password.l-page_float_left
-        = render "devise/shared/links"
+        .b-register__actions.l-page_float_left
+          = f.submit 'Войти', :class => 'b-register__input_submit'
+        .b-register__forgot_password.l-page_float_left
+          = render "devise/shared/links"
