@@ -63,7 +63,7 @@ namespace :db do
 end
 
 before 'deploy:assets:precompile', 'deploy:sql_symlink'
-after 'deploy:update', 'unicorn:restart', 'deploy:cleanup', 'db:backup'
+after 'deploy:update', 'unicorn:restart', 'deploy:cleanup'#, 'db:backup'
 # deploy:migrate
 
 # require './config/boot'
