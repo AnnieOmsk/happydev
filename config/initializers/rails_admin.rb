@@ -145,6 +145,11 @@ RailsAdmin.config do |config|
       field :name
       field :hall
     end
+    edit do
+      field :name
+      field :hall
+      field :description
+    end
   end
   
   config.model Specialization do
