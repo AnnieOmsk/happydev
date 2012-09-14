@@ -5,7 +5,7 @@
         - unless current_user
           =link_to "Регистрация", new_user_registration_path, :class => 'b-head__link'
         - else
-          =link_to "Оплата", pay_path, :class => 'b-head__link'
+          =link_to "Регистрация", pay_path, :class => 'b-head__link'
     %menu.b-head__nav
       %li.b-head__item{:style => "min-width: 125px;"}
         %a.b-head__link{:href => root_path_with_anchor('about')}
