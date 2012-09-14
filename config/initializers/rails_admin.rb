@@ -164,6 +164,7 @@ RailsAdmin.config do |config|
     end
     edit do
       field :title
+      field :permalink
       field :annotation, :rich_editor
       field :description, :rich_editor
       field :speaker
