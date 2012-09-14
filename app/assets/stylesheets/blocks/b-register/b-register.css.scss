@@ -103,7 +103,7 @@
 .b-register__textarea,
 .b-register__select {
     width: 100%;
-    padding: 5px 20px 5px 5px;
+    padding: 5px;
     background: #fff;
     border: 1px solid #d0dde5;
     font-size: 14px;
@@ -149,6 +149,7 @@
 .b-register__input_text,
 .b-register__input_email,
 .b-register__input_password {
+    padding-right: 20px;
     height: 30px;
     -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
