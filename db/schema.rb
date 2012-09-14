@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120913181033) do
+ActiveRecord::Schema.define(:version => 20120914033412) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -131,6 +131,7 @@ ActiveRecord::Schema.define(:version => 20120913181033) do
     t.integer  "company_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "position"
   end
 
   add_index "speakers", ["city_id"], :name => "index_speakers_on_city_id"
@@ -151,6 +152,8 @@ ActiveRecord::Schema.define(:version => 20120913181033) do
     t.integer  "specialization_id"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+    t.datetime "start_time"
+    t.integer  "timing"
   end
 
   add_index "speeches", ["section_id"], :name => "index_speeches_on_section_id"
