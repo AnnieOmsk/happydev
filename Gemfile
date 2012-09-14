@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',                      '3.2.8'
+gem 'rails_admin'
 
 gem 'mysql2',                     '~> 0.3.11'
 gem 'haml-rails',                 '~> 0.3.4'
@@ -20,6 +21,7 @@ gem 'high_voltage'
 
 gem 'rdiscount'
 gem 'hpricot'
+gem 'rich'
 
 group :assets do
   gem 'sass-rails',               '~> 3.2.3'

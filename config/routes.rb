@@ -1,4 +1,8 @@
 Happydev::Application.routes.draw do
+  mount Rich::Engine => '/rich', :as => 'rich'
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
   resources :events
 
   devise_for :users, :skip => [:registrations], :controllers => {:registrations => "registrations"}, :path => "registration", :path_names => { :sign_up => "new", :sign_in => 'login', :sign_out => 'logout' } do
