@@ -170,6 +170,7 @@ ActiveRecord::Schema.define(:version => 20120914075020) do
     t.string   "permalink"
   end
 
+  add_index "speeches", ["permalink"], :name => "index_speeches_on_permalink"
   add_index "speeches", ["section_id"], :name => "index_speeches_on_section_id"
   add_index "speeches", ["speaker_id"], :name => "index_speeches_on_speaker_id"
   add_index "speeches", ["specialization_id"], :name => "index_speeches_on_specialization_id"
