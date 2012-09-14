@@ -1,0 +1,72 @@
+- title "#{@speech.title} - #{@speaker.full_name}"
+
+.l-page_width_page
+  = render :partial => 'layouts/logo'
+  .b-speaker
+    %h1.b-speaker__theme-title.l-page_align_center
+      = @speech.title
+    .b-time.l-page_align_center
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        = @speech.time_range
+      %span.b-time__text
+        = @speech.section.hall
+    %span.b-speaker__theme-about.l-page_align_center
+      = @speech.annotation.html_safe
+    .b-speaker__report-info.clearfix
+      .b-speaker__left.l-page_float_left
+        - if @speaker.photo_url.present?
+          .b-speaker__photo
+            = image_tag @speaker.photo_url, :class => 'b-speaker__img', :alt => @speaker.full_name
+        %h2.b-speaker__title.b-speaker__title_type_normal
+          - if @speaker.personal_url_or_moikrug_url.present?
+            %a.b-speaker__link{:href => @speaker.personal_url_or_moikrug_url, :target => '_blank'}
+              = @speaker.full_name
+          - else
+            = @speaker.full_name
+        %p.b-speaker__text.b-speaker__text_type_gray
+          %a.b-reporters__person-company-link{:href => @company.url, :target => '_blank'}>= @company.name
+          == , #{@company.city.name}
+        %ul.b-speaker__likes.clearfix
+          - if @speaker.twitter.present?
+            %li.b-speaker__likes-item
+              %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => @speaker.twitter, :target => '_blank'}
+          - if @speaker.vk.present?
+            %li.b-speaker__likes-item
+              %a.b-speaker__likes-link.b-speaker__likes-link_icon_vk{:href => @speaker.vk, :target => '_blank'}
+          - if @speaker.facebook.present?
+            %li.b-speaker__likes-item
+              %a.b-speaker__likes-link.b-speaker__likes-link_icon_fb{:href => @speaker.facebook, :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_hh{:href => '#', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_flamp{:href => '#', :target => '_blank'}
+      .b-speaker__right.l-page_float_right
+        %h2.b-speaker__title
+          О докладчике
+        %span
+          = @speaker.description.html_safe
+        %h2.b-speaker__title
+          Описание
+        %span.b-speaker__text
+          = @speech.description.html_safe
+
+        .b-speaker__invite.clearfix
+          %span.b-speaker__invite-title.l-page_float_left
+            Пригласите друзей
+          .b-speaker__invite-likes.l-page_float_left.social-panel
+            = render :partial => 'layouts/social_links_panel'
+        -# %h2.b-speaker__title
+        -#   Презентация
+        -# .b-speaker__presentation
+        -#   = image_tag 'blocks/b-speaker/present.png'
+        -# %h2.b-speaker__title
+        -#   Видео доклада
+        -# .b-speaker__video
+        -#   = image_tag 'blocks/b-speaker/vimeo.png'
+        %h2.b-speaker__title
+          Комментарии
+        .b-speaker__presentation
+          = render :partial => 'pages/disqus'
+
+  -# = render :partial => 'home/speakers_carousel'
