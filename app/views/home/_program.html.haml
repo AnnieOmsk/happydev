@@ -30,15 +30,17 @@
         // Юрий Подорожный ======================================================
         %td.b-programm__column{:rowspan => 2}
           .b-programm__content.js-b-programm__content
-            -# = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('podorozhny'), :as => :speech
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('podorozhny'), :as => :speech
         // Ольга Павлова ======================================================              
         %td.b-programm__column{:rowspan => 2}
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/product/pavlova"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('pavlova'), :as => :speech
+            -# =render :partial => "home/product/pavlova"
         // Данил Снитко ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/factory/snitko"
+            -# =render :partial => "home/factory/snitko"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('snitko'), :as => :speech
 
       %tr.b-programm__row
         %td.b-programm__column
@@ -46,7 +48,8 @@
             11:20
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/factory/polykarpov"
+            -# =render :partial => "home/factory/polykarpov"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('polykarpov-factory'), :as => :speech
      
 
       %tr.b-programm__row.b-programm__row_state_filled
@@ -56,37 +59,44 @@
         // Рамиль Шайхутдинов ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/startup/shayhutdinov"
+            -# =render :partial => "home/startup/shayhutdinov"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('shayhutdinov'), :as => :speech
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/product/kudymov_scrum"
+            -# =render :partial => "home/product/kudymov_scrum"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudymov-scrum'), :as => :speech
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/factory/shapiro"
+            -# =render :partial => "home/factory/shapiro"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('shapiro'), :as => :speech
       %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
             11:50
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/startup/polykarpov"
+            -# =render :partial => "home/startup/polykarpov"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('polykarpov-startup'), :as => :speech
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/product/kudzev"
+            -# =render :partial => "home/product/kudzev"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudzev'), :as => :speech
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/factory/savilov"
+            -# =render :partial => "home/factory/savilov"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('savilov'), :as => :speech
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
             12:20
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/startup/treskin"
-            -# = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('treskin'), :as => :speech
+            -# =render :partial => "home/startup/treskin"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('treskin'), :as => :speech
         %td.b-programm__column{:colspan => "3"}
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/cross_section/filippov"
+            -# =render :partial => "home/cross_section/filippov"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('filippov'), :as => :speech
       %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
@@ -107,7 +117,8 @@
             14:20-15:00
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/cross_section/sirotkin"
+            -# =render :partial => "home/cross_section/sirotkin"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('sirotkin'), :as => :speech
         %td.b-programm__column{:colspan => "2"}
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
@@ -115,20 +126,24 @@
             15:05
         %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/startup/volkov"
+            -# =render :partial => "home/startup/volkov"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('volkov'), :as => :speech
         %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/product/kudymov_design"
+            -# =render :partial => "home/product/kudymov_design"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudymov-design'), :as => :speech
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/factory/koss"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('koss'), :as => :speech
+            -# =render :partial => "home/factory/koss"
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
             15:50
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/factory/yazovskiy"
+            -# =render :partial => "home/factory/yazovskiy"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('yazovskiy'), :as => :speech
       
       %tr.b-programm__row
         %td.b-programm__column
@@ -136,12 +151,14 @@
             16:00
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/startup/filippov"
+            -# =render :partial => "home/startup/filippov"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('filippov-startup'), :as => :speech
         %td.b-programm__column
           ?
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/factory/tarasenko"
+            -# =render :partial => "home/factory/tarasenko"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('tarasenko'), :as => :speech
       
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
@@ -158,10 +175,12 @@
           ?
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/product/gurtovenko"
+            -# =render :partial => "home/product/gurtovenko"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('gurtovenko'), :as => :speech
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/factory/nepomnyashikh"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('nepomnyashikh'), :as => :speech
+            -# =render :partial => "home/factory/nepomnyashikh"
       
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
@@ -169,21 +188,25 @@
             17:20
         %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/startup/volkov-pavlova"
+            -# =render :partial => "home/startup/volkov-pavlova"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('startup-porka'), :as => :speech
         %td.b-programm__column
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/factory/byndyu"
+            -# =render :partial => "home/factory/byndyu"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('byndyu'), :as => :speech
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
             18:40
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/product/chistyakov"
+            -# =render :partial => "home/product/chistyakov"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('chistyakov'), :as => :speech
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            =render :partial => "home/factory/bush"
+            -# =render :partial => "home/factory/bush"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('bush'), :as => :speech
       
       %tr.b-programm__row
         %td.b-programm__column
