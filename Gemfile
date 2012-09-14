@@ -21,6 +21,7 @@ gem 'high_voltage'
 
 gem 'rdiscount'
 gem 'hpricot'
+gem 'rich'
 
 group :assets do
   gem 'sass-rails',               '~> 3.2.3'

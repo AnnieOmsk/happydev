@@ -1,12 +1,10 @@
-# RailsAdmin config file. Generated on September 13, 2012 23:05
-# See github.com/sferik/rails_admin for more informations
-
 RailsAdmin.config do |config|
+  require 'i18n'
+  I18n.default_locale = :ru
 
-  # If your default_local is different from :en, uncomment the following 2 lines and set your default locale here:
-  # require 'i18n'
-  # I18n.default_locale = :de
-
+  config.authenticate_with do
+    authenticate_admin!
+  end
   config.current_user_method { current_user } # auto-generated
 
   # If you want to track changes on your models:
@@ -31,7 +29,7 @@ RailsAdmin.config do |config|
 
   #  ==> Included models
   # Add all excluded models here:
-  # config.excluded_models = [Event, Invoice, InvoiceEvent, Payment, Promocode, User]
+  config.excluded_models = [Invoice, InvoiceEvent, Payment, Promocode, User, Event]
 
   # Add models here if you want to go 'whitelist mode':
   # config.included_models = [Event, Invoice, InvoiceEvent, Payment, Promocode, User]
@@ -78,7 +76,75 @@ RailsAdmin.config do |config|
   # Your model's configuration, to help you get started:
 
   # All fields marked as 'hidden' won't be shown anywhere in the rails_admin unless you mark them as visible. (visible(true))
+  config.model City do
+    list do
+      field :name
+      field :companies
+    end
+    edit do
+      field :name
+      field :companies
+    end
+  end
 
+  config.model Company do
+    list do
+      field :name
+      field :city
+      field :url
+    end
+    edit do
+      field :name
+      field :city
+      field :url
+    end
+  end
+  
+  config.model Speaker do
+    object_label_method :full_name
+    list do
+      field :first_name
+      field :last_name
+      field :company
+      field :city
+      field :speeches
+    end
+  end
+  
+  config.model Section do
+    list do
+      field :name
+      field :hall
+    end
+  end
+  
+  config.model Specialization do
+    list do
+      field :name
+      field :speeches
+    end
+  end
+  
+  config.model Speech do
+    list do
+      field :title
+      field :speaker
+      field :section
+      field :specialization
+      field :start_time
+      field :timing
+    end
+    edit do
+      field :title
+      field :annotation, :rich_editor
+      field :description, :rich_editor
+      field :speaker
+      field :section
+      field :specialization
+      field :start_time
+      field :timing
+    end
+  end
   # config.model Event do
   #   # Found associations:
   #     configure :invoice_events, :has_many_association 
