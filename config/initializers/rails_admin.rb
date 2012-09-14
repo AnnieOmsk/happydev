@@ -174,6 +174,8 @@ RailsAdmin.config do |config|
       field :annotation, :rich_editor
       field :description, :rich_editor
       field :speaker
+      field :speaker2
+      field :speaker3
       field :section
       field :specialization
       field :start_time

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120914120323) do
+ActiveRecord::Schema.define(:version => 20120914130834) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -170,6 +170,8 @@ ActiveRecord::Schema.define(:version => 20120914120323) do
     t.datetime "start_time"
     t.integer  "timing"
     t.string   "permalink"
+    t.integer  "speaker2_id"
+    t.integer  "speaker3_id"
   end
 
   add_index "speeches", ["permalink"], :name => "index_speeches_on_permalink"
