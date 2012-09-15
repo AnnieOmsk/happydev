@@ -60,7 +60,7 @@
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('snitko'), :as => :speech
 
-      %tr.b-programm__row
+      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
             11:45
@@ -73,24 +73,24 @@
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('shapiro'), :as => :speech
 
-      %tr.b-programm__row.b-programm__row_state_filled
+      %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
             12:15
         // Петр Диденко ======================================================
-        %td.b-programm__column{:colspan => "3", :rowspan => "2"}
+        %td.b-programm__column{:colspan => "3"}
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('didenko'), :as => :speech
 
-      %tr.b-programm__row
+      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
             13:00
-        %td.b-programm__column{:colspan => "3", :rowspan => "2"}
+        %td.b-programm__column{:colspan => "3"}
           %p.b-programm__text
             Обед
 
-      %tr.b-programm__row.b-programm__row_state_filled
+      %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
             14:00
@@ -103,7 +103,7 @@
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('koss'), :as => :speech
 
-      %tr.b-programm__row.b-programm__row_state_filled
+      %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
             14:30
@@ -116,7 +116,7 @@
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('yazovskiy'), :as => :speech
       
-      %tr.b-programm__row
+      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
             15:00
@@ -133,7 +133,7 @@
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('tarasenko'), :as => :speech
       
-      %tr.b-programm__row.b-programm__row_state_filled
+      %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
             15:30
@@ -150,7 +150,7 @@
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('nepomnyashikh'), :as => :speech
 
-      %tr.b-programm__row.b-programm__row_state_filled
+      %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
             16:00
@@ -167,7 +167,7 @@
           %p.b-programm__column-title
             Кофе-брейк
 
-      %tr.b-programm__row.b-programm__row_state_filled
+      %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
             16:40
@@ -176,7 +176,7 @@
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('sirotkin'), :as => :speech
 
-      %tr.b-programm__row
+      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
             17:20
@@ -211,7 +211,7 @@
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('filippov'), :as => :speech
 
-      %tr.b-programm__row
+      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
             19:20-19:30
