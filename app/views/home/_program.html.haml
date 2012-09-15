@@ -13,7 +13,6 @@
           %p.b-programm__text
             Регистрация
       
-
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
@@ -21,82 +20,68 @@
         %td.b-programm__column{:colspan => "3"}
           %p.b-programm__text
             10:00 Открытие конференции
-      
 
       %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
-            10:25
-        // Юрий Подорожный ======================================================
-        %td.b-programm__column{:rowspan => 2, :style=> "width:27%"}
-          .b-programm__content.js-b-programm__content
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('podorozhny'), :as => :speech
-        // Ольга Павлова ======================================================              
-        %td.b-programm__column{:rowspan => 2, :style=> "width:27%"}
-          .b-programm__content.js-b-programm__content
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('pavlova'), :as => :speech
-            -# =render :partial => "home/product/pavlova"
-        // Данил Снитко ======================================================
+            10:15
+        // Артем Поликарпов ======================================================
         %td.b-programm__column{:style=> "width:27%"}
           .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/factory/snitko"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('polikarpov-fotorama'), :as => :speech
+        // Ольга Павлова ======================================================              
+        %td.b-programm__column{:rowspan => "2", :colspan => "2"}
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('pavlova'), :as => :speech
+
+      %tr.b-programm__row
+        %td.b-programm__column
+          %p.b-programm__text
+            10:45
+        // Максим Трескин ======================================================
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('treskin'), :as => :speech
+
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column
+          %p.b-programm__text
+            11:15
+        // Юрий Подорожный ======================================================
+        %td.b-programm__column{:rowspan => "2"}
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('podorozhny'), :as => :speech
+        // Александр Кудымов ======================================================
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudymov-scrum'), :as => :speech
+        // Данил Снитко ======================================================
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('snitko'), :as => :speech
 
       %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
-            11:20
+            11:45
+        // Артем Кудзев ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/factory/polykarpov"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('polykarpov-factory'), :as => :speech
-     
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudzev'), :as => :speech
+        // Андрей Шапиро ======================================================
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('shapiro'), :as => :speech
 
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
-            11:20
-        // Рамиль Шайхутдинов ======================================================
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/startup/shayhutdinov"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('shayhutdinov'), :as => :speech
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/product/kudymov_scrum"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudymov-scrum'), :as => :speech
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/factory/shapiro"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('shapiro'), :as => :speech
-      %tr.b-programm__row
-        %td.b-programm__column
-          %p.b-programm__text
-            11:50
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/startup/polykarpov"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('fotorama'), :as => :speech
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/product/kudzev"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudzev'), :as => :speech
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/factory/savilov"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('savilov'), :as => :speech
-      %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
-          %p.b-programm__text
-            12:20
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/startup/treskin"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('treskin'), :as => :speech
+            12:15
+        // Петр Диденко ======================================================
         %td.b-programm__column{:colspan => "3"}
           .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/cross_section/filippov"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('filippov'), :as => :speech
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('didenko'), :as => :speech
+
       %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
@@ -104,114 +89,132 @@
         %td.b-programm__column{:colspan => "3"}
           %p.b-programm__text
             Обед
+
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
-            13:40-14:20
-        %td.b-programm__column{:colspan => "3"}
-          %p.b-programm__text
-            Конкурсы
-      %tr.b-programm__row
-        %td.b-programm__column
-          %p.b-programm__text
-            14:20-15:00
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/cross_section/sirotkin"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('sirotkin'), :as => :speech
-        %td.b-programm__column{:colspan => "2"}
-      %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
-          %p.b-programm__text
-            15:05
+            14:00
+        // Леонид Волков ======================================================
         %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/startup/volkov"
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('volkov'), :as => :speech
-        %td.b-programm__column{:rowspan => "2"}
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/product/kudymov_design"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudymov-design'), :as => :speech
-        %td.b-programm__column
+        // Саша Косс ======================================================
+        %td.b-programm__column{:colspan => "2"}
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('koss'), :as => :speech
-            -# =render :partial => "home/factory/koss"
+
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
-            15:50
+            14:30
+        // Артем Поликарпов ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/factory/yazovskiy"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('yazovskiy'), :as => :speech
+           = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('polikarpov-technolog'), :as => :speech
+        // Антон Язовский ======================================================
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
+           = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('yazovskiy'), :as => :speech
       
       %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
-            16:00
+            15:00
+        // Рамиль Шайхутдинов ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/startup/filippov"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('filippov-startup'), :as => :speech
-        %td.b-programm__column
-          ?
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('shayhutdinov'), :as => :speech
+        // Александр Кудымов ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/factory/tarasenko"
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudymov-design'), :as => :speech
+        // Анна Тарасенко ======================================================
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('tarasenko'), :as => :speech
       
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
-            16:20-16:40
-        %td.b-programm__column{:colspan => "3"}
-          %p.b-programm__column-title
-            Полдник, конкурсы
-      %tr.b-programm__row
-        %td.b-programm__column
-          %p.b-programm__text
-            16:40
-        %td.b-programm__column
-          = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('startup-porka-part2'), :as => :speech
-        %td.b-programm__column
+            15:30
+        // Волков, Павлова, Диденко ======================================================
+        %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/product/gurtovenko"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('gurtovenko'), :as => :speech
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('startup-porka-part1'), :as => :speech
+        // Александр Чистяков ======================================================
+        %td.b-programm__column{:rowspan => "2"}
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('chistyakov'), :as => :speech
+        // Антон Непомнящих ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('nepomnyashikh'), :as => :speech
-            -# =render :partial => "home/factory/nepomnyashikh"
-      
+
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column
           %p.b-programm__text
-            17:20
-        %td.b-programm__column{:rowspan => "2"}
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/startup/volkov-pavlova"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('startup-porka-part1'), :as => :speech
-        %td.b-programm__column
+            16:00
+        // Сергей Буш ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/factory/byndyu"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('byndyu'), :as => :speech
-      %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
-          %p.b-programm__text
-            18:40
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/product/chistyakov"
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('chistyakov'), :as => :speech
-        %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            -# =render :partial => "home/factory/bush"
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('bush'), :as => :speech
       
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column
+          %p.b-programm__text
+            16:25-16:40
+        %td.b-programm__column{:colspan => "3"}
+          %p.b-programm__column-title
+            Кофе-брейк
+
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column
+          %p.b-programm__text
+            16:40
+        // Яков Сироткин ======================================================
+        %td.b-programm__column{:colspan => "3"}
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('sirotkin'), :as => :speech
+
       %tr.b-programm__row
         %td.b-programm__column
           %p.b-programm__text
-            18:50-19:00
+            17:20
+        // Волков, Павлова, Диденко ======================================================
+        %td.b-programm__column{:rowspan => "2"}
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('startup-porka-part2'), :as => :speech
+        // Максим Гуртовенко ======================================================
+        %td.b-programm__column{:rowspan => "2"}
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('gurtovenko'), :as => :speech
+        // Александр Бындю ======================================================
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('byndyu'), :as => :speech
+      
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column
+          %p.b-programm__text
+            17:50
+        // Максим Савилов ======================================================
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('savilov'), :as => :speech
+
+      %tr.b-programm__row
+        %td.b-programm__column
+          %p.b-programm__text
+            18:20-19:15
+        // Никита Филиппов ======================================================
+        %td.b-programm__column{:colspan => "3"}
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('filippov'), :as => :speech
+
+      %tr.b-programm__row
+        %td.b-programm__column
+          %p.b-programm__text
+            19:20-19:30
         %td.b-programm__column{:colspan => "3"}
           %p.b-programm__text
-            Закрытие
+            Закрытие конференции
