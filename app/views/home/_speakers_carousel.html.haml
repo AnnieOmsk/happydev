@@ -15,11 +15,9 @@
                 = speaker.full_name
               %p.b-reporters__person-theme
                 %a.b-reporters__person-theme-link{:href => "/speakers/#{speech.permalink}"}
-                  \&laquo;
-                  = speech.title
-                  &raquo;
+                  = "\&laquo;#{speech.title}&raquo;".html_safe
               %p.b-reporters__person-company
-                %a.b-reporters__person-company-link{:href => 'http://scrumtrek.ru/', :target => '_blank'}>= company.name
+                %a.b-reporters__person-company-link{:href => company.url, :target => '_blank'}>= company.name
                 ,
                 = speaker.city.name
 
