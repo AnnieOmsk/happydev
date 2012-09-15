@@ -8,7 +8,6 @@ gem 'haml-rails',                 '~> 0.3.4'
 gem 'json',                       '~> 1.7.5'
 gem 'libv8',                      '~> 3.11.8'
 gem 'therubyracer',               '0.11.0beta5'
-gem 'quiet_assets',               '~> 1.0.1'
 gem 'jquery-rails',               '~> 2.1.1'
 gem 'devise',                     '~> 2.1.2'
 gem 'simple_form',                '~> 2.0.2'
@@ -33,6 +32,7 @@ end
 group :development do
   gem 'thin',                     '~> 1.4.1'
   gem 'debugger'
+  gem 'quiet_assets',             '~> 1.0.1'
 end
 
 gem 'capistrano'
