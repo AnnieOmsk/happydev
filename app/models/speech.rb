@@ -33,6 +33,10 @@ class Speech < ActiveRecord::Base
     speakers.size > 1
   end
 
+  def has_one_speaker?
+    !has_multiple_speakers?
+  end
+
   def all_speakers_names
     speakers.map {|s| s.full_name if s}.join(', ')
   end

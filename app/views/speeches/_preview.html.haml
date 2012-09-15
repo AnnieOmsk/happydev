@@ -16,11 +16,11 @@
           = speech.section.hall
     .b-programm__desc-person
       .b-programm__desc-person-info-inner.clearfix
-        - if speaker.photo_url.present?
+        - if speaker.photo_url.present? && speech.has_one_speaker?
           = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
         .b-programm__desc-person-info
           %h2.b-programm__desc-name
-            = speaker.full_name
+            = speech.all_speakers_names
           %p.b-programm__desc-theme
             %a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
               = speech.title
