@@ -35,7 +35,7 @@ production:
     list_id: 30503cd22e
     list_id_7bits_friends: 9c2718348c
   robokassa:
-    login: 'AnnieOmsk'
+    login: 'EugeneTarasenko'
     secret1: 'dkhtdkjhpbkcp,2012'   # for notification method
     secret2: 'bdjyygrygbvvhlg2012'
   facebook:
