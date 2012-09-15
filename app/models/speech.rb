@@ -24,4 +24,16 @@ class Speech < ActiveRecord::Base
       nil
     end
   end
+
+  def speakers
+    [speaker, speaker2, speaker3].compact
+  end
+
+  def has_multiple_speakers?
+    speakers.size > 1
+  end
+
+  def all_speakers_names
+    speakers.map {|s| s.full_name if s}.join(', ')
+  end
 end
