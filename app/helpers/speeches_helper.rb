@@ -2,7 +2,7 @@
 
 module SpeechesHelper
   def icon_for_speakers speech
-    spec_hash = {"Разработка" => "developer", "Дизайн" => "designer", "Управление" => "manager"}
+    spec_hash = {"Разработка" => "developer", "Дизайн" => "designer", "Управление" => "manager", "Общий" => "general"}
     if speech.specialization
       image = "#{spec_hash[speech.specialization.name]}.png"
       image_tag image, :size => "20x20"

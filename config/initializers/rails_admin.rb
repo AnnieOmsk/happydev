@@ -178,6 +178,7 @@ RailsAdmin.config do |config|
       field :speaker3
       field :section
       field :specialization
+      field :specialization2
       field :start_time
       field :timing
     end

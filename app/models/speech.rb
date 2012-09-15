@@ -4,8 +4,9 @@ class Speech < ActiveRecord::Base
   belongs_to :speaker3, :class_name => 'Speaker'
   belongs_to :section
   belongs_to :specialization
+  belongs_to :specialization2, :class_name => 'Specialization'
   attr_accessible :annotation, :description, :title, :speaker, :section, :specialization, :start_time, :timing,
-                  :speaker_id, :speaker2_id, :speaker3_id, :section_id, :specialization_id, :permalink
+                  :speaker_id, :speaker2_id, :speaker3_id, :section_id, :specialization_id, :specialization2_id, :permalink
 
   validates_presence_of :title, :speaker
 
@@ -23,5 +24,21 @@ class Speech < ActiveRecord::Base
     else
       nil
     end
+  end
+
+  def speakers
+    [speaker, speaker2, speaker3].compact
+  end
+
+  def has_multiple_speakers?
+    speakers.size > 1
+  end
+
+  def has_one_speaker?
+    !has_multiple_speakers?
+  end
+
+  def all_speakers_names
+    speakers.map {|s| s.full_name if s}.join(', ')
   end
 end
