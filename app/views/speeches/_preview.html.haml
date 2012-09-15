@@ -1,8 +1,11 @@
 - if speech
   - speaker = speech.speaker
 
-  %div.b-programm__icon{:style => "float:left;margin-right:5px;"}
+  %div.b-programm__icon{:style => "float:left;margin-right:5px;position:relative;top:-4px;"}
     = icon_for_speakers speech
+    - if speech.specialization2
+      %div{:style => "margin-top:3px;"}
+        = icon_for_speakers speech, 2
   %div{:style => "display:table;"}
     %p.b-programm__text
       = speech.all_speakers_names
@@ -23,13 +26,15 @@
             = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
           .b-programm__desc-person-info
             %h2.b-programm__desc-name
-              = speech.all_speakers_names
+              = url_for_speakers_name speech
               = icon_for_speakers speech
+              - if speech.specialization2
+                = icon_for_speakers speech, 2
             %p.b-programm__desc-theme
-              - if speaker.company
+              - if speaker.company && [speech.speaker2, speech.speaker3].all?{ |sp| sp.blank? }
                 %a.b-reporters__person-company-link{:href => speaker.company.url, :target => '_blank', :style => "font-size:14px;"}
                   = speaker.company.name
-              %br/
+                %br/
               %a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
                 = speech.title
         %span.b-programm__desc-text
