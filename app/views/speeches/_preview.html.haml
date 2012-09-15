@@ -16,7 +16,7 @@
           = speech.section.hall
     .b-programm__desc-person
       .b-programm__desc-person-info-inner.clearfix
-        - if speaker.photo_url
+        - if speaker.photo_url.present?
           = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
         .b-programm__desc-person-info
           %h2.b-programm__desc-name
