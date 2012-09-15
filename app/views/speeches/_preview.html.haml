@@ -26,6 +26,10 @@
               = speech.all_speakers_names
               = icon_for_speakers speech
             %p.b-programm__desc-theme
+              - if speaker.company
+                %a.b-reporters__person-company-link{:href => speaker.company.url, :target => '_blank', :style => "font-size:14px;"}
+                  = speaker.company.name
+              %br/
               %a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
                 = speech.title
         %span.b-programm__desc-text
