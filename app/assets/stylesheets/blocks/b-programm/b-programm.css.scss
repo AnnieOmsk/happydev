@@ -103,8 +103,12 @@
 //    z-index: 111;
 //}
 
-.b-programm__desc:not .b-programm__column-last:last-child {
-    left: 0;
+.b-programm__desc {
+    left: -10px;
+}
+
+.b-programm__column_type_middle .b-programm__desc {
+    left: -70px;
 }
 
 .b-programm__column-last .b-programm__desc {
