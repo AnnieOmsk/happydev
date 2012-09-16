@@ -8,21 +8,6 @@
     Три потока, учитывающие особенности бизнеса:
 
   .clearfix
-    %article.b-sections__section
-      %h2.b-sections__section-title
-        Стартапы
-      %p.b-sections__text
-        Здесь мы хотели обсудим то, как работа в стартапе отражается на принятии решений в
-        разработке, управлении и дизайне. Какие задачи нужно решать в первую очередь, чем можно пренебречь.
-    %article.b-sections__section
-      %h2.b-sections__section-title
-        Продуктовая разработка
-      %p.b-sections__text
-        На этой секции мы рассмотрим вопросы зрелых продуктов с клиентской базой. Например,
-        поддержка пользователей, работа под нагрузками, развитие продукта.
-    %article.b-sections__section
-      %h2.b-sections__section-title
-        Фабрика проектов
-      %p.b-sections__text
-        Эта секция посвящена опыту веб-студий и аутсорс-компаний, у кого работа с проектами
-        поставлена на поток.
+    = render :partial => 'sections/section', :object => @sections.select {|s| s.id == 1}.first # Стартапы
+    = render :partial => 'sections/section', :object => @sections.select {|s| s.id == 3}.first # Продуктовая разработка
+    = render :partial => 'sections/section', :object => @sections.select {|s| s.id == 2}.first # Фабрика проектов

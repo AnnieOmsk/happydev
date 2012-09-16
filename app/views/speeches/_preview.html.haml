@@ -2,10 +2,10 @@
   - speaker = speech.speaker
 
   %div.b-programm__icon
-    = icon_for_speakers speech
+    = icon_for_speakers speech, false
     - if speech.specialization2
       %div{:style => "margin-top:3px;"}
-        = icon_for_speakers speech, 2
+        = icon_for_speakers speech, true
   %div{:style => "display:table;"}
     %p.b-programm__text
       = speech.all_speakers_names
@@ -28,9 +28,9 @@
           .b-programm__desc-person-info
             %h2.b-programm__desc-name
               = url_for_speakers_name speech, :class => 'b-link'
-              = icon_for_speakers speech
+              = icon_for_speakers speech, false
               - if speech.specialization2
-                = icon_for_speakers speech, 2
+                = icon_for_speakers speech, true
             %p.b-programm__desc-theme
               - if speaker.company && [speech.speaker2, speech.speaker3].all?{ |sp| sp.blank? }
                 %a.b-reporters__person-company-link{:href => speaker.company.url, :target => '_blank', :style => "font-size:14px;"}

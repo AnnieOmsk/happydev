@@ -15,7 +15,7 @@
     %meta{:property => "og:type", :content => "website"}
     %meta{:property => "fb:app_id", :content => APP_CONFIG['facebook']['AppID']}
     %meta{:property => "fb:admins", :content => APP_CONFIG['facebook']['admins']}
-    %meta{:property => "og:url", :content => APP_CONFIG['domain']}
+    %meta{:property => "og:url", :content => request.url}
     %meta{:property => "og:description", :content => yield(:title) ||"First big IT-conference in Omsk - Happydev"}
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "viewport"}/

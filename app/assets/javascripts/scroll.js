@@ -1,11 +1,9 @@
 $(window).load(function() {
-  
-  anchor = window.location.hash;
-  
-  if(anchor != '') {
-    element = $('a[href="' + anchor + '"]');
-    scrollWithAnimation(element.attr('href'), 50, 1000);
-  }
+  // anchor = window.location.hash;
+  // if(anchor != '') {
+  //   element = $('a[href="' + anchor + '"]');
+  //   scrollWithAnimation(element.attr('href'), 50, 1000);
+  // }
   
   $('.b-head__nav .b-head__link').bind('click', function(event){
       event.preventDefault();
@@ -13,7 +11,6 @@ $(window).load(function() {
   });
 
   function scrollWithAnimation(anchor, offset, delay) {
-    console.log($(anchor).offset().top)
     $('html, body').animate({scrollTop: $(anchor).offset().top - offset}, delay);
   };
 });

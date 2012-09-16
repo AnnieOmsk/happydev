@@ -7,6 +7,18 @@
     %tbody.b-programm__body
       %tr.b-programm__row
         %td.b-programm__column{:style=> "width:80px;"}
+        %td.b-programm__column
+          %p.b-programm__text
+            = @sections.select {|s| s.id == 1}.first.name
+        %td.b-programm__column
+          %p.b-programm__text
+            = @sections.select {|s| s.id == 3}.first.name
+        %td.b-programm__column
+          %p.b-programm__text
+            = @sections.select {|s| s.id == 2}.first.name
+
+      %tr.b-programm__row
+        %td.b-programm__column{:style=> "width:80px;"}
           %p.b-programm__text
             9:00
         %td.b-programm__column{:colspan => "3"}
@@ -68,10 +80,10 @@
         %td.b-programm__column.b-programm__column_type_middle
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudzev'), :as => :speech
-        // Андрей Шапиро ======================================================
+        // Артем Поликарпов ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('shapiro'), :as => :speech
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('polikarpov-technolog'), :as => :speech
 
       %tr.b-programm__row
         %td.b-programm__column
@@ -98,8 +110,12 @@
         %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('volkov'), :as => :speech
+        // Андрей Шапиро ======================================================
+        %td.b-programm__column
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('shapiro'), :as => :speech
         // Саша Косс ======================================================
-        %td.b-programm__column.b-programm__column_type_middle{:colspan => "2"}
+        %td.b-programm__column
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('koss'), :as => :speech
 
@@ -107,10 +123,10 @@
         %td.b-programm__column.b-programm__column_type_middle
           %p.b-programm__text
             14:30
-        // Артем Поликарпов ======================================================
+        // Докладчик уточняется ======================================================
         %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('polikarpov-technolog'), :as => :speech
+          %p.b-programm__text
+            Докладчик уточняется
         // Антон Язовский ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
