@@ -7,6 +7,8 @@ class Speaker < ActiveRecord::Base
 
   validates_presence_of :first_name, :last_name
 
+  scope :with_photos, where('photo_url != ?', '')
+
   def full_name
     [first_name, last_name].join(' ')
   end
