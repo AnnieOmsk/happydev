@@ -55,6 +55,9 @@ class Invoice < ActiveRecord::Base
     if promo.name == "Partners"
       ie = self.invoice_events.where(:event_id => Event.where(:priority => 0)).first
       set_paid(ie, 0)
+      if self.invoice_events.count == 1
+        Mailer.send_success_payment_notification(self.user.email, self).deliver!
+      end
     elsif promo.name == "VIP"
       self.invoice_events.each do |ie|
         set_paid(ie, 0)
