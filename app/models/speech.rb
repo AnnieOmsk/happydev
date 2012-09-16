@@ -39,6 +39,6 @@ class Speech < ActiveRecord::Base
   end
 
   def all_speakers_names
-    speakers.map {|s| "#{s.full_name} (s.company.name)" if s}.join(', ')
+    speakers.map {|s| s.full_name if s}.join(', ')
   end
 end

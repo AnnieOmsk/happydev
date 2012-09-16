@@ -8,7 +8,12 @@
         = icon_for_speakers speech, true
   %div{:style => "display:table;"}
     %p.b-programm__text
-      = speech.all_speakers_names
+      - if speech.has_one_speaker?
+        = "#{speaker.full_name}, "
+        %span.b-programm__company
+          = speaker.company.name
+      - else
+        = speech.all_speakers_names
       
     %p.b-programm__theme
       %a.b-programm__theme-link{:href => "/speakers/#{speech.permalink}"}
@@ -27,15 +32,16 @@
             = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
           .b-programm__desc-person-info
             %h2.b-programm__desc-name
-              = url_for_speakers_name speech, :class => 'b-link'
+              = speech.all_speakers_names
+              -# = url_for_speakers_name speech, :class => 'b-link'
               = icon_for_speakers speech, false
               - if speech.specialization2
                 = icon_for_speakers speech, true
             %p.b-programm__desc-theme
-              - if speaker.company && [speech.speaker2, speech.speaker3].all?{ |sp| sp.blank? }
-                %a.b-reporters__person-company-link{:href => speaker.company.url, :target => '_blank', :style => "font-size:14px;"}
-                  = speaker.company.name
-                %br/
+              -# - if speaker.company && [speech.speaker2, speech.speaker3].all?{ |sp| sp.blank? }
+              -#   %a.b-reporters__person-company-link{:href => speaker.company.url, :target => '_blank', :style => "font-size:14px;"}
+              -#     = speaker.company.name
+              -#   %br/
               %a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
                 = speech.title
         %span.b-programm__desc-text
