@@ -8,7 +8,10 @@
         = icon_for_speakers speech, true
   %div{:style => "display:table;"}
     %p.b-programm__text
-      = speech.all_speakers_names_with_companies
+      - if speech.has_one_speaker?
+        = speech.all_speakers_names_with_companies
+      - else
+        = speech.all_speakers_names
       
     %p.b-programm__theme
       %a.b-programm__theme-link{:href => "/speakers/#{speech.permalink}"}
