@@ -26,6 +26,9 @@ class InvoicesController < ApplicationController
       @invoice.reserve_user_id = current_user.id
 
       if @invoice.save
+        unless @invoice.promocode.blank?
+          @invoice.valued_promocode
+        end
 
         # Mailer.send_choice_part_conf(current_user.email, @invoice.events, @invoice.amount, @invoice.expired_at).deliver!
         if @invoice.discount_status

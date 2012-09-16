@@ -7,11 +7,11 @@
     .clearfix
       .l-page_display_inline.l-page_gap-right-out_45
         %div
-          - if @invoice.invoice_events.all?{|e| e.paid?}
+          - if @invoice.all_invoice_events_paid?
             %h3{:style => "margin-top:25px;"} Ураа, ты уже на полпути к #HappyDev 2012!
             %ul
               - for paid_event in @invoice.invoice_events
-                %li= "#{paid_event.event.full_name_without_price}, #{paid_event.paid_amount} руб. (<strong>Оплачено</strong>)".html_safe
+                %li= "#{paid_event.event.full_name_without_price}, #{paid_event.event.price} руб. (<strong>Оплачено</strong>)".html_safe
 
             / %h3 Оплачена сумма: #{ @invoice.amount} руб.
 

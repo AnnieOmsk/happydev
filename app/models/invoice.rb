@@ -10,7 +10,6 @@ class Invoice < ActiveRecord::Base
 
   validates :oferta, :inclusion => { :in => [true], :message => "Условия оферты должны быть приняты" }, :on => :create
 
-
   def all_invoice_events_paid?
     invoice_events.all?{ |e| e.paid? }
   end
@@ -45,16 +44,33 @@ class Invoice < ActiveRecord::Base
     end
   end
 
+  ## Method for set max discount (Partners(100% w/o lunch) and VIP(all_inclusive))
+  def valued_promocode
+    promo = Promocode.find_by_number(self.promocode)
+    if promo.name == "Partners"
+      ie = self.invoice_events.where(:event_id => Event.where(:priority => 0)).first
+      set_paid(ie, 0)
+    elsif promo.name == "VIP"
+      self.invoice_events.each do |ie|
+        set_paid(ie, 0)
+      end
+    end
+  end
+
   private
   def check_and_set_paid(ie, overall_amount)
     price = ie.price_with_discount
 
     if overall_amount >= price
-      ie.paid = true
-      ie.paid_amount = price
-      ie.save
+      set_paid(ie, price)
     end
     overall_amount -= price
+  end
+
+  def set_paid(ie, price)
+    ie.paid = true
+    ie.paid_amount = price
+    ie.save
   end
 
   def self.drafting_invoice(user, options, promocode)
@@ -72,9 +88,13 @@ class Invoice < ActiveRecord::Base
   end
 
   def self.counting_amount_with_discount(invoice, user, promocode)
-    tmp_amount = invoice.events.select{|e| e.discount != false }.map(&:price).inject(:+) || 0
-    tmp_amount = tmp_amount + (tmp_amount * (Promocode.find_by_number(promocode).discount_value/100.0))   # can handle +50% and -10%
-    tmp_amount += invoice.events.select{|e| e.discount == false }.map(&:price).inject(:+) || 0
+    if Promocode.find_by_number(promocode).name == "VIP"
+      tmp_amount = 0
+    else
+      tmp_amount = invoice.events.select{|e| e.discount != false }.map(&:price).inject(:+) || 0
+      tmp_amount = tmp_amount + (tmp_amount * (Promocode.find_by_number(promocode).discount_value/100.0))   # can handle +50% and -10%
+      tmp_amount += invoice.events.select{|e| e.discount == false }.map(&:price).inject(:+) || 0
+    end
   end
 
   def self.set_flash_message_include_promocode(promocode)
