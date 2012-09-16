@@ -14,6 +14,19 @@ $(window).load(function() {
 
   function scrollWithAnimation(anchor, offset, delay) {
     console.log($(anchor).offset().top)
-    $('html, body').animate({scrollTop: $(anchor).offset().top - offset}, delay);
+    animatable = $('html, body')
+    animatable.animate( { scrollTop: $(anchor).offset().top - offset},
+                             { duration: delay,
+                               step: function(now, fx){
+                                 isAnimating = true;
+                               }
+                              });
   };
+
+  $(window).scroll(function(e) {
+    if(!isAnimating){
+       animatable.stop(true, false); 
+    }
+    isAnimating = false;
+  });
 });
