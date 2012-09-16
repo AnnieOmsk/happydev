@@ -36,6 +36,8 @@ production:
     api_key: 2b25ec06f724c27a6b57a795fc5d1f37-us5
     list_id: 30503cd22e
     list_id_7bits_friends: 9c2718348c
+    list_id_freelancers: 4778518bd9
+    list_id_companies: aac0c2008a
   robokassa:
     login: 'EugeneTarasenko'
     secret1: 'dkhtdkjhpbkcp,2012'   # for notification method
