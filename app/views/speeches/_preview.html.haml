@@ -1,7 +1,7 @@
 - if speech
   - speaker = speech.speaker
 
-  %div.b-programm__icon{:style => "float:left;margin-right:5px;position:relative;top:-4px;"}
+  %div.b-programm__icon
     = icon_for_speakers speech
     - if speech.specialization2
       %div{:style => "margin-top:3px;"}
@@ -26,7 +26,7 @@
             = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
           .b-programm__desc-person-info
             %h2.b-programm__desc-name
-              = url_for_speakers_name speech
+              = url_for_speakers_name speech, :class => 'b-link'
               = icon_for_speakers speech
               - if speech.specialization2
                 = icon_for_speakers speech, 2
