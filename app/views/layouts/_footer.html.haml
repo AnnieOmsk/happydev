@@ -4,7 +4,8 @@
     %br/
     Все права защищены
   .b-foot__buttons.social-panel.social-panel-on-footer
-    -# = render :partial => 'layouts/social_links_panel'
+    - if controller.controller_name == 'home'
+      = render :partial => 'layouts/social_links_panel'
 
   .b-foot__powered-by
     %p.b-foot__powered-by-text
