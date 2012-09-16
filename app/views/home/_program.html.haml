@@ -39,7 +39,7 @@
           %p.b-programm__text
             10:45
         // Максим Трескин ======================================================
-        %td.b-programm__column
+        %td.b-programm__column.b-program__column_type_large
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('treskin'), :as => :speech
 
@@ -78,7 +78,7 @@
           %p.b-programm__text
             12:15
         // Петр Диденко ======================================================
-        %td.b-programm__column{:colspan => "3"}
+        %td.b-programm__column.b-program__column_type_large{:colspan => "3"}
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('didenko'), :as => :speech
 
@@ -172,7 +172,7 @@
           %p.b-programm__text
             16:40
         // Яков Сироткин ======================================================
-        %td.b-programm__column{:colspan => "3"}
+        %td.b-programm__column.b-program__column_type_large{:colspan => "3"}
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('sirotkin'), :as => :speech
 
@@ -207,7 +207,7 @@
           %p.b-programm__text
             18:20-19:15
         // Никита Филиппов ======================================================
-        %td.b-programm__column{:colspan => "3"}
+        %td.b-programm__column.b-program__column_type_large{:colspan => "3"}
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('filippov'), :as => :speech
 
