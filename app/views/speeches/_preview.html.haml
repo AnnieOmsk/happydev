@@ -10,8 +10,8 @@
     %p.b-programm__text
       - if speech.has_one_speaker?
         = speaker.full_name
-        %span.b-programm__company
-          = "(#{speaker.company.name})"
+        %span.b-programm__company<>
+          = ", #{speaker.company.name}"
       - else
         = speech.all_speakers_names
       
