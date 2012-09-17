@@ -35,7 +35,7 @@
 
 .b-foot__powered-by-text {
     margin: 0;
-    font-family: "PT Sans";
+    font-family: "pt sans";
     font-size: 12px;
     line-height: 17px;
     color: #666;
@@ -60,4 +60,17 @@
 
 .b-foot__powered-by-link:hover .b-foot__powered-by-link-logo {
     background-position: 0 -30px;
+}
+
+.b-foot__exit {
+    padding: 0;
+    position: absolute;
+    font-family: "pt sans";
+    font-size: 12px;
+    left: 150px;
+    top: 13px;
+}
+
+.b-foot .social-panel-on-footer {
+  padding-top: 4px;
 }
