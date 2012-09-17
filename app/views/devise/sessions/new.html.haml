@@ -9,6 +9,8 @@
         .clearfix
           .b-register__fields-inner
             .b-register__fields
+              - if flash[:alert]
+                %p.b-register__alert= flash[:alert]
               %label.b-register__label
                 %span.b-register__label-text
                   = f.label "Электронный адрес"
