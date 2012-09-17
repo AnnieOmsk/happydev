@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.haml" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.haml" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.haml" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -86,10 +84,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_links.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_links.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="80" selection-start="385" selection-end="385" vertical-scroll-proportion="0.19480519">
+            <state line="7" column="80" selection-start="385" selection-end="385" vertical-scroll-proportion="-4.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="46" selection-start="607" selection-end="607" vertical-scroll-proportion="0.38961038">
               <folding />
             </state>
           </provider>
@@ -108,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/invoices/__show.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss" />
@@ -124,6 +130,7 @@
         <option value="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/devise/shared/_links.haml" />
+        <option value="$PROJECT_DIR$/app/views/devise/passwords/new.html.haml" />
       </list>
     </option>
   </component>
@@ -371,6 +378,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="passwords" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1109,11 +1142,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/home/requisites.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="165" selection-end="165" vertical-scroll-proportion="0.14869888" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invoices/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="21" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.73977697" />
@@ -1194,7 +1222,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="80" selection-start="385" selection-end="385" vertical-scroll-proportion="0.19480519">
+        <state line="7" column="80" selection-start="385" selection-end="385" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="46" selection-start="607" selection-end="607" vertical-scroll-proportion="0.38961038">
           <folding />
         </state>
       </provider>
