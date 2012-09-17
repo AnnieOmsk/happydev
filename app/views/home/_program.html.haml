@@ -4,21 +4,21 @@
       %h2.b-programm__title
         Программа 29 сентября
   %table.b-programm__table
-    %tbody.b-programm__body
+    %thead.b-programm__head
       %tr.b-programm__row
-        %td.b-programm__column{:style=> "width:80px;"}
-        %td.b-programm__column
+        %th.b-programm__column.l-page_width_80
+        %th.b-programm__column
           %p.b-programm__text
             = @sections.select {|s| s.id == 1}.first.name
-        %td.b-programm__column
+        %th.b-programm__column
           %p.b-programm__text
             = @sections.select {|s| s.id == 3}.first.name
-        %td.b-programm__column
+        %th.b-programm__column
           %p.b-programm__text
             = @sections.select {|s| s.id == 2}.first.name
-
+    %tbody.b-programm__body
       %tr.b-programm__row
-        %td.b-programm__column{:style=> "width:80px;"}
+        %td.b-programm__column.l-page_width_80
           %p.b-programm__text
             9:00
         %td.b-programm__column{:colspan => "3"}
@@ -244,7 +244,7 @@
   %table.b-programm__table
     %tbody.b-programm__body
       %tr.b-programm__row
-        %td.b-programm__column{:style=> "width:80px;"}
+        %td.b-programm__column.l-page_width_80
         %td.b-programm__column{:colspan => "3"}
           %p.b-programm__text
             Формируется
