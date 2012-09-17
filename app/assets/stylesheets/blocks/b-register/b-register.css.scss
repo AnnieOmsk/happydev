@@ -235,13 +235,15 @@
 }
 
 .b-register__label_type_checkbox .b-register__input_checkbox,
-.b-register__label_type_checkbox .b-register__label-text {
+.b-register__label_type_checkbox .b-register__label-text,
+.b-register__label_type_oferta .field_with_errors {
     display: inline-block;
     vertical-align: top;
 }
 
 .b-register__label_valign_center .b-register__input_checkbox,
-.b-register__label_valign_center .b-register__label-text {
+.b-register__label_valign_center .b-register__label-text,
+.b-register__label_valign_center .b-register__label_type_oferta .field_with_errors {
     vertical-align: middle;
 }
 
