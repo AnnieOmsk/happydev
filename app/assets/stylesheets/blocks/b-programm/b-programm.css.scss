@@ -39,9 +39,13 @@
 .b-programm__column {
     position: relative;
     padding: 10px;
-    min-width: 80px;
+    width: 185px;
     color: #000;
     vertical-align: top;
+}
+
+.b-programm__column_width_40 {
+    width: 40px;
 }
 
 .b-programm__head .b-programm__column {

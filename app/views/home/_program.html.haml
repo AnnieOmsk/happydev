@@ -6,7 +6,7 @@
   %table.b-programm__table
     %thead.b-programm__head
       %tr.b-programm__row
-        %th.b-programm__column.l-page_width_80
+        %th.b-programm__column.b-programm__column_width_40
         %th.b-programm__column
           %p.b-programm__text
             = @sections.select {|s| s.id == 1}.first.name
@@ -18,7 +18,7 @@
             = @sections.select {|s| s.id == 2}.first.name
     %tbody.b-programm__body
       %tr.b-programm__row
-        %td.b-programm__column.l-page_width_80
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             9:00
         %td.b-programm__column{:colspan => "3"}
@@ -26,7 +26,7 @@
             Регистрация
       
       %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             10:00
         %td.b-programm__column{:colspan => "3"}
@@ -34,7 +34,7 @@
             Открытие конференции
 
       %tr.b-programm__row
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             10:15
         // Артем Поликарпов ======================================================
@@ -47,7 +47,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('pavlova'), :as => :speech
 
       %tr.b-programm__row
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             10:45
         // Максим Трескин ======================================================
@@ -56,7 +56,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('treskin'), :as => :speech
 
       %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             11:15
         // Юрий Подорожный ======================================================
@@ -73,7 +73,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('snitko'), :as => :speech
 
       %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             11:45
         // Артем Кудзев ======================================================
@@ -86,7 +86,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('polikarpov-technolog'), :as => :speech
 
       %tr.b-programm__row
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             12:15
         // Петр Диденко ======================================================
@@ -95,7 +95,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('didenko'), :as => :speech
 
       %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             13:00
         %td.b-programm__column{:colspan => "3"}
@@ -103,7 +103,7 @@
             Обед
 
       %tr.b-programm__row
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             14:00
         // Леонид Волков ======================================================
@@ -120,7 +120,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('koss'), :as => :speech
 
       %tr.b-programm__row
-        %td.b-programm__column.b-programm__column_type_middle
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             14:30
         // Докладчик уточняется ======================================================
@@ -133,7 +133,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('yazovskiy'), :as => :speech
       
       %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             15:00
         // Рамиль Шайхутдинов ======================================================
@@ -150,7 +150,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('tarasenko'), :as => :speech
       
       %tr.b-programm__row
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             15:30
         // Волков, Павлова, Диденко ======================================================
@@ -167,7 +167,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('nepomnyashikh'), :as => :speech
 
       %tr.b-programm__row
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             16:00
         // Сергей Буш ======================================================
@@ -176,7 +176,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('bush'), :as => :speech
       
       %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             16:25
         %td.b-programm__column{:colspan => "3"}
@@ -184,7 +184,7 @@
             Кофе-брейк
 
       %tr.b-programm__row
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             16:40
         // Яков Сироткин ======================================================
@@ -193,7 +193,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('sirotkin'), :as => :speech
 
       %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             17:20
         // Волков, Павлова, Диденко ======================================================
@@ -210,7 +210,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('byndyu'), :as => :speech
       
       %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             17:50
         // Максим Савилов ======================================================
@@ -219,7 +219,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('savilov'), :as => :speech
 
       %tr.b-programm__row
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             18:20
         // Никита Филиппов ======================================================
@@ -228,7 +228,7 @@
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('filippov'), :as => :speech
 
       %tr.b-programm__row.b-programm__row_state_filled
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             19:20
         %td.b-programm__column{:colspan => "3"}
