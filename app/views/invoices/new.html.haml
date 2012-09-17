@@ -6,43 +6,46 @@
         Оплата участия на HappyDev
     = form_for(@invoice, :url => invoice_path(@invoice)) do |f|
       .clearfix
-        .b-register__fields-inner
-          .b-register__fields
-            .b-register__label
-              %span.b-register__label-text{:style => "vertical-align:top;width:140px;"}
-                = f.label 'Я оплачиваю:'
-              %span.b-register__inputs-inner
-                - @events.each do |event|
-                  .new_invoice{:style => "margin-bottom:4px;"}
-                    - if event.priority == 0
-                      = check_box_tag "invoice[event_ids][]", event.id, true, :disabled => true, :class => "invoice_checkbox"
-                      = hidden_field_tag "invoice[event_ids][]", event.id
-                    - else
-                      = check_box_tag "invoice[event_ids][]", event.id, false, :class => "invoice_checkbox"
-                    %span{:style => "font-size: 14px;"}= event.full_name
-          .b-register__fields
-            %label.b-register__label
-              %span.b-register__label-text{:style => "width:140px;"}
-                = f.label "Общая стоимость:"
-              %span.b-register__inputs-inner
-                %strong
-                  %span#amount 0
-                  руб.
+        .l-page_display_inline.l-page_gap-right-out_45
+          - @events.each do |event|
+            %label.b-register__label_type_checkbox
+              - if event.priority == 0
+                = check_box_tag "invoice[event_ids][]", event.id, true, :disabled => true, :class => "invoice_checkbox"
+                = hidden_field_tag "invoice[event_ids][]", event.id
+              - else
+                = check_box_tag "invoice[event_ids][]", event.id, false, :class => "invoice_checkbox"
+              %span.b-register__label-text.b-register__label-text_width_340
+                = event.full_name_with_price
+                %span.b-price__rubl.b-price__rubl_type_dark-blue
+                  a
+        .l-page_float_right.l-page_gap-right-out_4
+          .b-register__total
+            %h2.b-register__total-title
+              Общая стоимость
+            %span.b-price.b-price_type_early
+              %i.b-price__number.js-amount
+                %span#amount 0
+              %span.b-price__rubl
+                a
 
-        .b-register__fields-inner.b-register__fields-inner_float_right
-          .b-register__fields{:style => "margin-bottom:35px;"}
-            %label.b-register__label
-              %span.b-register__label-text
-                = f.label "У меня есть промокод:"
-              %span.b-register__inputs-inner
-                = text_field_tag :promocode, nil, :class => "b-register__input_text"
-          .b-register__fields
-            %span.b-register__inputs-inner{:style => "width:20px;"}
-              = f.check_box :oferta
-            %span{:style => "font-size: 14px"}
-              = "С условиями <a href='/oferta' target='blank'>Публичной оферты</a> ознакомлен и согласен".html_safe
-            %i.b-register__error{:style => "margin-left:25px;"}
+        .l-page_display_inline.l-page_gap-right-out_45
+          %label.b-register__label
+            %span.b-register__label-text.b-register__label-text_type_block
+              У меня есть промокод
+            %span.b-register__inputs-inner.b-register__inputs-inner_type_small
+              = text_field_tag :promocode, nil, :class => "b-register__input_text"
+
+      .b-register__line
+      %section.l-page_gap-top-out_50.l-page_align_center
+        .b-register__label.b-register__label_type_checkbox.l-page_align_left.l-page_display_inline.b-register__label_type_oferta
+          = f.check_box :oferta, :class => 'b-register__input_checkbox'
+          %label.b-register__label-text.b-register__label-text_width_auto.b-register__text_style_small{:for => 'invoice_oferta'}
+            С условиями
+            %a.b-link{:href => '/oferta', :target => 'blank'} Публичной оферты
+            ознакомлен и согласен
+          %p
+            %i.b-register__error.b-register__error_gaps_oferta
               = error_messages_for :oferta, @invoice
 
-      %p.l-page_align_center
-        %input.b-register__input_submit{:type => "submit", :value => "Оплатить"}/
+        %p.l-page_align_center
+          %input.b-register__input_submit{:type => "submit", :value => "Оплатить"}/

@@ -75,14 +75,14 @@
     margin-top: 40px;
 }
 
-.b-speaker p {
+.b-speaker__right p {
     color: #3f495f;
     font-family: Arial, sans-serif;
     font-size: 13px;
     line-height: 19px;
 }
 
-.b-speaker ul {
+.b-speaker__right ul {
     margin: 0;
     padding: 0;
     font-size: 13px;
@@ -90,7 +90,7 @@
     font-family: Arial, sans-serif;
 }
 
-.b-speaker li  {
+.b-speaker__right li  {
     margin: 0 0 10px;
     padding: 0 0 0 20px;
     list-style: none;

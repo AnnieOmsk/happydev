@@ -12,10 +12,10 @@
               %label.b-register__label
                 %span.b-register__label-text
                   = f.label "Электронный адрес"
-                %span.b-register__inputs-inner.b-register__inputs-inner_state_errors
+                %span.b-register__inputs-inner
                   = f.email_field :email, :class => "b-register__input_email"
                   %span.b-register__required *
           = render "devise/shared/links"
 
-    %p.l-page_align_center
-      %input.b-register__input_submit{:type => "submit", :value => "Пришлите мне письмо с инструкцией"}/
+        %p.l-page_gap-left-out_40
+          %input.b-register__input_submit{:type => "submit", :value => "Пришлите мне письмо с инструкцией"}/ 

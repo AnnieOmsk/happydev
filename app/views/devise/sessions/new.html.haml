@@ -9,10 +9,12 @@
         .clearfix
           .b-register__fields-inner
             .b-register__fields
+              - if flash[:alert]
+                %p.b-register__alert= flash[:alert]
               %label.b-register__label
                 %span.b-register__label-text
                   = f.label "Электронный адрес"
-                %span.b-register__inputs-inner.b-register__inputs-inner_state_errors
+                %span.b-register__inputs-inner
                   = f.email_field :email, :class => "b-register__input_email"
                   %span.b-register__required *
             .b-register__fields
