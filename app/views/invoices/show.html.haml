@@ -5,34 +5,46 @@
       %h2.b-register__title
         Оплата участия на HappyDev
     .clearfix
-      .l-page_display_inline.l-page_gap-right-out_45
+      - if @invoice.all_invoice_events_paid?
+        %h3.b-content__title.b-content__title_type_middle.l-page_gap-left-out_40
+          Ураа, ты уже на полпути к #HappyDev 2012!
+      - else
+        %h3.b-content__title.b-content__title_type_middle
+          Вы хотите оплатить:
+      .l-page_display_inline.l-page_gap-right-out_45.l-page_gap-left-out_40
         %div
           - if @invoice.all_invoice_events_paid?
-            %h3{:style => "margin-top:25px;"} Ураа, ты уже на полпути к #HappyDev 2012!
-            %ul
+            %ul.b-content__list
               - for paid_event in @invoice.invoice_events
-                %li= "#{paid_event.event.full_name_without_price}, #{paid_event.paid_amount} руб. (<strong>Оплачено</strong>)".html_safe
+                %li.b-content__list-item
+                  #{paid_event.event.full_name_without_price},
+                  %strong
+                    #{paid_event.event.price}
+                  %span.b-price__rubl.b-price__rubl_type_dark-blue
+                    a
+                  (
+                  %strong{:style => 'color: green'}> Оплачено
+                  )
 
             / %h3 Оплачена сумма: #{ @invoice.amount} руб.
 
           - else
-            %h3{:style => "margin-top:25px;"} Вы хотите оплатить:
-            %ul
+            %ul.b-content__list
               - for ie in @invoice.invoice_events
-                %li
+                %li.b-content__list-item
                   = ie.event.full_name
                   - if ie.paid?
-                    = " (<strong>Оплачено</strong>)".html_safe 
+                    = " (<strong color='green'>Оплачено</strong>)".html_safe
 
-      .l-page_float_right.l-page_gap-right-out_45{:style => "margin-top: 21px;"}
+      .l-page_float_right.l-page_gap-right-out_45
         .b-register__total
           %h2.b-register__total-title
             Общая стоимость
-            %span.b-price.b-price_type_early
-              %i.b-price__number.js-amount
-                = @invoice.amount
-              %span.b-price__rubl
-                a
+          %span.b-price.b-price_type_early
+            %i.b-price__number.js-amount
+              = @invoice.amount
+            %span.b-price__rubl
+              a
       - unless @invoice.invoice_events.all?{|e| e.paid?}
         %section.l-page_gap-top-out_50.l-page_align_center
           %p
@@ -55,7 +67,7 @@
                       Безналичный расчет
 
         / %p.l-page_align_center
-        
+
 
 
         %h4 БЕЗНАЛИЧНЫЙ РАСЧЕТ

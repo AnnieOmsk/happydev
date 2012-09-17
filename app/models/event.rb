@@ -10,6 +10,10 @@ class Event < ActiveRecord::Base
     [name, master, "#{price} руб."].compact.join(', ')
   end
 
+  def full_name_with_price
+    [name, master, "#{price}"].compact.join(', ')
+  end
+
   def full_name_without_price
     [name, master].reject {|e| e.blank?}.join(', ')
   end

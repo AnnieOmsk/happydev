@@ -90,6 +90,7 @@
     width: 150px;
     font-size: 14px;
     color: #3f495f;
+    font-family: Arial, sans-serif;
 }
 
 .b-register__inputs-inner {
@@ -271,4 +272,8 @@
 .b-register__text_style_small {
     color: #000;
     font-size: 13px;
+}
+
+.b-register__inputs-inner_type_small {
+    width: 170px;
 }
