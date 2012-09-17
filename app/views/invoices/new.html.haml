@@ -37,13 +37,12 @@
 
       .b-register__line
       %section.l-page_gap-top-out_50.l-page_align_center
-        %p
-          .b-register__label_type_checkbox.l-page_align_left.l-page_display_inline.b-register__label_type_oferta
-            = f.check_box :oferta, :class => 'b-register__input_checkbox'
-            %label.b-register__label-text.b-register__label-text_width_auto.b-register__text_style_small{:for => 'invoice_oferta'}
-              С условиями
-              %a.b-link{:href => '/oferta', :target => 'blank'} Публичной оферты
-              ознакомлен и согласен
+        .b-register__label.b-register__label_type_checkbox.l-page_align_left.l-page_display_inline.b-register__label_type_oferta
+          = f.check_box :oferta, :class => 'b-register__input_checkbox'
+          %label.b-register__label-text.b-register__label-text_width_auto.b-register__text_style_small{:for => 'invoice_oferta'}
+            С условиями
+            %a.b-link{:href => '/oferta', :target => 'blank'} Публичной оферты
+            ознакомлен и согласен
           %i.b-register__error
             = error_messages_for :oferta, @invoice
 
