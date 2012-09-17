@@ -4,12 +4,12 @@
     %meta(charset="utf-8")
     %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
     %meta{:property => "og:image", :content => "#{APP_CONFIG['domain']}/assets/happydev_logo.png"}
-    %meta{:property => "og:title", :content => "Omsk IT-conference HappyDev"}
+    %meta{:property => "og:title", :content => "HappyDev'12 - IT-конференция в Омске"}
     %meta{:property => "og:type", :content => "website"}
     %meta{:property => "fb:app_id", :content => APP_CONFIG['facebook']['AppID']}
     %meta{:property => "fb:admins", :content => APP_CONFIG['facebook']['admins']}
     %meta{:property => "og:url", :content => APP_CONFIG['domain']}
-    %meta{:property => "og:description", :content => "First big IT-conference in Omsk - Happydev"}
+    %meta{:property => "og:description", :content => "HappyDev'12 - Уникальная IT-конференция в Омске"}
     -#%meta(name="viewport" content="width=device-width, initial-scale=1.0")
     %title= content_for?(:title) ? yield(:title) : "HappyDev'12 - Уникальная IT-конференция в Омске"
     = csrf_meta_tags
