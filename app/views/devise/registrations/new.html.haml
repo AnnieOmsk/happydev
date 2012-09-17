@@ -49,7 +49,7 @@
           .b-register__fields
             %label.b-register__label
               %span.b-register__label-text
-                = f.label "Эл. почта"
+                = f.label "Электронная почта"
               %span.b-register__inputs-inner
                 = f.email_field :email, :class => "b-register__input_email"
                 %span.b-register__required *
@@ -78,4 +78,4 @@
       %p.l-page_align_center
         %input.b-register__input_submit{:type => "submit", :value => "Зарегистрироваться"}/
         &nbsp; &nbsp; Я уже регистрировался,
-        =link_to "хочу войти", '/registration/login'
+        =link_to "хочу войти", '/registration/login', :class => 'b-link'
