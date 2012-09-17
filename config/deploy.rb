@@ -56,18 +56,17 @@ namespace :unicorn do
   end
 end
 
-namespace :db do
-  task :before_backup do
-    run "mysqldump --opt -uhappydev -p12hdhad019182b21 happydev_staging | gzip -c > ~/backups/dump-happydev_staging_before-`date \"+%Y-%m-%d\"`.sql.gz"
-  end
-  task :after_backup do
-    run "mysqldump --opt -uhappydev -p12hdhad019182b21 happydev_staging | gzip -c > ~/backups/dump-happydev_staging_after-`date \"+%Y-%m-%d\"`.sql.gz"
-  end
-end
+# namespace :db do
+#   task :before_backup do
+#     run "mysqldump --opt -uhappydev -p12hdhad019182b21 happydev_staging | gzip -c > ~/backups/dump-happydev_staging_before-`date \"+%Y-%m-%d\"`.sql.gz"
+#   end
+#   task :after_backup do
+#     run "mysqldump --opt -uhappydev -p12hdhad019182b21 happydev_staging | gzip -c > ~/backups/dump-happydev_staging_after-`date \"+%Y-%m-%d\"`.sql.gz"
+#   end
+# end
 
 before 'deploy:assets:precompile', 'deploy:sql_symlink'
-before 'deploy:update_code', 'db:before_backup'
-after 'deploy:update', 'unicorn:restart', 'deploy:cleanup', 'db:after_backup'
+after 'deploy:update', 'unicorn:restart', 'deploy:cleanup'
 # deploy:migrate
 
 # require './config/boot'
