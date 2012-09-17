@@ -1,10 +1,21 @@
-.devise-session
+.l-page_width_page.l-page_gap-bottom_50
+  = render :partial => 'layouts/logo'
+  %section.clearfix.b-register
+    .b-register__title-inner
+      %h2.b-register__title
+        Восстановление пароля
+    .b-register__form
+      = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+        .clearfix
+          .b-register__fields-inner
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  = f.label "Электронный адрес"
+                %span.b-register__inputs-inner
+                  = f.email_field :email, :class => "b-register__input_email"
+                  %span.b-register__required *
+          = render "devise/shared/links"
 
-  = simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post, :class => "form-horizontal" }) do |f|
-    = devise_error_messages!
-    %legend Восстановление пароля
-    = f.input :email, :required => true, :label => 'Электронный адрес'
-    .form-actions
-      = f.button :submit, "Пришлите мне письмо с инструкцией"
-      = render "devise/shared/links"
-
+        %p.l-page_gap-left-out_40
+          %input.b-register__input_submit{:type => "submit", :value => "Пришлите мне письмо с инструкцией"}/ 

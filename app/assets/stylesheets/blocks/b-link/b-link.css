@@ -1,0 +1,20 @@
+.b-link {
+    color: #3362AE;
+    text-decoration: none;
+    border-bottom: 1px solid #B2CCF0;
+}
+
+.b-link:hover {
+    color: #cc0000;
+    border-color: #F0B2B2;
+}
+
+.b-link:visited {
+    color: #909;
+    border-color: #E0B2E0;
+}
+
+.b-link:visited:hover {
+    color: #cc0000;
+    border-color: #F0B2B2;
+}

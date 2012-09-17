@@ -1,0 +1,50 @@
+- if speech
+  - speaker = speech.speaker
+
+  %div.b-programm__icon
+    = icon_for_speakers speech, false
+    - if speech.specialization2
+      %div{:style => "margin-top:3px;"}
+        = icon_for_speakers speech, true
+  %div{:style => "display:table;"}
+    %p.b-programm__text
+      - if speech.has_one_speaker?
+        = "#{speaker.full_name}, "
+        %span.b-programm__company
+          = speaker.company.name
+      - else
+        = speech.all_speakers_names
+      
+    %p.b-programm__theme
+      %a.b-programm__theme-link{:href => "/speakers/#{speech.permalink}"}
+        = speech.title
+    .b-programm__desc.js-b-programm__desc
+      .b-programm__desc-time
+        .b-time
+          %span.b-time__icon
+          %span.b-time__text.b-time__text_type_with-gap-out
+            = speech.time_range
+          %span.b-time__text
+            = speech.section.hall
+      .b-programm__desc-person
+        .b-programm__desc-person-info-inner.clearfix
+          - if speaker.photo_url.present? && speech.has_one_speaker?
+            = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
+          .b-programm__desc-person-info
+            %h2.b-programm__desc-name
+              = speech.all_speakers_names
+              -# = url_for_speakers_name speech, :class => 'b-link'
+              = icon_for_speakers speech, false
+              - if speech.specialization2
+                = icon_for_speakers speech, true
+            %p.b-programm__desc-theme
+              -# - if speaker.company && [speech.speaker2, speech.speaker3].all?{ |sp| sp.blank? }
+              -#   %a.b-reporters__person-company-link{:href => speaker.company.url, :target => '_blank', :style => "font-size:14px;"}
+              -#     = speaker.company.name
+              -#   %br/
+              %a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
+                = speech.title
+        %span.b-programm__desc-text
+          = speech.annotation.html_safe
+- else
+  Уточняется

@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120910041320) do
+ActiveRecord::Schema.define(:version => 20120916153307) do
+
+  create_table "cities", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "companies", :force => true do |t|
+    t.string   "name"
+    t.integer  "city_id"
+    t.string   "url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "companies", ["city_id"], :name => "index_companies_on_city_id"
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -77,9 +93,95 @@ ActiveRecord::Schema.define(:version => 20120910041320) do
     t.string   "name"
   end
 
+  create_table "rails_admin_histories", :force => true do |t|
+    t.text     "message"
+    t.string   "username"
+    t.integer  "item"
+    t.string   "table"
+    t.integer  "month",      :limit => 2
+    t.integer  "year",       :limit => 8
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "rich_rich_files", :force => true do |t|
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
+    t.string   "rich_file_file_name"
+    t.string   "rich_file_content_type"
+    t.integer  "rich_file_file_size"
+    t.datetime "rich_file_updated_at"
+    t.string   "owner_type"
+    t.integer  "owner_id"
+    t.text     "uri_cache"
+    t.string   "simplified_type",        :default => "file"
+  end
+
+  create_table "sections", :force => true do |t|
+    t.string   "name"
+    t.string   "hall"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.text     "description"
+  end
+
+  create_table "speakers", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "personal_url"
+    t.string   "twitter"
+    t.string   "facebook"
+    t.string   "vk"
+    t.string   "github"
+    t.string   "moikrug"
+    t.string   "slideshare"
+    t.text     "description"
+    t.integer  "city_id"
+    t.integer  "company_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.string   "position"
+    t.string   "photo_url"
+  end
+
+  add_index "speakers", ["city_id"], :name => "index_speakers_on_city_id"
+  add_index "speakers", ["company_id"], :name => "index_speakers_on_company_id"
+
+  create_table "specializations", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "speeches", :force => true do |t|
+    t.string   "title"
+    t.text     "annotation"
+    t.text     "description"
+    t.integer  "speaker_id"
+    t.integer  "section_id"
+    t.integer  "specialization_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.datetime "start_time"
+    t.integer  "timing"
+    t.string   "permalink"
+    t.integer  "speaker2_id"
+    t.integer  "speaker3_id"
+    t.integer  "specialization2_id"
+  end
+
+  add_index "speeches", ["permalink"], :name => "index_speeches_on_permalink"
+  add_index "speeches", ["section_id"], :name => "index_speeches_on_section_id"
+  add_index "speeches", ["speaker_id"], :name => "index_speeches_on_speaker_id"
+  add_index "speeches", ["specialization_id"], :name => "index_speeches_on_specialization_id"
+
   create_table "users", :force => true do |t|
-    t.string   "email",                  :default => "", :null => false
-    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "email",                  :default => "",    :null => false
+    t.string   "encrypted_password",     :default => "",    :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -88,16 +190,16 @@ ActiveRecord::Schema.define(:version => 20120910041320) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at",                             :null => false
-    t.datetime "updated_at",                             :null => false
-    t.string   "name",                                   :null => false
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
     t.string   "company"
     t.string   "city"
     t.string   "professional"
     t.boolean  "student"
     t.string   "promocode"
-    t.string   "first_name"
-    t.string   "last_name"
+    t.string   "first_name",             :default => "",    :null => false
+    t.string   "last_name",              :default => "",    :null => false
+    t.boolean  "admin",                  :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -1,27 +1,81 @@
-#content.container
-  .row
-    .span3
-      -#{:style => 'border-right:1px solid #000;'}
-      .registration-big-status Регистрация
-    -#.span3
-      .registration-big-status{:style => 'margin-left:20px;'} Оплата
+# encoding: utf-8
 
-#content.container
-  .row
-    .span12
-      = simple_form_for(resource, :as => resource_name, :url => registration_path(resource), :html => { :class => "form-horizontal" }) do |f|
-        -# = devise_error_messages!
-        = f.input :name, :label => 'Имя Фамилия', :required => true, :autofocus => true
-        = f.input :email, :label => 'Электронный адрес:', :required => true
-        = f.input :password, :label => 'Пароль:', :required => true
-        / = f.input :password_confirmation, :label => 'Подтвердите:', :required => true
-        / = f.input :student, :label => 'Я студент', :as => :boolean
-        = f.input :company, :label => 'Компания:'
-        = f.input :city, :label => 'Город:'
-        = f.input :professional,
-                  :collection => ['Разработка', 'Дизайн', 'Управление'],
-                  :label => 'Любимая специализация:'
-
-        .form-actions
-          %button{:type => "submit", :class => "btn btn-primary"} Зарегистрироваться
-          -# .back_button{:style => 'display:inline; margin-left:10px;'}= link_to "Back", :back
+.l-page_width_page.l-page_gap-bottom_50
+  = render :partial => 'layouts/logo'
+  %section.clearfix.b-register
+    .b-register__title-inner
+      %h2.b-register__title
+        Регистрация
+    = form_for(resource, :as => resource_name, :url => registration_path(resource)) do |f|
+      .clearfix
+        .b-register__fields-inner
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label "Имя"
+              %span.b-register__inputs-inner
+                = f.text_field :first_name, :class => "b-register__input_text"
+                %span.b-register__required *
+              %i.b-register__error
+                = error_messages_for :first_name, resource
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label "Фамилия"
+              %span.b-register__inputs-inner
+                = f.text_field :last_name, :class => "b-register__input_text"
+                %span.b-register__required *
+              %i.b-register__error
+                = error_messages_for :last_name, resource
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label "Пароль"
+              %span.b-register__inputs-inner
+                = f.password_field :password, :class => "b-register__input_password"
+                %span.b-register__required *
+              %i.b-register__error
+                = error_messages_for :password, resource
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label "Повторите пароль"
+              %span.b-register__inputs-inner
+                = f.password_field :password_confirmation, :class => "b-register__input_password"
+                %span.b-register__required *
+              %i.b-register__error
+                = error_messages_for :password_confirmation, resource
+        .b-register__fields-inner.b-register__fields-inner_float_right
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label "Электронная почта"
+              %span.b-register__inputs-inner
+                = f.email_field :email, :class => "b-register__input_email"
+                %span.b-register__required *
+              %i.b-register__error
+                = error_messages_for :email, resource
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label "Компания"
+              %span.b-register__inputs-inner
+                = f.text_field :company, :class => "b-register__input_text"
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label "Город"
+              %span.b-register__inputs-inner
+                = f.text_field :city, :class => "b-register__input_text"
+          .b-register__fields
+            %label.b-register__label
+              %span.b-register__label-text
+                = f.label "Специализация"
+              %span.b-register__inputs-inner
+                = f.select :professional, [['Дизайн', 'Дизайн'],['Разработка', 'Разработка'], ['Управление', 'Управление']], { :include_blank => true }, :class => "b-register__select"
+      %p.b-register__text.l-page_align_center
+        Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласие с тем, что &laquo;Личные данные&raquo; будут использованы для изготовления бейджа.
+      %p.l-page_align_center
+        %input.b-register__input_submit{:type => "submit", :value => "Зарегистрироваться"}/
+        &nbsp; &nbsp; Я уже регистрировался,
+        =link_to "хочу войти", '/registration/login', :class => 'b-link'

@@ -1,0 +1,88 @@
+- title "Темная сторона продуктовой разработки - Кудзев Артём"
+.l-page_width_page
+  = render :partial => 'layouts/logo'
+  .b-speaker
+    %h1.b-speaker__theme-title.l-page_align_center
+      Темная сторона продуктовой разработки
+    .b-time.l-page_align_center
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        10:25 - 10:45
+      %span.b-time__text
+        Синий зал
+    -#%p.b-speaker__theme-about.l-page_align_center
+    -#  Доклад об особенностях продуктовой разработки, скрытых от внешнего наблюдателя. <br/>Автор на собственном опыте работы в компании 2ГИС расскажет о работе<br/>
+    -#  с внутренним заказчиком и об управлении продуктом и командой.
+    .b-speaker__report-info.clearfix
+      .b-speaker__left.l-page_float_left
+        .b-speaker__photo
+          = image_tag 'speakers/kudzev_orig.jpg', :class => 'b-speaker__img'
+        %h2.b-speaker__title.b-speaker__title_type_normal
+          %a.b-speaker__link{:href => 'http://kudzev.ru', :target => '_blank'}
+            Кудзев Артём
+        %p.b-speaker__text.b-speaker__text_type_gray
+          %a.b-reporters__person-company-link{:href => '2gis.ru', :target => '_blank'}> 2ГИС
+          , Новосибирск.
+        %ul.b-speaker__likes.clearfix
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/kudzev', :target => '_blank'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_vk{:href => 'http://vk.com/kudzev', :target => '_blank'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_fb{:href => 'http://facebook.com/kudzev', :target => '_blank'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_hh{:href => '#'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_flamp{:href => 'http://user.flamp.ru/reviews/2879', :target => '_blank'}
+      .b-speaker__right.l-page_float_right
+        %h2.b-speaker__title
+          О докладчике
+        %ul.b-speaker__list
+          %li.b-speaker__list-item
+            Заместитель директора департамента R&D компании 2ГИС;
+          %li.b-speaker__list-item
+            Программный директор конференции
+            CodeFest;
+          %li.b-speaker__list-item
+            Организатор открытых встреч
+            для разработчиков DevDay.
+        %h2.b-speaker__title
+          Описание
+        %p.b-speaker__text
+          Я часто слышу, что заказная разработка — это зло. Заказчик-самодур диктует свои условия,
+          а разработчики пляшут под его дудку, пишут на Друпале (привет Омск), не высыпаются
+          и мечтают о продуктовой разработке. Где, говорят, один внутренний заказчик, который всё
+          знает, пишет подробное ТЗ, сроки гибкие, а разработчиков кормят плюшками с клюквой
+          и возят на конференции. Все счастливы!
+        %p.b-speaker__text
+          На самом деле нет. Есть свои нюансы, которые стоит учитывать.
+        %p.b-speaker__text
+          О них я и расскажу:
+        %ul.b-speaker__list
+          %li.b-speaker__list-item
+            Product team VS feature team VS &laquo;dev на 50% времени и frontend на 20%, test на 100%&raquo;.
+          %li.b-speaker__list-item
+            &laquo;Продакт все знает он нам напишет подробное ТЗ&raquo; VS прототипы и сплит-тестирование.
+          %li.b-speaker__list-item
+            Старожилы VS живчики.
+          %li.b-speaker__list-item
+            &laquo;Сначала сделаем, потом подумаем как зарабатывать&raquo;.
+        .b-speaker__invite.clearfix
+          %span.b-speaker__invite-title.l-page_float_left
+            Пригласите друзей
+          .b-speaker__invite-likes.l-page_float_left.social-panel
+            = render :partial => 'layouts/social_links_panel'
+        -# %h2.b-speaker__title
+        -#   Презентация
+        -# .b-speaker__presentation
+        -#   = image_tag 'blocks/b-speaker/present.png'
+        -# %h2.b-speaker__title
+        -#   Видео доклада
+        -# .b-speaker__video
+        -#   = image_tag 'blocks/b-speaker/vimeo.png'
+        %h2.b-speaker__title
+          Комментарии
+        .b-speaker__presentation
+          = render :partial => 'pages/disqus'
+
+  = render :partial => 'home/speakers_carousel'

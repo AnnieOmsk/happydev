@@ -1,25 +1,35 @@
-= simple_form_for(@invoice, :url => invoice_path(@invoice), :html => { :class => 'form-horizontal' }) do |f|
+= form_for(@invoice, :url => invoice_path(@invoice)) do |f|
+  .clearfix
+    .b-register__fields-inner
+      .b-register__fields
+        %label.b-register__label
+          %span.b-register__label-text
+            = f.label 'Я оплачиваю:'
+          %span.b-register__inputs-inner
+            = f.check_box :event_ids
+      .b-register__fields
+        %label.b-register__label
+          %span.b-register__label-text
+            = f.label "У меня есть промокод:"
+          %span.b-register__inputs-inner
+            = text_field_tag :promocode
+            -#= f.text_field :company, :class => "b-register__input_text"
 
-  = f.association :events,
-                  :collection => @events.collect{|e| [e.full_name, e.id]},
-                  :as => :check_boxes, 
-                  :label => 'Я оплачиваю:'
+      .b-register__fields
+        %label.b-register__label
+          %span.b-register__label-text
+            = "С условиями <a href='/oferta' target='blank'>Публичной оферты</a> ознакомлен и согласен".html_safe
+          %span.b-register__inputs-inner
+            = f.check_box :oferta
 
+      .b-register__fields
+        %label.b-register__label
+          %span.b-register__label-text
+            = f.label "Общая стоимость"
+          %span.b-register__inputs-inner
+            %strong
+              %span#amount 0
+              руб
 
-  #promocode.control-group
-    .control-label
-      У меня есть промокод:
-    .controls
-      = text_field_tag :promocode
-
-  = f.input :oferta, :label => "С условиями <a href='/oferta' target='blank'>Публичной оферты</a> ознакомлен и согласен"
-
-  #price.control-group
-    %label.control-label
-    .controls
-      Общая стоимость
-      %strong
-        %span#amount 0
-        руб
-  .form-actions
-    = f.submit 'Оплатить', :class => 'btn-primary'
+  %p.l-page_align_center
+    %input.b-register__input_submit{:type => "submit", :value => "Оплатить"}/

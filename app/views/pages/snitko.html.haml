@@ -1,0 +1,70 @@
+- title "Креативное агентство, работающее в кайф - Данил Снитко"
+
+.l-page_width_page
+  = render :partial => 'layouts/logo'
+  .b-speaker
+    %h1.b-speaker__theme-title.l-page_align_center
+      Креативное агентство, работающее в кайф
+    .b-time.l-page_align_center
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        10:25 - 11:10
+      %span.b-time__text
+        Главный зал
+    %p.b-speaker__theme-about.l-page_align_center
+      Рассказ о том, как сделать работу креативного агентства эффективной,
+      полезной и приносящей счастье всем участникам процесса.
+    .b-speaker__report-info.clearfix
+      .b-speaker__left.l-page_float_left
+        .b-speaker__photo
+          = image_tag 'speakers/danilsnitko_150px.jpg', :class => 'b-speaker__img', :alt => "Данил Снитко"
+        %h2.b-speaker__title.b-speaker__title_type_normal
+          %a.b-speaker__link{:href => 'http://dsnitko.moikrug.ru/', :target => '_blank'}
+            Данил Снитко
+        %p.b-speaker__text.b-speaker__text_type_gray
+          %a.b-reporters__person-company-link{:href => 'http://punk-you.ru/', :target => '_blank'}> PUNK YOU
+          , Барнаул
+        %ul.b-speaker__likes.clearfix
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_twitter{:href => 'http://twitter.com/kukalyakin', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_vk{:href => '#', :target => '_blank'}
+          %li.b-speaker__likes-item
+            %a.b-speaker__likes-link.b-speaker__likes-link_icon_fb{:href => 'http://www.facebook.com/danilsnitko', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_hh{:href => '#', :target => '_blank'}
+          -# %li.b-speaker__likes-item
+          -#   %a.b-speaker__likes-link.b-speaker__likes-link_icon_flamp{:href => '#', :target => '_blank'}
+      .b-speaker__right.l-page_float_right
+        %h2.b-speaker__title
+          О докладчике
+        %p.b-speaker__text
+          Aрт-директор PUNK YOU
+        %p.b-speaker__text
+          
+        %h2.b-speaker__title
+          Описание
+        %p.b-speaker__text
+          Автор расскажет о том, как устроена отрасль в целом, какие бывают агентства,
+          как устроено отдельно взятое креативное агентство. О том, как правильно ставить задачи,
+          о типичных ошибках со стороны агенства и клиентов, мешающих обеим сторонам 
+          быть довольными работой друг друга.
+        .b-speaker__invite.clearfix
+          %span.b-speaker__invite-title.l-page_float_left
+            Пригласите друзей
+          .b-speaker__invite-likes.l-page_float_left.social-panel
+            = render :partial => 'layouts/social_links_panel'
+        -# %h2.b-speaker__title
+        -#   Презентация
+        -# .b-speaker__presentation
+        -#   = image_tag 'blocks/b-speaker/present.png'
+        -# %h2.b-speaker__title
+        -#   Видео доклада
+        -# .b-speaker__video
+        -#   = image_tag 'blocks/b-speaker/vimeo.png'
+        %h2.b-speaker__title
+          Комментарии
+        .b-speaker__presentation
+          = render :partial => 'pages/disqus'
+
+  = render :partial => 'home/speakers_carousel'

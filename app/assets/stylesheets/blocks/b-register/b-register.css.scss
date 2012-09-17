@@ -1,0 +1,286 @@
+.b-register {
+    margin: 65px 0 0;
+    position: relative;
+    padding: 55px 25px 25px;
+    border: 1px solid #85b0c6;
+}
+
+.b-register_style_green {
+    border-color: #4b9800;
+}
+
+.b-register__title-inner {
+    position: absolute;
+    left: 0;
+    top: -18px;
+    right: 0;
+    text-align: center;
+}
+
+.b-register_style_green .b-register__title-inner {
+    top: -16px;
+}
+
+.b-register__title {
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+    font-weight: normal;
+    background: #f1f1f3;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+
+.b-register_style_green .b-register__title {
+    font-size: 26px;
+    color: #000;
+}
+
+.b-register__form {
+    margin: 0 0 0 250px;
+}
+
+.b-register__actions {
+    margin: 0 0 0 154px;
+}
+
+.b-register__forgot_password {
+    margin: 10px 0 0 20px;
+
+}
+
+.ie7 .b-register__title {
+    display: inline;
+}
+
+.b-register__fields-inner {
+    width: 440px;
+    float: left;
+}
+
+.b-register__fields-inner_float_right {
+    margin: 0 0 0 30px;
+    float: right;
+}
+
+.b-register__text,
+.b-register__fields {
+    font-family: Arial, sans-serif;
+}
+
+.b-register__fields {
+    margin: 0 0 25px;
+}
+
+.b-register__label-text,
+.b-register__inputs-inner {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ie7 .b-register__label-text,
+.ie7 .b-register__inputs-inner {
+    display: inline;
+}
+
+.b-register__label-text {
+    width: 150px;
+    font-size: 14px;
+    color: #3f495f;
+    font-family: Arial, sans-serif;
+}
+
+.b-register__inputs-inner {
+    width: 270px;
+    position: relative;
+}
+
+.b-register__input_text,
+.b-register__input_email,
+.b-register__input_password,
+.b-register__textarea,
+.b-register__select {
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #d0dde5;
+    font-size: 14px;
+    color: #666;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.b-register__input_text:focus,
+.b-register__input_email:focus,
+.b-register__input_password:focus,
+.b-register__textarea:focus {
+    color: #414141;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: none;
+}
+
+.field_with_errors .b-register__input_text,
+.field_with_errors .b-register__input_email,
+.field_with_errors .b-register__input_password,
+.field_with_errors .b-register__textarea {
+    border-color: #B94A48;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.field_with_errors .b-register__input_text:focus,
+.field_with_errors .b-register__input_email:focus,
+.field_with_errors .b-register__input_password:focus,
+.field_with_errors .b-register__textarea:focus {
+    border-color: #953B39;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #D59392;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #D59392;
+}
+
+.b-register__input_text,
+.b-register__input_email,
+.b-register__input_password {
+    padding-right: 20px;
+    height: 30px;
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.ie7 .b-register__input_text,
+.ie7.b-register__input_email,
+.ie7 .b-register__input_password {
+    height: 20px;
+}
+
+.b-register__input_checkbox,
+.b-register__input_radio {
+    margin: 0 5px 0 0;
+}
+
+.b-register__required {
+    position: absolute;
+    right: 1px;
+    top: -1px;
+    bottom: 2px;
+    padding: 7px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #666;
+}
+
+.b-register__inputs-inner_state_errors .b-register__required {
+    color: #B94A48;
+}
+
+.b-register__text {
+    width: 420px;
+    margin: auto;
+    color: #3f495f;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.b-register__input_submit {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30px;
+    background: #429aec; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQyOWFlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNjYxZGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #429aec 0%, #1661db 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#429aec), color-stop(100%,#1661db)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #429aec 0%,#1661db 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #429aec 0%,#1661db 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #429aec 0%,#1661db 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #429aec 0%,#1661db 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#429aec', endColorstr='#1661db',GradientType=0 ); /* IE6-8 */
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'pf_din_text_cond_proregular';
+}
+
+.ie9 .b-register__input_submit {
+    filter: none;
+}
+
+.b-register__error {
+    margin: 5px 0 0 160px;
+    display: none;
+    color: #cc0000;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.b-register__label_type_checkbox {
+    display: block;
+    margin: 0 0 15px;
+}
+
+.b-register__label_type_checkbox .b-register__input_checkbox,
+.b-register__label_type_checkbox .b-register__label-text,
+.b-register__label_type_oferta .field_with_errors {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.b-register__label_valign_center .b-register__input_checkbox,
+.b-register__label_valign_center .b-register__label-text,
+.b-register__label_valign_center .b-register__label_type_oferta .field_with_errors {
+    vertical-align: middle;
+}
+
+.b-register__label-text_width_340 {
+    width: 340px;
+}
+
+.b-register__label-text_width_auto {
+    width: auto;
+}
+
+.b-register__label-text_type_block {
+    display: block;
+    margin: 0 0 20px;
+}
+
+.b-register__total-title {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.b-register__line {
+    margin: 20px -25px;
+    border-top: 1px dotted #85B0C6; // 4b9800;
+}
+
+.b-register__text_style_small {
+    color: #000;
+    font-size: 13px;
+}
+
+.b-register__inputs-inner_type_small {
+    width: 170px;
+}
+.b-register__alert {
+    color: #c00;
+    font-size: 12px;
+    margin-left: 120px;
+}

@@ -7,7 +7,11 @@ class Event < ActiveRecord::Base
   before_create :set_priority
 
   def full_name
-    [name, master, "#{price} рублей"].compact.join(', ')
+    [name, master, "#{price} руб."].compact.join(', ')
+  end
+
+  def full_name_with_price
+    [name, master, "#{price}"].compact.join(', ')
   end
 
   def full_name_without_price

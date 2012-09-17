@@ -1,0 +1,82 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js ie7 lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js ie8 lt-ie9">
+/[if IE 9] <html class="no-js ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
+  %head
+    %meta(charset="utf-8")
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+    %meta{:property => "og:image", :content => "#{APP_CONFIG['domain']}/assets/happydev_logo.png"}
+    %meta{:property => "og:title", :content => "Omsk IT-conference HappyDev"}
+    %meta{:property => "og:type", :content => "website"}
+    %meta{:property => "fb:app_id", :content => APP_CONFIG['facebook']['AppID']}
+    %meta{:property => "fb:admins", :content => APP_CONFIG['facebook']['admins']}
+    %meta{:property => "og:url", :content => request.url}
+    %meta{:property => "og:description", :content => yield(:title) ||"First big IT-conference in Omsk - Happydev"}
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "viewport"}/
+    %link{:href => "/favicon.png", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %link{:href => "/favicon.png", :rel => "icon", :type => "image/x-icon"}/
+    
+    %title= content_for?(:title) ? yield(:title) : "HappyDev"
+    = csrf_meta_tags
+    
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "application"
+    
+    = include_gon
+
+    %script{:type => 'text/javascript'}
+      :plain
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34324708-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    -# %link(href="images/favicon.ico" rel="shortcut icon")
+
+  %body.b-page.js-b-page{"data-spy" => "scroll", "data-target" => ".js-b-head"}
+    .b-page__inner
+      /[if lt IE 7]
+        <p class="chromeframe">
+        You are using an outdated browser.
+        <a href="http://browsehappy.com/">Upgrade your browser today</a> or
+        <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to
+        better experience this site.</p>
+      = render :partial => 'layouts/header'
+      .b-main{:role => "main"}
+        = yield
+
+      = render :partial => 'layouts/footer'
+      
+      <!-- Yandex.Metrika counter -->
+      :javascript
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter17140027 = new Ya.Metrika({id:17140027, enableAll: true, trackHash:true, webvisor:true,params:window.yaParams||{ }});
+                } catch(e) { }
+            });
+            
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+      %noscript
+        %div
+          %img{:src =>"//mc.yandex.ru/watch/17140027", :style =>"position:absolute; left:-9999px;", :alt =>""}

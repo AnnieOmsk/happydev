@@ -1,0 +1,71 @@
+- title "Marklogic: как обуздать сотни гигабайт неструктурированных данных - Антон Язовский"
+
+.l-page_width_page
+  = render :partial => 'layouts/logo'
+  .b-speaker
+    %h1.b-speaker__theme-title.l-page_align_center
+      Marklogic: как обуздать сотни гигабайт неструктурированных данных
+    .b-time.l-page_align_center
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        15:30 - 15:50
+      %span.b-time__text
+        Главный зал
+    %p.b-speaker__theme-about.l-page_align_center
+      Автор поделится с вами опытом боевого использовании XML базы данных Marklogic
+     
+    .b-speaker__report-info.clearfix
+      .b-speaker__left.l-page_float_left
+        .b-speaker__photo
+          = image_tag 'speakers/yazovskiy.jpg', :class => 'b-speaker__img'
+        %h2.b-speaker__title.b-speaker__title_type_normal
+          %a.b-speaker__link{:href => 'http://antonyazovskiy.moikrug.ru/', :target => '_blank'}
+            Антон Язовский
+        %p.b-speaker__text.b-speaker__text_type_gray
+          %a.b-reporters__person-company-link{:href => 'http://www.thumbtack.ru/', :target => '_blank'}> Тамтек
+          , Омск
+      .b-speaker__right.l-page_float_right
+        %h2.b-speaker__title
+          О докладчике
+        %p.b-speaker__text
+          Thumbtack Technology, Inc., Старший разработчик, DevLead ряда проектов компании
+        %p.b-speaker__text
+          Разработал web ориентированную CRM для французской консалтинговой компании
+          %br
+          Разработал framework для mock-тестирования клиентской части GWT приложений
+        %h2.b-speaker__title
+          Описание
+        %p.b-speaker__text
+          Сервисы электронной коммерции, которые позволяют издательствам предоставлять и продавать он-лайн 
+          доступ к изданиям, оперируют большими объемами слабо-структурированных данных. Перед подобными 
+          системами стоят вопросы доступности, поиска и преобразования информации, производительности,
+          масштабируемости системы в-целом.
+
+        %p.b-speaker__text
+          "XML база данных? Впервые слышу!". Если это про вас, то приходите на доклад и узнаете:
+        %ul.b-speaker__list
+          %li.b-speaker__list-item
+            чем XML базы данных могут помочь именно вам
+          %li.b-speaker__list-item
+            что за зверь - Marklogic
+          %li.b-speaker__list-item
+            ответ на главный вопрос жизни, вселенной и всего такого
+        .b-speaker__invite.clearfix
+          %span.b-speaker__invite-title.l-page_float_left
+            Пригласите друзей
+          .b-speaker__invite-likes.l-page_float_left.social-panel
+            = render :partial => 'layouts/social_links_panel'
+        -# %h2.b-speaker__title
+        -#   Презентация
+        -# .b-speaker__presentation
+        -#   = image_tag 'blocks/b-speaker/present.png'
+        -# %h2.b-speaker__title
+        -#   Видео доклада
+        -# .b-speaker__video
+        -#   = image_tag 'blocks/b-speaker/vimeo.png'
+        %h2.b-speaker__title
+          Комментарии
+        .b-speaker__presentation
+          = render :partial => 'pages/disqus'
+
+  = render :partial => 'home/speakers_carousel'

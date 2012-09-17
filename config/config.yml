@@ -12,6 +12,7 @@ development:
     admins: 100001720278298
   vkontakte:
     AppID: 3104899
+  2gis_map_id: 'd263f13b06daad57b9f5061d74b42311'
 
 staging:
   domain: http://office.7bits.it:21780
@@ -27,6 +28,7 @@ staging:
     admins: 100001720278298
   vkontakte:
     AppID: 3104899
+  2gis_map_id: '1a231b1f06c4f241c7d630691756a3b7'
 
 production:
   domain: http://happydev.ru
@@ -34,6 +36,8 @@ production:
     api_key: 2b25ec06f724c27a6b57a795fc5d1f37-us5
     list_id: 30503cd22e
     list_id_7bits_friends: 9c2718348c
+    list_id_freelancers: 4778518bd9
+    list_id_companies: aac0c2008a
   robokassa:
     login: 'EugeneTarasenko'
     secret1: 'dkhtdkjhpbkcp,2012'   # for notification method
@@ -43,3 +47,4 @@ production:
     admins: 100001720278298
   vkontakte:
     AppID: 3104781
+  2gis_map_id: '398515700752a255c6f4ba03702e376e'

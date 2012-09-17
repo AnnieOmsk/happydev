@@ -12,6 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.tools.min
+//= require bootstrap.min
 //= require payments
-//= require twitter/bootstrap
-//= require_tree .
+//= require modernizr-2.6.1.min.js
+//= require carousel
+//= require blocks/b-programm/b-programm
+
+//= require blocks/b-tikets/slider_run
+//= require blocks/b-reporters/carousel-run
+//= require blocks/b-members/b-members-carousel-run
+//= require plugins
+//= require invoice
+//= require register

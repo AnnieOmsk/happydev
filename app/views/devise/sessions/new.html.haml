@@ -1,13 +1,30 @@
-.devise-session
-  = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => "form-horizontal" }) do |f|
-    = devise_error_messages!
-    %legend Войти
-    = f.input :email, :label => 'Электронный адрес'
-    = f.input :password, :label => 'Пароль'
-
-    .form-actions
-      %button{:type => "submit", :class => "btn btn-primary"}
+.l-page_width_page.l-page_gap-bottom_50
+  = render :partial => 'layouts/logo'
+  %section.clearfix.b-register
+    .b-register__title-inner
+      %h2.b-register__title
         Войти
-
-      = render "devise/shared/links"
-
+    .b-register__form.l-page_float_left
+      = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+        .clearfix
+          .b-register__fields-inner
+            .b-register__fields
+              - if flash[:alert]
+                %p.b-register__alert= flash[:alert]
+              %label.b-register__label
+                %span.b-register__label-text
+                  = f.label "Электронный адрес"
+                %span.b-register__inputs-inner
+                  = f.email_field :email, :class => "b-register__input_email"
+                  %span.b-register__required *
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  = f.label "Пароль"
+                %span.b-register__inputs-inner
+                  = f.password_field :password, :class => "b-register__input_password"
+                  %span.b-register__required *
+        .b-register__actions.l-page_float_left
+          = f.submit 'Войти', :class => 'b-register__input_submit'
+        .b-register__forgot_password.l-page_float_left
+          = render "devise/shared/links"

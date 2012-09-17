@@ -1,0 +1,13 @@
+%section.b-sections
+  %h1#about.b-sections__title
+    Уникальная IT-конференция
+    %span.b-sections__title-small
+      для разработчиков, дизайнеров и менеджеров
+
+  %h2.b-sections__title.b-sections__title_type_small
+    Три потока, учитывающие особенности бизнеса:
+
+  .clearfix
+    = render :partial => 'sections/section', :object => @sections.select {|s| s.id == 1}.first # Стартапы
+    = render :partial => 'sections/section', :object => @sections.select {|s| s.id == 3}.first # Продуктовая разработка
+    = render :partial => 'sections/section', :object => @sections.select {|s| s.id == 2}.first # Фабрика проектов

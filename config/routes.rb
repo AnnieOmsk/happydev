@@ -1,4 +1,8 @@
 Happydev::Application.routes.draw do
+  mount Rich::Engine => '/rich', :as => 'rich'
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
   resources :events
 
   devise_for :users, :skip => [:registrations], :controllers => {:registrations => "registrations"}, :path => "registration", :path_names => { :sign_up => "new", :sign_in => 'login', :sign_out => 'logout' } do
@@ -22,6 +26,8 @@ Happydev::Application.routes.draw do
   match '/pay' => 'home#payment'
 
   match '/invoices/new' => 'invoices#new', :as => :pay
+  # match '/speakers/:id' => 'high_voltage/pages#show', :as => :static, :via => :get, :format => false
+  match '/speakers/:permalink' => 'speeches#show'
 
   scope 'payment' do
     match 'result'    => 'payments#result',    :as => :payment_result # to handle Robokassa push request

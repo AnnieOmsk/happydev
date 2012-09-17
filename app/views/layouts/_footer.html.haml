@@ -1,81 +1,21 @@
-.container{:style=> "padding-left:20px"}
-  .row
-    .span2
-      %ul
-        / %li
-        /   %a{:href => "/about"} Организаторы
-        %li
-          %a{:href => "/oferta"} Договор оферты
-        %li
-          %a{:href => "/pay"} Стоимость участия
-        %li
-          %a{:href => "http://arvd.ru/page/view?id=15", :title => "Конгресс-холл Экспоцентра"} Место проведения
-        
-    .span2
-      %ul
-        -if current_user
-          %li= link_to 'Выход', destroy_user_session_path, :method => :DELETE
-        
-    .span7.social-panel-on-footer
-      -unless Rails.env == 'development'
-        #fb-root
-        %script{:type => "text/javascript"}
-          :plain
-            window.fbAsyncInit = function() {
-              FB.init({
-                appId      : #{APP_CONFIG['facebook']['AppID']}, // App ID
-                channelUrl : '//www.happydev.ru/channel.html', // Channel File
-                status     : true, // check login status
-                cookie     : true, // enable cookies to allow the server to access the session
-                xfbml      : true  // parse XFBML
-              });
+%footer.b-foot.l-page_width_page{:role => 'contentinfo'}
+  %p.b-foot__copy
+    \&copy; 2012 &laquo;HappyDev&raquo;
+    %br/
+    Все права защищены
+  - if controller.controller_name == 'invoices'
+    .b-foot__exit
+      = link_to 'Выход', destroy_user_session_path, :method => :delete, :class => 'b-foot__exit-link'
+      %span.b-foot__exit-icon
+  .b-foot__buttons.social-panel.social-panel-on-footer
+    - if controller.controller_name == 'home'
+      = render :partial => 'layouts/social_links_panel'
 
-              // Additional initialization code here
-            };
-
-            // Load the SDK Asynchronously
-            (function(d){
-               var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-               if (d.getElementById(id)) {return;}
-               js = d.createElement('script'); js.id = id; js.async = true;
-               js.src = "//connect.facebook.net/en_US/all.js";
-               ref.parentNode.insertBefore(js, ref);
-             }(document));
-
-        .fb-like{:'data-send' => 'false', :'data-href' => 'http://happydev.ru', :'data-layout' => 'button_count', :'data-width' => '120', :'data-show-faces' => 'false', :'data-font' => 'lucida grande'}
-
-        %a.twitter-share-button{:href => 'https://twitter.com/share', :'data-url' => 'http://happydev.ru'}
-          Tweet
-        %script(type="text/javascript")
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
-        .g-plusone{:'data-size' => 'medium'}
-        %script(type="text/javascript")
-          (function() {
-          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-          po.src = 'https://apis.google.com/js/plusone.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-          })();
-
-        %script{:type => 'text/javascript', :src => 'http://userapi.com/js/api/openapi.js?52'}
-        %script(type="text/javascript")
-          VK.init({apiId: #{APP_CONFIG['vkontakte']['AppID']}, onlyWidgets: true});
-        #vk_like
-        %script(type="text/javascript")
-          VK.Widgets.Like("vk_like", {type: "mini", height: 20});
-
-
-#footer-extra
-  .container{:style=> "padding-left:20px"}
-    .row
-      .span4
-        &copy; 2012 HappyDev
-      .span4
-        %i.icon-phone
-        &nbsp; 
-        == +7 (909) 535-00-73
-        /, +7 (908) 310-33-81
-      .span4
-        %i.icon-envelope
-        &nbsp; 
-        %a{:href => "mailto:org@happydev.ru"} org@happydev.ru 
+  .b-foot__powered-by
+    %p.b-foot__powered-by-text
+      Красивый дизайн делают
+      %br
+      в студии
+      %a.b-foot__powered-by-link{:href => "http://a2design.ru", :target => '_blank'}
+        &laquo;А2 Дизайн&raquo;
+        %span.b-foot__powered-by-link-logo

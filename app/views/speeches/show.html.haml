@@ -1,0 +1,51 @@
+- title "#{@speech.title} - #{@speech.all_speakers_names}"
+
+.l-page_width_page
+  = render :partial => 'layouts/logo'
+  .b-speaker
+    %h1.b-speaker__theme-title.l-page_align_center
+      = @speech.title
+    .b-time.l-page_align_center
+      %span.b-time__icon
+      %span.b-time__text.b-time__text_type_with-gap-out
+        = @speech.time_range
+      %span.b-time__text
+        = @speech.section.hall
+    %span.b-speaker__theme-about.l-page_align_center
+      = @speech.annotation.html_safe
+    .b-speaker__report-info.clearfix
+      .b-speaker__left.l-page_float_left
+        - if @speech.has_multiple_speakers?
+          = render :partial => 'speakers/multiple_speakers_info', :object => @speech.speakers, :as => :speakers
+        - else
+          = render :partial => 'speakers/single_speaker_info', :object => @speech.speaker, :as => :speaker
+      .b-speaker__right.l-page_float_right
+        - unless @speech.has_multiple_speakers?
+          %h2.b-speaker__title
+            О докладчике
+          %span
+            = @speaker.description.html_safe
+        %h2.b-speaker__title
+          Описание
+        %span.b-speaker__text
+          = @speech.description.html_safe
+
+        .b-speaker__invite.clearfix
+          %span.b-speaker__invite-title.l-page_float_left
+            Пригласите друзей
+          .b-speaker__invite-likes.l-page_float_left.social-panel
+            = render :partial => 'layouts/social_links_panel'
+        -# %h2.b-speaker__title
+        -#   Презентация
+        -# .b-speaker__presentation
+        -#   = image_tag 'blocks/b-speaker/present.png'
+        -# %h2.b-speaker__title
+        -#   Видео доклада
+        -# .b-speaker__video
+        -#   = image_tag 'blocks/b-speaker/vimeo.png'
+        %h2.b-speaker__title
+          Комментарии
+        .b-speaker__presentation
+          = render :partial => 'pages/disqus'
+
+  = render :partial => 'home/speakers_carousel'

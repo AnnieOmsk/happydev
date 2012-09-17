@@ -1,0 +1,181 @@
+.b-programm {
+    margin: 35px 0 0;
+}
+
+.b-programm__line {
+    position: relative;
+    border-top: 1px solid #c1c1c2;
+}
+
+.b-programm__title-inner {
+    position: absolute;
+    left: 0;
+    top: -18px;
+    right: 0;
+    text-align: center;
+}
+
+.b-programm__title {
+    margin: 0;
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: normal;
+    background: #f1f1f3;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.ie7 .b-programm__title {
+    display: inline;
+}
+
+.b-programm__table {
+    width: 100%;
+    margin: 35px 0 0;
+}
+
+.b-programm__column {
+    position: relative;
+    padding: 10px;
+    min-width: 80px;
+    color: #000;
+    vertical-align: top;
+}
+
+.b-programm__head .b-programm__column {
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.b-programm__column-title {
+    margin: 0;
+}
+
+.b-programm__body .b-programm__row_state_filled .b-programm__column {
+    background: #fbfbfb;
+}
+
+.b-programm__text,
+.b-programm__theme {
+    margin: 0;
+}
+
+.b-programm__text {
+    font-size: 16px;
+}
+
+.b-programm__company {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #79868D;
+}
+
+.b-programm__theme-link,
+.b-programm__theme-link:visited {
+    color: #3362ae;
+}
+
+.b-programm__theme-link:hover {
+    color: #5f9cff;
+}
+
+.b-programm__theme-link {
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    border-bottom: 1px solid #B2CCF0;
+}
+
+.b-programm__icon {
+    float: left;
+    margin: -2px 5px 0 0;
+}
+
+.b-programm__desc {
+    display: none;
+    width: 430px;
+    padding: 15px;
+    position: absolute;
+    background: #fff;
+    top: -10px;
+    left: -10px;
+    -moz-box-shadow: -1px 12px 46px -7px rgba(67, 86, 100, .4);
+    -webkit-box-shadow: -1px 12px 46px -7px rgba(67, 86, 100, .4);
+    box-shadow: -1px 12px 46px -7px rgba(67, 86, 100, .4);
+    z-index: 111;
+}
+
+.ie7 .b-programm__desc,
+.ie8 .b-programm__desc {
+    border: 1px solid #ccc;
+}
+
+.b-programm__column-last .b-programm__desc {
+    left: auto;
+    right: 0;
+}
+
+.b-program__column_type_large .b-programm__desc {
+    left: 0;
+}
+
+.b-programm__column_type_middle .b-programm__desc {
+    left: -70px;
+}
+
+.b-programm__desc-time {
+    white-space: nowrap;
+}
+
+.b-programm__desc-person-info-inner {
+    margin: 15px 0 0;
+}
+
+.b-programm__desc-photo {
+    margin: 0 15px 0 0;
+    float: left;
+    width: 80px;
+}
+
+.b-programm__desc-person-info {
+    float: left;
+    width: 330px;
+}
+
+.b-programm__desc-name {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.b-programm__desc-theme {
+    margin: 0;
+    line-height: 20px;
+}
+
+.b-programm__desc-theme-link {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    border-bottom: 1px solid #B2CCF0;
+}
+
+.b-programm__desc-theme-link,
+.b-programm__desc-theme-link:visited {
+    color: #3362ae;
+}
+
+.b-programm__desc-theme-link:hover {
+    color: #cc0000;
+    border-color: #F0B2B2;
+}
+
+.b-programm__desc-text {
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 19px;
+    color: #3f495f;
+    font-family: Arial, sans-serif;
+}

@@ -3,7 +3,8 @@ class InvoicesController < ApplicationController
   # include HttpAuthenticable
   # before_filter :authenticate
 
-  before_filter :authenticate_user!, :except => :delete
+  before_filter :authenticate_user!, :except => [:new, :delete]
+  before_filter :move_to_register_if_not_signed_in, :only => :new
   before_filter :find_invoice, :only => [:new, :show, :clearing]
 
   def new
@@ -19,13 +20,16 @@ class InvoicesController < ApplicationController
   end
 
   def create
-    if params[:invoice]["event_ids"].all?{ |i| i.blank? }    # if events not selected
+    if !params[:invoice]["event_ids"] # && params[:invoice]["event_ids"].all?{ |i| i.blank? }    # if events not selected
       redirect_to new_invoice_path
     else
       @invoice = Invoice.drafting_invoice(current_user, params[:invoice], params[:promocode])
       @invoice.reserve_user_id = current_user.id
 
       if @invoice.save
+        unless @invoice.promocode.blank?
+          @invoice.valued_promocode
+        end
 
         # Mailer.send_choice_part_conf(current_user.email, @invoice.events, @invoice.amount, @invoice.expired_at).deliver!
         if @invoice.discount_status
