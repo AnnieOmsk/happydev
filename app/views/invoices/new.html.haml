@@ -43,8 +43,9 @@
             С условиями
             %a.b-link{:href => '/oferta', :target => 'blank'} Публичной оферты
             ознакомлен и согласен
-          %i.b-register__error
-            = error_messages_for :oferta, @invoice
+          %p
+            %i.b-register__error.b-register__error_gaps_oferta
+              = error_messages_for :oferta, @invoice
 
         %p.l-page_align_center
           %input.b-register__input_submit{:type => "submit", :value => "Оплатить"}/
