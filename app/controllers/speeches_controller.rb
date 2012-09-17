@@ -4,7 +4,11 @@ class SpeechesController < ApplicationController
 
   def show
     @speech = Speech.find_by_permalink(params[:permalink])
-    @speaker = @speech.speaker
-    @company = @speaker.company
+    if @speech.blank?
+      redirect_to root_url
+    else
+      @speaker = @speech.speaker
+      @company = @speaker.company
+    end
   end
 end
