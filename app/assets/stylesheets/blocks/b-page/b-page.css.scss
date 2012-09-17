@@ -1,39 +1,39 @@
 @font-face {
-  font-family: 'pf_din_text_cond_proregular';
-  src: url(font-path('pfdintextcondpro-regular_0-webfont.eot')),
-       url(font-path('pfdintextcondpro-regular_0-webfont.eot') + "?#iefix") format('embedded-opentype'),
-       url(font-path('pfdintextcondpro-regular_0-webfont.woff')) format('woff'),
-       url(font-path('pfdintextcondpro-regular_0-webfont.ttf'))  format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'pf_din_text_cond_proregular';
+    src: url(font-path('pfdintextcondpro-regular_0-webfont.eot')),
+    url(font-path('pfdintextcondpro-regular_0-webfont.eot?#iefix')) format('embedded-opentype'),
+    url(font-path('pfdintextcondpro-regular_0-webfont.woff')) format('woff'),
+    url(font-path('pfdintextcondpro-regular_0-webfont.ttf'))  format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'pf_din_text_cond_probold';
-  src: url(font-path('pfdintextcondpro-bold_0-webfont.eot')),
-       url(font-path('pfdintextcondpro-bold_0-webfont.eot') + "?#iefix") format('embedded-opentype'),
-       url(font-path('pfdintextcondpro-bold_0-webfont.woff')) format('woff'),
-       url(font-path('pfdintextcondpro-bold_0-webfont.ttf'))  format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'pf_din_text_cond_probold';
+    src: url(font-path('pfdintextcondpro-bold_0-webfont.eot')),
+    url(font-path('pfdintextcondpro-bold_0-webfont.eot?#iefix')) format('embedded-opentype'),
+    url(font-path('pfdintextcondpro-bold_0-webfont.woff')) format('woff'),
+    url(font-path('pfdintextcondpro-bold_0-webfont.ttf'))  format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src: url(font-path('PTS55F-webfont.eot')),
-       url(font-path('PTS55F-webfont.eot') + "?#iefix") format('embedded-opentype'),
-       url(font-path('PTS55F-webfont.woff')) format('woff'),
-       url(font-path('PTS55F-webfont.ttf'))  format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'PT Sans';
+    src: url(font-path('PTS55F-webfont.eot')),
+    url(font-path('PTS55F-webfont.eot')) format('embedded-opentype'),
+    url(font-path('PTS55F-webfont.woff')) format('woff'),
+    url(font-path('PTS55F-webfont.ttf'))  format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'als_rublregular';
     src: url(font-path('rouble-webfont.eot')),
-         url(font-path('rouble-webfont.eot') + "?#iefix") format('embedded-opentype'),
-         url(font-path('rouble-webfont.woff')) format('woff'),
-         url(font-path('rouble-webfont.ttf'))  format('truetype');
+    url(font-path('rouble-webfont.eot?#iefix')) format('embedded-opentype'),
+    url(font-path('rouble-webfont.woff')) format('woff'),
+    url(font-path('rouble-webfont.ttf'))  format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -42,4 +42,3 @@
     font-family: 'pf_din_text_cond_proregular';
     background: #f1f1f3;
 }
-
