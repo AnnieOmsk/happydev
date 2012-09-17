@@ -10,4 +10,8 @@ class HomeController < ApplicationController
   def about
     redirect_to "/"
   end
+
+  def program
+    redirect_to "/"
+  end
 end
