@@ -3,7 +3,8 @@ class InvoicesController < ApplicationController
   # include HttpAuthenticable
   # before_filter :authenticate
 
-  before_filter :authenticate_user!, :except => :delete
+  before_filter :authenticate_user!, :except => [:new, :delete]
+  before_filter :move_to_register_if_not_signed_in, :only => :new
   before_filter :find_invoice, :only => [:new, :show, :clearing]
 
   def new

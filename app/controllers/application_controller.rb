@@ -16,4 +16,8 @@ class ApplicationController < ActionController::Base
   def authenticate_admin!
     redirect_to '/' unless current_user && current_user.admin?
   end
+
+  def move_to_register_if_not_signed_in
+    redirect_to new_user_registration_path unless current_user
+  end
 end

@@ -3,8 +3,9 @@
     \&copy; 2012 &laquo;HappyDev&raquo;
     %br/
     Все права защищены
-  .b-foot__exit
-    = link_to 'Выход', destroy_user_session_path, :method => :delete
+  - if controller.controller_name == 'invoices'
+    .b-foot__exit
+      = link_to 'Выход', destroy_user_session_path, :method => :delete
   .b-foot__buttons.social-panel.social-panel-on-footer
     - if controller.controller_name == 'home'
       = render :partial => 'layouts/social_links_panel'
