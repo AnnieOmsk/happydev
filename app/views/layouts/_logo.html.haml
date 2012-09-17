@@ -1,6 +1,6 @@
 .b-logo
   %p.b-logo__image
-    - if controller.controller_name == 'home'
+    - if controller.controller_name == 'home' && controller.action_name == 'index'
       = image_tag 'blocks/b-logo/logo.png', :alt => "HappyDEV 2012"
     - else
       %a.b-logo__link{:href => '/'}
