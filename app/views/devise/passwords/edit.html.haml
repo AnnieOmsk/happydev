@@ -1,13 +1,34 @@
-.devise-session
+.l-page_width_page.l-page_gap-bottom_50
+  = render :partial => 'layouts/logo'
+  %section.clearfix.b-register
+    .b-register__title-inner
+      %h2.b-register__title
+        Меняем пароль:
+    .b-register__form
+      = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f|
+        = f.hidden_field :reset_password_token, :as => :hidden
+        -# = f.full_error :reset_password_token
+        .clearfix
+          .b-register__fields-inner
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  = f.label "Пароль"
+                %span.b-register__inputs-inner
+                  = f.password_field :password, :class => "b-register__input_email"
+                  %span.b-register__required *
+                %i.b-register__error
+                  = error_messages_for :password, resource
+            .b-register__fields
+              %label.b-register__label
+                %span.b-register__label-text
+                  = f.label "Ещё раз пароль"
+                %span.b-register__inputs-inner
+                  = f.password_field :password_confirmation, :class => "b-register__input_email"
+                  %span.b-register__required *
+                %i.b-register__error
+                  = error_messages_for :password, resource
+          = render "devise/shared/links"
 
-  = simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put, :class => "form-horizontal" }) do |f|
-    = devise_error_messages!
-    %legend Меняем пароль:
-    = f.input :reset_password_token, :as => :hidden
-    = f.full_error :reset_password_token
-    = f.input :password, :label => "Пароль", :required => true
-    = f.input :password_confirmation, :label => "Еще раз пароль", :required => true
-    .form-actions
-      = f.button :submit, "Готово"
-      = render "devise/shared/links"
-
+        %p.l-page_gap-left-out_40
+          %input.b-register__input_submit{:type => "submit", :value => "Готово"}/ 
