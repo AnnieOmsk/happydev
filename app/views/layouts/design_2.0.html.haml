@@ -57,7 +57,7 @@
 
       = render :partial => 'layouts/footer'
      
-      = if Rails.env == 'production'
+      - if Rails.env == 'production'
         <!-- Yandex.Metrika counter -->
         :javascript
           (function (d, w, c) {
