@@ -45,7 +45,7 @@
       %section.l-page_gap-top-out_50.l-page_align_center
         %p
           = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
-            = submit_tag "Оплатить через робокассу", :class => 'b-register__input_submit'
+            = submit_tag "Оплатить через робокассу", :class => 'b-button'
       .clearfix
         .b-register__line
           -#.l-page_float_left.l-page_gap-left-out_90
