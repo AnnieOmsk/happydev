@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_about.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_about.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -66,10 +66,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="b-programm.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="b-programm.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="23" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.8051342">
+            <state line="52" column="23" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_header.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__about.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/__about.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_about.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/home/_about.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="4" selection-start="631" selection-end="631" vertical-scroll-proportion="0.25210086">
               <folding />
             </state>
           </provider>
@@ -93,7 +120,6 @@
         <option value="$PROJECT_DIR$/app/views/speeches/_preview.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss" />
         <option value="$PROJECT_DIR$/app/helpers/speeches_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/_about.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/_social_links_panel.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" />
@@ -104,6 +130,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/_about.html.haml" />
       </list>
     </option>
   </component>
@@ -1200,27 +1227,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/sections/_section.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="84" selection-end="100" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="111" selection-end="111" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_social_links_panel.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="88" selection-start="941" selection-end="941" vertical-scroll-proportion="-15.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/oferta.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="148" selection-start="1399" selection-end="1399" vertical-scroll-proportion="-7.375">
@@ -1307,7 +1313,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="23" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.8051342">
+        <state line="52" column="23" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/__about.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/_about.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="631" selection-end="631" vertical-scroll-proportion="0.25210086">
           <folding />
         </state>
       </provider>
