@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/blocks/b-organizers/in-numbers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/blocks/b-organizers/raec.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/blocks/b-organizers/rocid.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
@@ -71,19 +66,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_orgs_and_sponsors.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_orgs_and_sponsors.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="4" selection-start="1259" selection-end="1277" vertical-scroll-proportion="-16.25">
+            <state line="25" column="42" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.45018008">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-organizers.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="b-organizers.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.2975496">
+            <state line="17" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,8 +111,8 @@
         <option value="$PROJECT_DIR$/app/views/invoices/show.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-button/b-button.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml" />
       </list>
     </option>
   </component>
@@ -1380,16 +1375,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="4" selection-start="1259" selection-end="1277" vertical-scroll-proportion="-16.25">
+        <state line="17" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.2975496">
+        <state line="25" column="42" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.45018008">
           <folding />
         </state>
       </provider>
