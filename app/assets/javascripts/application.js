@@ -15,6 +15,7 @@
 //= require jquery.tools.min
 //= require bootstrap.min
 //= require payments
+//= require filter
 //= require modernizr-2.6.1.min.js
 //= require carousel
 //= require blocks/b-programm/b-programm

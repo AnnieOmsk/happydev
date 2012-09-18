@@ -1,0 +1,45 @@
+.b-filter {
+    position: relative;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.b-filter__item {
+    margin: 0 0 0 20px;
+    display: inline-block;
+    list-style: none;
+}
+
+.ie7 .b-filter__item {
+    display: inline;
+}
+
+.b-filter__item:first-child {
+    margin: 0;
+}
+
+.b-filter__link {
+    display: block;
+    color: #3362ae;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.b-filter__link:hover {
+    color: #287aff;
+}
+
+.b-filter__item_state_current .b-filter__link {
+    padding: 3px 10px;
+    border: 1px solid #85b0c6;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    color: #85b0c6;
+    cursor: default;
+}
