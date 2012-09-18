@@ -2,7 +2,7 @@
 
 module SpeechesHelper
   def icon_for_speakers speech, spec2, options = {}
-    spec_hash = {"Разработка" => "developer", "Дизайн" => "designer", "Управление" => "manager", "Общий" => "general"}
+    spec_hash = {"Разработка" => "developer", "Дизайн" => "designer", "Управление" => "manager", "Общий" => "general", "Стартап-порка" => "startup_porka"}
     if spec2
       image = "#{spec_hash[speech.specialization2.name]}.png"
       image_tag image, options.merge!(:size => "20x20")
