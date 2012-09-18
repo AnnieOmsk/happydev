@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_about.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_about.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.haml" afterPath="$PROJECT_DIR$/app/views/home/index.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -67,19 +66,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="23" selection-start="5878" selection-end="5878" vertical-scroll-proportion="-61.875">
+            <state line="3" column="39" selection-start="111" selection-end="111" vertical-scroll-proportion="0.054021608">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_about.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_about.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/_about.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="38" selection-start="273" selection-end="273" vertical-scroll-proportion="0.14405762">
+            <state line="8" column="38" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -121,7 +120,6 @@
         <option value="$PROJECT_DIR$/app/views/devise/passwords/new.html.haml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/views/invoices/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-speaking/b-speaking.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/_program.html.haml" />
         <option value="$PROJECT_DIR$/app/views/speeches/_preview.html.haml" />
@@ -132,6 +130,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/_about.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
       </list>
     </option>
   </component>
@@ -987,7 +986,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1922" height="1037" extended-state="7" />
+    <frame x="-1" y="24" width="1922" height="1037" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1188,9 +1187,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="23" selection-start="5878" selection-end="5878" vertical-scroll-proportion="-61.875">
+        <state line="81" column="22" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/_about.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="38" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
@@ -1202,16 +1208,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="22" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_about.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="38" selection-start="273" selection-end="273" vertical-scroll-proportion="0.14405762">
+        <state line="3" column="39" selection-start="111" selection-end="111" vertical-scroll-proportion="0.054021608">
           <folding />
         </state>
       </provider>
