@@ -8,7 +8,7 @@
           - speech = speaker.speeches.first
           - company = speaker.company
           - if speech && company
-            .b-reporters__person
+            .b-reporters__person{:data => { :section => speech.section.name, :specialization => speech.specialization.name }}
               .b-reporters__person-photo
                 = image_tag speaker.photo_url, :class => "b-reporters__person-photo-img"
               %h2.b-reporters__person-name
