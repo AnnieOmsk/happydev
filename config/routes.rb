@@ -22,6 +22,7 @@ Happydev::Application.routes.draw do
   match '/programme' => 'home#program'
   match '/program' => 'home#program'
   match '/about' => 'home#about'
+  match '/students' => 'home#students'
   match '/oferta' => 'home#oferta'
   match '/pay' => 'home#payment'
 
