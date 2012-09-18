@@ -9,7 +9,10 @@
     = speaker.full_name
 %p.b-speaker__text.b-speaker__text_type_gray
   %a.b-reporters__person-company-link{:href => speaker.company.url, :target => '_blank'}>= speaker.company.name
-  == , #{speaker.company.city.name}
+  ,
+  = speaker.position
+%p.b-speaker__text.b-speaker__text_type_gray
+  = speaker.city.name
 %ul.b-speaker__likes.clearfix
   - if speaker.twitter.present?
     %li.b-speaker__likes-item
