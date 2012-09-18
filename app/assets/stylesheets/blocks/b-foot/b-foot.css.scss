@@ -84,16 +84,15 @@
 }
 
 .b-foot__exit-icon {
-    width: 8px;
-    height: 8px;
-    background: url(exit.png);
-    background-size: 8px;
-    opacity: .6;
-    filter: alpha(opacity=60);
+    width: 16px;
+    height: 16px;
+    background: image-url('blocks/b-foot/exit.png');
+    opacity: .8;
+    filter: alpha(opacity=80);
 }
 
 .b-foot__exit-link {
-    margin: 5px 3px 0 0;
+    margin: 5px 0 0 0;
     text-decoration: none;
     font-size: 12px;
     color: #333;

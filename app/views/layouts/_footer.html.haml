@@ -5,8 +5,8 @@
     Все права защищены
   - if controller.controller_name == 'invoices'
     .b-foot__exit
-      = link_to 'Выход', destroy_user_session_path, :method => :delete, :class => 'b-foot__exit-link'
       %span.b-foot__exit-icon
+      = link_to 'Выход', destroy_user_session_path, :method => :delete, :class => 'b-foot__exit-link'
   .b-foot__buttons.social-panel.social-panel-on-footer
     - if controller.controller_name == 'home'
       = render :partial => 'layouts/social_links_panel'
