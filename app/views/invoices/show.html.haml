@@ -8,7 +8,7 @@
       .l-page_display_inline.l-page_gap-right-out_45.l-page_gap-left-out_40
         .clearfix
           - if @invoice.all_invoice_events_paid?
-            %h3.b-content__title.b-content__title_type_middle.l-page_gap-left-out_40
+            %h3.b-content__title.b-content__title_type_middle
               Ураа, ты уже на полпути к #HappyDev 2012!
             %ul.b-content__list
               - for paid_event in @invoice.invoice_events
@@ -25,7 +25,7 @@
             / %h3 Оплачена сумма: #{ @invoice.amount} руб.
 
           - else
-            %h3.b-content__title.b-content__title_type_middle.l-page_gap-left-out_40
+            %h3.b-content__title.b-content__title_type_middle
               Вы хотите оплатить:
             %ul.b-content__list
               - for ie in @invoice.invoice_events
@@ -66,11 +66,9 @@
 
       / %p.l-page_align_center
 
-
-
-      %h2.b-register__title
+      %h2.b-content__title.b-content__title_type_middle.l-page_gap-left-out_40
         Безналичный расчет
-      %p.b-register__text
+      %p.b-register__text.l-page_gap-left-out_40
         Пожалуйста, скачайте &nbsp;
         %a.b-link{:href => "#{APP_CONFIG[:domain]}/docs/HappyDev_12_agreement.doc"}>  образец договора
         , заполните все выделенные фрагменты, кроме номера договора и вышлите на адрес &nbsp;
