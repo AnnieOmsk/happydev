@@ -13,7 +13,7 @@
                 = check_box_tag "invoice[event_ids][]", event.id, true, :disabled => true, :class => "invoice_checkbox"
                 = hidden_field_tag "invoice[event_ids][]", event.id
               - else
-                = check_box_tag "invoice[event_ids][]", event.id, false, :class => "invoice_checkbox"
+                = check_box_tag "invoice[event_ids][]", event.id, true, :class => "invoice_checkbox"
               %span.b-register__label-text.b-register__label-text_width_340
                 = event.full_name_with_price
                 %span.b-price__rubl.b-price__rubl_type_dark-blue
