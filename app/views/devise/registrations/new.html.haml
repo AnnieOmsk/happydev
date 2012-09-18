@@ -73,7 +73,7 @@
                 = f.label "Специализация"
               %span.b-register__inputs-inner
                 = f.select :professional, [['Дизайн', 'Дизайн'],['Разработка', 'Разработка'], ['Управление', 'Управление']], { :include_blank => true }, :class => "b-register__select"
-      %p.b-register__text.l-page_align_center
+      %p.b-register__text.b-register__text_type_small.l-page_align_center
         Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласие с тем, что &laquo;Личные данные&raquo; будут использованы для изготовления бейджа.
       %p.l-page_align_center
         %input.b-register__input_submit{:type => "submit", :value => "Зарегистрироваться"}/
