@@ -1,42 +1,40 @@
 .l-page_width_page.l-page_gap-bottom_50
   = render :partial => 'layouts/logo'
-  %section.clearfix.b-register{:style => "padding-top:15px;"}
+  %section.clearfix.b-register
     .b-register__title-inner
       %h2.b-register__title
         Оплата участия на HappyDev
     .clearfix
-      .l-page_display_inline.l-page_gap-right-out_45.l-page_gap-left-out_40
-        .clearfix
-          - if @invoice.all_invoice_events_paid?
-            %h3.b-content__title.b-content__title_type_middle
-              Ураа, ты уже на полпути к #HappyDev 2012!
-            %ul.b-content__list
-              - for paid_event in @invoice.invoice_events
-                %li.b-content__list-item
-                  #{paid_event.event.full_name_without_price},
-                  %strong
-                    #{paid_event.event.price}
-                  %span.b-price__rubl.b-price__rubl_type_dark-blue
-                    a
-                  (
-                  %strong{:style => 'color: green'}> Оплачено
-                  )
+      .l-page_display_inline
+        - if @invoice.all_invoice_events_paid?
+          %h3.b-content__title.b-content__title_type_middle
+            Ураа, ты уже на полпути к #HappyDev 2012!
+          %ul.b-content__list
+            - for paid_event in @invoice.invoice_events
+              %li.b-content__list-item
+                #{paid_event.event.full_name_without_price},
+                %strong
+                  #{paid_event.event.price}
+                %span.b-price__rubl.b-price__rubl_type_dark-blue
+                  a
+                (
+                %strong{:style => 'color: green'}> Оплачено
+                )
 
-            / %h3 Оплачена сумма: #{ @invoice.amount} руб.
+          / %h3 Оплачена сумма: #{ @invoice.amount} руб.
 
-          - else
-            %h3.b-content__title.b-content__title_type_middle
-              Вы хотите оплатить:
-            %ul.b-content__list
-              - for ie in @invoice.invoice_events
-                %li.b-content__list-item
-                  = ie.event.full_name
-                  - if ie.paid?
-                    = " (<strong color='green'>Оплачено</strong>)".html_safe
-
-      .l-page_float_right.l-page_gap-right-out_45
+        - else
+          %h3.b-register__title-middle
+            Вы хотите оплатить:
+          %ul.b-content__list
+            - for ie in @invoice.invoice_events
+              %li.b-content__list-item
+                = ie.event.full_name
+                - if ie.paid?
+                  = " (<strong color='green'>Оплачено</strong>)".html_safe
+      .l-page_float_right
         .b-register__total
-          %h2.b-register__total-title
+          %h2.b-register__title-middle
             Общая стоимость
           %span.b-price.b-price_type_early
             %i.b-price__number.js-amount
@@ -66,9 +64,9 @@
 
       / %p.l-page_align_center
 
-      %h2.b-content__title.b-content__title_type_middle.l-page_gap-left-out_40
+      %h2.b-register__title-middle
         Безналичный расчет
-      %p.b-register__text.l-page_gap-left-out_40
+      %p.b-register__text
         Пожалуйста, скачайте &nbsp;
         %a.b-link{:href => "#{APP_CONFIG[:domain]}/docs/HappyDev_12_agreement.doc"}>  образец договора
         , заполните все выделенные фрагменты, кроме номера договора и вышлите на адрес &nbsp;

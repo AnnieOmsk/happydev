@@ -185,7 +185,6 @@
 }
 
 .b-register__text {
-    width: 420px;
     color: #3f495f;
     font-size: 12px;
     line-height: 19px;
@@ -255,6 +254,10 @@
     width: 340px;
 }
 
+.b-register__label-text_width_265 {
+  width: 265px;
+}
+
 .b-register__label-text_width_auto {
     width: auto;
 }
@@ -264,9 +267,11 @@
     margin: 0 0 20px;
 }
 
-.b-register__total-title {
-    font-size: 24px;
+.b-register__title-middle {
+    margin-top: 0;
+    font-size: 25px;
     font-weight: normal;
+    text-transform: none;
 }
 
 .b-register__line {
@@ -280,8 +285,9 @@
 }
 
 .b-register__inputs-inner_type_small {
-    width: 170px;
+    width: 270px;
 }
+
 .b-register__alert {
     color: #c00;
     font-size: 12px;

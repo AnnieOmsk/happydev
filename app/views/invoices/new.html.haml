@@ -14,13 +14,13 @@
                 = hidden_field_tag "invoice[event_ids][]", event.id
               - else
                 = check_box_tag "invoice[event_ids][]", event.id, false, :class => "invoice_checkbox"
-              %span.b-register__label-text.b-register__label-text_width_340
+              %span.b-register__label-text.b-register__label-text_width_265
                 = event.full_name_with_price
                 %span.b-price__rubl.b-price__rubl_type_dark-blue
                   a
         .l-page_float_right.l-page_gap-right-out_4
           .b-register__total
-            %h2.b-register__total-title
+            %h2.b-register__title-middle
               Общая стоимость
             %span.b-price.b-price_type_early
               %i.b-price__number.js-amount
@@ -43,7 +43,7 @@
             С условиями
             %a.b-link{:href => '/oferta', :target => 'blank'} Публичной оферты
             ознакомлен и согласен
-          %p
+          %p.l-page_gaps_none
             %i.b-register__error.b-register__error_gaps_oferta
               = error_messages_for :oferta, @invoice
 

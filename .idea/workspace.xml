@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_social_links_panel.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_social_links_panel.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/invoices/new.html.haml" afterPath="$PROJECT_DIR$/app/views/invoices/new.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/invoices/show.html.haml" afterPath="$PROJECT_DIR$/app/views/invoices/show.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -67,15 +69,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="39" selection-start="111" selection-end="111" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_footer.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.haml">
           <provider selected="true" editor-type-id="text-editor">
@@ -85,19 +78,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_social_links_panel.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_social_links_panel.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_social_links_panel.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="88" selection-start="941" selection-end="941" vertical-scroll-proportion="0.4390244">
+            <state line="24" column="88" selection-start="941" selection-end="941" vertical-scroll-proportion="-15.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_about.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/_about.html.haml">
+      <file leaf-file-name="b-register.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="38" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.0">
+            <state line="287" column="13" selection-start="7465" selection-end="7465" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="oferta.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/oferta.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="148" selection-start="1399" selection-end="1399" vertical-scroll-proportion="-7.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="___form.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/invoices/___form.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="98" selection-start="518" selection-end="518" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/invoices/_form.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="81" selection-start="794" selection-end="794" vertical-scroll-proportion="-9.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/invoices/new.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="75" selection-start="848" selection-end="848" vertical-scroll-proportion="-4.387755">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/invoices/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="28" selection-start="243" selection-end="243" vertical-scroll-proportion="0.092364535">
               <folding />
             </state>
           </provider>
@@ -106,7 +144,7 @@
       <file leaf-file-name="l-page.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="1" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0">
+            <state line="17" column="12" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,15 +154,6 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="22" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_section.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sections/_section.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="84" selection-end="100" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -145,20 +174,20 @@
       <list>
         <option value="$PROJECT_DIR$/app/views/devise/passwords/new.html.haml" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/views/invoices/new.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-speaking/b-speaking.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/_program.html.haml" />
         <option value="$PROJECT_DIR$/app/views/speeches/_preview.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss" />
         <option value="$PROJECT_DIR$/app/helpers/speeches_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/invoices/show.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/_about.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/_social_links_panel.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/invoices/new.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/invoices/show.html.haml" />
       </list>
     </option>
   </component>
@@ -1051,6 +1080,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1066,7 +1096,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1169,32 +1198,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers/speeches_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="117" selection-start="210" selection-end="210" vertical-scroll-proportion="0.106571935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_program.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="29" selection-start="8064" selection-end="8064" vertical-scroll-proportion="0.018007202">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/speeches/_preview.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="409" selection-end="409" vertical-scroll-proportion="0.22569028">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="68" selection-start="435" selection-end="435" vertical-scroll-proportion="0.14002334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="117" column="26" selection-start="1912" selection-end="1912" vertical-scroll-proportion="0.017502917">
@@ -1212,20 +1215,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/speeches/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.9166667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/invoices/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="35" selection-start="3134" selection-end="3134" vertical-scroll-proportion="-27.833334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="266" column="26" selection-start="7113" selection-end="7113" vertical-scroll-proportion="0.46886447">
           <folding />
         </state>
       </provider>
@@ -1251,13 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="1" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="22" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
@@ -1274,7 +1256,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_social_links_panel.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="88" selection-start="941" selection-end="941" vertical-scroll-proportion="0.4390244">
+        <state line="24" column="88" selection-start="941" selection-end="941" vertical-scroll-proportion="-15.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/oferta.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="148" selection-start="1399" selection-end="1399" vertical-scroll-proportion="-7.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/invoices/___form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="98" selection-start="518" selection-end="518" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/invoices/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="81" selection-start="794" selection-end="794" vertical-scroll-proportion="-9.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="12" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/invoices/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="75" selection-start="848" selection-end="848" vertical-scroll-proportion="-4.387755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-register/b-register.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="287" column="13" selection-start="7465" selection-end="7465" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/invoices/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="28" selection-start="243" selection-end="243" vertical-scroll-proportion="0.092364535">
           <folding />
         </state>
       </provider>
