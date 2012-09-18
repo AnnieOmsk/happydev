@@ -1,11 +1,11 @@
 #carousel.b-reporters__persons.b-reporters__carousel.js-b-reporters__carousel.slide
   .carousel-inner
     - batch_counter = 0
-    - Speaker.with_photos.find_in_batches(:batch_size => 4) do |group|
+    - Speech.where({ 'speaker2_id' => nil, 'speaker3_id' => nil}).find_in_batches(:batch_size => 4) do |group|
       - batch_counter += 1
       .item.clearfix{:class => batch_counter == 1 ? 'active' : nil}
-        - group.each do |speaker|
-          - speech = speaker.speeches.first
+        - group.each do |speech|
+          - speaker = speech.speaker
           - company = speaker.company
           - if speech && company
             .b-reporters__person{:data => { :section => speech.section.name, :specialization => speech.specialization.name }}
