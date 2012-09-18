@@ -4,7 +4,8 @@
   %h2.b-reporters__title
     Докладчики
   %p.b-reporters__title-text
-    На нашей конференции выступят только те докладчики, которые смогут
-    %br/
-    прежде чем рассказывать &laquo;как&raquo;, рассказать «зачем».
+    - Section.without_general.each do |section|
+      = section.name
+    - Specialization.without_general.each do |spec|
+      = spec.name
   = render :partial => 'speakers_carousel'
