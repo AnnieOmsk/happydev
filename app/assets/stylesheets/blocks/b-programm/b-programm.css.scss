@@ -48,17 +48,11 @@
     width: 40px;
 }
 
-.b-programm__head {
-    .b-programm__column {
-        text-align: left;
-        letter-spacing: 2px;
-
-    }
-
-    th > p {
-      padding-left: 30px !important;
-    }
+.b-programm__head .b-programm__column {
+    text-align: left;
+    letter-spacing: 2px;
 }
+
 .b-programm__column-title {
     margin: 0;
 }
@@ -74,6 +68,10 @@
 
 .b-programm__text {
     font-size: 16px;
+}
+
+.b-programm__head .b-programm__text {
+    padding-left: 30px;
 }
 
 .b-programm__company {
