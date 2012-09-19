@@ -34,7 +34,7 @@
         this.$scrollElement = $element.on('scroll.scroll-spy.data-api', process)
         this.selector = (this.options.target
             || ((href = $(element).attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
-            || '') + ' .b-head__link'
+            || '') + ' .js-b-head__link'
         this.$body = $('body')
         this.refresh()
 //        this.process()

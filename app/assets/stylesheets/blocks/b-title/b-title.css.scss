@@ -1,15 +1,9 @@
-.b-speaking {
-    margin: 65px 0 0;
+.b-title__line {
     position: relative;
-    padding: 25px;
-    border: 1px solid #85b0c6;
+    border-top: 1px solid #c1c1c2;
 }
 
-.b-speaking_style_green {
-    border: 1px solid #4b9800;
-}
-
-.b-speaking__title-inner {
+.b-title__inner {
     position: absolute;
     left: 0;
     top: -18px;
@@ -17,9 +11,9 @@
     text-align: center;
 }
 
-.b-speaking__title {
-    display: inline-block;
+.b-title {
     margin: 0;
+    display: inline-block;
     padding: 0 20px;
     font-weight: normal;
     background: #f1f1f3;
@@ -29,6 +23,6 @@
     letter-spacing: 5px;
 }
 
-.ie7 .b-speaking__title {
+.ie7 .b-title {
     display: inline;
 }
