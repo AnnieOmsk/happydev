@@ -2,35 +2,35 @@ $(document).ready(function() {
 
   $(function() {
 
-      descLink = $('.js-b-tikets__link');
+      var tiketLink = $('.js-b-tikets__link');
 
-      descLink.closeSelected = function() {
-          descLink.parent().filter('.b-tikets__method_state_active').each(descLink.unSelected);
+      tiketLink.closeSelected = function() {
+          tiketLink.parent().filter('.b-tikets__method_state_active').each(tiketLink.unSelected);
       }
 
-      descLink.unSelected = function() {
-          descLink.parent().removeClass('b-tikets__method_state_active');
+      tiketLink.unSelected = function() {
+          tiketLink.parent().removeClass('b-tikets__method_state_active');
       }
 
       if(!$(window).hover) {
-          descLink.bind('vclick', function() {
+          tiketLink.bind('vclick', function() {
               if (!$(this).parent().hasClass('b-tikets__method_state_active')) {
                   $(this)
-                      .each(descLink.closeSelected)
+                      .each(tiketLink.closeSelected)
                       .parent().addClass('b-tikets__method_state_active');
                   return false;
               }
           });
       }
 
-      descLink.hover(function() {
+      tiketLink.hover(function() {
 
           var elem = $(this);
 
           intervalElem = setTimeout(
 
               function() {
-                  descLink.parent().removeClass('b-tikets__method_state_active');
+                  tiketLink.parent().removeClass('b-tikets__method_state_active');
                   elem.parent().addClass('b-tikets__method_state_active');
               }, 50);
 
