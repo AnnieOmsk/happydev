@@ -1,0 +1,91 @@
+.b-icon {
+    float: left;
+    margin: -2px 10px 0 0;
+    padding: 0;
+}
+
+.b-icon_type_into-desc {
+    margin: 2px 10px 0 0;
+}
+
+.b-icon__item {
+    margin: 0 0 0 3px;
+    float: left;
+    list-style: none;
+}
+
+.b-icon__item:first-child {
+    margin: 0;
+}
+
+.b-icon_type_vert .b-icon__item {
+    margin: 3px 0 0;
+    float: none;
+}
+
+.b-icon_type_vert .b-icon__item:first-child {
+    margin: 0;
+}
+
+.b-icon__icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: image-url('blocks/b-icon/icons.png');
+}
+
+.b-icon__icon_register {
+    background-position: 0 -40px;
+}
+
+.b-icon__icon_opening {
+    background-position: -40px -20px;
+}
+
+.b-icon__icon_lunch {
+    background-position: 0 0;
+}
+
+.b-icon__icon_startup_porka {
+    background-position: -40px 0;
+}
+
+.b-icon__icon_coffee-break {
+    background-position: -20px 0;
+}
+
+.b-icon__icon_end {
+    background-position: 0 -20px;
+}
+
+.b-icon__icon_developer {
+    background-position: -40px -60px;
+}
+
+.b-icon__icon_manager {
+    background-position: -20px -60px;
+}
+
+.b-icon__icon_designer {
+    background-position: 0 -60px;
+}
+
+.b-icon__icon_general {
+    background-position: -40px -40px;
+}
+
+.b-icon__icon_developer-s {
+    background-position: -40px -80px;
+}
+
+.b-icon__icon_manager-s {
+    background-position: -20px -80px;
+}
+
+.b-icon__icon_designer-s {
+    background-position: 0 -80px;
+}
+
+.b-icon__icon_general-s {
+    background-position: -40px -40px;
+}

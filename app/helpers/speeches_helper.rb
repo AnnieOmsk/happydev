@@ -6,12 +6,10 @@ module SpeechesHelper
     spec_hash = apply_icon_theme(spec_hash, options[:theme]) if options[:theme]
      
     if options[:second]
-      image = "#{spec_hash[speech.specialization2.name]}.png"
-      image_tag image, link_options
+     "#{spec_hash[speech.specialization2.name]}"
     else
       if speech.specialization
-        image = "#{spec_hash[speech.specialization.name]}.png"
-        image_tag image, link_options
+        "#{spec_hash[speech.specialization.name]}"
       end
     end
   end
