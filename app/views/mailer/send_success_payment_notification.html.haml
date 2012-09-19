@@ -1,7 +1,7 @@
 #show-payment
   -# if @invoice.invoice_events.all?{|e| e.paid?}
   %p 
-    Привет, друг.
+    = "Привет, #{@user.first_name}!"
     %br
     Ура, мы получили твой платеж, и рады поздравить тебя с вступлением в ряды участников HappyDev. Большое тебе спасибо!
     %br
@@ -14,6 +14,10 @@
     %li Следить за обновлениями <a href="http://twitter.com/_happydev">в твиттере</a>
     %li Периодически заглядывать на сайт <a href="http://happydev.ru">happydev.ru</a> 
     %li Приглашать друзей :)
+  
+  - if @user.student?
+    %p{:style=> "font-size: 1.2em"}
+      = "#{@user.first_name}, не забудь свой студенческий билет - он будет нужен для регистрации"
 
   -unless @invoice.user.city =~ /^Omsk|^Омск/
     %p Информация о проезде и проживании для иногородних появится на сайте в ближайшее время.
