@@ -15,10 +15,10 @@
                 = speaker.full_name
               - speeches.each do |speech|
                 %p.b-reporters__person-theme
-                  -# .b-reporters__person-icon{:style => 'padding-right: 5px; margin-top: 18px;float:left;'}
-                  -#   = icon_for_speakers speech, :theme => 'small'
-                  -#   - if speech.specialization2
-                  -#     = icon_for_speakers speech, :second => true, :theme => 'small'
+                  .b-reporters__person-icon{:style => 'padding-right: 5px; margin-top: 0px;float:left;'}
+                    = icon_for_speakers speech, :theme => 'small'
+                    - if speech.specialization2
+                      = icon_for_speakers speech, :second => true, :theme => 'small'
                   %a.b-reporters__person-theme-link{:href => "/speakers/#{speech.permalink}", 
                                                     :data => { :section => speech.section.name,
                                                                :specialization => speech.specialization.name }}
