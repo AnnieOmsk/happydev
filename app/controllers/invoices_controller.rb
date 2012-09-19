@@ -12,7 +12,12 @@ class InvoicesController < ApplicationController
       redirect_to invoice_path
     else
       @invoice = current_user.build_invoice
-      @events = Event.all
+      @events =  
+        if params[:student] == 'true'
+          Event.for_student
+        else
+          Event.for_all
+        end
       gon_hash = {}
       @events.each { |e| gon_hash[e.id] = e.price }
       gon.event_prices = gon_hash
