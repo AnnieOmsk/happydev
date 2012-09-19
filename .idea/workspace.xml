@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -87,10 +84,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-reporters.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="b-reporters.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="22" selection-start="37" selection-end="37" vertical-scroll-proportion="0.017942583">
+            <state line="1" column="22" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="speeches_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/speeches_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="18" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,15 +106,6 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="112" column="33" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_section.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sections/_section.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="74" selection-end="74" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -141,10 +138,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-icon.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="b-icon.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
+            <state line="52" column="1" selection-start="759" selection-end="785" vertical-scroll-proportion="0.5562201">
               <folding />
             </state>
           </provider>
@@ -183,11 +180,11 @@
         <option value="$PROJECT_DIR$/app/views/home/_program.html.haml" />
         <option value="$PROJECT_DIR$/app/views/speeches/_preview.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/_speakers.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss" />
       </list>
     </option>
   </component>
@@ -1791,13 +1788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/speeches_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sections/_section.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="13" selection-start="74" selection-end="74" vertical-scroll-proportion="-1.25">
@@ -1815,13 +1805,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/speeches/_preview.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="117" selection-start="1534" selection-end="1668" vertical-scroll-proportion="-20.083334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1863,7 +1846,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="37" selection-end="37" vertical-scroll-proportion="0.017942583">
+        <state line="1" column="22" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/speeches_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="18" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="1" selection-start="759" selection-end="785" vertical-scroll-proportion="0.5562201">
           <folding />
         </state>
       </provider>
