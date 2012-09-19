@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_tickets.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -104,10 +103,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-tikets.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="b-tikets.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="28" selection-start="810" selection-end="810" vertical-scroll-proportion="0.47257876">
+            <state line="16" column="31" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b-programm.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="19" selection-start="342" selection-end="342" vertical-scroll-proportion="0.17502917">
               <folding />
             </state>
           </provider>
@@ -144,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/_logo.html.haml" />
         <option value="$PROJECT_DIR$/vendor/assets/javascripts/scrollspy.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/design_2.0.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/scroll.js" />
@@ -160,6 +167,7 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js" />
       </list>
     </option>
   </component>
@@ -1634,13 +1642,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/home/_program.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="46" selection-start="46" selection-end="68" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-content/b-content.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="20" selection-start="959" selection-end="959" vertical-scroll-proportion="0.87747955">
@@ -1741,7 +1742,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="28" selection-start="810" selection-end="810" vertical-scroll-proportion="0.47257876">
+        <state line="16" column="31" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="19" selection-start="342" selection-end="342" vertical-scroll-proportion="0.17502917">
           <folding />
         </state>
       </provider>

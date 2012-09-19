@@ -3,8 +3,8 @@ $(document).ready(function() {
 
   $(function() {
 
-      descLink = $('.js-b-programm__content');
-      descObj = $('.js-b-programm__desc');
+      var descLink = $('.js-b-programm__content');
+      var descObj = $('.js-b-programm__desc');
 
       descLink.closeSelected = function() {
           descObj.parent().filter('.selected').each(descLink.unSelected);
