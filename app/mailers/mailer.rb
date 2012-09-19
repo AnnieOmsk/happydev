@@ -5,6 +5,7 @@ class Mailer < Devise::Mailer
 
   # Send notification on mail user
   def send_notification(*content)
+    @user = User.find_by_email(content[0])
     mail(:to => content[0],
          :subject => "Мы зарегистрировали тебя на конференцию HappyDev")
   end
