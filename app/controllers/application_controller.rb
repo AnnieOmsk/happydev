@@ -18,6 +18,6 @@ class ApplicationController < ActionController::Base
   end
 
   def move_to_register_if_not_signed_in
-    redirect_to new_user_registration_path unless current_user
+    redirect_to new_user_registration_path(:student => params[:student] || nil) unless current_user
   end
 end

@@ -5,7 +5,8 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable, :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :email, :first_name, :last_name, :company, :city, :professional, :password, :password_confirmation, :remember_me, :promocode, :oferta
+  attr_accessible :email, :first_name, :last_name, :company, :city, :professional,
+                  :password, :password_confirmation, :remember_me, :promocode, :oferta, :student
 
   has_one :invoice
 
@@ -14,7 +15,7 @@ class User < ActiveRecord::Base
   validates :password, :presence => true
   validates :password_confirmation, :presence => true
   validates :email, :presence => true, :uniqueness => true
-  # validates :professional, :presence => true
+  validates :professional, :presence => true
 
   after_create :subscribe_to_mailchimp, :deliver_notification
 

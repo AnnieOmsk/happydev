@@ -13,7 +13,7 @@ class InvoicesController < ApplicationController
     else
       @invoice = current_user.build_invoice
       @events =  
-        if params[:student] == 'true'
+        if current_user.student?
           Event.for_student
         else
           Event.for_all
