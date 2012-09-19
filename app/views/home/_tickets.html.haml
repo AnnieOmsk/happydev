@@ -1,82 +1,83 @@
-%section#tikets.b-tikets.l-page_gap-top-out_30
-  .l-page_align_center
-    %h2.b-tikets__title
-      %b.b-tikets__title-left
-      %b.b-tikets__title-right
-      Билеты
-  %p.b-tikets__title-text
-    Уникальная IT-конференция в Омске для разработчиков, дизайнеров и менеджеров. Мы рекомендуем вам приобрести билеты заранее, по хорошей цене.
-  -# .b-tikets__gallery
-  -#   = image_tag "blocks/b-tikets/conf-img.png"
+%section#tikets.b-tikets.l-page_gap-top-out_50.l-page_gap-top_25
+  .l-page_align_center.b-title__line.l-page_gap-bottom-out_40
+    .b-title__inner
+      %h2.b-title
+        Билеты
   .b-tikets__methods.clearfix
-    .b-tikets__method.b-tikets__method_type_earliest
-      .b-tikets__link.js-b-tikets__link{:href => "#"}
-        %h2.b-tikets__method-title
-          Очень раннее бронирование
-        .b-tikets__pricing.clearfix
-          .b-tikets__price-inner
-            .b-price.b-price_type_earliest
-              %i.b-price__number.b-price__number_type_old 2200
-              %span.b-price__rubl
-                a
-          %span.b-tikets__pricing-date
-            До 9 сентября
-        .b-tikets__content
-          %p.b-tikets__content-title
-            В стоимость участия входит:
-          %ul.b-tikets__content-list
-            %li.b-tikets__content-item
-              Все то же самое
-            %li.b-tikets__content-item
-              Плюс благодарность от организаторов за доверие
-    .b-tikets__method.b-tikets__method_type_early.b-tikets__method_state_active
+    .b-tikets__method.b-tikets__method_state_active
       .b-tikets__link.js-b-tikets__link
-        %h2.b-tikets__method-title
-          Раннее бронирование
-        .b-tikets__pricing.clearfix
-          .b-tikets__price-inner
-            .b-price.b-price_type_early
-              %i.b-price__number
-                2700
-              %span.b-price__rubl
-                a
-          %span.b-tikets__pricing-date
-            До 19 сентября
-        .b-tikets__content
-          %p.b-tikets__content-title
-            В стоимость участия входит:
-          %ul.b-tikets__content-list
-            %li.b-tikets__content-item
-              Офигенные доклады на 3-х секциях;
-            %li.b-tikets__content-item
-              Полезные знакомства и интересные собеседники;
-            %li.b-tikets__content-item
-              Масса озарений и полезных практик на каждый день;
-            %li.b-tikets__content-item
-              Возможность пообщаться с докладчиками в неформальной обстановке;
-            %li.b-tikets__content-item
-              Кофе, чай, сладости и солености в течение всего дня.
+        .clearfix
+          .l-page_float_left.l-page_width_170
+            %h2.b-tikets__method-title
+              Тариф
+              %br
+              для всех
+            .b-tikets__pricing.clearfix
+              .b-tikets__pricing-date
+                До 19 сентября
+              .b-tikets__price-inner
+                .b-price.b-price_type_early
+                  %i.b-price__number
+                    2700
+                  %span.b-price__rubl
+                    a
+            %p.b-content__text
+              %a.b-link{:href => 'http://happydev.tumblr.com/post/31846025256', :target => '_blank'}
+                Почему так дорого
+          .l-page_float_right.l-page_width_250
+            .b-tikets__content
+              %p.b-tikets__content-title
+                В стоимость участия входит:
+              %ul.b-tikets__content-list
+                %li.b-tikets__content-item
+                  офигенные доклады на 3-х секциях;
+                %li.b-tikets__content-item
+                  полезные знакомства и интересные собеседники;
+                %li.b-tikets__content-item
+                  масса озарений и полезных практик на каждый день;
+                %li.b-tikets__content-item
+                  кофе, чай, сладости и солености в течение всего дня.
         %p.b-tikets__buy
           %a.b-button{:href => pay_path}
             Купить билет
-    .b-tikets__method.b-tikets__method_type_normal
+    .b-tikets__method
       .b-tikets__link.js-b-tikets__link
-        %h2.b-tikets__method-title
-          Полная стоимость билета
-        .b-tikets__pricing.clearfix
-          .b-tikets__price-inner
-            .b-price.b-price_type_normal
-              %i.b-price__number
-                3200
-              %span.b-price__rubl
-                a
-          %span.b-tikets__pricing-date
-            До 23 сентября
-        .b-tikets__content
-          %p.b-tikets__content-title
-            В стоимость участия входит:
-          %ul.b-tikets__content-list
-            %li.b-tikets__content-item
-              Все то же самое
-            %li.b-tikets__content-item
-              Плюс благодарность от организаторов за дополнительную поддержку
+        .clearfix
+          .l-page_float_left.l-page_width_170
+            %h2.b-tikets__method-title
+              Тариф студенческий
+            .b-tikets__pricing.clearfix
+              .b-tikets__pricing-date
+                До 21 сентября
+              .b-tikets__price-inner
+                .b-price.b-price_type_green
+                  %i.b-price__number
+                    500
+                  %span.b-price__rubl
+                    a
+            %p.b-content__text
+              %a.b-link{:href => '/students'}
+                Как попасть бесплатно
+          .l-page_float_right.l-page_width_250
+            .b-tikets__content
+              %p.b-tikets__content-title
+                В стоимость участия входит:
+              %ul.b-tikets__content-list
+                %li.b-tikets__content-item
+                  о ценности высшего образования с точки
+                  зрения работодателя;
+                %li.b-tikets__content-item
+                  какие направления ИТ сейчас наиболее
+                  перспективны;
+                %li.b-tikets__content-item
+                  о самообразовании;
+                %li.b-tikets__content-item
+                  как стать действительно востребованным
+                  специалистом;
+                %li.b-tikets__content-item
+                  какие спецкурсы в каких вузах проводятся;
+                %li.b-tikets__content-item
+                  где в Омске можно пройти стажировку.
+        -# %p.b-tikets__buy
+        -#   %a.b-button{:href => pay_path}
+        -#     Купить билет
