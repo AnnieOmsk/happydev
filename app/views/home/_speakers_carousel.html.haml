@@ -15,14 +15,17 @@
                 = speaker.full_name
               - speeches.each do |speech|
                 %p.b-reporters__person-theme
-                  .b-reporters__person-icon{:style => 'padding-right: 5px; margin-top: 0px;float:left;'}
-                    = icon_for_speakers speech, :theme => 'small'
-                    - if speech.specialization2
-                      = icon_for_speakers speech, :second => true, :theme => 'small'
-                  %a.b-reporters__person-theme-link{:href => "/speakers/#{speech.permalink}", 
-                                                    :data => { :section => speech.section.name,
-                                                               :specialization => speech.specialization.name }}
-                    = "\&laquo;#{speech.title}&raquo;".html_safe
+                  .js-spec
+                    %ul.b-icon.b-icon_type_into-carousel
+                      %li.b-icon__item
+                        %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech) + '-s'}
+                      - if speech.specialization2
+                        %li.b-icon__item
+                          %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true) + '-s'}
+                    %a.b-reporters__person-theme-link{:href => "/speakers/#{speech.permalink}",
+                                                      :data => { :section => speech.section.name,
+                                                                 :specialization => speech.specialization.name }}
+                      = "\&laquo;#{speech.title}&raquo;".html_safe
               %p.b-reporters__person-company
                 %a.b-reporters__person-company-link{:href => company.url, :target => '_blank'}>= company.name
                 ,
@@ -30,3 +33,6 @@
 
   %a.b-reporters__carousel-control.carousel-control.left{"data-slide" => "prev", :href => "#carousel"}
   %a.b-reporters__carousel-control.carousel-control.right{"data-slide" => "next", :href => "#carousel"}
+  %p.l-page_align_center
+    %a.b-button{:href => ''}
+      Все докладчики

@@ -7,9 +7,11 @@
 }
 
 .b-filter__item {
-    margin: 0 0 0 20px;
+    padding: 3px 10px;
+    margin: 0 0 0 5px;
     display: inline-block;
     list-style: none;
+    border: 1px solid transparent;
 }
 
 .ie7 .b-filter__item {
@@ -34,12 +36,15 @@
     color: #08347C;
 }
 
-.b-filter__item_state_current .b-filter__link {
-    padding: 3px 10px;
-    border: 1px solid #85b0c6;
+.b-filter__item_state_current {
+    border-color: #85b0c6;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
+}
+
+.b-filter__item_state_current .b-filter__link {
+    border: none;
     color: #85b0c6;
     cursor: default;
 }
