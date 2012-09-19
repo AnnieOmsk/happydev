@@ -2,35 +2,6 @@
     margin: 35px 0 0;
 }
 
-.b-programm__line {
-    position: relative;
-    border-top: 1px solid #c1c1c2;
-}
-
-.b-programm__title-inner {
-    position: absolute;
-    left: 0;
-    top: -18px;
-    right: 0;
-    text-align: center;
-}
-
-.b-programm__title {
-    margin: 0;
-    display: inline-block;
-    padding: 0 20px;
-    font-weight: normal;
-    background: #f1f1f3;
-    color: #333;
-    text-transform: uppercase;
-    font-size: 30px;
-    letter-spacing: 5px;
-}
-
-.ie7 .b-programm__title {
-    display: inline;
-}
-
 .b-programm__table {
     width: 100%;
     margin: 35px 0 0;

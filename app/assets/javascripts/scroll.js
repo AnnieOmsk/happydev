@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.b-head__nav .b-head__link').bind('click', function(event){
+  $('.js-b-head__link').bind('click', function(event){
       event.preventDefault();
       scrollWithAnimation($(this).attr('href'), 50, 1000);
       changeUrlAnchor($(this).attr('href'));
