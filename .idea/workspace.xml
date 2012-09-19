@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_tickets.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -69,16 +71,7 @@
       <file leaf-file-name="_tickets.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/_tickets.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="30" selection-start="1681" selection-end="1681" vertical-scroll-proportion="-27.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="41" selection-start="711" selection-end="711" vertical-scroll-proportion="0.15995261">
+            <state line="58" column="43" selection-start="2185" selection-end="2185" vertical-scroll-proportion="-25.0">
               <folding />
             </state>
           </provider>
@@ -87,7 +80,7 @@
       <file leaf-file-name="b-price.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-price/b-price.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="21" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
+            <state line="10" column="29" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-tikets.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="b-tikets.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="15" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
+            <state line="27" column="28" selection-start="810" selection-end="810" vertical-scroll-proportion="0.47257876">
               <folding />
             </state>
           </provider>
@@ -164,9 +157,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-tikets/b-tikets.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-programm.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js" />
-        <option value="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js" />
       </list>
     </option>
   </component>
@@ -1697,20 +1690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-price/b-price.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="33" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="36" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
@@ -1725,9 +1704,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
+        <state line="6" column="41" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-price/b-price.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="33" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1741,14 +1734,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_tickets.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="30" selection-start="1681" selection-end="1681" vertical-scroll-proportion="-27.5">
+        <state line="58" column="43" selection-start="2185" selection-end="2185" vertical-scroll-proportion="-25.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="41" selection-start="711" selection-end="711" vertical-scroll-proportion="0.15995261">
+        <state line="27" column="28" selection-start="810" selection-end="810" vertical-scroll-proportion="0.47257876">
           <folding />
         </state>
       </provider>

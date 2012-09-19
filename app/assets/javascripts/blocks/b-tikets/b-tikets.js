@@ -32,7 +32,7 @@ $(document).ready(function() {
               function() {
                   descLink.parent().removeClass('b-tikets__method_state_active');
                   elem.parent().addClass('b-tikets__method_state_active');
-              }, 800);
+              }, 50);
 
           }
       )
