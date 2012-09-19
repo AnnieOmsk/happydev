@@ -1,0 +1,52 @@
+%section.b-members.l-page_gap-top-out_50.clearfix
+  %h2.b-members__title
+    %span.b-members__title-small
+      Компанию составят
+    %span.b-members__title-big
+      Сотрудники
+  .b-members__logos
+    #carousel-logos.b-members__carousel.slide
+      .carousel-inner
+
+        -#Реальные
+        .item.active
+          = image_tag "blocks/b-members/7bits.png", :class => 'b-members__logo', :alt => "7bits"
+          = image_tag "blocks/b-members/aldigit.png", :class => 'b-members__logo', :alt => "Al Digit"
+          = image_tag "blocks/b-members/a2design.png", :class => 'b-members__logo', :alt => "A2Design"
+          = image_tag "blocks/b-members/development-mill.png", :class => 'b-members__logo', :alt => "Development mill"
+        .item
+          = image_tag "blocks/b-members/apparat.png", :class => 'b-members__logo', :alt => "Apparat.ws"
+          = image_tag "blocks/b-members/luxoft.png", :class => 'b-members__logo', :alt => "Luxoft"
+          = image_tag "blocks/b-members/mahogany.png", :class => 'b-members__logo', :alt => "Mahogany group"
+          = image_tag "blocks/b-members/qliff.png", :class => 'b-members__logo', :alt => "Qliff"
+        .item
+          = image_tag "blocks/b-members/thumbtack.png", :class => 'b-members__logo', :alt => "Thumbtack"
+          /= image_tag "blocks/b-members/parallels.png", :class => 'b-members__logo', :alt => "Parallels"
+          = image_tag "blocks/b-members/roketsmedia.png", :class => 'b-members__logo', :alt => "RoketsMedia"
+          = image_tag "blocks/b-members/xored.png", :class => 'b-members__logo', :alt => "Xored"
+        .item
+          = image_tag "blocks/b-members/skb-kontur.png", :class => 'b-members__logo', :alt => "Скб Контур"
+          = image_tag "blocks/b-members/naumen.png", :class => 'b-members__logo', :alt => "Naumen"
+          = image_tag "blocks/b-members/uniskan.png", :class => 'b-members__logo', :alt => "Унискан"
+          = image_tag "blocks/b-members/iss-art.png", :class => 'b-members__logo', :alt => "Iss Art"
+
+
+        -#Фэйковые
+
+        -# .item.active
+        -#   = image_tag "blocks/b-members/hh-logo.png", :class => 'b-members__logo', :alt => "Habrahabr"
+        -#   = image_tag "blocks/b-members/revision-logo.png", :class => 'b-members__logo', :alt => "Revision"
+        -#   = image_tag "blocks/b-members/dominion-logo.png", :class => 'b-members__logo', :alt => "Студия Доминион"
+        -#   = image_tag "blocks/b-members/cms-magazine-logo.png", :class => 'b-members__logo', :alt => "CMS magazine"
+        -# .item
+        -#   = image_tag "blocks/b-members/hh-logo.png", :class => 'b-members__logo', :alt => "Habrahabr"
+        -#   = image_tag "blocks/b-members/revision-logo.png", :class => 'b-members__logo', :alt => "Revision"
+        -#   = image_tag "blocks/b-members/dominion-logo.png", :class => 'b-members__logo', :alt => "Студия Доминион"
+        -#   = image_tag "blocks/b-members/cms-magazine-logo.png", :class => 'b-members__logo', :alt => "CMS magazine"
+        -# .item
+        -#   = image_tag "blocks/b-members/hh-logo.png", :class => 'b-members__logo', :alt => "Habrahabr"
+        -#   = image_tag "blocks/b-members/revision-logo.png", :class => 'b-members__logo', :alt => "Revision"
+        -#   = image_tag "blocks/b-members/dominion-logo.png", :class => 'b-members__logo', :alt => "Студия Доминион"
+        -#   = image_tag "blocks/b-members/cms-magazine-logo.png", :class => 'b-members__logo', :alt => "CMS magazine"
+      %a.b-members__carousel-control.carousel-control.left{"data-slide" => "prev", :href => "#carousel-logos"}
+      %a.b-members__carousel-control.carousel-control.right{"data-slide" => "next", :href => "#carousel-logos"}

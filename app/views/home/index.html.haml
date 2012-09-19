@@ -3,131 +3,14 @@
 
 .l-page_width_page.l-page_gap-bottom_25
   = render :partial => 'layouts/logo'
-  = render :partial => 'about'
 .l-page_bg_white.l-page_gap-top_5
   .l-page_width_page
     = render :partial => 'speakers'
-.l-page_width_page.l-page_gap-top_25
-  %section.b-members.clearfix
-    %h2.b-members__title
-      %span.b-members__title-small
-        Компанию составят
-      %span.b-members__title-big
-        Сотрудники
-    .b-members__logos
-      #carousel-logos.b-members__carousel.slide
-        .carousel-inner
-
-          -#Реальные
-          .item.active
-            = image_tag "blocks/b-members/7bits.png", :class => 'b-members__logo', :alt => "7bits"
-            = image_tag "blocks/b-members/aldigit.png", :class => 'b-members__logo', :alt => "Al Digit"
-            = image_tag "blocks/b-members/a2design.png", :class => 'b-members__logo', :alt => "A2Design"
-            = image_tag "blocks/b-members/development-mill.png", :class => 'b-members__logo', :alt => "Development mill"
-          .item
-            = image_tag "blocks/b-members/apparat.png", :class => 'b-members__logo', :alt => "Apparat.ws"            
-            = image_tag "blocks/b-members/luxoft.png", :class => 'b-members__logo', :alt => "Luxoft"
-            = image_tag "blocks/b-members/mahogany.png", :class => 'b-members__logo', :alt => "Mahogany group"
-            = image_tag "blocks/b-members/qliff.png", :class => 'b-members__logo', :alt => "Qliff"
-          .item
-            = image_tag "blocks/b-members/thumbtack.png", :class => 'b-members__logo', :alt => "Thumbtack"
-            /= image_tag "blocks/b-members/parallels.png", :class => 'b-members__logo', :alt => "Parallels"
-            = image_tag "blocks/b-members/roketsmedia.png", :class => 'b-members__logo', :alt => "RoketsMedia"
-            = image_tag "blocks/b-members/xored.png", :class => 'b-members__logo', :alt => "Xored"
-          .item
-            = image_tag "blocks/b-members/skb-kontur.png", :class => 'b-members__logo', :alt => "Скб Контур"
-            = image_tag "blocks/b-members/naumen.png", :class => 'b-members__logo', :alt => "Naumen"
-            = image_tag "blocks/b-members/uniskan.png", :class => 'b-members__logo', :alt => "Унискан"
-            = image_tag "blocks/b-members/iss-art.png", :class => 'b-members__logo', :alt => "Iss Art"   
-
-
-          -#Фэйковые
-
-          -# .item.active
-          -#   = image_tag "blocks/b-members/hh-logo.png", :class => 'b-members__logo', :alt => "Habrahabr"
-          -#   = image_tag "blocks/b-members/revision-logo.png", :class => 'b-members__logo', :alt => "Revision"
-          -#   = image_tag "blocks/b-members/dominion-logo.png", :class => 'b-members__logo', :alt => "Студия Доминион"
-          -#   = image_tag "blocks/b-members/cms-magazine-logo.png", :class => 'b-members__logo', :alt => "CMS magazine"
-          -# .item
-          -#   = image_tag "blocks/b-members/hh-logo.png", :class => 'b-members__logo', :alt => "Habrahabr"
-          -#   = image_tag "blocks/b-members/revision-logo.png", :class => 'b-members__logo', :alt => "Revision"
-          -#   = image_tag "blocks/b-members/dominion-logo.png", :class => 'b-members__logo', :alt => "Студия Доминион"
-          -#   = image_tag "blocks/b-members/cms-magazine-logo.png", :class => 'b-members__logo', :alt => "CMS magazine"
-          -# .item
-          -#   = image_tag "blocks/b-members/hh-logo.png", :class => 'b-members__logo', :alt => "Habrahabr"
-          -#   = image_tag "blocks/b-members/revision-logo.png", :class => 'b-members__logo', :alt => "Revision"
-          -#   = image_tag "blocks/b-members/dominion-logo.png", :class => 'b-members__logo', :alt => "Студия Доминион"
-          -#   = image_tag "blocks/b-members/cms-magazine-logo.png", :class => 'b-members__logo', :alt => "CMS magazine"
-        %a.b-members__carousel-control.carousel-control.left{"data-slide" => "prev", :href => "#carousel-logos"}
-        %a.b-members__carousel-control.carousel-control.right{"data-slide" => "next", :href => "#carousel-logos"}
-  %section.clearfix.b-speaking
-    .b-speaking__title-inner
-      %h2.b-speaking__title
-        Говорят
-    .b-comments
-      .b-comments__comment.clearfix
-        .b-comments__person.clearfix
-          .b-comments__person-photo
-            = image_tag "blocks/b-comments/person-1.png", :class => 'b-comments__person-img', :alt => "Сергей Бережной"
-            %span.b-comments__person-frame
-          .b-comments__content
-            %h2.b-comments__person-name
-              Сергей Бережной
-            %p.b-comments__person-url
-              %a.b-comments__person-url-link{:href => "http://anotherpm.com"}
-                anotherpm.com
-            %p.b-comments__text
-              Да, довольно интересное событие, которое ищет свою нишу в рынке конференций и
-              идей. Приятно удивляет то, что вы хотите сделать конфу практичной, а не
-              \&laquo;популистской&raquo;, Это замечательное решение, которого давно ждет рынок:)
-        .b-comments__person.clearfix
-          .b-comments__person-photo
-            = image_tag "blocks/b-comments/person-2.png", :class => 'b-comments__person-img', :alt => "Сергей Бережной"
-            %span.b-comments__person-frame
-          .b-comments__content
-            %h2.b-comments__person-name
-              Дмитрий Проворотов
-            %p.b-comments__person-url
-              %a.b-comments__person-url-link{:href => "http://factory.mn"}
-                factory.mn
-            %p.b-comments__text
-              У вас очень крутой подход к реализации и ваше письмо с пожеланиями по теме и
-              структуре выступления просто покорило меня. Успеха вам!
-              Уверен, у вас все получится отлично!
-    .b-twitter
-      %script{:src => 'http://widgets.twimg.com/j/2/widget.js'}
-      %script(type="text/javascript")
-        new TWTR.Widget({
-        version: 2,
-        type: 'profile',
-        interval: 6000,
-        title: '#HappyDev',
-        width: 220,
-        height: 320,
-        theme: {
-        shell: {
-        background: '#f1f1f3',
-        color: '#4A5257'
-        },
-        tweets: {
-        background: '#fff',
-        color: '#1c1c1c',
-        links: '#3a6fcd'
-        }
-        },
-        features: {
-        scrollbar: false,
-        loop: true,
-        live: true,
-        hashtags: true,
-        timestamp: true,
-        avatars: true,
-        toptweets: true,
-        behavior: 'default'
-        }
-        }).render().setUser('@_HappyDev').start();
-
-  = render :partial => 'tickets'
+.l-page_width_page
+  = render :partial => 'about'
   = render :partial => 'program'
+  = render :partial => 'tickets'
   = render :partial => 'place'
+  = render :partial => 'members'
+  = render :partial => 'comments'
   = render :partial => 'orgs_and_sponsors'
