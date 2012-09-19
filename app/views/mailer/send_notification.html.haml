@@ -6,7 +6,7 @@
 
 %p{:style=> "font-size: 1.2em"}
   Сегодняшняя цена:
-  = Event.where(:priority => 0).first.price
+  = @invoice.events.where(:priority => 0).first.price
   рублей
 %p
   Начиная с 19-го сентября стоимость увеличится до 3200 рублей
@@ -34,4 +34,3 @@
 
 %p 
   Организаторы <a href="http://happydev.ru">HappyDev</a>
-
