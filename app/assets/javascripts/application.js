@@ -26,3 +26,4 @@
 //= require plugins
 //= require invoice
 //= require register
+//= require filter

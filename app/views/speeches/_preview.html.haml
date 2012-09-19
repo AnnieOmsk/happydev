@@ -3,9 +3,9 @@
 
   %ul.b-icon.b-icon_type_vert
     %li.b-icon__item
-      %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech)}
+      %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :program => true)}
 
-    - if speech.specialization2
+    - if speech.specialization2 && speech.section.name != "Общий"
       %li.b-icon__item
         %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true)}
   %div{:style => "display:table;"}
@@ -36,8 +36,8 @@
             .clearfix
               %ul.b-icon.b-icon_type_into-desc
                 %li.b-icon__item
-                  %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech) + '-s'}
-                - if speech.specialization2
+                  %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :program => true) + '-s'}
+                - if speech.specialization2 && speech.section.name != "Общий"
                   %li.b-icon__item
                     %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true) + '-s'}
               %h2.b-programm__desc-name.l-page_float_left

@@ -4,10 +4,11 @@ class Speech < ActiveRecord::Base
   belongs_to :speaker2, :class_name => 'Speaker'
   belongs_to :speaker3, :class_name => 'Speaker'
   belongs_to :section
+  belongs_to :section2, :class_name => 'Section'
   belongs_to :specialization
   belongs_to :specialization2, :class_name => 'Specialization'
   attr_accessible :annotation, :description, :title, :speaker, :section, :specialization, :start_time, :timing,
-                  :speaker_id, :speaker2_id, :speaker3_id, :section_id, :specialization_id, :specialization2_id, :permalink
+                  :speaker_id, :speaker2_id, :speaker3_id, :section_id, :section2_id, :specialization_id, :specialization2_id, :permalink
 
   validates_presence_of :title, :speaker
 

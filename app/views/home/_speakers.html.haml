@@ -3,14 +3,10 @@
     %i.b-reporters__count-number 24
   %h2.b-reporters__title
     Докладчики
-
   %ul.b-filter
-    - Section.without_general.each do |section|
-      %li.b-filter__item
-        %a.b-filter__link
-          = section.name
-    - Specialization.without_general.each do |spec|
-      %li.b-filter__item
-        %a.b-filter__link
-          = spec.name
+    - section_and_spec_names.each do |type, array|
+      - array.each do |item|
+        %li.b-filter__item
+          %a.b-filter__link{:data => { type => item }}
+            = item
   = render :partial => 'speakers_carousel'
