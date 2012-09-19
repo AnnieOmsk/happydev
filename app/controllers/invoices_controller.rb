@@ -12,7 +12,7 @@ class InvoicesController < ApplicationController
       redirect_to invoice_path
     else
       @invoice = current_user.build_invoice
-      @events = Event.all
+      @events = Event.where(:id => [7,8])
       gon_hash = {}
       @events.each { |e| gon_hash[e.id] = e.price }
       gon.event_prices = gon_hash
@@ -39,7 +39,7 @@ class InvoicesController < ApplicationController
         end
         redirect_to invoice_path
       else
-        @events = Event.all
+        @events = Event.where(:id => [7,8])
         gon_hash = {}
         @events.each { |e| gon_hash[e.id] = e.price }
         gon.event_prices = gon_hash
