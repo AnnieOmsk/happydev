@@ -1,54 +1,10 @@
-.b-tikets__title {
-    display: inline-block;
-    padding: 0 10px;
-    position: relative;
-    text-transform: uppercase;
-    color: #333;
-    border-top: 1px solid #cdcdcf;
-    border-bottom: 1px solid #cdcdcf;
-    height: 47px;
-    line-height: 51px;
-    letter-spacing: 3px;
-}
-
-.ie7 .b-tikets__title {
-    display: inline;
-}
-
-.b-tikets__title-left,
-.b-tikets__title-right {
-    position: absolute;
-    top: 0;
-    width: 11px;
-    height: 48px;
-}
-
-.b-tikets__title-left {
-    left: -11px;
-    background: image-url('blocks/b-tikets/title-l-bg.png');
-}
-
-.b-tikets__title-right {
-    right: -11px;
-    background: image-url('blocks/b-tikets/title-r-bg.png');
-}
-
-.b-tikets__title-text {
-    width: 590px;
-    margin: 0 auto 30px;
-    font-size: 14px;
-    color: #3f495f;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
 .b-tikets__methods {
     margin: 30px 0 0;
 }
 
 .b-tikets__method {
     float: left;
-    width: 310px;
+    width: 490px;
 }
 
 .b-tikets__link {
@@ -63,14 +19,16 @@
 }
 
 .b-tikets__method-title {
-    padding: 0 10px 0 0;
-    margin: 0 0 40px;
+    margin: 0 0 35px;
     text-transform: uppercase;
     font-size: 26px;
     line-height: 34px;
     font-weight: normal;
     color: #333;
-    letter-spacing: 3px;
+}
+
+.b-tikets__content-title {
+    margin-top: 0;
 }
 
 .b-tikets__price-inner {
@@ -79,8 +37,7 @@
 }
 
 .b-tikets__pricing-date {
-    margin: 10px 0 0;
-    float: right;
+    margin: 0 0 10px;
     font-style: normal;
     font-size: 16px;
     color: #000;
@@ -118,11 +75,12 @@
 }
 
 .b-tikets__buy {
+    display: none;
     margin: 25px 0 0;
     text-align: center;
 }
 
-.b-tikets__method_state_active .b-tikets__link {
+.b-tikets__method_state_active .b-tikets__buy {
     display: block;
 }
 
