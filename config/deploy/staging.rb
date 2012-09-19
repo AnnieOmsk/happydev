@@ -9,5 +9,5 @@ role :app,        host
 role :web,        host
 role :db,         host, :primary => true
 
-set :branch,    'design_2.0'
+set :branch,    'invoice_for_students'
 set :deploy_to, '$HOME/www/happydev'
