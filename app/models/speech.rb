@@ -1,3 +1,4 @@
+# coding: utf-8
 class Speech < ActiveRecord::Base
   belongs_to :speaker
   belongs_to :speaker2, :class_name => 'Speaker'
@@ -9,6 +10,8 @@ class Speech < ActiveRecord::Base
                   :speaker_id, :speaker2_id, :speaker3_id, :section_id, :specialization_id, :specialization2_id, :permalink
 
   validates_presence_of :title, :speaker
+
+  scope :without_startup_battles, joins(:specialization).where('specializations.name != ?', 'Стартап-порка')
 
   def end_time
     if start_time && timing

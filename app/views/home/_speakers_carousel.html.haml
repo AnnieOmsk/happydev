@@ -1,21 +1,28 @@
 #carousel.b-reporters__persons.b-reporters__carousel.js-b-reporters__carousel.slide
   .carousel-inner
     - batch_counter = 0
-    - Speech.where({ 'speaker2_id' => nil, 'speaker3_id' => nil}).find_in_batches(:batch_size => 4) do |group|
+    - Speaker.find_in_batches(:batch_size => 4) do |group|
       - batch_counter += 1
       .item.clearfix{:class => batch_counter == 1 ? 'active' : nil}
-        - group.each do |speech|
-          - speaker = speech.speaker
+        - group.each do |speaker|
+          - speeches = speaker.speeches.without_startup_battles
           - company = speaker.company
-          - if speech && company
-            .b-reporters__person{:data => { :section => speech.section.name, :specialization => speech.specialization.name }}
+          - if speeches && company
+            .b-reporters__person
               .b-reporters__person-photo
                 = image_tag speaker.photo_url, :class => "b-reporters__person-photo-img"
               %h2.b-reporters__person-name
                 = speaker.full_name
-              %p.b-reporters__person-theme
-                %a.b-reporters__person-theme-link{:href => "/speakers/#{speech.permalink}"}
-                  = "\&laquo;#{speech.title}&raquo;".html_safe
+              - speeches.each do |speech|
+                %p.b-reporters__person-theme
+                  -# .b-reporters__person-icon{:style => 'padding-right: 5px; margin-top: 18px;float:left;'}
+                  -#   = icon_for_speakers speech, :theme => 'small'
+                  -#   - if speech.specialization2
+                  -#     = icon_for_speakers speech, :second => true, :theme => 'small'
+                  %a.b-reporters__person-theme-link{:href => "/speakers/#{speech.permalink}", 
+                                                    :data => { :section => speech.section.name,
+                                                               :specialization => speech.specialization.name }}
+                    = "\&laquo;#{speech.title}&raquo;".html_safe
               %p.b-reporters__person-company
                 %a.b-reporters__person-company-link{:href => company.url, :target => '_blank'}>= company.name
                 ,

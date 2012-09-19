@@ -1,15 +1,17 @@
 # encoding: utf-8
 
 module SpeechesHelper
-  def icon_for_speakers speech, spec2, options = {}
+  def icon_for_speakers speech, options = {}, link_options = {}
     spec_hash = {"Разработка" => "developer", "Дизайн" => "designer", "Управление" => "manager", "Общий" => "general", "Стартап-порка" => "startup_porka"}
-    if spec2
+    spec_hash = apply_icon_theme(spec_hash, options[:theme]) if options[:theme]
+     
+    if options[:second]
       image = "#{spec_hash[speech.specialization2.name]}.png"
-      image_tag image, options.merge!(:size => "20x20")
+      image_tag image, link_options
     else
       if speech.specialization
         image = "#{spec_hash[speech.specialization.name]}.png"
-        image_tag image, options.merge!(:size => "20x20")
+        image_tag image, link_options
       end
     end
   end
@@ -24,5 +26,10 @@ module SpeechesHelper
                 end
     end
     array.join(", ").html_safe
+  end
+
+  private
+  def apply_icon_theme(hash, suffix)
+    hash.each {|key, value| hash[key] = value + '_' + suffix}
   end
 end
