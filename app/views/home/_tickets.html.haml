@@ -14,11 +14,11 @@
               для всех
             .b-tikets__pricing.clearfix
               .b-tikets__pricing-date
-                До 19 сентября
+                До 26 сентября
               .b-tikets__price-inner
                 .b-price.b-price_type_early
                   %i.b-price__number
-                    2700
+                    3200
                   %span.b-price__rubl
                     a
             %p.b-content__text
@@ -57,26 +57,20 @@
                     a
             %p.b-content__text
               %a.b-link{:href => '/students'}
-                Как попасть бесплатно
+                А можно бесплатно?
           .l-page_float_right.l-page_width_250
             .b-tikets__content
               %p.b-tikets__content-title
                 В стоимость участия входит:
               %ul.b-tikets__content-list
                 %li.b-tikets__content-item
-                  о ценности высшего образования с точки
-                  зрения работодателя;
+                  <a href="/students">специальные доклады на студенческом потоке</a>;
                 %li.b-tikets__content-item
-                  какие направления ИТ сейчас наиболее
-                  перспективны;
+                  возможность встретить своего будущего работодателя;
                 %li.b-tikets__content-item
-                  о самообразовании;
+                  возможность посетить доклады на основных секциях;
                 %li.b-tikets__content-item
-                  как стать действительно востребованным
-                  специалистом;
-                %li.b-tikets__content-item
-                  какие спецкурсы в каких вузах проводятся;
-                %li.b-tikets__content-item
-                  где в Омске можно пройти стажировку.
+                  все то же самое, что и за полную цену;
+                
         %p.b-tikets__buy
           = link_to 'Купить билет', pay_path(:student => true), :class => 'b-button'

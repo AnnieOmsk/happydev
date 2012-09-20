@@ -30,11 +30,11 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/database.yml #{latest_release}/config/database.yml"
   end
 
-  namespace :assets do
-    task :precompile do
-      run "cd #{current_path}; rake assets:precompile RAILS_ENV=#{rails_env}"
-    end
-  end
+  # namespace :assets do
+  #   task :precompile do
+  #     run "cd #{current_path}; rake assets:precompile RAILS_ENV=#{rails_env}"
+  #   end
+  # end
 end
 
 # after "deploy:setup" do
