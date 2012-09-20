@@ -24,6 +24,7 @@ Happydev::Application.routes.draw do
   match '/about' => 'home#about'
   match '/oferta' => 'home#oferta'
   match '/pay' => 'home#payment'
+  match '/speakers' => 'home#speakers'
 
   match '/invoices/new' => 'invoices#new', :as => :pay
   # match '/speakers/:id' => 'high_voltage/pages#show', :as => :static, :via => :get, :format => false

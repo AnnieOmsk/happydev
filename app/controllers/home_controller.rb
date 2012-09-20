@@ -14,4 +14,7 @@ class HomeController < ApplicationController
   def program
     redirect_to "/"
   end
+
+  def speakers
+  end
 end

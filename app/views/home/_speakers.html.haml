@@ -4,9 +4,5 @@
   %h2.b-reporters__title
     Докладчики
   %ul.b-filter
-    - section_and_spec_names.each do |type, array|
-      - array.each do |item|
-        %li.b-filter__item
-          %a.b-filter__link{:data => { type => item }}
-            = item
+    = render :partial => 'filter_speakers'
   = render :partial => 'speakers_carousel'
