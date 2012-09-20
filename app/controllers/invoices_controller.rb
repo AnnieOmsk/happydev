@@ -3,9 +3,9 @@ class InvoicesController < ApplicationController
   # include HttpAuthenticable
   # before_filter :authenticate
 
-  before_filter :authenticate_user!, :except => [:new, :delete]
+  before_filter :authenticate_user!, :except => [:new, :delete, :detach_from_user]
   before_filter :move_to_register_if_not_signed_in, :only => :new
-  before_filter :find_invoice, :only => [:new, :show, :clearing]
+  before_filter :find_invoice, :only => [:new, :show, :clearing, :detach_from_user]
 
   def new
     if @invoice
@@ -63,6 +63,11 @@ class InvoicesController < ApplicationController
     unless @invoice
       redirect_to new_invoice_path
     end
+  end
+
+  def detach_from_user
+    @invoice.update_attribute(:user_id, nil)
+    redirect_to new_invoice_path
   end
 
   def clearing

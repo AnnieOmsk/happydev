@@ -14,6 +14,7 @@ Happydev::Application.routes.draw do
 
   resources :events
   resource :invoice, :only => [:new, :create, :show] do
+    delete :detach_from_user
     put :clearing
   end
 

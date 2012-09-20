@@ -48,6 +48,11 @@
         %p
           = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
             = submit_tag "Оплатить через робокассу", :class => 'b-button'
+            
+            %span.b-register__cancel_invoice
+              ×
+              = link_to "Отмена", detach_from_user_invoice_path, :method => :delete,
+                                                                 :confirm => 'При удалении счёта все совершённые оплаты станут недействительными. Вы уверены, что хотите удалить счёт?'
       .clearfix
         .b-register__line
           -#.l-page_float_left.l-page_gap-left-out_90
