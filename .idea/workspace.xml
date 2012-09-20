@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js" />
-=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-content/b-content.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-content/b-content.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" />
->>>>>>> speaker_filter
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_tickets.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/speakers.html.haml" afterPath="$PROJECT_DIR$/app/views/home/speakers.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/students.html.haml" afterPath="$PROJECT_DIR$/app/views/home/students.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -71,90 +72,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-<<<<<<< HEAD
       <file leaf-file-name="_tickets.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/_tickets.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="43" selection-start="2185" selection-end="2185" vertical-scroll-proportion="-25.0">
-=======
-      <file leaf-file-name="b-icon.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="19" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all_speakers.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/all_speakers.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="27" selection-start="472" selection-end="472" vertical-scroll-proportion="-8.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="oferta.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/oferta.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="33" selection-start="866" selection-end="866" vertical-scroll-proportion="-8.125">
->>>>>>> speaker_filter
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="b-price.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-price/b-price.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="l-page.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="33" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="b-tikets.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-tikets/b-tikets.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="45" selection-start="1656" selection-end="1656" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="b-tikets.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="31" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="b-programm.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="19" selection-start="342" selection-end="342" vertical-scroll-proportion="0.17502917">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="36" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+            <state line="66" column="51" selection-start="2586" selection-end="2586" vertical-scroll-proportion="-24.708334">
               <folding />
             </state>
           </provider>
@@ -163,13 +84,79 @@
       <file leaf-file-name="students.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/students.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="52" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
-=======
-      <file leaf-file-name="b-filter.css.scss" pinned="false" current="true" current-in-tab="true">
+            <state line="9" column="11" selection-start="240" selection-end="240" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b-content.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-content/b-content.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="20" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b-filter.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="36" selection-start="336" selection-end="336" vertical-scroll-proportion="0.19486581">
->>>>>>> speaker_filter
+            <state line="9" column="14" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_speakers_carousel.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="19" selection-start="797" selection-end="797" vertical-scroll-proportion="-7.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="speakers.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/speakers.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="20" selection-start="1169" selection-end="1169" vertical-scroll-proportion="-11.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b-reporters.css.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="13" selection-start="990" selection-end="990" vertical-scroll-proportion="0.6703297">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_filter_speakers.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/_filter_speakers.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/filter.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="40" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="speeches_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/speeches_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="27" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,40 +175,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/vendor/assets/javascripts/scrollspy.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/design_2.0.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/scroll.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-speaking/b-speaking.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-content/b-content.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/students.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-price/b-price.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-tikets/b-tikets.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-programm.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-=======
->>>>>>> speaker_filter
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js" />
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/app/helpers/speeches_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/_program.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/speeches/_preview.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/home/_speakers.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-filter/b-filter.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/blocks/b-filter/b-filter.js.coffee" />
+        <option value="$PROJECT_DIR$/vendor/assets/javascripts/jquery.scroll-follow.js" />
+        <option value="$PROJECT_DIR$/app/views/home/oferta.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/home/all_speakers.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/oferta.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/home/_tickets.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-content/b-content.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/students.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" />
->>>>>>> speaker_filter
+        <option value="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/filter.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/home/speakers.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
       </list>
     </option>
   </component>
@@ -259,10 +228,6 @@
       <sortByType />
     </navigator>
     <panes>
-<<<<<<< HEAD
-      <pane id="PackagesPane">
-        <subPane />
-=======
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -272,7 +237,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
->>>>>>> speaker_filter
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -389,7 +353,6 @@
               <option name="myItemId" value="speakers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-<<<<<<< HEAD
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -408,8 +371,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-=======
->>>>>>> speaker_filter
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -430,24 +391,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sections" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -771,36 +714,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="b-title" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="b-tikets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -891,8 +804,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
-=======
               <option name="myItemId" value="b-reporters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -923,7 +834,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
->>>>>>> speaker_filter
               <option name="myItemId" value="b-register" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1164,8 +1074,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
-=======
               <option name="myItemId" value="b-filter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1196,7 +1104,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
->>>>>>> speaker_filter
               <option name="myItemId" value="b-content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1497,6 +1404,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1504,29 +1414,21 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-<<<<<<< HEAD
-      <recent name="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets" />
-      <recent name="$PROJECT_DIR$/app/assets/images/blocks/b-price" />
-      <recent name="$PROJECT_DIR$/app/assets/images/blocks/b-tikets" />
-      <recent name="$PROJECT_DIR$/app/assets/stylesheets/blocks" />
-      <recent name="$PROJECT_DIR$/app/views/home" />
-=======
       <recent name="$PROJECT_DIR$/app/views/home" />
       <recent name="$PROJECT_DIR$/app/assets/images/blocks/b-icon" />
       <recent name="$PROJECT_DIR$/app/assets/stylesheets/blocks" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets" />
       <recent name="$PROJECT_DIR$/app/assets/images/blocks/b-price" />
->>>>>>> speaker_filter
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/assets/images/blocks/b-organizers" />
@@ -1557,24 +1459,6 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -1611,6 +1495,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -1628,6 +1530,17 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -1654,17 +1567,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -1739,6 +1641,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32842582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1751,15 +1654,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.32687926" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946581" sideWeight="0.6715742" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24839744" sideWeight="0.6715742" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-=======
->>>>>>> speaker_filter
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1861,125 +1759,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-content/b-content.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="20" selection-start="959" selection-end="959" vertical-scroll-proportion="0.87747955">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-speaking/b-speaking.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="168" selection-end="168" vertical-scroll-proportion="0.14002334">
-          <folding />
-        </state>
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/home/program.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_program.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="35" selection-start="1484" selection-end="1484" vertical-scroll-proportion="-9.75" />
->>>>>>> speaker_filter
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="23" column="24" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.41416568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/design_2.0.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="59" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.027611045">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/scroll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="229" selection-end="229" vertical-scroll-proportion="0.105017506">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/scrollspy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="475" selection-end="475" vertical-scroll-proportion="0.017502917">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/register.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-=======
-        <state line="150" column="4" selection-start="2521" selection-end="2521" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sections/_section.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="74" selection-end="74" vertical-scroll-proportion="-1.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/speakers/_single_speaker_info.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/speeches_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
->>>>>>> speaker_filter
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="36" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
-=======
     <entry file="file://$PROJECT_DIR$/app/views/home/_speakers.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="2" selection-start="152" selection-end="413" vertical-scroll-proportion="0.0">
->>>>>>> speaker_filter
           <folding />
         </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/views/home/students.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="52" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-price/b-price.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
-=======
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="17" selection-start="3575" selection-end="3575" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
@@ -1990,72 +1774,100 @@
     <entry file="file://$PROJECT_DIR$/app/views/speeches/_preview.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="117" selection-start="1534" selection-end="1668" vertical-scroll-proportion="0.60384154">
->>>>>>> speaker_filter
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/home/oferta.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="33" selection-start="2619" selection-end="2619" vertical-scroll-proportion="0.0">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="102" selection-end="1806" vertical-scroll-proportion="0.036014404">
->>>>>>> speaker_filter
+        <state line="15" column="31" selection-start="894" selection-end="894" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-tikets/b-tikets.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="45" selection-start="1656" selection-end="1656" vertical-scroll-proportion="0.0">
-=======
+        <state line="22" column="40" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1348131236000" expanded="true" signature="-1:-1" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="19" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
->>>>>>> speaker_filter
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/home/_tickets.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="43" selection-start="2185" selection-end="2185" vertical-scroll-proportion="-25.0">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/home/oferta.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="866" selection-end="866" vertical-scroll-proportion="-8.125">
->>>>>>> speaker_filter
+        <state line="66" column="51" selection-start="2586" selection-end="2586" vertical-scroll-proportion="-24.708334">
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-content/b-content.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/home/all_speakers.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="472" selection-end="472" vertical-scroll-proportion="-8.125">
->>>>>>> speaker_filter
+        <state line="11" column="20" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm.js">
+    <entry file="file://$PROJECT_DIR$/app/views/home/students.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="342" selection-end="342" vertical-scroll-proportion="0.17502917">
-=======
+        <state line="9" column="11" selection-start="240" selection-end="240" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="36" selection-start="336" selection-end="336" vertical-scroll-proportion="0.19486581">
->>>>>>> speaker_filter
+        <state line="9" column="14" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/_filter_speakers.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/filter.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="40" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/speeches_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="27" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="19" selection-start="797" selection-end="797" vertical-scroll-proportion="-7.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/speakers.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="20" selection-start="1169" selection-end="1169" vertical-scroll-proportion="-11.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="13" selection-start="990" selection-end="990" vertical-scroll-proportion="0.6703297">
           <folding />
         </state>
       </provider>
