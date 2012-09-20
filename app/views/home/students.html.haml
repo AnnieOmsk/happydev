@@ -8,7 +8,6 @@
         %h2.b-title
           Студентам
   .clearfix
-    .l-page_float_left.l-page_width_280
     .l-page_float_right.l-page_width_645
       %h1.b-content__title
         Дорогие студенты старших курсов!
@@ -16,7 +15,8 @@
     .l-page_float_left.l-page_width_280
       .l-page_width_250
         %p.b-content__text.l-page_gap-bottom-out_30
-          %h3 Стоимость участия
+          %h3.b-content__title.b-content__title_type_small
+            Стоимость участия
           %p.b-content__text.l-page_width_230
             До 21 сентября
             %b.b-content__price.l-page_float_right
@@ -36,7 +36,7 @@
               %span.b-price__rubl.b-price__rubl_type_black
                 a
 
-          %p{:style => "text-align:center"}
+          %p.l-page_align_center
             = link_to 'Купить билет', pay_path(:student => true), :class => 'b-button'
 
 
@@ -45,7 +45,9 @@
               %h2.b-speaking__title
                 Халява
             %p.b-content__text
-              Три автора самых стоящих ответов на <a href="http://tinyurl.com/happydev-2012">эти вопросы</a> смогут попасть на конференцию бесплатно! (ответы принимаются до пятницы 21 сентября)
+              Три автора самых стоящих ответов на
+              %a.b-link{:href => 'http://tinyurl.com/happydev-2012'} эти вопросы
+              смогут попасть на конференцию бесплатно! (ответы принимаются до пятницы 21 сентября)
     .l-page_float_right.l-page_width_645
       .b-content
         %p.b-content__text
