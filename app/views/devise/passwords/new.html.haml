@@ -17,6 +17,8 @@
                 %span.b-register__inputs-inner
                   = f.email_field :email, :class => "b-register__input_email"
                   %span.b-register__required *
+                %i.b-register__error
+                  = error_messages_for :email, resource
           = render "devise/shared/links"
 
         %p.l-page_gap-left-out_40
