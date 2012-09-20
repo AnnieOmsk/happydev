@@ -2,10 +2,12 @@
 
 .l-page_width_page.l-page_gap-bottom_50
   = render :partial => 'layouts/logo'
-  %section.clearfix.b-register
+  %section.clearfix.b-register.b-register__invoice
     .b-register__title-inner
       %h2.b-register__title
         Оплата участия на HappyDev
+    .b-register__label_text.l-page_align_center.l.b-register__user-info
+      = "#{current_user.full_name} (#{current_user.email})"
     .clearfix
       .l-page_display_inline
         - if @invoice.all_invoice_events_paid?
@@ -48,11 +50,8 @@
         %p
           = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
             = submit_tag "Оплатить через робокассу", :class => 'b-button'
-            
-            %span.b-register__cancel_invoice
-              ×
-              = link_to "Отмена", detach_from_user_invoice_path, :method => :delete,
-                                                                 :confirm => 'При удалении счёта все совершённые оплаты станут недействительными. Вы уверены, что хотите удалить счёт?'
+            = link_to "Отмена", detach_from_user_invoice_path, :method => :delete, :class => 'b-button b-button_style_gray l-page_gap-left-out_15',
+                                                               :confirm => 'При удалении счёта все совершённые оплаты станут недействительными. Вы уверены, что хотите удалить счёт?'
       .clearfix
         .b-register__line
           -#.l-page_float_left.l-page_gap-left-out_90

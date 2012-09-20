@@ -85,9 +85,10 @@
             = f.check_box :student, :checked => (params[:student] || resource.student).to_s == 'true' ? true : false, :class => 'b-register__student'
             %span.b-register__student_notice.b-register__text_style_small
               == На регистрации надо будет предъявить студенческий билет
-      %p.b-register__text.b-register__text_type_small.l-page_align_center
-        Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласие с тем, что &laquo;Личные данные&raquo; будут использованы для изготовления бейджа.
-      %p.l-page_align_center
+      .b-register__text_type_small.l-page_align_center
+        %p.b-register__text
+          Нажимая на кнопку &laquo;Зарегистрироваться&raquo;, вы подтверждаете свое согласие с тем, что &laquo;Личные данные&raquo; будут использованы для изготовления бейджа.
+      %p.l-page_gap-top-out_30.b-content__text.l-page_align_center
         %input.b-button{:type => "submit", :value => "Зарегистрироваться"}/
         &nbsp; &nbsp; Я уже регистрировался,
         =link_to "хочу войти", '/registration/login', :class => 'b-link'
