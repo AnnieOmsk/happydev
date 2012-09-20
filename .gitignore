@@ -24,4 +24,5 @@ doc/
 .DS_Store
 
 public/index.html
+public/speakers.html
 public/speakers

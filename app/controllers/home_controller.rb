@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
-  caches_page :index
+  caches_page :index, :speakers
 
   def index
     @speeches = Speech.joins([:speaker, :section])
