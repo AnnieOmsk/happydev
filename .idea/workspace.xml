@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.haml" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -67,10 +66,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="b-reporters.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="b-reporters.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="13" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+            <state line="54" column="1" selection-start="934" selection-end="934" vertical-scroll-proportion="0.3839713">
               <folding />
             </state>
           </provider>
@@ -85,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="30" selection-start="4438" selection-end="4438" vertical-scroll-proportion="0.8337439">
+            <state line="90" column="30" selection-start="4438" selection-end="4438" vertical-scroll-proportion="-28.208334">
               <folding />
             </state>
           </provider>
@@ -182,10 +181,10 @@
         <option value="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/filter.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/home/speakers.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
         <option value="$PROJECT_DIR$/app/views/devise/shared/_links.haml" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
       </list>
     </option>
   </component>
@@ -1744,13 +1743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="13" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invoices/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.0416667">
@@ -1809,7 +1801,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="30" selection-start="4438" selection-end="4438" vertical-scroll-proportion="0.8337439">
+        <state line="90" column="30" selection-start="4438" selection-end="4438" vertical-scroll-proportion="-28.208334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="1" selection-start="934" selection-end="934" vertical-scroll-proportion="0.3839713">
           <folding />
         </state>
       </provider>
