@@ -31,4 +31,8 @@ class User < ActiveRecord::Base
   def deliver_notification
     Mailer.send_notification(email).deliver!
   end  
+
+  def full_name
+    [first_name, last_name].join(' ')
+  end
 end

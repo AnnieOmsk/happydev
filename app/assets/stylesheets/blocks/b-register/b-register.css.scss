@@ -5,6 +5,10 @@
     border: 1px solid #85b0c6;
 }
 
+.b-register__invoice {
+    padding-top: 30px;
+}
+
 .b-register_style_green {
     border-color: #4b9800;
 }
@@ -277,4 +281,11 @@
 
 .b-register__cancel_invoice {
     margin-left: 15px;
+}
+
+.b-register__user-info {
+    font-size: 14px;
+    color: #3f495f;
+    font-family: Arial, sans-serif;
+    padding-bottom: 20px;
 }

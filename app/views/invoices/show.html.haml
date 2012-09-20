@@ -2,10 +2,12 @@
 
 .l-page_width_page.l-page_gap-bottom_50
   = render :partial => 'layouts/logo'
-  %section.clearfix.b-register
+  %section.clearfix.b-register.b-register__invoice
     .b-register__title-inner
       %h2.b-register__title
         Оплата участия на HappyDev
+    .b-register__label_text.l-page_align_center.l.b-register__user-info
+      = "#{current_user.full_name} (#{current_user.email})"
     .clearfix
       .l-page_display_inline
         - if @invoice.all_invoice_events_paid?

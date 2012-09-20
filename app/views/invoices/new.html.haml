@@ -2,10 +2,12 @@
 
 .l-page_width_page.l-page_gap-bottom_50
   = render :partial => 'layouts/logo'
-  %section.clearfix.b-register
+  %section.clearfix.b-register.b-register__invoice
     .b-register__title-inner
       %h2.b-register__title
         Оплата участия на HappyDev
+    .b-register__label_text.l-page_align_center.l.b-register__user-info
+      = "#{current_user.full_name} (#{current_user.email})"
     = form_for(@invoice, :url => invoice_path(@invoice)) do |f|
       .clearfix
         .l-page_display_inline.l-page_gap-right-out_45
@@ -38,7 +40,7 @@
               = text_field_tag :promocode, nil, :class => "b-register__input_text"
 
       .b-register__line
-      %section.l-page_gap-top-out_50.l-page_align_center
+      %section.l-page_gap-top-out_40.l-page_align_center
         .b-register__label.b-register__label_type_checkbox.l-page_align_left.l-page_display_inline.b-register__label_type_oferta
           = f.check_box :oferta, :class => 'b-register__input_checkbox'
           %label.b-register__label-text.b-register__label-text_width_auto.b-register__text_style_small{:for => 'invoice_oferta'}
