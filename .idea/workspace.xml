@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
@@ -76,10 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all_speakers.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="all_speakers.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/all_speakers.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="27" selection-start="472" selection-end="472" vertical-scroll-proportion="0.23409364">
+            <state line="13" column="27" selection-start="472" selection-end="472" vertical-scroll-proportion="-8.125">
               <folding />
             </state>
           </provider>
@@ -94,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-filter.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="b-filter.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="11" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+            <state line="20" column="36" selection-start="336" selection-end="336" vertical-scroll-proportion="0.19486581">
               <folding />
             </state>
           </provider>
@@ -130,8 +129,8 @@
         <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/all_speakers.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-icon/b-icon.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/oferta.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" />
       </list>
     </option>
   </component>
@@ -1782,16 +1781,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/home/all_speakers.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="11" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+        <state line="13" column="27" selection-start="472" selection-end="472" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/all_speakers.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="472" selection-end="472" vertical-scroll-proportion="0.23409364">
+        <state line="20" column="36" selection-start="336" selection-end="336" vertical-scroll-proportion="0.19486581">
           <folding />
         </state>
       </provider>
