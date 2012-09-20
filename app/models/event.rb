@@ -6,6 +6,9 @@ class Event < ActiveRecord::Base
 
   before_create :set_priority
 
+  scope :for_student, where(:system_name => [:conference_student, :dinner]).order('price desc')
+  scope :for_all, where(:system_name => [:conference_main, :dinner]).order('price desc')
+
   def full_name
     [name, master, "#{price} руб."].compact.join(', ')
   end

@@ -78,6 +78,5 @@
                   какие спецкурсы в каких вузах проводятся;
                 %li.b-tikets__content-item
                   где в Омске можно пройти стажировку.
-        -# %p.b-tikets__buy
-        -#   %a.b-button{:href => pay_path}
-        -#     Купить билет
+        %p.b-tikets__buy
+          = link_to 'Купить билет', pay_path(:student => true), :class => 'b-button'
