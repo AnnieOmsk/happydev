@@ -18,15 +18,9 @@
           %h3.b-content__title.b-content__title_type_small
             Стоимость участия
           %p.b-content__text.l-page_width_230
-            До 21 сентября
+            Цена сегодня:
             %b.b-content__price.l-page_float_right
               500
-              %span.b-price__rubl.b-price__rubl_type_black
-                a
-          %p.b-content__text.l-page_width_230
-            Для самых неторопливых
-            %b.b-content__price.l-page_float_right
-              750
               %span.b-price__rubl.b-price__rubl_type_black
                 a
           %p.b-content__text.l-page_width_230
@@ -77,3 +71,32 @@
         / %p.b-content__text
         /   Стоимость участия в конференции для неработающего студента - от 0 до 750 рублей. Еще за 350 рублей вас
         /   накормят вкусным горячим обедом.
+
+        %p.b-content__text
+          %b
+            Доклады специально для вас:
+        %ul.b-content__list
+          %li.b-content__list-item
+            %span.b-content__list-item__title Как учёба в универе и олимпиады не сделали мою жизнь хуже.
+            %span.b-content__list-item__speaker
+              = succeed ',' do
+                = link_to "Годовых Олег", "http://olegg.moikrug.ru/", :target => "_blank"
+              = link_to "Noveo", "http://noveogroup.ru/", :target => "_blank"
+          %li.b-content__list-item
+            %span.b-content__list-item__title Обучение и самообучение.
+            %span.b-content__list-item__speaker
+              = succeed ',' do
+                = link_to "Подгурский Михаил", "http://kmmbvnr.moikrug.ru/", :target => "_blank"
+              Freelance
+          %li.b-content__list-item
+            %span.b-content__list-item__title Школа Джедая: как сделать из студента программиста.
+            %span.b-content__list-item__speaker
+              = succeed ',' do
+                = link_to "Крамарова Татьяна", "http://t-kramarova.moikrug.ru/", :target => "_blank"
+              = link_to "ИСС Арт", "http://issart.ru/", :target => "_blank"
+          %li.b-content__list-item
+            %span.b-content__list-item__title Карьера в IT.
+            %span.b-content__list-item__speaker
+              = succeed ',' do
+                = link_to "Бындю Александр", "http://abyindyu.moikrug.ru/", :target => "_blank"
+              = link_to "ByndyuSoft", "http://soft.byndyu.ru/", :target => "_blank"
