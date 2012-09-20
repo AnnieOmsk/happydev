@@ -9,7 +9,7 @@
       = link_to 'Выход', destroy_user_session_path, :method => :delete, :class => 'b-foot__exit-link'
   .b-foot__buttons.social-panel.social-panel-on-footer
     - if controller.controller_name == 'home'
-      = render :partial => 'layouts/social_links_panel'
+      = render :partial => 'shared/social_links_panel'
 
   .b-foot__powered-by
     %p.b-foot__powered-by-text

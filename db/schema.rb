@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120919103047) do
+ActiveRecord::Schema.define(:version => 20120920044707) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -92,6 +92,7 @@ ActiveRecord::Schema.define(:version => 20120919103047) do
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.string   "name"
+    t.string   "system_name"
   end
 
   create_table "rails_admin_histories", :force => true do |t|

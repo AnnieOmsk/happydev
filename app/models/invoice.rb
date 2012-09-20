@@ -30,7 +30,7 @@ class Invoice < ActiveRecord::Base
 
     invoice_events.sort_by{ |i| i.event.priority }.each do |ie|
       if ie.paid?
-        if !promo.blank? && promo.name == "Partners" && ie.event.priority == 0
+        if !promo.blank? && promo.system_name == "partners" && ie.event.priority == 0
           overall_pay_amount -= 0
         else
           overall_pay_amount -= ie.event.price
@@ -49,16 +49,16 @@ class Invoice < ActiveRecord::Base
     end
   end
 
-  ## Method for set max discount (Partners(100% w/o lunch) and VIP(all_inclusive))
+  ## Method for set max discount (Partners(100% w/o lunch) and sponsors(all_inclusive))
   def valued_promocode
     promo = Promocode.find_by_number(self.promocode)
-    if promo.name == "Partners"
+    if promo.system_name == "partners"
       ie = self.invoice_events.where(:event_id => Event.where(:priority => 0)).first
       set_paid(ie, 0)
       if self.invoice_events.count == 1
         Mailer.send_success_payment_notification(self.user.email, self).deliver!
       end
-    elsif promo.name == "VIP"
+    elsif promo.system_name == "sponsors"
       self.invoice_events.each do |ie|
         set_paid(ie, 0)
       end
@@ -97,7 +97,7 @@ class Invoice < ActiveRecord::Base
   end
 
   def self.counting_amount_with_discount(invoice, user, promocode)
-    if Promocode.find_by_number(promocode).name == "VIP"
+    if Promocode.find_by_number(promocode).system_name == "sponsors"
       tmp_amount = 0
     else
       tmp_amount = invoice.events.select{|e| e.discount != false }.map(&:price).inject(:+) || 0
