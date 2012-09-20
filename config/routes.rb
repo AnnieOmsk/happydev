@@ -32,9 +32,9 @@ Happydev::Application.routes.draw do
   end  
 
   # redirections (compatibility with old site and routes):
-  match '/programme' => 'home#index'
-  match '/program' => 'home#index'
-  match '/about' => 'home#index'
+  match '/programme' => redirect('/')
+  match '/program' => redirect('/')
+  match '/about' => redirect('/')
 
   root :to => 'home#index'
 end
