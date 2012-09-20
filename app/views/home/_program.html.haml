@@ -22,7 +22,9 @@
           %p.b-programm__text
             9:00
         %td.b-programm__column{:colspan => "3"}
-          %span.b-programm__icon-b.b-programm__icon-b_icon_register
+          %ul.b-icon
+            %li.b-icon__item
+              %span.b-icon__icon.b-icon__icon_register
           %p.b-programm__text
             Регистрация
       
@@ -31,7 +33,9 @@
           %p.b-programm__text
             10:00
         %td.b-programm__column{:colspan => "3"}
-          %span.b-programm__icon-b.b-programm__icon-b_icon_opening
+          %ul.b-icon
+            %li.b-icon__item
+              %span.b-icon__icon.b-icon__icon_opening
           %p.b-programm__text
             Открытие конференции
 
@@ -40,7 +44,7 @@
           %p.b-programm__text
             10:15
         // Артем Поликарпов ======================================================
-        %td.b-programm__column{:style=> "width:27%"}
+        %td.b-programm__column
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('polikarpov-fotorama'), :as => :speech
         // Ольга Павлова ======================================================              
@@ -101,7 +105,9 @@
           %p.b-programm__text
             13:00
         %td.b-programm__column{:colspan => "3"}
-          %span.b-programm__icon-b.b-programm__icon-b_icon_lunch
+          %ul.b-icon
+            %li.b-icon__item
+              %span.b-icon__icon.b-icon__icon_lunch
           %p.b-programm__text
             Обед
 
@@ -183,7 +189,9 @@
           %p.b-programm__text
             16:25
         %td.b-programm__column{:colspan => "3"}
-          %span.b-programm__icon-b.b-programm__icon-b_icon_cofee-break
+          %ul.b-icon
+            %li.b-icon__item
+              %span.b-icon__icon.b-icon__icon_coffee-break
           %p.b-programm__text
             Кофе-брейк
 
@@ -236,7 +244,9 @@
           %p.b-programm__text
             19:20
         %td.b-programm__column{:colspan => "3"}
-          %span.b-programm__icon-b.b-programm__icon-b_icon_end
+          %ul.b-icon
+            %li.b-icon__item
+              %span.b-icon__icon.b-icon__icon_end
           %p.b-programm__text
             Завершение дня
 

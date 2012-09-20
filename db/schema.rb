@@ -174,6 +174,7 @@ ActiveRecord::Schema.define(:version => 20120920044707) do
     t.integer  "speaker2_id"
     t.integer  "speaker3_id"
     t.integer  "specialization2_id"
+    t.integer  "section2_id"
   end
 
   add_index "speeches", ["permalink"], :name => "index_speeches_on_permalink"

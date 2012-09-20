@@ -21,6 +21,7 @@ Happydev::Application.routes.draw do
   match '/students' => 'home#students'
   match '/oferta' => 'home#oferta'
   match '/pay' => 'home#payment'
+  match '/speakers' => 'home#speakers'
 
   match '/invoices/new' => 'invoices#new', :as => :pay
   match '/speakers/:permalink' => 'speeches#show'

@@ -1,1 +1,0 @@
-$('.js-b-reporters__carousel').carousel('pause');

@@ -1,11 +1,13 @@
 - if speech
   - speaker = speech.speaker
 
-  %div.b-programm__icon
-    = icon_for_speakers speech, false
-    - if speech.specialization2
-      %div{:style => "margin-top:3px;"}
-        = icon_for_speakers speech, true
+  %ul.b-icon.b-icon_type_vert
+    %li.b-icon__item
+      %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :program => true)}
+
+    - if speech.specialization2 && speech.section.name != "Общий"
+      %li.b-icon__item
+        %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true)}
   %div{:style => "display:table;"}
     %p.b-programm__text
       - if speech.has_one_speaker?
@@ -31,12 +33,17 @@
           - if speaker.photo_url.present? && speech.has_one_speaker?
             = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
           .b-programm__desc-person-info
-            %h2.b-programm__desc-name
-              = speech.all_speakers_names
-              -# = url_for_speakers_name speech, :class => 'b-link'
-              = icon_for_speakers speech, false
-              - if speech.specialization2
-                = icon_for_speakers speech, true
+            .clearfix
+              %ul.b-icon.b-icon_type_into-desc
+                %li.b-icon__item
+                  %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :program => true) + '-s'}
+                - if speech.specialization2 && speech.section.name != "Общий"
+                  %li.b-icon__item
+                    %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true) + '-s'}
+              %h2.b-programm__desc-name.l-page_float_left
+                = speech.all_speakers_names
+                -# = url_for_speakers_name speech, :class => 'b-link'
+
             %p.b-programm__desc-theme
               -# - if speaker.company && [speech.speaker2, speech.speaker3].all?{ |sp| sp.blank? }
               -#   %a.b-reporters__person-company-link{:href => speaker.company.url, :target => '_blank', :style => "font-size:14px;"}
