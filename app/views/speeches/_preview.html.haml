@@ -8,6 +8,8 @@
     - if speech.specialization2 && speech.section.name != "Общий"
       %li.b-icon__item
         %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true)}
+    %span.b-programm__like-icon{:'data-speech-id' => speech.id}
+      ☆
   %div{:style => "display:table;"}
     %p.b-programm__text
       - if speech.has_one_speaker?
