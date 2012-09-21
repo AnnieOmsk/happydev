@@ -27,4 +27,10 @@ module ApplicationHelper
   def title(page_title)
     content_for(:title) { page_title + " | HappyDev'12" }
   end
+
+  def social_links_only_main
+    if controller.controller_name == 'home' && controller.action_name == 'index'
+      "set_class_for_footer"
+    end
+  end
 end
