@@ -8,7 +8,7 @@
       %span.b-foot__exit-icon
       = link_to 'Выход', destroy_user_session_path, :method => :delete, :class => 'b-foot__exit-link'
   .b-foot__buttons.social-panel.social-panel-on-footer
-    - if controller.controller_name == 'home'
+    - unless controller.controller_name == 'home' && controller.action_name == 'speakers'
       = render :partial => 'shared/social_links_panel'
 
   .b-foot__powered-by

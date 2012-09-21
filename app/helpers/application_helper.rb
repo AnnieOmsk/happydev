@@ -29,8 +29,8 @@ module ApplicationHelper
   end
 
   def social_links_only_main
-    if controller.controller_name == 'home' && controller.action_name == 'index'
-      "set_class_for_footer"
+    if controller.controller_name == 'home' && controller.action_name == 'index' || controller.action_name == 'students'
+      "b-foot_type_home"
     end
   end
 end
