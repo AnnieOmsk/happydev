@@ -1,13 +1,13 @@
 .l-page_width_page
   = render :partial => 'layouts/logo'
   .l-page_gap-top-out_50.l-page_gap-bottom-out_40
-    .l-page_align_center.b-title__line
+    .l-page_align_center.b-title__line.js-title
       .b-title__inner
         %h2.b-title
           Докладчики
   .clearfix
     .l-page_float_left.l-page_width_220{:style => 'width: 220px'}
-      %ul.b-filter.b-filter_type_vert.clearfix
+      %ul#fixedBox.b-filter.b-filter_type_vert.js-b-filter_type_vert.clearfix
         = render :partial => 'filter_speakers'
     .l-page_float_right.l-page_width_710{:style => 'width: 710px'}
 
