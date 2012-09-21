@@ -1,3 +1,5 @@
+- like_url = controller.controller_name == 'speeches' ? request.url : 'http://happydev.ru'
+
 #fb-root
 %script{:type => "text/javascript"}
   :plain
@@ -22,9 +24,9 @@
        ref.parentNode.insertBefore(js, ref);
      }(document));
 
-.fb-like{:'data-send' => 'false', :'data-layout' => 'button_count', :'data-width' => '200', :'data-show-faces' => 'false', :'data-font' => 'lucida grande'}
+.fb-like{:'data-send' => 'false', :'data-href' => like_url, :'data-layout' => 'button_count', :'data-width' => '200', :'data-show-faces' => 'false', :'data-font' => 'lucida grande'}
 
-%a.twitter-share-button{:href => 'https://twitter.com/share', :'data-url' => controller.controller_name == 'speeches' ? request.url : 'http://happydev.ru'}
+%a.twitter-share-button{:href => 'https://twitter.com/share', :'data-url' => like_url}
   Tweet
 %script(type="text/javascript")
   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
