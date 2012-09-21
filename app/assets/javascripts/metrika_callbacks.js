@@ -10,4 +10,5 @@ $(document).ready(function() {
     var targetName = input.data('target');
     yaCounter17140027.reachGoal(targetName);
     console.log('reach goal' + ' ' + targetName);
+  });
 });
