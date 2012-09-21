@@ -12,6 +12,9 @@ Happydev::Application.routes.draw do
     # delete 'registration' => 'devise/registrations#destroy', :as => 'user_registration'
   end
 
+  resources :likes, :only => [:create, :update, :destroy] do
+  end
+
   resources :events
   resource :invoice, :only => [:new, :create, :show] do
     delete :detach_from_user

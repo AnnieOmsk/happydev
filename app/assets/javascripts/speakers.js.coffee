@@ -1,0 +1,3 @@
+jQuery ->
+  $('#hd-like').click ->
+    

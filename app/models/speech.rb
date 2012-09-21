@@ -7,6 +7,9 @@ class Speech < ActiveRecord::Base
   belongs_to :section2, :class_name => 'Section'
   belongs_to :specialization
   belongs_to :specialization2, :class_name => 'Specialization'
+  has_many :likes
+  has_many :users, :through => :likes
+
   attr_accessible :annotation, :description, :title, :speaker, :section, :specialization, :start_time, :timing,
                   :speaker_id, :speaker2_id, :speaker3_id, :section_id, :section2_id, :specialization_id, :specialization2_id, :permalink
 
