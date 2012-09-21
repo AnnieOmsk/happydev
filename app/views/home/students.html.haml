@@ -29,7 +29,8 @@
                 a
 
           %p.l-page_align_center
-            = link_to 'Купить билет', pay_path(:student => true), :class => 'b-button'
+            = link_to 'Купить билет', pay_path(:student => true), :class => 'b-button', :data => { :metrika => true,
+                                                                                                   :target => 'buy_student_ticket' }
 
 
           .b-speaking.b-speaking_style_green
