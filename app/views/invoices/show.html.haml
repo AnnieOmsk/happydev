@@ -51,7 +51,7 @@
           = payment_service_for @invoice.code, APP_CONFIG['robokassa']['login'], :amount =>  @invoice.amount, :service => :robokassa, :secret => APP_CONFIG['robokassa']['secret1'] do |s|
             = submit_tag "Оплатить через робокассу", :class => 'b-button',
                                                      :data => { :metrika => 'true',
-                                                                :target => current_user.student? ? 'student_went_to_robokassa_test' : 'general_user_went_to_robokassa_test' }
+                                                                :target => current_user.student? ? 'student_went_to_robokassa' : 'general_user_went_to_robokassa' }
             = link_to "Отмена", detach_from_user_invoice_path, :method => :delete, :class => 'b-button b-button_style_gray l-page_gap-left-out_15',
                                                                :confirm => 'При удалении счёта все совершённые оплаты станут недействительными. Вы уверены, что хотите удалить счёт?'
       .clearfix

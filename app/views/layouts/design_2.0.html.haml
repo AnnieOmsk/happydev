@@ -56,6 +56,5 @@
 
       = render :partial => 'layouts/footer'
      
-      -# - if Rails.env == 'production'
-      - if true
+      - if Rails.env == 'production'
         = render :partial => 'layouts/yandex_metrika'

@@ -39,7 +39,7 @@
                   кофе, чай, сладости и солености в течение всего дня.
         %p.b-tikets__buy
           = link_to 'Купить билет', pay_path, :class => 'b-button', :data => { :metrika => true,
-                                                                               :target => 'buy_general_ticket_test' }
+                                                                               :target => 'buy_general_ticket' }
     .b-tikets__method
       .b-tikets__link.js-b-tikets__link
         .clearfix
@@ -75,4 +75,4 @@
                 
         %p.b-tikets__buy
           = link_to 'Купить билет', pay_path(:student => true), :class => 'b-button', :data => { :metrika => true,
-                                                                                                 :target => 'buy_student_ticket_test' }
+                                                                                                 :target => 'buy_student_ticket' }
