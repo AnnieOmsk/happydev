@@ -17,6 +17,8 @@ log/*.log
 *.swp
 .rbenv-version
 
+.idea/workspace.xml
+
 # YARD artifacts
 .yardoc
 _yardoc
