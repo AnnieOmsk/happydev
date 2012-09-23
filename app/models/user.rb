@@ -38,11 +38,7 @@ class User < ActiveRecord::Base
     [first_name, last_name].join(' ')
   end
 
-  def has_speech_like?(permalink)
-    debugger; puts 1
-  end
-
-  def has_speech_like_create?(permalink)
-    
+  def like_speech(speech)
+    self.likes.where(:speech_id => speech.id).last
   end
 end

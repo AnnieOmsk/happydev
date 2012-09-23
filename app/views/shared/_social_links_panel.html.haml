@@ -1,10 +1,7 @@
 - like_url = controller.controller_name == 'speeches' ? request.url : 'http://happydev.ru'
 
-#hd-like{:style => "margin-right:3px;position:relative;top:0px;cursor:point;font-size:10px;"}
-  - if current_user && current_user.has_speech_like?(@speech.permalink)
-    ★
-  - elsif current_user.has_speech_like_create?(@speech.permalink)
-    ☆
+#hd-like{:style => "position:relative;"}
+  #hd-like-star
 
 #fb-root
 %script{:type => "text/javascript"}
@@ -18,17 +15,23 @@
         xfbml      : true  // parse XFBML
       });
       FB.Event.subscribe('edge.create', function(response) {
-        var id = window.location.pathname.split('/')[2];
-        $.ajax({
-          url: '/likes',
-          data: { id: id },
-          type: 'POST',
-          success: function(data) {
-            $('#hd-like').show();
-          },
-          error: function(data) {
-          }
-        });
+        var location = window.location.pathname.split('/');
+        var cont = location[1];
+        var id = location[2];
+        if (cont == "speakers") {
+          $.ajax({
+            url: '/likes',
+            data: { id: id },
+            dataType: 'json',
+            type: 'POST',
+            success: function(data) {
+              $('#hd-like-star').html("★");
+            },
+            error: function(data) {
+              // console.log(data)
+            }
+          });
+        }
       });
       // Additional initialization code here
     };

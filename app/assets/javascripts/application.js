@@ -29,4 +29,3 @@
 //= require register
 //= require filter
 //= require scroll_filter
-//= require speakers
