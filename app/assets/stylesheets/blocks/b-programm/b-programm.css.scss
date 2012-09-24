@@ -162,7 +162,7 @@
 // Second day
 
 .b-programm__head-title,
-.b-programm__content {
+.b-programm__content-small {
     padding: 10px;
 }
 
@@ -176,10 +176,17 @@
 }
 
 .b-programm__list-item {
+    float: left;
+    clear: left;
+    position: relative;
     margin: 10px 0 0;
     list-style: none;
 }
 
 .b-programm__list-item:first-child {
     margin: 0;
+}
+
+.b-programm__content-small .b-programm__desc {
+    top: -20px;
 }
