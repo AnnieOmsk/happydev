@@ -22,10 +22,11 @@
     margin: 0;
 }
 
-.b-organizers__logo {
-    margin: 0 30px 0 0;
+.b-organizers__link {
+    margin: 0 0 0 30px;
+    text-decoration: none;
 }
 
-.b-organizers__link {
-    text-decoration: none;
+.b-organizers__link:first-child {
+    margin: 0;
 }
