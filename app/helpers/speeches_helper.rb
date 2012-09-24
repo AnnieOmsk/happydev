@@ -16,6 +16,22 @@ module SpeechesHelper
     end
   end
 
+  # old. using by pdf builder only
+  def image_for_speakers speech, options = {}, link_options = {}
+    spec_hash = {"Разработка" => "developer", "Дизайн" => "designer", "Управление" => "manager", "Общий" => "general", "Стартап-порка" => "startup_porka"}
+    spec_hash = apply_icon_theme(spec_hash, options[:theme]) if options[:theme]
+     
+    if options[:second]
+      image = "#{spec_hash[speech.specialization2.name]}.png"
+      image_tag image, link_options
+    else
+      if speech.specialization
+        image = "#{spec_hash[speech.specialization.name]}.png"
+        image_tag image, link_options
+      end
+    end
+  end
+
   def url_for_speakers_name speech, options = {}
     array = []
     speech.speakers.map do |sp|
