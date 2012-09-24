@@ -11,7 +11,7 @@ class Speech < ActiveRecord::Base
   has_many :users, :through => :likes
 
   attr_accessible :annotation, :description, :title, :speaker, :section, :specialization, :start_time, :timing,
-                  :speaker_id, :speaker2_id, :speaker3_id, :section_id, :section2_id, :specialization_id, :specialization2_id, :permalink
+                  :speaker_id, :speaker2_id, :speaker3_id, :section_id, :section2_id, :specialization_id, :specialization2_id, :permalink, :master_class
 
   validates_presence_of :title, :speaker
 
