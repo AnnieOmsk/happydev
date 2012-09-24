@@ -75,6 +75,9 @@
 .b-reporters__person-theme-link,
 .b-reporters__person-theme-link:visited {
     color: #3362ae;
+}
+
+.b-reporters__person-theme-link {
     font-size: 14px;
     line-height: 20px;
     font-family: Arial, sans-serif;
@@ -88,6 +91,11 @@
 .b-reporters__person-theme-link:hover {
     color: #cc0000;
     border-color: #F0B2B2;
+}
+
+.b-reporters__person-theme-link_type_ptsans {
+    font-family: "PT Sans";
+    line-height: 15px;
 }
 
 .b-reporters__person-company {
