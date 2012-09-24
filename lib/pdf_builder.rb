@@ -1,5 +1,6 @@
 class PdfBuilder < ActionController::Base
   include ApplicationHelper
+  include SpeechesHelper
 
   def create_program_for_user(user)
     @speeches = Speech.joins([:speaker, :section])
