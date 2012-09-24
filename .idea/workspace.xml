@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/PTS55F-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/PTS55F-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/PTS55F-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/fonts/pts55f-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/pts55f2-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/fonts/pts55f-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/pts55f2-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/fonts/pts55f-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/pts55f2-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/fonts/pts55f-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/pts55f2-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_social_links_panel.html.haml" afterPath="$PROJECT_DIR$/app/views/shared/_social_links_panel.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -66,37 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_orgs_and_sponsors.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml">
+      <file leaf-file-name="b-page.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="97" selection-start="3374" selection-end="3374" vertical-scroll-proportion="-31.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="b-organizers.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="14" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="speakers.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/speakers.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_speakers_carousel.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="53" selection-start="1544" selection-end="1544" vertical-scroll-proportion="-17.5">
+            <state line="32" column="19" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,16 +89,16 @@
       <file leaf-file-name="b-reporters.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="27" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.5809859">
+            <state line="96" column="33" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.0528169">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-page.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss">
+      <file leaf-file-name="b-foot.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="28" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+            <state line="41" column="25" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,8 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-content/b-content.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/students.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/scroll_filter.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/home/_members.html.haml" />
@@ -147,6 +129,8 @@
         <option value="$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/shared/_social_links_panel.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
       </list>
@@ -328,7 +312,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails_admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -647,6 +679,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="b-members" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="b-foot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1031,6 +1093,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.85763097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.32687926" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1040,7 +1103,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1142,48 +1204,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/home/_members.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="96" selection-start="1261" selection-end="1261" vertical-scroll-proportion="-13.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/speakers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm/b-programm-likes_getter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/speeches/_preview.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="41" selection-start="933" selection-end="933" vertical-scroll-proportion="-9.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-programm/b-programm.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="16" selection-start="2981" selection-end="2981" vertical-scroll-proportion="0.7112676">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_program.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="457" column="70" selection-start="23601" selection-end="23601" vertical-scroll-proportion="-6.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/blocks/b-tikets/b-tikets.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="14" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.6137184">
@@ -1242,16 +1262,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_yandex_metrika.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/rails_admin/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_social_links_panel.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="50" selection-start="2375" selection-end="2375" vertical-scroll-proportion="-22.458334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-foot/b-foot.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="25" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+        <state line="32" column="19" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="27" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.5809859">
+        <state line="96" column="33" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.0528169">
           <folding />
         </state>
       </provider>
