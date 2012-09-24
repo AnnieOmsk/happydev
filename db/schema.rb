@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120921085637) do
+ActiveRecord::Schema.define(:version => 20120924083948) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -186,6 +186,7 @@ ActiveRecord::Schema.define(:version => 20120921085637) do
     t.integer  "speaker3_id"
     t.integer  "specialization2_id"
     t.integer  "section2_id"
+    t.boolean  "master_class"
   end
 
   add_index "speeches", ["permalink"], :name => "index_speeches_on_permalink"

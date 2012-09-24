@@ -21,38 +21,6 @@
     %p.b-programm__theme
       %a.b-programm__theme-link{:href => "/speakers/#{speech.permalink}"}
         = speech.title
-    .b-programm__desc.js-b-programm__desc
-      .b-programm__desc-time
-        .b-time
-          %span.b-time__icon
-          %span.b-time__text.b-time__text_type_with-gap-out
-            = speech.time_range
-          %span.b-time__text
-            = speech.section.hall
-      .b-programm__desc-person
-        .b-programm__desc-person-info-inner.clearfix
-          - if speaker.photo_url.present? && speech.has_one_speaker?
-            = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
-          .b-programm__desc-person-info
-            .clearfix
-              %ul.b-icon.b-icon_type_into-desc
-                %li.b-icon__item
-                  %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :program => true) + '-s'}
-                - if speech.specialization2 && speech.section.name != "Общий"
-                  %li.b-icon__item
-                    %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true) + '-s'}
-              %h2.b-programm__desc-name.l-page_float_left
-                = speech.all_speakers_names
-                -# = url_for_speakers_name speech, :class => 'b-link'
-
-            %p.b-programm__desc-theme
-              -# - if speaker.company && [speech.speaker2, speech.speaker3].all?{ |sp| sp.blank? }
-              -#   %a.b-reporters__person-company-link{:href => speaker.company.url, :target => '_blank', :style => "font-size:14px;"}
-              -#     = speaker.company.name
-              -#   %br/
-              %a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
-                = speech.title
-        %span.b-programm__desc-text
-          = speech.annotation.html_safe
+    = render :partial => "speeches/speaker_popup", :locals => {:speech => speech, :speaker => speaker, :second_day => false}
 - else
   Уточняется
