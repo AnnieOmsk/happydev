@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2112e71a-257d-4d32-865a-eac80b3ca488" name="Default" comment="Makeup has been fixed.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/blocks/b-organizers/zeon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/pts55f-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/pts55f-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/pts55f-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/pts55f-webfont.svg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/PTS55F-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/PTS55F-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/PTS55F-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/PTS55F-webfont.woff" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/design_2.0.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/design_2.0.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" afterPath="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" />
     </list>
     <list id="7864ade1-cb8e-4a46-baba-9d680fb0572b" name="Failed commit: Default" comment="Makeup has been fixed." />
     <ignored path="Happydev.iws" />
@@ -79,10 +86,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-organizers.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="b-organizers.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="14" selection-start="455" selection-end="455" vertical-scroll-proportion="0.52816904">
+            <state line="30" column="14" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="speakers.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/speakers.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_speakers_carousel.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="53" selection-start="1544" selection-end="1544" vertical-scroll-proportion="-17.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b-reporters.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="20" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b-page.css.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="28" selection-start="975" selection-end="975" vertical-scroll-proportion="0.40492958">
               <folding />
             </state>
           </provider>
@@ -101,9 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/scroll_filter.js" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-content/b-content.css.scss" />
         <option value="$PROJECT_DIR$/app/views/home/students.html.haml" />
@@ -117,6 +157,9 @@
         <option value="$PROJECT_DIR$/app/views/layouts/design_2.0.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/_orgs_and_sponsors.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss" />
       </list>
     </option>
   </component>
@@ -494,7 +537,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="b-reporters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="b-programm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="happydev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="b-page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -676,119 +779,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b-programm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b-organizers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b-members" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="happydev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -827,11 +818,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/fonts" />
       <recent name="$PROJECT_DIR$/app/assets/images/blocks/b-organizers" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts/blocks/b-programm" />
       <recent name="$PROJECT_DIR$/app/assets/images/blocks/b-members" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
-      <recent name="$PROJECT_DIR$/app/views/home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/assets/images/blocks/b-organizers" />
@@ -1162,30 +1153,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/plugins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/invoice.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/scroll_filter.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="182" selection-end="182" vertical-scroll-proportion="0.1056338">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/l-page/l-page.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.221831">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/_members.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="96" selection-start="1261" selection-end="1261" vertical-scroll-proportion="-13.75">
@@ -1267,7 +1234,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-organizers/b-organizers.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="14" selection-start="455" selection-end="455" vertical-scroll-proportion="0.52816904">
+        <state line="30" column="14" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/speakers.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/_speakers_carousel.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="53" selection-start="1544" selection-end="1544" vertical-scroll-proportion="-17.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-reporters/b-reporters.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="20" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-page/b-page.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="28" selection-start="975" selection-end="975" vertical-scroll-proportion="0.40492958">
           <folding />
         </state>
       </provider>
