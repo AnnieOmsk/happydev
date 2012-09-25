@@ -12,10 +12,11 @@
     %span.b-programm__like-icon{:'data-speech-id' => speech.id}
   %div{:style => "display:table;"}
     %p.b-programm__text
-      - if speech.has_one_speaker?
-        = "#{speaker.full_name}, "
-        %span.b-programm__company
-          = speaker.company.name
+      - if speech.ne_porka?
+        - speech.speakers.each do |speaker|
+          = "#{speaker.full_name}, "
+          %span.b-programm__company
+            = speaker.company.name
       - else
         = speech.all_speakers_names
       
