@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   caches_page :index, :speakers
 
   def index
-    @speeches = Speech.joins([:speaker, :section])
+    @speeches = Speech.includes([:speaker, :section])
     @sections = Section.first(3)
   end
 

@@ -1,0 +1,12 @@
+- if speech
+  - speaker = speech.speaker
+  %a.b-programm__theme-link.js-b-programm__theme-link{:href => "/speakers/#{speech.permalink}"}>= speech.title
+  %span.b-programm__company
+    - if speech.has_one_speaker?
+      = "#{speaker.full_name}, "
+    - else
+      = speech.all_speakers_names
+    = speaker.company.name if speaker.company
+  = render :partial => "speeches/speaker_popup", :locals => {:speech => speech, :speaker => speaker, :speaker2 => nil,:second_day => true}
+- else
+  Уточняется

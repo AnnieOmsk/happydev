@@ -1,3 +1,4 @@
+-# = javascript_include_tag "speakers"
 - title "#{@speech.title} - #{@speech.all_speakers_names}"
 
 .l-page_width_page
@@ -6,34 +7,44 @@
     %h1.b-speaker__theme-title.l-page_align_center
       = @speech.title
     .b-time.l-page_align_center
-      %span.b-time__icon
-      %span.b-time__text.b-time__text_type_with-gap-out
-        = @speech.time_range
+      - unless @speech.start_time.strftime("%H:%M") == "00:00"
+        %span.b-time__icon
+        %span.b-time__text.b-time__text_type_with-gap-out
+          = @speech.time_range
       %span.b-time__text
-        = @speech.section.hall
+        - if @speech.section
+          = @speech.section.hall
+        - else
+          Зал уточняется
+        -# = @speech.section.hall
     %span.b-speaker__theme-about.l-page_align_center
       = @speech.annotation.html_safe
     .b-speaker__report-info.clearfix
       .b-speaker__left.l-page_float_left.l-page_width_280
         - if @speech.has_multiple_speakers?
-          = render :partial => 'speakers/multiple_speakers_info', :object => @speech.speakers, :as => :speakers
+          - if @speech.ne_porka?
+            = render :partial => 'speakers/multiple_speakers_info', :object => @speech.speakers, :as => :speakers
+          - else
+            = render :partial => 'speakers/startup_porka_info', :object => @speech.speakers, :as => :speakers
         - else
           = render :partial => 'speakers/single_speaker_info', :object => @speech.speaker, :as => :speaker
       .b-speaker__right.l-page_float_right.l-page_width_645
-        - unless @speech.has_multiple_speakers?
+        - if @speech.ne_porka? && !@speech.speakers.first.description.blank?
           %h2.b-speaker__title
-            О докладчике
-          %span
-            = @speaker.description.html_safe
-        %h2.b-speaker__title
-          Описание
-        %span.b-speaker__text
-          = @speech.description.html_safe
+            = @speech.has_multiple_speakers? ? "О докладчиках" : "О докладчике"
+          - @speech.speakers.each do |speaker|
+            %span
+              = speaker.description.html_safe
+        - unless @speech.description.blank?
+          %h2.b-speaker__title
+            Описание
+          %span.b-speaker__text
+            = @speech.description.html_safe
 
         .b-speaker__invite.clearfix
           %span.b-speaker__invite-title.l-page_float_left
             Пригласите друзей
-          .b-speaker__invite-likes.l-page_float_left.social-panel
+          .b-speaker__invite-likes.l-page_float_left.social-panel{:style => "margin-left:13px;"}
             = render :partial => 'shared/social_links_panel'
         -# %h2.b-speaker__title
         -#   Презентация

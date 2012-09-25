@@ -1,3 +1,5 @@
+-# = javascript_include_tag 'blocks/b-programm/b-programm-likes_getter'
+
 %section#programm.b-programm.l-page_gap-top_25.l-page_gap-top-out_35
   .l-page_align_center.b-title__line
     .b-title__inner
@@ -132,10 +134,11 @@
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             14:30
-        // Докладчик уточняется ======================================================
+        // Данил Снитко фейкстиваль ======================================================
         %td.b-programm__column
-          %p.b-programm__text
-            Докладчик уточняется
+          .b-programm__content.js-b-programm__content
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('snitko-fakestival'), :as => :speech
+
         // Антон Язовский ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
@@ -228,7 +231,7 @@
         // Максим Савилов ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('savilov'), :as => :speech
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('savilov-shevtsova'), :as => :speech
 
       %tr.b-programm__row
         %td.b-programm__column.b-programm__column_width_40
@@ -250,37 +253,74 @@
           %p.b-programm__text
             Завершение дня
 
-
--#%section#programm.b-programm.l-page_gap-top_25
-  .l-page_align_center.b-programm__line
-    .b-programm__title-inner
-      %h2.b-programm__title
-        Программа 30 сентября (уточняется)
-  %table.b-programm__table
-    %tbody.b-programm__body
       %tr.b-programm__row
-        %td.b-programm__column{:style=> "width:80px;"}
-        %td.b-programm__column
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            Мастер-класс Александра Бындю
-        %td.b-programm__column
+            20:00
+        %td.b-programm__column{:colspan => "3"}
+          %ul.b-icon
+            %li.b-icon__item
+              %span.b-icon__icon.b-icon__icon_afterparty
           %p.b-programm__text
-            Мастер-класс Юрия Подорожного
-        %td.b-programm__column
-          %p.b-programm__text
-            Мастер-класс Льва Иванищева
-      %tr.b-programm__row
-        %td.b-programm__column{:style=> "width:80px;"}
-        %td.b-programm__column{:colspan => 3}
-          %p.b-programm__text
-            Кроме этого с докладом выступит настоящий ЗАКАЗЧИК, и скажет что он о нас всех думает
-      %tr.b-programm__row
-        %td.b-programm__column{:style=> "width:80px;"}
-        %td.b-programm__column
-          %p.b-programm__text
-            Данил Снитко - Фейкстивать
-          %p.b-programm__text
-            Артем Кудзев - Роль личности в разработке
+            Afterparty
 
+// Second_Day ////////////////
 
-
+%section#programm.b-programm.l-page_gap-top_25.l-page_gap-top-out_35
+  .l-page_align_center.b-title__line
+    .b-title__inner
+      %h2.b-title
+        Программа 30 сентября
+  .l-page_gap-top-out_35
+    .b-programm__row
+      .b-programm__head-title.clearfix
+        .l-page_float_left.l-page_width_80
+          %p.b-programm__text
+            10:00
+        .l-page_float_left
+          %p.b-programm__text
+            Мастер-классы
+      .b-programm__content-small
+        %ul.b-programm__list.clearfix
+          %li.b-programm__list-item.js-b-programm__content
+            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('byndyu-masterclass'), :as => :speech
+          %li.b-programm__list-item.js-b-programm__content
+            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('podorozhny-masterclass'), :as => :speech
+          %li.b-programm__list-item.js-b-programm__content
+            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('ivanischev-idea'), :as => :speech
+          %li.b-programm__list-item.js-b-programm__content
+            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('ivanischev-planning'), :as => :speech
+          %li.b-programm__list-item.js-b-programm__content
+            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('nepomnyashikh-masterclass'), :as => :speech
+          %li.b-programm__list-item.js-b-programm__content
+            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('shapiro-masterclass'), :as => :speech
+    .b-programm__row
+      .b-programm__head-title.clearfix
+        .l-page_float_left.l-page_width_80
+          %p.b-programm__text
+            14:00
+        .l-page_float_left
+          %p.b-programm__text
+            Доклады
+      .b-programm__content-small
+        %ul.b-programm__list.clearfix
+          %li.b-programm__list-item.js-b-programm__content
+            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('belokrys'), :as => :speech
+          %li.b-programm__list-item.js-b-programm__content
+            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('bektimirov'), :as => :speech
+          %li.b-programm__list-item.js-b-programm__content
+            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('mikodin'), :as => :speech
+          %li.b-programm__list-item.js-b-programm__content
+            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('shibaev'), :as => :speech
+    -#.b-programm__row
+      .b-programm__head-title.clearfix
+        .l-page_float_left.l-page_width_80
+          %p.b-programm__text
+            &nbsp;
+        .l-page_float_left
+          %p.b-programm__text
+            Круглые столы
+      .b-programm__content-small
+        %ul.b-programm__list.clearfix
+          %li.b-programm__list-item.js-b-programm__content
+          %li.b-programm__list-item.js-b-programm__content

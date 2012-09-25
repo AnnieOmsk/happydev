@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
                   :password, :password_confirmation, :remember_me, :promocode, :oferta, :student
 
   has_one :invoice
+  has_many :likes, :dependent => :destroy
+  has_many :speeches, :through => :likes
 
   validates :first_name, :presence => true
   validates :last_name, :presence => true
@@ -34,5 +36,9 @@ class User < ActiveRecord::Base
 
   def full_name
     [first_name, last_name].join(' ')
+  end
+
+  def like_speech(speech)
+    self.likes.where(:speech_id => speech.id).last
   end
 end

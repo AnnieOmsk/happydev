@@ -7,12 +7,16 @@ class Speech < ActiveRecord::Base
   belongs_to :section2, :class_name => 'Section'
   belongs_to :specialization
   belongs_to :specialization2, :class_name => 'Specialization'
+  has_many :likes
+  has_many :users, :through => :likes
+
   attr_accessible :annotation, :description, :title, :speaker, :section, :specialization, :start_time, :timing,
-                  :speaker_id, :speaker2_id, :speaker3_id, :section_id, :section2_id, :specialization_id, :specialization2_id, :permalink
+                  :speaker_id, :speaker2_id, :speaker3_id, :section_id, :section2_id, :specialization_id, :specialization2_id, :permalink, :master_class
 
   validates_presence_of :title, :speaker
 
-  scope :without_startup_battles, joins(:specialization).where('specializations.name != ?', 'Стартап-порка')
+  scope :without_startup_battles, includes(:specialization).where('specialization_id is ? or specializations.name != ?', nil, 'Стартап-порка')
+  scope :without_master_classes, where('speeches.master_class is ? or speeches.master_class = ?', nil, false)
 
   def end_time
     if start_time && timing
@@ -36,6 +40,14 @@ class Speech < ActiveRecord::Base
 
   def has_multiple_speakers?
     speakers.size > 1
+  end
+
+  def ne_porka?
+    if specialization
+      specialization.name != 'Стартап-порка'
+    else
+      true
+    end
   end
 
   def has_one_speaker?

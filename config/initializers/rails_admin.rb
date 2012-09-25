@@ -167,8 +167,10 @@ RailsAdmin.config do |config|
       field :specialization
       field :start_time
       field :timing
+      field :master_class
     end
     edit do
+      field :master_class
       field :title
       field :permalink
       field :annotation, :rich_editor

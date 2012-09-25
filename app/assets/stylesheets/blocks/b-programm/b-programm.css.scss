@@ -118,6 +118,10 @@
     width: 330px;
 }
 
+.b-programm__desc-two-persons-info {
+    width: 220px;
+}
+
 .b-programm__desc-name {
     width: 270px;
     margin: 0;
@@ -125,6 +129,9 @@
     font-weight: normal;
 }
 
+.b-programm__desc-two-names {
+    width: 180px;
+}
 .b-programm__desc-theme {
     margin: 0;
     line-height: 20px;
@@ -153,4 +160,40 @@
     line-height: 19px;
     color: #3f495f;
     font-family: Arial, sans-serif;
+}
+
+.b-programm__like-icon {
+    padding-left: 2px;
+}
+
+// Second day
+
+.b-programm__head-title,
+.b-programm__content-small {
+    padding: 10px;
+}
+
+.b-programm__head-title {
+    background: #fff;
+}
+
+.b-programm__list {
+    margin: 0 0 0 80px;
+    padding: 0;
+}
+
+.b-programm__list-item {
+    float: left;
+    clear: left;
+    position: relative;
+    margin: 10px 0 0;
+    list-style: none;
+}
+
+.b-programm__list-item:first-child {
+    margin: 0;
+}
+
+.b-programm__content-small .b-programm__desc {
+    top: -20px;
 }

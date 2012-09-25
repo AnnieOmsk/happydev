@@ -1,20 +1,24 @@
-.b-link {
+.b-link,
+.b-programm__desc-text a {
     color: #3362AE;
     text-decoration: none;
     border-bottom: 1px solid #B2CCF0;
 }
 
-.b-link:hover {
+.b-link:hover,
+.b-programm__desc-text a:hover {
     color: #cc0000;
     border-color: #F0B2B2;
 }
 
-.b-link:visited {
+.b-link:visited,
+.b-programm__desc-text a:visited {
     color: #909;
     border-color: #E0B2E0;
 }
 
-.b-link:visited:hover {
+.b-link:visited:hover,
+.b-programm__desc-text a:visited:hover {
     color: #cc0000;
     border-color: #F0B2B2;
 }

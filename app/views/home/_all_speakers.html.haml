@@ -1,0 +1,37 @@
+- batch_counter = 0
+- carousel_speakers = Speaker.without_training_masters
+- shevtsova = carousel_speakers.select {|s| s.id == 31}.first
+- carousel_speakers = carousel_speakers.delete_if {|s| s.id == 31}
+- carousel_speakers.insert(7, shevtsova)
+- carousel_speakers.in_groups_of(4) do |group|
+  - batch_counter += 1
+  .item{:class => check_if_carousel(carousel, batch_counter)}
+    - group.compact.each do |speaker|
+      - speeches = speaker.speeches.without_startup_battles.without_master_classes 
+      - if speeches.empty?
+        - speeches = speaker.secondary_speeches.without_startup_battles.without_master_classes
+      - company = speaker.company
+      - if speeches && company
+        .b-reporters__person
+          .b-reporters__person-photo
+            = image_tag speaker.photo_url, :class => "b-reporters__person-photo-img"
+          %h2.b-reporters__person-name
+            = speaker.full_name
+          - speeches.each do |speech|
+            .js-spec
+              .b-reporters__person-theme
+                %ul.b-icon.b-icon_type_into-carousel
+                  %li.b-icon__item
+                    - if speech.specialization
+                      %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :general => true) + '-s'}
+                  - if speech.specialization2 && speech.section.name != "Общий"
+                    %li.b-icon__item
+                      %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true) + '-s'}
+                = link_for_speech speech
+          %p.b-reporters__person-company
+            - if company.url.blank?
+              = company.name
+            - else
+              = link_to company.name, company.url, {:class => "b-reporters__person-company-link", :target => '_blank'}
+            ,
+            = speaker.city.name

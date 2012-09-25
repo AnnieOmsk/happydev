@@ -45,11 +45,20 @@ module SpeechesHelper
 
   def link_for_speech speech
     options = { :class => 'b-reporters__person-theme-link',
-                :data => { :section => speech.section.name,
-                           :specialization => speech.specialization.name } }
+                :data => { :section => speech.section ? speech.section.name : nil,
+                           :specialization => speech.specialization ? speech.specialization.name : nil} }
     options.merge!(:"data-specialization2" => speech.specialization2.name) if speech.specialization2
     options.merge!(:"data-section2" => speech.section2.name) if speech.section2
     link_to "\&laquo;#{speech.title}&raquo;".html_safe, "/speakers/#{speech.permalink}", options
+  end
+
+  def check_if_carousel(carousel, counter)
+    klass = ""
+    if carousel
+      klass = "clearfix"
+      klass += " active" if counter == 1
+    end
+    klass
   end
 
   private

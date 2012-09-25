@@ -1,0 +1,39 @@
+.b-programm__desc.js-b-programm__desc
+  .b-programm__desc-time
+    .b-time
+      - unless second_day
+        %span.b-time__icon
+        %span.b-time__text.b-time__text_type_with-gap-out
+          = speech.time_range
+      %span.b-time__text
+        - if speech.section
+          = speech.section.hall
+        - else
+          Зал уточняется
+  .b-programm__desc-person
+    .b-programm__desc-person-info-inner.clearfix
+      - if speaker.photo_url.present? && speech.ne_porka?
+        = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
+        - if speaker2
+          = image_tag speaker2.photo_url, :class => 'b-programm__desc-photo', :alt => speaker2.full_name, :style => 'float:right;'
+      .b-programm__desc-person-info{:class => speaker2 && speech.ne_porka? ? 'b-programm__desc-two-persons-info' : nil}
+        .clearfix
+          - unless second_day
+            %ul.b-icon.b-icon_type_into-desc
+              %li.b-icon__item
+                %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :program => true) + '-s'}
+              - if speech.specialization2 && speech.section.name != "Общий"
+                %li.b-icon__item
+                  %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true) + '-s'}
+          %h2.b-programm__desc-name.l-page_float_left{:class =>  speaker2 && speech.ne_porka? ? 'b-programm__desc-two-names' : nil}
+            = speech.all_speakers_names
+            -# = url_for_speakers_name speech, :class => 'b-link'
+
+        %p.b-programm__desc-theme
+          %a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
+            = speech.title
+    %span.b-programm__desc-text
+      - if speech.annotation.blank? && second_day
+        = speech.description.html_safe
+      - else
+        = speech.annotation.html_safe

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120920044707) do
+ActiveRecord::Schema.define(:version => 20120924083948) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -78,6 +78,17 @@ ActiveRecord::Schema.define(:version => 20120920044707) do
   end
 
   add_index "invoices", ["user_id"], :name => "index_invoices_on_user_id"
+
+  create_table "likes", :force => true do |t|
+    t.boolean  "status"
+    t.integer  "user_id"
+    t.integer  "speech_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "likes", ["speech_id"], :name => "index_likes_on_speech_id"
+  add_index "likes", ["user_id"], :name => "index_likes_on_user_id"
 
   create_table "payments", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -175,6 +186,7 @@ ActiveRecord::Schema.define(:version => 20120920044707) do
     t.integer  "speaker3_id"
     t.integer  "specialization2_id"
     t.integer  "section2_id"
+    t.boolean  "master_class"
   end
 
   add_index "speeches", ["permalink"], :name => "index_speeches_on_permalink"

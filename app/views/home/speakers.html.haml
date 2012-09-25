@@ -12,30 +12,4 @@
     .l-page_float_right.l-page_width_710{:style => 'width: 710px'}
 
       .b-reporters__persons.b-reporters__persons_type_all.clearfix
-        - batch_counter = 0
-        - Speaker.find_in_batches(:batch_size => 4) do |group|
-          - batch_counter += 1
-          .item
-            - group.each do |speaker|
-              - speeches = speaker.speeches.without_startup_battles
-              - company = speaker.company
-              - if speeches && company
-                .b-reporters__person
-                  .b-reporters__person-photo
-                    = image_tag speaker.photo_url, :class => "b-reporters__person-photo-img"
-                  %h2.b-reporters__person-name
-                    = speaker.full_name
-                  - speeches.each do |speech|
-                    .b-reporters__person-theme
-                      .js-spec
-                        %ul.b-icon.b-icon_type_into-carousel
-                          %li.b-icon__item
-                            %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :general => true) + '-s'}
-                          - if speech.specialization2 && speech.section.name != "Общий"
-                            %li.b-icon__item
-                              %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true) + '-s'}
-                        = link_for_speech speech
-                  %p.b-reporters__person-company
-                    %a.b-reporters__person-company-link{:href => company.url, :target => '_blank'}>= company.name
-                    ,
-                    = speaker.city.name
+        = render :partial => "home/all_speakers", :locals => {:carousel => false}
