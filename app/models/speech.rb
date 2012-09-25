@@ -16,6 +16,7 @@ class Speech < ActiveRecord::Base
   validates_presence_of :title, :speaker
 
   scope :without_startup_battles, includes(:specialization).where('specialization_id is ? or specializations.name != ?', nil, 'Стартап-порка')
+  scope :without_master_classes, where('speeches.master_class is ? or speeches.master_class = ?', nil, false)
 
   def end_time
     if start_time && timing

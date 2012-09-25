@@ -9,6 +9,14 @@ class Speaker < ActiveRecord::Base
 
   scope :with_photos, where('photo_url != ?', '')
 
+  def secondary_speeches
+    Speech.where('speaker2_id = ?', id)
+  end
+  
+  def self.without_training_masters
+    includes(:speeches).merge(Speech.without_master_classes).to_a.uniq
+  end
+
   def full_name
     [first_name, last_name].join(' ')
   end
