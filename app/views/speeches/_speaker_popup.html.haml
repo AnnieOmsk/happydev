@@ -30,11 +30,8 @@
             -# = url_for_speakers_name speech, :class => 'b-link'
 
         %p.b-programm__desc-theme
-          - if second_day
+          %a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
             = speech.title
-          - else
-            %a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
-              = speech.title
     %span.b-programm__desc-text
       - if speech.annotation.blank? && second_day
         = speech.description.html_safe
