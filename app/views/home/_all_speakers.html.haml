@@ -1,5 +1,9 @@
 - batch_counter = 0
-- Speaker.without_training_masters.in_groups_of(4) do |group|
+- carousel_speakers = Speaker.without_training_masters
+- shevtsova = carousel_speakers.select {|s| s.id == 31}.first
+- carousel_speakers = carousel_speakers.delete_if {|s| s.id == 31}
+- carousel_speakers.insert(7, shevtsova)
+- carousel_speakers.in_groups_of(4) do |group|
   - batch_counter += 1
   .item{:class => check_if_carousel(carousel, batch_counter)}
     - group.compact.each do |speaker|
