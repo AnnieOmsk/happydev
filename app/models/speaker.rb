@@ -22,6 +22,6 @@ class Speaker < ActiveRecord::Base
   end
 
   def personal_url_or_moikrug_url
-    personal_url ? personal_url : moikrug
+    personal_url.blank? ? moikrug : personal_url
   end
 end
