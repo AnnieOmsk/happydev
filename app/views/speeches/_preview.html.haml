@@ -1,5 +1,6 @@
 - if speech
   - speaker = speech.speaker
+  - speaker2 = speech.speaker2
 
   %ul.b-icon.b-icon_type_vert
     %li.b-icon__item
@@ -21,6 +22,6 @@
     %p.b-programm__theme
       %a.b-programm__theme-link{:href => "/speakers/#{speech.permalink}"}
         = speech.title
-    = render :partial => "speeches/speaker_popup", :locals => {:speech => speech, :speaker => speaker, :second_day => false}
+    = render :partial => "speeches/speaker_popup", :locals => {:speech => speech, :speaker => speaker, :speaker2 => speaker2, :second_day => false}
 - else
   Уточняется

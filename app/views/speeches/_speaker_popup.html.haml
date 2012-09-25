@@ -12,9 +12,11 @@
           Зал уточняется
   .b-programm__desc-person
     .b-programm__desc-person-info-inner.clearfix
-      - if speaker.photo_url.present? && speech.has_one_speaker?
+      - if speaker.photo_url.present? && speech.ne_porka?
         = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
-      .b-programm__desc-person-info
+        - if speaker2
+          = image_tag speaker2.photo_url, :class => 'b-programm__desc-photo', :alt => speaker2.full_name, :style => 'float:right;'
+      .b-programm__desc-person-info{:class => speaker2 && speech.ne_porka? ? 'b-programm__desc-two-persons-info' : nil}
         .clearfix
           - unless second_day
             %ul.b-icon.b-icon_type_into-desc
@@ -23,17 +25,16 @@
               - if speech.specialization2 && speech.section.name != "Общий"
                 %li.b-icon__item
                   %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true) + '-s'}
-          %h2.b-programm__desc-name.l-page_float_left
+          %h2.b-programm__desc-name.l-page_float_left{:class =>  speaker2 && speech.ne_porka? ? 'b-programm__desc-two-names' : nil}
             = speech.all_speakers_names
             -# = url_for_speakers_name speech, :class => 'b-link'
 
         %p.b-programm__desc-theme
-          -# - if speaker.company && [speech.speaker2, speech.speaker3].all?{ |sp| sp.blank? }
-          -#   %a.b-reporters__person-company-link{:href => speaker.company.url, :target => '_blank', :style => "font-size:14px;"}
-          -#     = speaker.company.name
-          -#   %br/
-          -#%a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
-          = speech.title
+          - if second_day
+            = speech.title
+          - else
+            %a.b-programm__desc-theme-link{:href => "/speakers/#{speech.permalink}"}
+              = speech.title
     %span.b-programm__desc-text
       - if speech.annotation.blank? && second_day
         = speech.description.html_safe

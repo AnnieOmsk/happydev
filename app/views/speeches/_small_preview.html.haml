@@ -9,6 +9,6 @@
     - else
       = speech.all_speakers_names
     = speaker.company.name if speaker.company
-  = render :partial => "speeches/speaker_popup", :locals => {:speech => speech, :speaker => speaker, :second_day => true}
+  = render :partial => "speeches/speaker_popup", :locals => {:speech => speech, :speaker => speaker, :speaker2 => nil,:second_day => true}
 - else
   Уточняется
