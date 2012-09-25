@@ -16,15 +16,19 @@
     .b-speaker__report-info.clearfix
       .b-speaker__left.l-page_float_left.l-page_width_280
         - if @speech.has_multiple_speakers?
-          = render :partial => 'speakers/multiple_speakers_info', :object => @speech.speakers, :as => :speakers
+          - if @speech.ne_porka?
+            = render :partial => 'speakers/multiple_speakers_info', :object => @speech.speakers, :as => :speakers
+          - else
+            = render :partial => 'speakers/startup_porka_info', :object => @speech.speakers, :as => :speakers
         - else
           = render :partial => 'speakers/single_speaker_info', :object => @speech.speaker, :as => :speaker
       .b-speaker__right.l-page_float_right.l-page_width_645
-        - unless @speech.has_multiple_speakers?
+        - if @speech.ne_porka?
           %h2.b-speaker__title
-            О докладчике
-          %span
-            = @speaker.description.html_safe
+            = @speech.has_multiple_speakers? ? "О докладчиках" : "О докладчике"
+          - @speech.speakers.each do |speaker|
+            %span
+              = speaker.description.html_safe
         %h2.b-speaker__title
           Описание
         %span.b-speaker__text

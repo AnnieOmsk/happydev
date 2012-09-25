@@ -12,7 +12,7 @@ class Speech < ActiveRecord::Base
 
   validates_presence_of :title, :speaker
 
-  scope :without_startup_battles, joins(:specialization).where('specializations.name != ?', 'Стартап-порка')
+  scope :without_startup_battles, includes(:specialization).where('specialization_id is ? or specializations.name != ?', nil, 'Стартап-порка')
 
   def end_time
     if start_time && timing
@@ -36,6 +36,14 @@ class Speech < ActiveRecord::Base
 
   def has_multiple_speakers?
     speakers.size > 1
+  end
+
+  def ne_porka?
+    if specialization
+      specialization.name != 'Стартап-порка'
+    else
+      false
+    end
   end
 
   def has_one_speaker?
