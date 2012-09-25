@@ -69,7 +69,7 @@
       <file leaf-file-name="b-filter.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="15" selection-start="419" selection-end="419" vertical-scroll-proportion="0.45774648">
+            <state line="24" column="17" selection-start="372" selection-end="372" vertical-scroll-proportion="0.4225352">
               <folding />
             </state>
           </provider>
@@ -1260,7 +1260,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/blocks/b-filter/b-filter.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="15" selection-start="419" selection-end="419" vertical-scroll-proportion="0.45774648">
+        <state line="24" column="17" selection-start="372" selection-end="372" vertical-scroll-proportion="0.4225352">
           <folding />
         </state>
       </provider>
