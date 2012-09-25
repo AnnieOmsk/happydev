@@ -35,10 +35,11 @@
           - @speech.speakers.each do |speaker|
             %span
               = speaker.description.html_safe
-        %h2.b-speaker__title
-          Описание
-        %span.b-speaker__text
-          = @speech.description.html_safe
+        - unless @speech.description.blank?
+          %h2.b-speaker__title
+            Описание
+          %span.b-speaker__text
+            = @speech.description.html_safe
 
         .b-speaker__invite.clearfix
           %span.b-speaker__invite-title.l-page_float_left
