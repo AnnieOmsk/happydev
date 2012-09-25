@@ -1,6 +1,17 @@
 %section#venue.b-venue.l-page_gap-top-out_50
   %h2.b-venue__title
     Место проведения
+  %p
+    Как доехать до
+    = link_to "HappyDev'12", "javascript: void(0);", :onclick => 'myMap.setCenter(new DG.GeoPoint(73.3248460943341,54.97891767527),15.5);',
+                                                     :class => 'b-link'
+    c
+    = link_to "ж/д вокзала", 'javascript: void(0);', :onclick => 'myMap.setCenter(new DG.GeoPoint(73.384812,54.94006),15.5);',
+                                                     :class => 'b-link'
+    , из 
+    = link_to "аэропорта", 'javascript: void(0);', :class => 'b-link'
+    или 
+    = link_to "на метро", 'javascript: void(0);', :class => 'b-link'
   .b-venue__map
     -# yandex map:
     -# #ymaps-map-id_134753110165585967103{:style => "width: 100%; height: 400px;"}
@@ -28,7 +39,7 @@
     -# 2GIS standart map:
     %script{:type => "text/javascript", :src => "http://maps.api.2gis.ru/1.0"}
     #2gis_map{:style =>"width:100%; height:400px;"}
-    
+   
     %script{:type => "text/javascript"}
       :plain
         DG.autoload(function() {
@@ -42,7 +53,12 @@
 
           var myBalloon = new DG.Balloons.Common({
               geoPoint: new DG.GeoPoint(73.3248460943341,54.9789176752755),
-              contentHtml: "<img src=#{image_path('logo_24px.png')}><br><p>Конгресс-холл экспоцентра Континент<br>70 лет Октября, 25 к4</p>"
+              contentHtml: "<img src=#{image_path('logo_24px.png')}><br><p>Конгресс-холл экспоцентра Континент<br>70 лет Октября, 25 к4</p><br>"
+          });
+
+          var stationBalloon = new DG.Balloons.Common({
+              geoPoint: new DG.GeoPoint(73.384812,54.94006),
+              contentHtml: "<p><b>Остановка: Ж/д вокзал.</b><br><br>С этой остановки до HappyDev вас довезут:<br><b>Маршрутки</b>: 103, 374, 409, 371, 418.<br><b>Автобусы</b>: 24, 74.</br><b>Троллейбус</b>: 7</p>Выйти будет нужно на остановке 11-ый микрорайон"
           });
           var myMarker = new DG.Markers.Common({
               geoPoint: new DG.GeoPoint(73.3248460943341,54.9789176752755),
@@ -54,7 +70,21 @@
                   }
               }
           });
+          var stationMarker = new DG.Markers.Common({
+              geoPoint: new DG.GeoPoint(73.384812,54.94006),
+              clickCallback: function() {
+                  if (! myMap.balloons.getDefaultGroup().contains(stationBalloon)) {
+                      myMap.balloons.add(stationBalloon);
+                  } else {
+                      stationBalloon.show();
+                  }
+              }
+          });
           myMap.balloons.add(myBalloon);
+          myMap.balloons.add(stationBalloon);
+          stationBalloon.show()
           myBalloon.show();
           myMap.markers.add(myMarker);
+          myMap.markers.add(stationMarker);
+          myMap.setCenter(new DG.GeoPoint(73.3248460943341,54.97891767527),15.5);
         });
