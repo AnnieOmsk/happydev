@@ -1,35 +1,6 @@
 #carousel.b-reporters__persons.b-reporters__carousel.js-b-reporters__carousel.slide
   .carousel-inner.carousel-speakers
-    - batch_counter = 0
-    - Speaker.without_training_masters.in_groups_of(4) do |group|
-      - batch_counter += 1
-      .item.clearfix{:class => batch_counter == 1 ? 'active' : nil}
-        - group.compact.each do |speaker|
-          - speeches = speaker.speeches.without_startup_battles.without_master_classes 
-          - if speeches.empty?
-            - speeches = speaker.secondary_speeches.without_startup_battles.without_master_classes
-          - company = speaker.company
-          - if speeches && company
-            .b-reporters__person
-              .b-reporters__person-photo
-                = image_tag speaker.photo_url, :class => "b-reporters__person-photo-img"
-              %h2.b-reporters__person-name
-                = speaker.full_name
-              - speeches.each do |speech|
-                .js-spec
-                  .b-reporters__person-theme
-                    %ul.b-icon.b-icon_type_into-carousel
-                      %li.b-icon__item
-                        - if speech.specialization
-                          %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :general => true) + '-s'}
-                      - if speech.specialization2 && speech.section.name != "Общий"
-                        %li.b-icon__item
-                          %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true) + '-s'}
-                    = link_for_speech speech
-              %p.b-reporters__person-company
-                %a.b-reporters__person-company-link{:href => company.url, :target => '_blank'}>= company.name
-                ,
-                = speaker.city.name
+    = render :partial => "home/all_speakers", :locals => {:carousel => true}
 
   %a.b-reporters__carousel-control.carousel-control.left{"data-slide" => "prev", :href => "#carousel"}
   %a.b-reporters__carousel-control.carousel-control.right{"data-slide" => "next", :href => "#carousel"}

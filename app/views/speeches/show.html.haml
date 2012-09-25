@@ -7,11 +7,16 @@
     %h1.b-speaker__theme-title.l-page_align_center
       = @speech.title
     .b-time.l-page_align_center
-      %span.b-time__icon
-      %span.b-time__text.b-time__text_type_with-gap-out
-        = @speech.time_range
+      - unless @speech.start_time.strftime("%H:%M") == "00:00"
+        %span.b-time__icon
+        %span.b-time__text.b-time__text_type_with-gap-out
+          = @speech.time_range
       %span.b-time__text
-        = @speech.section.hall
+        - if @speech.section
+          = @speech.section.hall
+        - else
+          Зал уточняется
+        -# = @speech.section.hall
     %span.b-speaker__theme-about.l-page_align_center
       = @speech.annotation.html_safe
     .b-speaker__report-info.clearfix
@@ -24,7 +29,7 @@
         - else
           = render :partial => 'speakers/single_speaker_info', :object => @speech.speaker, :as => :speaker
       .b-speaker__right.l-page_float_right.l-page_width_645
-        - if @speech.ne_porka?
+        - if @speech.ne_porka? && !@speech.speakers.first.description.blank?
           %h2.b-speaker__title
             = @speech.has_multiple_speakers? ? "О докладчиках" : "О докладчике"
           - @speech.speakers.each do |speaker|

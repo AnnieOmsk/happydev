@@ -52,6 +52,15 @@ module SpeechesHelper
     link_to "\&laquo;#{speech.title}&raquo;".html_safe, "/speakers/#{speech.permalink}", options
   end
 
+  def check_if_carousel(carousel, counter)
+    klass = ""
+    if carousel
+      klass = "clearfix"
+      klass += " active" if counter == 1
+    end
+    klass
+  end
+
   private
   def apply_icon_theme(hash, suffix)
     hash.each {|key, value| hash[key] = value + '_' + suffix}
