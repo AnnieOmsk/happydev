@@ -1,14 +1,14 @@
 %section#venue.b-venue.l-page_gap-top-out_50
   %h2.b-venue__title
     Место проведения
-  %p
+  %p.b-content__text
     Как доехать до
     = link_to "HappyDev'12", "javascript: void(0);", :onclick => 'myMap.setCenter(new DG.GeoPoint(73.3248460943341,54.97891767527),15.5);',
                                                      :class => 'b-link'
     c
     = link_to "ж/д вокзала", 'javascript: void(0);', :onclick => 'myMap.setCenter(new DG.GeoPoint(73.384812,54.94006),15.5);',
                                                      :class => 'b-link'
-    , из 
+    , из
     = link_to "аэропорта", 'javascript: void(0);', :class => 'b-link'
     или 
     = link_to "на метро", 'javascript: void(0);', :class => 'b-link'

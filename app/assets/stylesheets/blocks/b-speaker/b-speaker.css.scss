@@ -46,6 +46,16 @@
     width: 645px;
 }
 
+.b-speaker__title:first-child {
+    margin-top: 0;
+}
+
+.b-speaker__title {
+    margin-top: 40px;
+}
+
+// Bad code
+
 .b-speaker__right a {
     color: #3362AE;
     text-decoration: none;
@@ -67,14 +77,6 @@
     border-color: #F0B2B2;
 }
 
-.b-speaker__title:first-child {
-    margin-top: 0;
-}
-
-.b-speaker__title {
-    margin-top: 40px;
-}
-
 .b-speaker__right p {
     color: #3f495f;
     font-family: Arial, sans-serif;
@@ -94,8 +96,11 @@
     margin: 0 0 10px;
     padding: 0 0 0 20px;
     list-style: none;
-    background: image-url('blocks/b-speaker/line.png') 0 8px no-repeat;
+    background: image-url('blocks/b-speaker/line.png') 0 9px no-repeat;
 }
+
+// End bad code
+
 
 .b-speaker__list_type_gray .b-speaker__list-item {
     background-image: iamge-url('blocks/b-speaker/line-gray.png');
