@@ -3,14 +3,8 @@ $(document).ready(function() {
     myMap.setCenter(new DG.GeoPoint(73.3248460943341,54.97891767527),15.5);
   });
   $('a.js-place-rail-station').click(function() {
-    
-    if (! myMap.balloons.getDefaultGroup().contains(stationBalloon)) {
-      myMap.balloons.add(stationBalloon);
-    }
-    
-    if (! myMap.markers.getDefaultGroup().contains(stationMarker)) {
-      myMap.markers.add(stationMarker);
-    }
+    if (! myMap.balloons.getDefaultGroup().contains(stationBalloon)) { myMap.balloons.add(stationBalloon); }
+    if (! myMap.markers.getDefaultGroup().contains(stationMarker)) { myMap.markers.add(stationMarker); }
 
     stationBalloon.show();
     stationMarker.show();
@@ -20,13 +14,8 @@ $(document).ready(function() {
   });
 
   $('a.js-place-hotel').click(function() {
-    if (! myMap.balloons.getDefaultGroup().contains(hotelBalloon)) {
-      myMap.balloons.add(hotelBalloon);
-    }
-    
-    if (! myMap.markers.getDefaultGroup().contains(hotelMarker)) {
-      myMap.markers.add(hotelMarker);
-    }
+    if (! myMap.balloons.getDefaultGroup().contains(hotelBalloon)) { myMap.balloons.add(hotelBalloon); }
+    if (! myMap.markers.getDefaultGroup().contains(hotelMarker)) { myMap.markers.add(hotelMarker); }
 
     hotelBalloon.show();
     hotelMarker.show();
