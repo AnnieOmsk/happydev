@@ -1,6 +1,12 @@
+# coding: utf-8
 class PdfBuilder < ActionController::Base
   include ApplicationHelper
   include SpeechesHelper
+  BADGE_TYPES = {
+    'Разработка' => 'developer',
+    'Дизайн' => 'designer',
+    'Управление' => 'manager'
+  }
 
   def create_program_for_user(user)
     @speeches = Speech.joins([:speaker, :section])
@@ -24,7 +30,14 @@ class PdfBuilder < ActionController::Base
       file << pdf
     end
     
-    badge_path = Rails.root.join('badges', 'templates', 'guest.pdf')
+    badge_name = 
+      if user.professional.present?
+        BADGE_TYPES[user.professional]
+      else
+        'developer'
+      end
+     
+    badge_path = Rails.root.join('badges', 'templates', "#{badge_name}.pdf")
     pdf_path = Rails.root.join('badges', 'final', "#{@user.id}.pdf")
     system "pdftk #{background_path} background #{badge_path} output #{pdf_path}"
   end
