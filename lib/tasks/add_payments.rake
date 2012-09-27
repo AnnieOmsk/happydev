@@ -23,7 +23,11 @@ namespace :db do
           overall_pay_amount = invoice.payments.map(&:amount).sum
 
           [0,1].each do |priority|
-            cur_event = Event.find_by_priority(priority)
+            cur_event = if user.student.blank?
+                          Event.where(:priority => priority).first
+                        else
+                          Event.where(:priority => priority).last
+                        end
             cur_price = 0
 
             if !invoice.promocode.blank? && Promocode.all.map(&:number).include?(invoice.promocode) && cur_event.discount   # Если промокод есть
