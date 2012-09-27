@@ -9,7 +9,7 @@ class PdfBuilder < ActionController::Base
   }
 
   def create_program_for_user(user)
-    @speeches = Speech.joins([:speaker, :section])
+    @speeches = Speech.includes([:speaker, :section])
     @sections = Section.first(3)
     @user = user
 
@@ -50,7 +50,6 @@ class PdfBuilder < ActionController::Base
       :encoding => 'utf8',
       :layout => false,
       :dpi => '300',
-      :no_background => true
     }
   end
 
@@ -72,6 +71,8 @@ class PdfBuilder < ActionController::Base
                                               :left => '0mm',
                                               :right => '0mm'},
                                   :page_height => '110',
-                                  :page_width => '90')
+                                  :page_width => '90',
+                                  :no_background => true)
+
   end
 end
