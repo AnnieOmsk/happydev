@@ -1,14 +1,44 @@
+%style{:type => 'text/css'}
+  :plain
+    .b-programm__icon, .b-programm__icon-b {
+          float: left;
+          margin: -2px 10px 0 0;
+      }
+      
+      .b-programm__icon-b {
+          width: 20px;
+          height: 20px;
+          background: image-url('blocks/b-programm/icons.png');
+      }
+      .b-programm__icon-b_icon_register {
+          background-position: 0 -40px;
+      }
+      .b-programm__icon-b_icon_opening {
+          background-position: -40px -20px;
+      }
+      .b-programm__icon-b_icon_lunch {
+          background-position: 0 0;
+      }
+      .b-programm__icon-b_icon_porka {
+          background-position: -40px 0;
+      }
+      .b-programm__icon-b_icon_cofee-break {
+          background-position: -20px 0;
+      }
+      .b-programm__icon-b_icon_end {
+          background-position: 0 -20px;
+      }
+
 - if speech
   - speaker = speech.speaker
-
-  %ul.b-icon.b-icon_type_vert
-    %li.b-icon__item
-      %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :program => true)}
-
-    - if speech.specialization2 && speech.section.name != "Общий"
-      %li.b-icon__item
-        %span.b-icon__icon{:class => 'b-icon__icon_' + icon_for_speakers(speech, :second => true)}
-    %span.b-programm__like-icon{:'data-speech-id' => speech.id}
+  
+  %div.b-programm__icon
+    = image_for_speakers speech
+    - if speech.specialization2
+      %div{:style => "margin-top:3px;"}
+        = image_for_speakers speech, :second => true
+    .b-programm__like-icon{:'data-speech-id' => speech.id}
+      -# = '★' if Like.select(:speech_id).where(:user_id => @user.id, :status => true).to_a.map(&:speech_id).include?(speech.id)
   %div{:style => "display:table;"}
     %p.b-programm__text
       - if speech.has_one_speaker?
