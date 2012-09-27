@@ -1,7 +1,7 @@
 # encoding: utf-8
 namespace :db do
   desc 'final counting members and lunch'
-  task :final_count, [:served, :badges] => :environment do |t, args|
+  task :final_print, [:served, :badges] => :environment do |t, args|
     SPEC_HASH = {"Разработка" => "developer", "Дизайн" => "designer", "Управление" => "manager"}
     users_all_paid = {'designer' => [], 'developer' => [], 'manager' => [], 'no_professional' => []}
     counter = 0
@@ -36,12 +36,10 @@ namespace :db do
         else
           p = PdfBuilder.new
           p.create_badge_for_user(user)
-          exit
         end
       end
     end
-
-    Invoice.where("user_id is NOT NULL").each do |invoice|
+    Invoice.includes(:user).where("user_id is NOT NULL and users.org is NULL").each do |invoice|
       payments_amount = invoice.payments.map(&:amount).inject(:+) || 0
       user = User.where(:id => invoice.user_id).first
       if invoice.promocode.blank? || Promocode.find_by_number(invoice.promocode).blank?
@@ -92,7 +90,19 @@ namespace :db do
     puts "Total count = #{counter}"
   end
 
-  task :final_count_speakers_and_orgs, [:served, :badges] => :environment do |t, args|
+  task :final_print_speakers_and_orgs, [:served, :badges] => :environment do |t, args|
+    def generate_badges(user)
+      p = PdfBuilder.new
+      p.create_badge_for_user(user, true)
+    end
+
+    User.where(:org => 1).each do |user|
+      generate_badges(user)
+    end
+
+    Speaker.all.each do |speaker|
+      generate_badges(speaker)
+    end
   end
 
   desc ""

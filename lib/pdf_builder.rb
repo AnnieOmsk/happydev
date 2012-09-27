@@ -21,7 +21,7 @@ class PdfBuilder < ActionController::Base
     end
   end
 
-  def create_badge_for_user(user)
+  def create_badge_for_user(user, speakers_orgs = nil)
     @user = user
     pdf = render_to_string options_for_badges
     
@@ -31,10 +31,14 @@ class PdfBuilder < ActionController::Base
     end
     
     badge_name = 
-      if user.professional.present?
-        BADGE_TYPES[user.professional]
+      if speakers_orgs
+        "speakers_orgs"
       else
-        'developer'
+        if user.professional.present?
+          BADGE_TYPES[user.professional]
+        else
+          'developer'
+        end
       end
      
     badge_path = Rails.root.join('badges', 'templates', "#{badge_name}.pdf")

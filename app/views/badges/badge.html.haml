@@ -24,6 +24,12 @@
   #last_name
     = @user.last_name
   #company
-    = @user.company
+    - if @user.instance_of? Speaker
+      = @user.company.name
+    - else
+      = @user.company
   #city
-    = @user.city
+    - if @user.instance_of? Speaker
+      = @user.city.name
+    - else
+      = @user.city
