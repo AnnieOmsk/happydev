@@ -88,6 +88,21 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.model Stream do
+    list do
+      field :disable
+      field :number
+      field :section
+    end
+    edit do
+      field :disable
+      field :number
+      field :section
+      field :frame_width
+      field :frame_height
+    end
+  end
+
   config.model Company do
     list do
       field :name

@@ -17,4 +17,7 @@ class HomeController < ApplicationController
 
   def speakers
   end
+
+  def stream
+  end
 end
