@@ -28,3 +28,6 @@ doc/
 public/index.html
 public/speakers.html
 public/speakers
+pdfs/*
+badges/tmp/*
+badges/final/*

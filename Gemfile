@@ -21,6 +21,8 @@ gem 'high_voltage'
 gem 'rdiscount'
 gem 'hpricot'
 gem 'rich'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 group :assets do
   gem 'sass-rails',               '~> 3.2.3'
