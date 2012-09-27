@@ -1,13 +1,13 @@
 # encoding: utf-8
 namespace :db do
   desc 'final counting members and lunch'
-  task :final_count, [:served] => :environment do |t, args|
+  task :final_count, [:served, :badges] => :environment do |t, args|
     SPEC_HASH = {"Разработка" => "developer", "Дизайн" => "designer", "Управление" => "manager"}
     users_all_paid = {'designer' => [], 'developer' => [], 'manager' => [], 'no_professional' => []}
     counter = 0
     lunch_count = 0
-    emails = []
     served = true if args[:served] == 'true'
+    badges = true if args[:badges] == 'true'
 
     def counting_by_spec(user, users_all_paid)
       if SPEC_HASH.keys.include?(user.professional)
@@ -29,6 +29,18 @@ namespace :db do
       invoice.events.include?(Event.find_by_system_name('dinner')) ? 1 : 0
     end
 
+    def generate_badges(status, user)
+      if status
+        if user.professional.blank?
+          puts "___ #{user.email} not contain professional"
+        else
+          p = PdfBuilder.new
+          p.create_badge_for_user(user)
+          exit
+        end
+      end
+    end
+
     Invoice.where("user_id is NOT NULL").each do |invoice|
       payments_amount = invoice.payments.map(&:amount).inject(:+) || 0
       user = User.where(:id => invoice.user_id).first
@@ -36,10 +48,10 @@ namespace :db do
         if payments_amount > 32 # == invoice.amount
           if invoice.invoice_events.map(&:paid).all?
             counter += 1
-            # emails << user.email
             set_served(served, user)
             counting_by_spec(user, users_all_paid)
             lunch_count += counting_lunch(invoice)
+            generate_badges(badges, user)
           end
         end
       else
@@ -47,17 +59,17 @@ namespace :db do
         if promo.system_name == "sponsors"
           counter += 1
           lunch_count += 1
-          # emails << user.email
           set_served(served, user)
           counting_by_spec(user, users_all_paid)
+          generate_badges(badges, user)
         elsif promo.system_name == "partners"
           if payments_amount > 32 # == invoice.amount
             lunch_count += counting_lunch(invoice)
           end   
           counter += 1
-          # emails << user.email
           set_served(served, user)
           counting_by_spec(user, users_all_paid)
+          generate_badges(badges, user)
         else
           if payments_amount > 32 # == invoice.amount
             if invoice.invoice_events.map(&:paid).all?
@@ -65,7 +77,7 @@ namespace :db do
               set_served(served, user)
               counting_by_spec(user, users_all_paid)
               lunch_count += counting_lunch(invoice)
-              # emails << user.email
+              generate_badges(badges, user)
             end
           else
           end 
