@@ -50,13 +50,14 @@ class PdfBuilder < ActionController::Base
       :layout => false,
       :template => template,
       :dpi => '300',
-      :margin => {:top => '50mm',
+      # :margin => {:top => '50mm',
+      :margin => {:top => '0mm',
                   :bottom => '0mm',
                   :left => '0mm',
                   :right => '0mm'},
-      # :page_size => 'A4',
-      :page_height => '110',
-      :page_width => '90',
+      :page_size => 'A4',
+      # :page_height => '110',
+      # :page_width => '90',
       :no_background => true
     }
   end
