@@ -1,0 +1,21 @@
+= wicked_pdf_stylesheet_link_tag 'application'
+= wicked_pdf_javascript_include_tag 'application'
+
+%style{:type => 'text/css'}
+  :plain
+    .b-title {
+      letter-spacing: 0px !important; 
+      font-family: 'PF Din Text Cond Pro Regular' !important;
+    }
+
+    th {
+      letter-spacing: 0px !important; 
+      font-family: 'PF Din Text Cond Pro Regular' !important;
+    }
+
+    .b-programm__text {
+      font-family: 'PF Din Text Cond Pro Regular' !important;
+    }
+
+.l-page_width_page
+  = render :partial => 'home/program30'
