@@ -1,0 +1,29 @@
+%style{:type => 'text/css'}
+  :plain
+    body { background-color: white; }
+    #badge {
+      width: 100%;
+      position: absolute;
+    }
+    #first_name, #last_name {
+      text-align: center;
+      font-family: 'PFDinDisplayPro-Medium' !important;
+    }
+    #company, #city {
+      text-align: center;
+      font-family: 'PFDinDisplayPro-Light' !important;
+    }
+    #first_name { font-size: 35px; }
+    #last_name { font-size: 26px; }
+    #company { font-size: 14px; }
+    #city { font-size: 14px; }
+    
+#badge
+  #first_name
+    = @user.first_name
+  #last_name
+    = @user.last_name
+  #company
+    = @user.company
+  #city
+    = @user.city
