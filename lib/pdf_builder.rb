@@ -13,7 +13,7 @@ class PdfBuilder < ActionController::Base
     @sections = Section.first(3)
     @user = user
 
-    pdf = render_to_string options_for_template("file.pdf", "programs/show")
+    pdf = render_to_string options_for_programs
 
     save_path = Rails.root.join("pdfs/#{@user.full_name}.pdf")    
     File.open(save_path, 'wb') do |file|
@@ -23,7 +23,7 @@ class PdfBuilder < ActionController::Base
 
   def create_badge_for_user(user)
     @user = user
-    pdf = render_to_string options_for_template("badge.pdf", "badges/badge")
+    pdf = render_to_string options_for_badges
     
     background_path = Rails.root.join("badges/tmp/background_#{@user.id}.pdf")    
     File.open(background_path, 'wb') do |file|
@@ -43,22 +43,33 @@ class PdfBuilder < ActionController::Base
   end
 
   private
-  def options_for_template(name, template)
+  def default_print_options
      {
-      :pdf => name,
       :encoding => 'utf8',
       :layout => false,
-      :template => template,
       :dpi => '300',
-      # :margin => {:top => '50mm',
-      :margin => {:top => '0mm',
-                  :bottom => '0mm',
-                  :left => '0mm',
-                  :right => '0mm'},
-      :page_size => 'A4',
-      # :page_height => '110',
-      # :page_width => '90',
       :no_background => true
     }
+  end
+
+  def options_for_programs
+    default_print_options.merge!( :pdf => 'file.pdf',
+                                  :template => "programs/show",
+                                  :margin => {:top => '0mm',
+                                              :bottom => '0mm',
+                                              :left => '0mm',
+                                              :right => '0mm'},
+                                  :page_size => 'A4')
+  end
+
+  def options_for_badges
+    default_print_options.merge!( :pdf => "badge.pdf",
+                                  :template => "badges/badge",
+                                  :margin => {:top => '50mm',
+                                              :bottom => '0mm',
+                                              :left => '0mm',
+                                              :right => '0mm'},
+                                  :page_height => '110',
+                                  :page_width => '90')
   end
 end
