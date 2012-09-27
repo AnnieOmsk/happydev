@@ -17,5 +17,46 @@
       font-family: 'PF Din Text Cond Pro Regular' !important;
     }
 
+    .organizers-pdf {
+      text-align: center;
+      margin-top: 3mm;
+    }
+
+    img.b-organizers__logo {
+      margin: -5mm 5mm 0 0;
+      height: auto;
+      max-height: 14mm;
+    }
+
+    header { 
+      display: none;
+    }
+    
+    .b-pdf__header_logo {
+      height: auto;
+      max-height: 
+    }
+
+    section {
+      padding-top: 40px !important;
+    }
+
+    .pdf-logo img{
+      max-height: 10mm;
+    }
+
+    .b-icon__item img{
+      width: 20px;
+    }
+
 .l-page_width_page
-  = render :partial => 'home/program'
+  .l-page_float_left.l-page_gap-left-out_20.pdf-logo
+    = wicked_pdf_image_tag 'blocks/b-logo/logo.png', :class => 'b-pdf__header_logo'
+  = render :partial => 'programs/first_day'
+
+  .b-organizers__row.organizers-pdf
+    = wicked_pdf_image_tag 'blocks/b-organizers/7bits-logo.png', :class => 'b-organizers__logo', :alt => '7bits'
+    = wicked_pdf_image_tag 'blocks/b-organizers/skb-kontur.png', :class => 'b-organizers__logo', :alt => 'Скб-Контур'
+    = wicked_pdf_image_tag 'blocks/b-organizers/thumbtack.png', :class => 'b-organizers__logo', :alt => 'Тамтэк'
+    = wicked_pdf_image_tag 'blocks/b-organizers/a2design-logo.png', :class => 'b-organizers__logo', :alt => 'a2design'
+    = wicked_pdf_image_tag 'blocks/b-organizers/it-cluster.png', :class => 'b-organizers__logo', :alt => 'IT-кластер'
