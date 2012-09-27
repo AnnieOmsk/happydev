@@ -92,6 +92,9 @@ namespace :db do
     puts "Total count = #{counter}"
   end
 
+  task :final_count_speakers_and_orgs, [:served, :badges] => :environment do |t, args|
+  end
+
   desc ""
   task :user_not_invoice => :environment do
     invoices_user_nil = Invoice.where("user_id is NULL")
