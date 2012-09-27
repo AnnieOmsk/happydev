@@ -1,5 +1,7 @@
 - if speech
   - speaker = speech.speaker
+  %div{:style => "position:relative;"}
+    %span.b-programm__like-icon{:'data-speech-id' => speech.id, :style => "position:absolute; left:-22px;top:-2px;"}
   %a.b-programm__theme-link.js-b-programm__theme-link{:href => "/speakers/#{speech.permalink}"}>= speech.title
   %span.b-programm__company
     - if speech.has_one_speaker?

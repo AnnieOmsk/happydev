@@ -14,25 +14,25 @@
         cookie     : true, // enable cookies to allow the server to access the session
         xfbml      : true  // parse XFBML
       });
-      // FB.Event.subscribe('edge.create', function(response) {
-      //   var location = window.location.pathname.split('/');
-      //   var cont = location[1];
-      //   var id = location[2];
-      //   if (cont == "speakers") {
-      //     $.ajax({
-      //       url: '/likes',
-      //       data: { id: id },
-      //       dataType: 'json',
-      //       type: 'POST',
-      //       success: function(data) {
-      //         $('#hd-like-star').html("★");
-      //       },
-      //       error: function(data) {
-      //         // console.log(data)
-      //       }
-      //     });
-      //   }
-      // });
+      FB.Event.subscribe('edge.create', function(response) {
+        var location = window.location.pathname.split('/');
+        var cont = location[1];
+        var id = location[2];
+        if (cont == "speakers") {
+          $.ajax({
+            url: '/likes',
+            data: { id: id },
+            dataType: 'json',
+            type: 'POST',
+            success: function(data) {
+              $('#hd-like-star').html("★");
+            },
+            error: function(data) {
+              // console.log(data)
+            }
+          });
+        }
+      });
       // Additional initialization code here
     };
 
