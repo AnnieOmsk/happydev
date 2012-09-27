@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
+  include HttpAuthenticable
+  before_filter :authenticate, :only => :stream
 
-  caches_page :index, :speakers
+  caches_page :index, :speakers, :stream
 
   def index
     @speeches = Speech.includes([:speaker, :section])
