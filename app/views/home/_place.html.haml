@@ -8,7 +8,8 @@
     = link_to "HappyDev'12", "javascript: void(0);", :class => 'b-link js-place-happydev'
     c <a href='javascript: void(0);', class='b-link js-place-rail-station'>ж/д вокзала</a>,
     из <a href='javascript: void(0);', class='b-link js-place-hotel'>гостиницы 'Иртыш'</a>.
-    А вот <a href='http://maps.yandex.ru/-/CVqYmC6k' class='b-link' target = '_blank'>так</a> можно добраться с ж/д вокзала до гостиницы.
+    Вот <a href='http://maps.yandex.ru/-/CVqYmC6k' class='b-link' target = '_blank'>так</a> добираться с ж/д вокзала до гостиницы.
+    А вот <a href='javascript: void(0);' class='b-link js-eat' target='_blank'> тут</a> можно посмотреть, где поесть.
   .b-venue__map
     -# yandex map:
     -# #ymaps-map-id_134753110165585967103{:style => "width: 100%; height: 400px;"}
@@ -17,21 +18,22 @@
     -# %script{:type =>"text/javascript", :src => "http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134753110165585967103"}
   
     -# 2GIS Mini Widget:
-    -# %noscript#dg-widget-minigis-place-2fe734c6{:style =>"color:#c00;font-size:16px;font-weight:bold;"}
-    -#   Виджет miniGIS использует JavaScript. Включите его в настройках вашего браузера.
-    -# %script{:src =>"http://mini.api.2gis.ru/js/ver_7d7aab3/loader.js"}
-    -# :javascript
-    -#     new DG.Widget.Components.Loader({
-    -#         wid: '2fe734c6', 
-    -#         params: { "projectSelector":{"id":2,"code":"omsk","name":"Омск","centroid":"POINT(73.384884 54.974635)","timezone":"Asia/Omsk"},
-    -#                   "search":{
-    -#                     "rubrics":{"list":["_10","_12","_16","_18","_43","_48"]},
-    -#                     "_searchFirmBasePoint":{"lon":73.3248460943341,"lat":54.97891767527},
-    -#                     "searchPlaceName":"Омск, 70 лет Октября, 25 к4"},
-    -#                   "customBalloon":{"content":"Омск, 70 лет Октября, 25 к4"},
-    -#                   "Map":{"zoom":14,"lon":73.3248460943341,"lat":54.97891767527,"customBalloon":true,"customBallonHidden":false},
-    -#                   "resize":{"w":980,"h":400}},
-    -#                   });
+    #2gis-mini-map{:style => 'display:none'}
+      %noscript#dg-widget-minigis-place-2fe734c6{:style =>"color:#c00;font-size:16px;font-weight:bold;"}
+        Виджет miniGIS использует JavaScript. Включите его в настройках вашего браузера.
+      %script{:src =>"http://mini.api.2gis.ru/js/ver_7d7aab3/loader.js"}
+      :javascript
+          new DG.Widget.Components.Loader({
+              wid: '2fe734c6', 
+              params: { "projectSelector":{"id":2,"code":"omsk","name":"Омск","centroid":"POINT(73.384884 54.974635)","timezone":"Asia/Omsk"},
+                        "search":{
+                          "rubrics":{"list":["_12"]},
+                          "_searchFirmBasePoint":{"lon":73.3248460943341,"lat":54.97891767527},
+                          "searchPlaceName":"Омск, 70 лет Октября, 25 к4"},
+                        "customBalloon":{"content":"Омск, 70 лет Октября, 25 к4"},
+                        "Map":{"zoom":14,"lon":73.3248460943341,"lat":54.97891767527,"customBalloon":true,"customBallonHidden":false},
+                        "resize":{"w":980,"h":416}},
+                        });
 
     -# 2GIS standart map:
     %script{:type => "text/javascript", :src => "http://maps.api.2gis.ru/1.0"}
