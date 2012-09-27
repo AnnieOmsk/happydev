@@ -39,7 +39,7 @@ class PdfBuilder < ActionController::Base
      
     badge_path = Rails.root.join('badges', 'templates', "#{badge_name}.pdf")
     pdf_path = Rails.root.join('badges', 'final', "#{@user.id}.pdf")
-    system "pdftk #{background_path} background #{badge_path} output #{pdf_path}"
+    system "pdftk #{badge_path} stamp #{background_path} output #{pdf_path}"
   end
 
   private
