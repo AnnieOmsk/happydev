@@ -22,12 +22,12 @@ module SpeechesHelper
     spec_hash = apply_icon_theme(spec_hash, options[:theme]) if options[:theme]
      
     if options[:second]
-      image = "#{spec_hash[speech.specialization2.name]}.png"
-      image_tag image, link_options
+      image = "pdf_program_icons/#{spec_hash[speech.specialization2.name]}.svg"
+      wicked_pdf_image_tag image, link_options.merge!(:size => '20x20')
     else
       if speech.specialization
-        image = "#{spec_hash[speech.specialization.name]}.png"
-        image_tag image, link_options
+        image = "pdf_program_icons/#{spec_hash[speech.specialization.name]}.svg"
+        wicked_pdf_image_tag image, link_options.merge!(:size => '20x20')
       end
     end
   end
