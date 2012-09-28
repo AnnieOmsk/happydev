@@ -16,7 +16,8 @@ th {
 
 .organizers-pdf {
   text-align: center;
-  margin-top: 3mm;
+  margin-top: 32mm; // page without likes
+  // margin-top: 16mm; // with likes page
 }
 
 img.b-organizers__logo {
@@ -25,7 +26,7 @@ img.b-organizers__logo {
 }
 
 header { 
-  display: none;
+  // display: none;
 }
 
 .pdf-logo img{
@@ -47,3 +48,8 @@ header {
 
 .b-programm__table {margin: 20px 0 0}
 .b-programm__column {padding: 8px}
+
+.b-programm__text_type_normal {
+  font-weight: normal;
+  display: block;
+}

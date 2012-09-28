@@ -1,7 +1,7 @@
 = wicked_pdf_stylesheet_link_tag 'application'
 = wicked_pdf_stylesheet_link_tag 'pdf/print'
 
-.l-page_width_page.l-page_gap-top-out_35
+.l-page_width_page.l-page_gap-top-out_25
   .l-page_align_center.pdf-logo
     = wicked_pdf_image_tag 'pdf_program_icons/HD_logo.svg', :class => 'b-pdf__header_logo'
   - if @user.likes.size > 0

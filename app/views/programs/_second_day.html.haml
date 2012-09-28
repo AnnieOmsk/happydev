@@ -1,3 +1,5 @@
+-# = javascript_include_tag 'blocks/b-programm/b-programm-likes_getter'
+
 // Second_Day ////////////////
 %section#programm.b-programm.l-page_gap-top-out_30
   #second_day
@@ -5,56 +7,84 @@
     .b-title__inner
       %h2.b-title
         Программа 30 сентября
-  .l-page_gap-top-out_35
-    .b-programm__row
-      .b-programm__head-title.clearfix
-        .l-page_float_left.l-page_width_80
+
+  %table.b-programm__table{:style => 'margin-top: 45px;'}
+    %tbody.b-programm__body
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            10:00
-        .l-page_float_left
+            9:00
+        %td.b-programm__column
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('byndyu-masterclass'), :as => :speech
+        %td.b-programm__column
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('ivanischev-planning'), :as => :speech
+        %td.b-programm__column{:colspan => '2'}
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('shapiro-masterclass'), :as => :speech
+      %tr.b-programm__row
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            Мастер-классы
-      .b-programm__content-small
-        %ul.b-programm__list.clearfix
-          %li.b-programm__list-item.js-b-programm__content
-            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('byndyu-masterclass'), :as => :speech
-          %li.b-programm__list-item.js-b-programm__content
-            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('podorozhny-masterclass'), :as => :speech
-          %li.b-programm__list-item.js-b-programm__content
-            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('ivanischev-idea'), :as => :speech
-          %li.b-programm__list-item.js-b-programm__content
-            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('ivanischev-planning'), :as => :speech
-          %li.b-programm__list-item.js-b-programm__content
-            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('nepomnyashikh-masterclass'), :as => :speech
-          %li.b-programm__list-item.js-b-programm__content
-            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('shapiro-masterclass'), :as => :speech
-    .b-programm__row
-      .b-programm__head-title.clearfix
-        .l-page_float_left.l-page_width_80
+            11:00
+        %td.b-programm__column
+        %td.b-programm__column
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('ivanischev-idea'), :as => :speech
+        %td.b-programm__column
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('podorozhny-masterclass'), :as => :speech
+        %td.b-programm__column
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('nepomnyashikh-masterclass'), :as => :speech
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column.b-programm__column.b-programm__column_width_40
+          %p.b-programm__text
+            13:00
+        %td.b-programm__column{:colspan => "4"}
+          %ul.b-icon
+            %li.b-icon__item
+              -# %span.b-icon__icon.b-icon__icon_lunch
+              = wicked_pdf_image_tag 'pdf_program_icons/icons_02.svg'
+          %p.b-programm__text
+            Обед
+      %tr.b-programm__row
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             14:00
-        .l-page_float_left
+        %td.b-programm__column.b-program__column_type_large{:colspan => "4"}
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('bektimirov'), :as => :speech
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            Доклады
-      .b-programm__content-small
-        %ul.b-programm__list.clearfix
-          %li.b-programm__list-item.js-b-programm__content
-            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('belokrys'), :as => :speech
-          %li.b-programm__list-item.js-b-programm__content
-            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('bektimirov'), :as => :speech
-          %li.b-programm__list-item.js-b-programm__content
-            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('mikodin'), :as => :speech
-          %li.b-programm__list-item.js-b-programm__content
-            = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('shibaev'), :as => :speech
-    -#.b-programm__row
-      .b-programm__head-title.clearfix
-        .l-page_float_left.l-page_width_80
+            14:35
+        %td.b-programm__column.b-program__column_type_large{:colspan => "4"}
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('mikodin'), :as => :speech
+      %tr.b-programm__row
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            &nbsp;
-        .l-page_float_left
+            15:00
+        %td.b-programm__column.b-program__column_type_large{:colspan => "4"}
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('belokrys'), :as => :speech
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            Круглые столы
-      .b-programm__content-small
-        %ul.b-programm__list.clearfix
-          %li.b-programm__list-item.js-b-programm__content
-          %li.b-programm__list-item.js-b-programm__content
+            16:10
+        %td.b-programm__column.b-program__column_type_large{:colspan => "4"}
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('shibaev'), :as => :speech
+      %tr.b-programm__row
+        %td.b-programm__column.b-programm__column_width_40
+          %p.b-programm__text
+            17:00
+        %td.b-programm__column
+          .b-program__text
+            %a.b-programm__theme-link{:href => ''} Круглый стол по ИТ-образованию
+        %td.b-programm__column
+        %td.b-programm__column{:colspan => "2"}
+          .b-program__text
+            %a.b-programm__theme-link{:href => ''} World cafe, open space и другие креативные тусовки
+      %tr.b-programm__row.b-programm__row_state_filled
+        %td.b-programm__column.b-programm__column_width_40
+          %p.b-programm__text
+            18:00
+        %td.b-programm__column{:colspan => "4"}
+          %ul.b-icon
+            %li.b-icon__item
+              -# %span.b-icon__icon.b-icon__icon_end
+              = wicked_pdf_image_tag 'pdf_program_icons/icons_06.svg'
+          %p.b-programm__text
+            Закрытие конференции
