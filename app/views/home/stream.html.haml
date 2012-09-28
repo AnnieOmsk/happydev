@@ -1,0 +1,18 @@
+.l-page_width_page
+  = render :partial => 'layouts/logo'
+  .l-page_gap-top-out_50.l-page_gap-bottom-out_40
+    .l-page_align_center.b-title__line
+      .b-title__inner
+        %h2.b-title
+          Онлайн трансляция
+  .clearfix
+    - Stream.only_enabled.each do |stream|
+      -#%div
+        %h2.b-sections__section-title
+          = stream.section.name
+      %iframe{:src => "http://www.ustream.tv/embed/#{stream.number}", :width => "#{stream.frame_width}", :height => "#{stream.frame_height}", :scrolling => "no", :frameborder => "0", :style => "border: 0px none transparent;"}
+      -#%iframe{:width => "340", :scrolling => "no", :height => "368", :frameborder => "0", :style => "border: 0px none transparent", :src => "http://www.ustream.tv/socialstream/#{stream.number}"}
+
+    %br
+    %a{:href => "http://www.ustream.tv/", :style => "padding: 2px 0px 4px; width: 480px; background: #ffffff; display: block; color: #000000; font-weight: normal; font-size: 10px; text-decoration: underline; text-align: center;", :target => "_blank"}
+      Stream videos at Ustream

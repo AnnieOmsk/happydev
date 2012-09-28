@@ -1,14 +1,39 @@
+-# - if speech
+-#   - speaker = speech.speaker
+-#   %div{:style => "position:relative;"}
+-#     %span.b-programm__like-icon{:'data-speech-id' => speech.id, :style => "position:absolute; left:-22px;top:-2px;"}
+-#     -# .b-programm__like-icon{:'data-speech-id' => speech.id}
+-#     -#   = '★' if Like.select(:speech_id).where(:user_id => @user.id, :status => true).to_a.map(&:speech_id).include?(speech.id)
+-#   %a.b-programm__theme-link.js-b-programm__theme-link{:href => "/speakers/#{speech.permalink}"}= speech.title
+-#   %span.b-programm__company
+-#     - if speech.has_one_speaker?
+-#       = "#{speaker.full_name}, "
+-#     - else
+-#       = speech.all_speakers_names
+-#     = speaker.company.name if speaker.company
+-#   = render :partial => "speeches/speaker_popup", :locals => {:speech => speech, :speaker => speaker, :speaker2 => nil,:second_day => true}
+-# - else
+-#   Уточняется
+
 - if speech
   - speaker = speech.speaker
+  - speaker2 = speech.speaker2
   %div{:style => "position:relative;"}
     %span.b-programm__like-icon{:'data-speech-id' => speech.id, :style => "position:absolute; left:-22px;top:-2px;"}
-  %a.b-programm__theme-link.js-b-programm__theme-link{:href => "/speakers/#{speech.permalink}"}>= speech.title
-  %span.b-programm__company
-    - if speech.has_one_speaker?
-      = "#{speaker.full_name}, "
-    - else
-      = speech.all_speakers_names
-    = speaker.company.name if speaker.company
-  = render :partial => "speeches/speaker_popup", :locals => {:speech => speech, :speaker => speaker, :speaker2 => nil,:second_day => true}
+      = '★' if Like.select(:speech_id).where(:user_id => @user.id, :status => true).to_a.map(&:speech_id).include?(speech.id)
+  .js-b-programm__content{:style => "display:table;"}
+    %p.b-programm__text
+      - if speech.ne_porka?
+        - speech.speakers.each do |speaker|
+          = "#{speaker.full_name}, "
+          %span.b-programm__company
+            = speaker.company.name
+      - else
+        = speech.all_speakers_names
+      
+    %p.b-programm__theme
+      %a.b-programm__theme-link{:href => "/speakers/#{speech.permalink}"}
+        = speech.title
+    = render :partial => "speeches/speaker_popup", :locals => {:speech => speech, :speaker => speaker, :speaker2 => speaker2, :second_day => true}
 - else
   Уточняется

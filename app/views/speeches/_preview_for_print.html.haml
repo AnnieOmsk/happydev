@@ -1,10 +1,5 @@
 %style{:type => 'text/css'}
   :plain
-    .b-programm__icon, .b-programm__icon-b {
-          float: left;
-          margin: -2px 10px 0 0;
-      }
-      
       .b-programm__icon-b {
           width: 20px;
           height: 20px;
@@ -38,7 +33,7 @@
       %div{:style => "margin-top:3px;"}
         = image_for_speakers speech, :second => true
     .b-programm__like-icon{:'data-speech-id' => speech.id}
-      -# = '★' if Like.select(:speech_id).where(:user_id => @user.id, :status => true).to_a.map(&:speech_id).include?(speech.id)
+      = '★' if Like.select(:speech_id).where(:user_id => @user.id, :status => true).to_a.map(&:speech_id).include?(speech.id)
   %div{:style => "display:table;"}
     %p.b-programm__text
       - if speech.has_one_speaker?

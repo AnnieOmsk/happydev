@@ -1,21 +1,23 @@
 = wicked_pdf_stylesheet_link_tag 'application'
-= wicked_pdf_javascript_include_tag 'application'
+= wicked_pdf_stylesheet_link_tag 'pdf/print'
 
 %style{:type => 'text/css'}
   :plain
-    .b-title {
-      letter-spacing: 0px !important; 
-      font-family: 'PF Din Text Cond Pro Regular' !important;
+    .organizers-pdf {
+      margin-top: 174mm;    // main pdf
+      // margin-top: 158mm; // pdf with likes
     }
+.l-page_width_page.l-page_gap-top-out_25
+  .l-page_align_center.pdf-logo
+    = wicked_pdf_image_tag 'pdf_program_icons/HD_logo.svg', :class => 'b-pdf__header_logo'
+  - if @user.likes.size > 0
+    .l-page_align_center.l-page_gap-top-out_20
+      %h2.b-comments__person-name= @user.full_name
+  = render :partial => 'programs/second_day'
 
-    th {
-      letter-spacing: 0px !important; 
-      font-family: 'PF Din Text Cond Pro Regular' !important;
-    }
-
-    .b-programm__text {
-      font-family: 'PF Din Text Cond Pro Regular' !important;
-    }
-
-.l-page_width_page
-  = render :partial => 'home/program30'
+  .b-organizers__row.organizers-pdf
+    = wicked_pdf_image_tag 'pdf_organizers_icons/02.svg', :class => 'b-organizers__logo'
+    = wicked_pdf_image_tag 'pdf_organizers_icons/01.svg', :class => 'b-organizers__logo'
+    = wicked_pdf_image_tag 'pdf_organizers_icons/05.svg', :class => 'b-organizers__logo'
+    = wicked_pdf_image_tag 'pdf_organizers_icons/03.svg', :class => 'b-organizers__logo'
+    = wicked_pdf_image_tag 'pdf_organizers_icons/04.svg', :class => 'b-organizers__logo'

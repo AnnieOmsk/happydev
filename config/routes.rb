@@ -1,5 +1,7 @@
 Happydev::Application.routes.draw do
   get "home/index"
+  get "programs/program29"
+  get "programs/program30"
   mount Rich::Engine => '/rich', :as => 'rich'
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
@@ -25,6 +27,7 @@ Happydev::Application.routes.draw do
   match '/oferta' => 'home#oferta'
   match '/pay' => 'home#payment'
   match '/speakers' => 'home#speakers'
+  match '/stream' => 'home#stream'
 
   match '/invoices/new' => 'invoices#new', :as => :pay
   match '/speakers/:permalink' => 'speeches#show'

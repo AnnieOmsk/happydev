@@ -1,14 +1,14 @@
 -# = javascript_include_tag 'blocks/b-programm/b-programm-likes_getter'
 
 // Second_Day ////////////////
-%section.b-programm.l-page_gap-top_25.l-page_gap-top-out_35{:style => "position:relative;"}
+%section#programm.b-programm.l-page_gap-top-out_30
   #second_day
   .l-page_align_center.b-title__line
     .b-title__inner
       %h2.b-title
         Программа 30 сентября
 
-  %table.b-programm__table
+  %table.b-programm__table{:style => 'margin-top: 45px;'}
     %tbody.b-programm__body
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column.b-programm__column_width_40
@@ -38,7 +38,8 @@
         %td.b-programm__column{:colspan => "4"}
           %ul.b-icon
             %li.b-icon__item
-              %span.b-icon__icon.b-icon__icon_lunch
+              -# %span.b-icon__icon.b-icon__icon_lunch
+              = wicked_pdf_image_tag 'pdf_program_icons/icons_02.svg'
           %p.b-programm__text
             Обед
       %tr.b-programm__row
@@ -69,7 +70,7 @@
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             17:00
-        %td.b-programm__column{:colspan => "2"}
+        %td.b-programm__column
           .b-program__text
             %a.b-programm__theme-link{:href => ''} Круглый стол по ИТ-образованию
         %td.b-programm__column
@@ -83,6 +84,7 @@
         %td.b-programm__column{:colspan => "4"}
           %ul.b-icon
             %li.b-icon__item
-              %span.b-icon__icon.b-icon__icon_end
+              -# %span.b-icon__icon.b-icon__icon_end
+              = wicked_pdf_image_tag 'pdf_program_icons/icons_06.svg'
           %p.b-programm__text
-            Завершение дня
+            Закрытие конференции

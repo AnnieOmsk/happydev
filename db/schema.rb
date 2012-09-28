@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120926084114) do
+ActiveRecord::Schema.define(:version => 20120927181627) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -193,6 +193,18 @@ ActiveRecord::Schema.define(:version => 20120926084114) do
   add_index "speeches", ["section_id"], :name => "index_speeches_on_section_id"
   add_index "speeches", ["speaker_id"], :name => "index_speeches_on_speaker_id"
   add_index "speeches", ["specialization_id"], :name => "index_speeches_on_specialization_id"
+
+  create_table "streams", :force => true do |t|
+    t.string   "number"
+    t.integer  "frame_width"
+    t.integer  "frame_height"
+    t.boolean  "disable",      :default => false
+    t.integer  "section_id"
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+  end
+
+  add_index "streams", ["section_id"], :name => "index_streams_on_section_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "",    :null => false

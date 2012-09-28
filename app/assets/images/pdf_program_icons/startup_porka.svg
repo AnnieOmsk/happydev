@@ -1,122 +1,16 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"
-[
- <!ATTLIST svg
-  xmlns:xlink CDATA #FIXED "http://www.w3.org/1999/xlink">
-]>
-<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
-<svg
-   xml:space="preserve"
-   width="128pt"
-   height="128pt"
-   viewBox="0 0 507.946 507.946"
-   id="svg49"
-   sodipodi:version="0.27"
-   sodipodi:docname="/mnt/windows/Themes/Work/Blue-Sphere/3rightarrow.svg"
-   sodipodi:docbase="/mnt/windows/Themes/Work/Blue-Sphere/"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs
-     id="defs62">
-    <radialGradient
-       id="aigrd1"
-       cx="218.9404"
-       cy="219.7715"
-       r="150.7063"
-       fx="218.9404"
-       fy="219.7715"
-       gradientUnits="userSpaceOnUse"
-       style="stroke:#000000;stroke-opacity:0.986014;stroke-width:0.981612;">
-      <stop
-         offset="0"
-         style="stop-color:#73ffff;stroke:#000000;stroke-opacity:0.986014;stroke-width:0.981612;"
-         id="stop53" />
-      <stop
-         offset="0.2809"
-         style="stop-color:#2EA6B9;stroke:#000000;stroke-opacity:0.986014;stroke-width:0.981612;"
-         id="stop54" />
-      <stop
-         offset="1"
-         style="stop-color:#006b8b;stroke:#000000;stroke-opacity:0.986014;stroke-width:0.981612;"
-         id="stop55" />
-    </radialGradient>
-    <linearGradient
-       xlink:href="#aigrd1"
-       id="linearGradient130"
-       x1="0.380952"
-       y1="0.0859375"
-       x2="-0.111111"
-       y2="1.00781"
-       gradientUnits="objectBoundingBox"
-       gradientTransform="translate(1.72005e-09,-7.1599e-09)"
-       spreadMethod="pad" />
-    <linearGradient
-       x1="0.000000"
-       y1="0.000000"
-       x2="1.000000"
-       y2="0.000000"
-       xlink:href="#aigrd1"
-       id="linearGradient321" />
-  </defs>
-  <sodipodi:namedview
-     id="base">
-    <sodipodi:guide
-       orientation="horizontal"
-       position="106.801262"
-       id="sodipodi:guide328" />
-    <sodipodi:guide
-       orientation="horizontal"
-       position="14.738171"
-       id="sodipodi:guide329" />
-  </sodipodi:namedview>
-  <g
-     id="g325"
-     transform="translate(147.416,-1.60236)">
-    <path
-       style="font-size:12;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#a4c9ee;stroke-width:10.824;stroke-linejoin:round;stroke-opacity:0.701961;"
-       d="M 338.593 175.32 L 435.492 261.836 L 339.257 355.345 L 338.593 175.32 z "
-       id="path326"
-       transform="matrix(1.72603,0,0,1.94683,-397.314,-245.978)"
-       sodipodi:nodetypes="cccc" />
-    <path
-       style="font-size:12;fill:url(#linearGradient130);fill-opacity:0.992157;fill-rule:evenodd;stroke:#0c6671;stroke-width:9.60304;stroke-opacity:0.992157;"
-       d="M 355.635 183.469 L 437.887 259.936 L 355.817 342.102 L 355.635 183.469 z "
-       id="path327"
-       transform="matrix(1.67014,0,0,1.75639,-395.375,-194.413)"
-       sodipodi:nodetypes="cccc" />
-  </g>
-  <g
-     id="g322"
-     transform="translate(-11.2164,1.60236)">
-    <path
-       style="font-size:12;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#a4c9ee;stroke-width:10.824;stroke-linejoin:round;stroke-opacity:0.701961;"
-       d="M 338.593 175.32 L 435.492 261.836 L 339.257 355.345 L 338.593 175.32 z "
-       id="path126"
-       transform="matrix(1.72603,0,0,1.94683,-397.314,-245.978)"
-       sodipodi:nodetypes="cccc" />
-    <path
-       style="font-size:12;fill:url(#linearGradient130);fill-opacity:0.992157;fill-rule:evenodd;stroke:#0c6671;stroke-width:9.60304;stroke-opacity:0.992157;"
-       d="M 355.635 183.469 L 437.887 259.936 L 355.817 342.102 L 355.635 183.469 z "
-       id="path84"
-       transform="matrix(1.67014,0,0,1.75639,-395.375,-194.413)"
-       sodipodi:nodetypes="cccc" />
-  </g>
-  <g
-     id="g64"
-     transform="translate(-174.656,1.60236)">
-    <path
-       style="font-size:12;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#a4c9ee;stroke-width:10.824;stroke-linejoin:round;stroke-opacity:0.701961;"
-       d="M 338.593 175.32 L 435.492 261.836 L 339.257 355.345 L 338.593 175.32 z "
-       id="path65"
-       transform="matrix(1.72603,0,0,1.94683,-397.314,-245.978)"
-       sodipodi:nodetypes="cccc" />
-    <path
-       style="font-size:12;fill:url(#linearGradient130);fill-opacity:0.992157;fill-rule:evenodd;stroke:#0c6671;stroke-width:9.60304;stroke-opacity:0.992157;"
-       d="M 355.635 183.469 L 437.887 259.936 L 355.817 342.102 L 355.635 183.469 z "
-       id="path66"
-       transform="matrix(1.67014,0,0,1.75639,-395.375,-194.413)"
-       sodipodi:nodetypes="cccc" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="restaurant" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="95.145px" viewBox="0 0 100 95.145" enable-background="new 0 0 100 95.145" xml:space="preserve">
+<path fill="#333333" d="M26.828,73.432c-1.604,2.439-4.271,3.521-5.953,2.412l-2.284-1.503c-1.683-1.107-1.741-3.982-0.137-6.422
+	L31.42,48.227c1.606-2.438,3.061-1.409,4.741-0.302l2.284,1.504c1.681,1.106,2.954,1.873,1.348,4.312L26.828,73.432z"/>
+<g>
+	<path fill="#333333" d="M48.788,77.611c-3.681,0.104-6.404-0.152-8.454-1.542c-1.463-0.989-1.983-2.612-2.15-4.304
+		c-0.446-4.526,5.679-7.438,14.155-11.471C64.369,54.573,79.34,47.453,79.34,33.74c0-5.731-2.981-10.627-7.601-12.469
+		c-5.272-2.103-10.791,0.119-16.458,6.097C44.558,38.675,38.823,51.936,38.764,52.055l-5.027-3.762
+		c0.25-0.501,6.923-11.837,17.954-23.471c6.52-6.871,14.691-8.779,21.112-6.22c5.717,2.279,9.408,8.221,9.408,15.137
+		c0,15.526-16.554,23.399-28.641,29.147c-6.282,2.988-12.78,6.076-12.531,8.595c0.084,0.848,0.479,1.48,1.244,1.998
+		c5.219,3.538,22.917-0.468,29.295-2.312l0.262,0.903C70.304,72.822,61.309,77.249,48.788,77.611z"/>
+</g>
 </svg>
