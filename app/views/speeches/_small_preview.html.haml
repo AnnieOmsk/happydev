@@ -20,7 +20,6 @@
   - speaker2 = speech.speaker2
   %div{:style => "position:relative;"}
     %span.b-programm__like-icon{:'data-speech-id' => speech.id, :style => "position:absolute; left:-22px;top:-2px;"}
-      = '★' if Like.select(:speech_id).where(:user_id => @user.id, :status => true).to_a.map(&:speech_id).include?(speech.id)
   .js-b-programm__content{:style => "display:table;"}
     %p.b-programm__text
       - if speech.ne_porka?
