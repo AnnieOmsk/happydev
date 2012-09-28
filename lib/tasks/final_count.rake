@@ -90,14 +90,21 @@ namespace :db do
     puts "Total count = #{counter}"
   end
 
-  task :final_print_speakers_and_orgs, [:served, :badges] => :environment do |t, args|
+  task :final_print_speakers_and_orgs => :environment do |t, args|
     def generate_badges(user)
       p = PdfBuilder.new
       p.create_badge_for_user(user, true)
     end
 
+    def set_served(user)
+      user.served = true
+      user.save(:validate => false)
+      puts "served"
+    end
+
     User.where(:org => 1).each do |user|
       generate_badges(user)
+      set_served(user)
     end
 
     Speaker.all.each do |speaker|
