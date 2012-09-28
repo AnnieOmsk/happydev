@@ -112,6 +112,31 @@ namespace :db do
     end
   end
 
+  task :final_print_by_one, [:email, :speakers_orgs] => :environment do |t, args|
+    _email = args[:email].blank? ? "" : args[:email]
+    _speakers_orgs = args[:speakers_orgs] == 'true' ? true : false
+
+    def generate_badges(user, speakers_orgs)
+      p = PdfBuilder.new
+      if speakers_orgs
+        p.create_badge_for_user(user, true)
+      else
+        p.create_badge_for_user(user)
+      end
+    end
+
+    def set_served(user)
+      user.served = true
+      user.save(:validate => false)
+      puts "served"
+    end
+
+    if user = User.find_by_email(_email)
+      generate_badges(user, _speakers_orgs)
+      set_served(user)
+    end
+  end
+
   desc ""
   task :user_not_invoice => :environment do
     invoices_user_nil = Invoice.where("user_id is NULL")
