@@ -125,29 +125,26 @@
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('shapiro'), :as => :speech
-        // Саша Косс ======================================================
+        // Анна Тарасенко ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('koss'), :as => :speech
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('tarasenko'), :as => :speech
 
       %tr.b-programm__row
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            14:30
+            14:35
         // Данил Снитко фейкстиваль ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('snitko-fakestival'), :as => :speech
 
-        // Антон Язовский ======================================================
         %td.b-programm__column
-          .b-programm__content.js-b-programm__content
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('yazovskiy'), :as => :speech
       
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            15:00
+            15:10
         // Рамиль Шайхутдинов ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
@@ -156,15 +153,14 @@
         %td.b-programm__column.b-programm__column_type_middle
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('kudymov-design'), :as => :speech
-        // Анна Тарасенко ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('tarasenko'), :as => :speech
+            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('yazovskiy'), :as => :speech
       
       %tr.b-programm__row
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            15:30
+            15:45
         // Волков, Павлова, Диденко ======================================================
         %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
@@ -181,7 +177,7 @@
       %tr.b-programm__row
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            16:00
+            16:20
         // Сергей Буш ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
@@ -190,7 +186,7 @@
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            16:25
+            16:45
         %td.b-programm__column{:colspan => "3"}
           %ul.b-icon
             %li.b-icon__item
@@ -201,7 +197,7 @@
       %tr.b-programm__row
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            16:40
+            17:10
         // Яков Сироткин ======================================================
         %td.b-programm__column.b-program__column_type_large{:colspan => "3"}
           .b-programm__content.js-b-programm__content
@@ -210,7 +206,7 @@
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            17:20
+            17:55
         // Волков, Павлова, Диденко ======================================================
         %td.b-programm__column{:rowspan => "2"}
           .b-programm__content.js-b-programm__content
@@ -227,22 +223,13 @@
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
-            17:50
+            18:30
         // Максим Савилов ======================================================
         %td.b-programm__column
           .b-programm__content.js-b-programm__content
             = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('savilov-shevtsova'), :as => :speech
 
       %tr.b-programm__row
-        %td.b-programm__column.b-programm__column_width_40
-          %p.b-programm__text
-            18:20
-        // Никита Филиппов ======================================================
-        %td.b-programm__column.b-program__column_type_large{:colspan => "3"}
-          .b-programm__content.js-b-programm__content
-            = render :partial => "speeches/preview", :object => @speeches.find_by_permalink('filippov'), :as => :speech
-
-      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             19:20
@@ -253,7 +240,7 @@
           %p.b-programm__text
             Завершение дня
 
-      %tr.b-programm__row
+      %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
             20:00
@@ -261,9 +248,8 @@
           %ul.b-icon
             %li.b-icon__item
               %span.b-icon__icon.b-icon__icon_afterparty
-          %p.b-programm__text
-            %p.b-programm__theme
-              Afterparty
+          %p.b-programm__text.b-programm__theme
+            Afterparty
             .b-programm__desc.js-b-programm__desc
               .b-programm__desc-person
                 %h2 Afterparty
