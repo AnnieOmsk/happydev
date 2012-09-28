@@ -70,12 +70,9 @@
           %p.b-programm__text
             17:00
         %td.b-programm__column{:colspan => "2"}
-          .b-program__text
-            %a.b-programm__theme-link{:href => ''} Круглый стол по ИТ-образованию
-        %td.b-programm__column
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('education'), :as => :speech
         %td.b-programm__column{:colspan => "2"}
-          .b-program__text
-            %a.b-programm__theme-link{:href => ''} World cafe, open space и другие креативные тусовки
+          = render :partial => "speeches/small_preview", :object => @speeches.find_by_permalink('worldcaffee'), :as => :speech
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text

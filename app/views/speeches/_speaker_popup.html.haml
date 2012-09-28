@@ -14,7 +14,7 @@
     .b-programm__desc-person-info-inner.clearfix
       - if speaker.photo_url.present? && speech.ne_porka?
         = image_tag speaker.photo_url, :class => 'b-programm__desc-photo', :alt => speaker.full_name
-        - if speaker2
+        - if speaker2 && speaker2.photo_url.present?
           = image_tag speaker2.photo_url, :class => 'b-programm__desc-photo l-page_float_right', :alt => speaker2.full_name
       .b-programm__desc-person-info{:class => speaker2 && speech.ne_porka? ? 'b-programm__desc-two-persons-info' : nil}
         .clearfix

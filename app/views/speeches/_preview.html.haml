@@ -13,7 +13,7 @@
   %div{:style => "display:table;"}
     %p.b-programm__text
       - if speech.ne_porka?
-        - speech.speakers.each do |speaker|
+        - speech.speakers.map do |speaker|
           = "#{speaker.full_name}, "
           %span.b-programm__company
             = speaker.company.name
