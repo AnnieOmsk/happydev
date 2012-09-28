@@ -1,6 +1,6 @@
 = javascript_include_tag 'blocks/b-programm/b-programm-likes_getter'
 
-%section#programm.b-programm.l-page_gap-top_25.l-page_gap-top-out_35
+%section#programm.b-programm.l-page_gap-top-out_30
   .l-page_align_center.b-title__line
     .b-title__inner
       %h2.b-title
@@ -19,18 +19,6 @@
           %p.b-programm__text
             = @sections.select {|s| s.id == 2}.first.name
     %tbody.b-programm__body
-      %tr.b-programm__row
-        %td.b-programm__column.b-programm__column_width_40
-          %p.b-programm__text
-            9:00
-        %td.b-programm__column{:colspan => "3"}
-          %ul.b-icon
-            %li.b-icon__item
-              %span.b-icon__icon.b-icon__icon_register
-              -# = image_tag 'pdf_program_icons/icons_01.svg'
-          %p.b-programm__text
-            Регистрация
-      
       %tr.b-programm__row.b-programm__row_state_filled
         %td.b-programm__column.b-programm__column_width_40
           %p.b-programm__text
