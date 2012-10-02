@@ -199,6 +199,9 @@ RailsAdmin.config do |config|
       field :specialization2
       field :start_time
       field :timing
+      field :slideshare_embed_code_id do
+        label "Slideshare embed code id"
+      end
     end
   end
   # config.model Event do
