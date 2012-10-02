@@ -46,13 +46,12 @@
             Пригласите друзей
           .b-speaker__invite-likes.l-page_float_left.social-panel{:style => "margin-left:13px;"}
             = render :partial => 'shared/social_links_panel'
-        -# - if @speech.has_presentation?
-        - if false
+        - if @speech.has_presentation?
           %h2.b-speaker__title
             Презентация
           .b-speaker__presentation
             %iframe{:src => "http://www.slideshare.net/slideshow/embed_code/#{@speech.slideshare_embed_code_id}",
-                    :width => "601", :height =>"476", :frameborder =>"0", :marginwidth => "0", :marginheight => "0",
+                    :width => "643", :height =>"476", :frameborder =>"0", :marginwidth => "0", :marginheight => "0",
                     :scrolling =>"no", :style => "border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px",
                     :allowfullscreen => true}
         -# %h2.b-speaker__title
