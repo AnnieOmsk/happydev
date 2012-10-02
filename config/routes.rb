@@ -38,6 +38,8 @@ Happydev::Application.routes.draw do
     # match 'fail'    => 'payments#fail',    :as => :payment_fail # to handle Robokassa fail redirect
   # end  
 
+  match '/feedback-2012' => 'high_voltage/pages#show', :id => 'feedback-2012'
+
   # redirections (compatibility with old site and routes):
   match '/programme' => redirect('/')
   match '/program' => redirect('/')
