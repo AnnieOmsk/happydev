@@ -26,8 +26,9 @@ class PdfBuilder < ActionController::Base
   def create_badge_for_user(user, speakers_orgs = nil)
     @user = user
     pdf = render_to_string options_for_badges
-    
-    background_path = Rails.root.join("badges/tmp/background_#{@user.id}.pdf")    
+    user_id = Time.now.to_i + @user.id
+
+    background_path = Rails.root.join("badges/tmp/background_#{user_id}.pdf")
     File.open(background_path, 'wb') do |file|
       file << pdf
     end
@@ -44,7 +45,7 @@ class PdfBuilder < ActionController::Base
       end
      
     badge_path = Rails.root.join('badges', 'templates', "#{badge_name}.pdf")
-    pdf_path = Rails.root.join('badges', 'final', "#{@user.id}.pdf")
+    pdf_path = Rails.root.join('badges', 'final', "#{user_id}.pdf")
     system "pdftk #{badge_path} stamp #{background_path} output #{pdf_path}"
   end
 
