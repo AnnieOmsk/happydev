@@ -41,11 +41,6 @@
           %span.b-speaker__text
             = @speech.description.html_safe
 
-        .b-speaker__invite.clearfix
-          %span.b-speaker__invite-title.l-page_float_left
-            Пригласите друзей
-          .b-speaker__invite-likes.l-page_float_left.social-panel{:style => "margin-left:13px;"}
-            = render :partial => 'shared/social_links_panel'
         - if @speech.has_presentation?
           %h2.b-speaker__title
             Презентация
@@ -58,6 +53,11 @@
         -#   Видео доклада
         -# .b-speaker__video
         -#   = image_tag 'blocks/b-speaker/vimeo.png'
+        .b-speaker__invite.clearfix
+          -# %span.b-speaker__invite-title.l-page_float_left
+          -#   Пригласите друзей
+          .b-speaker__invite-likes.l-page_float_left.social-panel{:style => "margin-left:13px;"}
+            = render :partial => 'shared/social_links_panel'
         %h2.b-speaker__title
           Комментарии
         .b-speaker__presentation
