@@ -46,17 +46,21 @@
             Пригласите друзей
           .b-speaker__invite-likes.l-page_float_left.social-panel{:style => "margin-left:13px;"}
             = render :partial => 'shared/social_links_panel'
-        -# %h2.b-speaker__title
-        -#   Презентация
-        -# .b-speaker__presentation
-        -#   = image_tag 'blocks/b-speaker/present.png'
+        - if @speech.has_presentation?
+          %h2.b-speaker__title
+            Презентация
+          .b-speaker__presentation
+            %iframe{:src => "http://www.slideshare.net/slideshow/embed_code/#{@speech.slideshare_embed_code_id}",
+                    :width => "601", :height =>"476", :frameborder =>"0", :marginwidth => "0", :marginheight => "0",
+                    :scrolling =>"no", :style => "border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px",
+                    :allowfullscreen => true}
         -# %h2.b-speaker__title
         -#   Видео доклада
         -# .b-speaker__video
         -#   = image_tag 'blocks/b-speaker/vimeo.png'
-        -# %h2.b-speaker__title
-        -#   Комментарии
-        -# .b-speaker__presentation
-        -#   = render :partial => 'shared/disqus'
+        %h2.b-speaker__title
+          Комментарии
+        .b-speaker__presentation
+          = render :partial => 'shared/disqus'
 
   = render :partial => 'home/speakers_carousel'

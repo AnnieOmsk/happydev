@@ -57,4 +57,8 @@ class Speech < ActiveRecord::Base
   def all_speakers_names
     speakers.map {|s| s.full_name if s}.to_sentence
   end
+
+  def has_presentation?
+    slideshare_embed_code_id?
+  end
 end
