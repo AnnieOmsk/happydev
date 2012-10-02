@@ -8,6 +8,7 @@ class Speaker < ActiveRecord::Base
   validates_presence_of :first_name, :last_name
 
   scope :with_photos, where('photo_url != ?', '')
+  scope :visible, where('hidden = ?', 0)
 
   def secondary_speeches
     Speech.where('speaker2_id = ?', id)

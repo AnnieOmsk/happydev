@@ -1,5 +1,5 @@
 - batch_counter = 0
-- carousel_speakers = Speaker.where('photo_url not in (?)', ['']).without_training_masters
+- carousel_speakers = Speaker.visible.with_photos.without_training_masters
 - shevtsova = carousel_speakers.select {|s| s.id == 31}.first
 - carousel_speakers = carousel_speakers.delete_if {|s| s.id == 31}
 - carousel_speakers.insert(7, shevtsova)
