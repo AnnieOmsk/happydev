@@ -84,7 +84,7 @@ jQuery ->
       carousel += item;
       $(main_content_tag).html(carousel);
 
-    $('.b-filter__item').click ->
+    $('.b-filter__item').live "click", ->
       if $('.b-filter__item').hasClass('b-filter__item_state_current')
         $('.b-filter__item').removeClass('b-filter__item_state_current');
       $(this).addClass('b-filter__item_state_current');
