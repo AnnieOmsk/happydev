@@ -12,7 +12,7 @@ class Speech < ActiveRecord::Base
 
   attr_accessible :annotation, :description, :title, :speaker, :section, :specialization, :start_time, :timing,
                   :speaker_id, :speaker2_id, :speaker3_id, :section_id, :section2_id, :slideshare_embed_code_id,
-                  :specialization_id, :specialization2_id, :permalink, :master_class
+                  :specialization_id, :specialization2_id, :permalink, :master_class, :vimeo
 
   validates_presence_of :title, :speaker
 
