@@ -62,4 +62,8 @@ class Speech < ActiveRecord::Base
   def has_presentation?
     slideshare_embed_code_id?
   end
+
+  def has_video?
+    !vimeo.blank?
+  end
 end

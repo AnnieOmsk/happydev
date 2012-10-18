@@ -49,10 +49,11 @@
                     :width => "643", :height =>"476", :frameborder =>"0", :marginwidth => "0", :marginheight => "0",
                     :scrolling =>"no", :style => "border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px",
                     :allowfullscreen => true}
-        -# %h2.b-speaker__title
-        -#   Видео доклада
-        -# .b-speaker__video
-        -#   = image_tag 'blocks/b-speaker/vimeo.png'
+        - if @speech.has_video?
+          %h2.b-speaker__title
+            Видео доклада
+          .b-speaker__video
+            =CGI.unescapeHTML @speech.vimeo
         .b-speaker__invite.clearfix
           -# %span.b-speaker__invite-title.l-page_float_left
           -#   Пригласите друзей
