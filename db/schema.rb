@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121002035926) do
+ActiveRecord::Schema.define(:version => 20121018095748) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -189,6 +189,7 @@ ActiveRecord::Schema.define(:version => 20121002035926) do
     t.integer  "section2_id"
     t.boolean  "master_class"
     t.string   "slideshare_embed_code_id"
+    t.text     "vimeo"
   end
 
   add_index "speeches", ["permalink"], :name => "index_speeches_on_permalink"
