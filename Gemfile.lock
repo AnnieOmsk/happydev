@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/mileszs/wicked_pdf.git
+  revision: e7876a3fbac2792232d4ba2c2ca5d58185cb1a70
+  specs:
+    wicked_pdf (0.7.9)
+      rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -225,6 +232,9 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
+    turbo-sprockets-rails3 (0.2.12)
+      railties (>= 3.1.0, < 3.2.9)
+      sprockets (>= 2.0.0)
     twitter-bootstrap-rails (2.1.2)
       actionpack (>= 3.1)
       less-rails (~> 2.2.3)
@@ -239,7 +249,6 @@ GEM
       raindrops (~> 0.7)
     warden (1.2.1)
       rack (>= 1.0)
-    wicked_pdf (0.7.9)
     wkhtmltopdf-binary (0.9.9.1)
 
 PLATFORMS
@@ -273,8 +282,9 @@ DEPENDENCIES
   simple_form (~> 2.0.2)
   therubyracer (= 0.11.0beta5)
   thin (~> 1.4.1)
+  turbo-sprockets-rails3
   twitter-bootstrap-rails (~> 2.1.2)
   uglifier (>= 1.0.3)
   unicorn (~> 4.3.1)
-  wicked_pdf
+  wicked_pdf!
   wkhtmltopdf-binary
