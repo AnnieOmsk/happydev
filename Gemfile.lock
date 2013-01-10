@@ -258,7 +258,7 @@ PLATFORMS
 DEPENDENCIES
   activemerchant
   airbrake
-  capistrano
+  capistrano (= 2.13.3)
   capistrano-ext
   coffee-rails (~> 3.2.1)
   debugger

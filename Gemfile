@@ -38,7 +38,7 @@ group :development do
   gem 'quiet_assets',             '~> 1.0.1'
 end
 
-gem 'capistrano'
+gem 'capistrano',                 '2.13.3'
 gem 'capistrano-ext'
 gem 'rvm-capistrano',             '>= 1.1.0'
 
