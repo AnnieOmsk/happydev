@@ -38,6 +38,7 @@ production:
     list_id_7bits_friends: 9c2718348c
     list_id_freelancers: 4778518bd9
     list_id_companies: aac0c2008a
+    list_id_news: 3f257b112f
   robokassa:
     login: 'EugeneTarasenko'
     secret1: 'dkhtdkjhpbkcp,2012'   # for notification method
