@@ -1,0 +1,11 @@
+%article.l-page_gap-top-out_50.clearfix
+  #carousel-logos.b-photos.b-photos__carousel.slide
+    .b-photos-carousel-inner
+      - photos = Dir.glob("app/assets/images/photos/*")
+      .item.active
+        = image_tag "photos/#{photos[0].split('/').last}", :class => 'b-landing-photo'
+      - photos.slice(1, photos.size).each do |photo|
+        .item
+          = image_tag "photos/#{photo.split('/').last}", :class => 'b-landing-photo'
+    %a.b-photos__carousel-control.carousel-control.left{"data-slide" => "prev", :href => "#carousel-logos"}
+    %a.b-photos__carousel-control.carousel-control.right{"data-slide" => "next", :href => "#carousel-logos"}
