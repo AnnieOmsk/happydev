@@ -134,10 +134,11 @@
 }
 
 .b-landing-links {
-  font-size: 24px;
-  margin-top: 60px;
+  font-size: 33px;
+  margin-top: 44px;
   color: #3362AE;
   text-align: center;
+  font-family: 'pf_din_text_cond_prothin';
 }
 
 .b-landing-links__link {
@@ -192,10 +193,10 @@
 
 .b-foot-text {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 17px;
   color: rgb(163, 163, 163);
-  font-family: "pf_din_text_cond_proregular";
+  font-family: 'PT Sans Regular';
 }
 
 .b-landing-footer {
@@ -252,7 +253,7 @@
 }
 
 .b-landing-social-links {
-  margin-top: 52px;
+  margin-top: 37px;
   margin-bottom: 150px;
 }
 
@@ -264,4 +265,8 @@
 
 .b-landing-social-image {
   height: 65px;
+}
+
+.b-landing-speaking {
+  margin: 94px 0 0 !important;
 }
