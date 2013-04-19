@@ -13,8 +13,8 @@
 
 .b-landing-sections__text {
   display: block;
-  font-family: 'pf_din_text_cond_proregular';
-  font-size: 25px;
+  font-family: 'pf_din_text_cond_proxthin';
+  font-size: 52px;
   color: #333;
   letter-spacing: 0;
   word-spacing: 6px;
@@ -146,15 +146,14 @@
 }
 
 .b-landing-red-text {
-  font-family: 'PT Sans';
-  font-size: 19px;
-  font-weight: bold;
-  color: #eb1e23;
+  font-family: 'PT Sans Regular';
+  font-size: 35px;
+  color: #BD3248;
   text-transform: uppercase;
 }
 
 .b-landing-subscribe {
-    width: 700px;
+    width: 858px;
     margin: auto;
     margin-top: 60px;
     left: 0;
@@ -167,15 +166,18 @@
 }
 
 .b-landing-subscribe__title-small {
-    font-size: 34px;
+    font-size: 54px;
+    line-height: 85px;
     font-weight: normal;
     color: #333;
+    font-family: 'pf_din_text_cond_proxthin';
 }
 
 .b-landing-subscribe__title {
-    font-size: 30px;
+    font-size: 51px;
     font-weight: bold;
     color: #333;
+    margin-bottom: 30px;
 }
 
 .b-landing-form-item {
@@ -190,18 +192,43 @@
 
 .b-foot-text {
   text-align: center;
-  font-size: 14px;
+  font-size: 30px;
   line-height: 17px;
-  color: #4a5257;
-  font-family: "PT Sans";
+  color: rgb(163, 163, 163);
+  font-family: "pf_din_text_cond_proregular";
 }
 
 .b-landing-footer {
-  margin: 50px 0 0;
+  margin: 80px 0 0;
 }
 
 .b-landing-form__input {
-  width: 250px;
+  width: 434px;
+  height: 45px;
+  font-family: 'pf_din_text_cond_proregular';
+  font-size: 23px;
+}
+
+@mixin input-placeholder {
+  color:    #000;
+  padding-left: 10px;
+}
+
+.b-landing-form__input::-webkit-input-placeholder { /* WebKit browsers */
+  @include input-placeholder;
+}
+.b-landing-form__input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  @include input-placeholder;
+}
+.b-landing-form__input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  @include input-placeholder;
+}
+.b-landing-form__input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  @include input-placeholder;
+}
+
+.l-page-hr {
+  margin-top: 94px;
 }
 
 .b-landing-subscribe__button {
@@ -220,10 +247,13 @@
     -webkit-border-radius: 48px;
     text-transform: uppercase;
     border: none;
+    font-size: 23px;
+    font-family: 'pf_din_text_cond_proregular';
 }
 
 .b-landing-social-links {
-  margin-top: 30px;
+  margin-top: 52px;
+  margin-bottom: 150px;
 }
 
 .b-landing-social__link {

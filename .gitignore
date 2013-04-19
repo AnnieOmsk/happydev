@@ -31,3 +31,6 @@ public/speakers
 pdfs/*
 badges/tmp/*
 badges/final/*
+
+.idea/
+.idea/misc.xml
