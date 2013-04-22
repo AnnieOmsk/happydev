@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   layout 'design_2.0'
   protect_from_forgery
+  ensure_security_headers
 
   private
   def after_sign_in_path_for(user)

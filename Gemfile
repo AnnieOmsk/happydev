@@ -17,6 +17,7 @@ gem 'activemerchant', :require => 'active_merchant'
 gem 'gon'
 gem 'airbrake'
 gem 'high_voltage'
+gem 'secure_headers'
 
 gem 'rdiscount'
 gem 'hpricot'
