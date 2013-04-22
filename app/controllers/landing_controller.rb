@@ -1,4 +1,4 @@
-#coding:utf-8
+#coding: utf-8
 class LandingController < ApplicationController
   def index
     #TODO:: replace to DB
@@ -18,10 +18,15 @@ class LandingController < ApplicationController
   end
 
   def subscribe
-    email = params[:email]
-    Mailchimp.new.subscribe_to_news(email)
-    Mailer.send_success_subscription(email).deliver()
-    flash[:notice] = "Теперь вы подписаны на новости о HappyDev!"
+    @subscription = Subscription.new(email: params[:email])
+
+    if @subscription.save
+      Mailer.send_success_subscription(@subscription.email).deliver
+      flash[:notice] = "Теперь вы подписаны на новости о HappyDev!"
+    else
+      flash[:error] = "Неверный формат email!"
+    end
+
     redirect_to landing_path
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121018095748) do
+ActiveRecord::Schema.define(:version => 20130422165142) do
 
   create_table "cities", :force => true do |t|
     t.string   "name"
@@ -208,6 +208,12 @@ ActiveRecord::Schema.define(:version => 20121018095748) do
   end
 
   add_index "streams", ["section_id"], :name => "index_streams_on_section_id"
+
+  create_table "subscriptions", :force => true do |t|
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "",    :null => false
