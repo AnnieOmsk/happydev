@@ -205,6 +205,13 @@ RailsAdmin.config do |config|
       end
     end
   end
+  
+  config.model Tweet do
+    list do
+      field :id
+      field :text
+    end
+  end
   # config.model Event do
   #   # Found associations:
   #     configure :invoice_events, :has_many_association 

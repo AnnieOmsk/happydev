@@ -28,7 +28,7 @@
         - for tweet in @tweets
           %blockquote.twitter-tweet{:align=>"center"}
             %p
-              = tweet.html_safe
+              = tweet.text.html_safe
               %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
 
 %hr.l-page-hr
