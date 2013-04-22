@@ -249,7 +249,7 @@
     border: none;
     font-size: 23px;
     font-family: 'pf_din_text_cond_proregular';
-    display: table-cell;
+    width: 200px;
 }
 
 .b-landing-social-links {
@@ -309,4 +309,8 @@
   text-shadow: 0 1px 0 #ffffff;
   opacity: 0.2;
   filter: alpha(opacity=20);
+}
+
+.twitter-tweet {
+  width: 600px;
 }

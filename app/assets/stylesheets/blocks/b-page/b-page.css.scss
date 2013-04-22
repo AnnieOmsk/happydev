@@ -10,24 +10,24 @@
 
 @font-face {
     font-family: 'pf_din_text_cond_prothin';
-    src: url(font-path('PFDinTextCondPro-Thin.ttf'))  format('truetype');
+    src: url(font-path('PFDinTextCondPro-Thin.eot')),
+        url(font-path('PFDinTextCondPro-Thin.eot?#iefix')) format('embedded-opentype'),
+        url(font-path('PFDinTextCondPro-Thin.woff')) format('woff'),
+        url(font-path('PFDinTextCondPro-Thin.ttf'))  format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'pf_din_text_cond_proxthin';
-  src: url(font-path('PFDinTextCondPro-XThin.ttf'))  format('truetype');
+  src:  url(font-path('PFDinTextCondPro-XThin.eot')),
+    url(font-path('PFDinTextCondPro-XThin.eot?#iefix')) format('embedded-opentype'),
+    url(font-path('PFDinTextCondPro-XThin.woff')) format('woff'),
+    url(font-path('PFDinTextCondPro-XThin.ttf'))  format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'pf_din_text_cond_promedium';
-  src: url(font-path('PFDinTextCondPro-Medium.ttf'))  format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
     font-family: 'PT Sans';
