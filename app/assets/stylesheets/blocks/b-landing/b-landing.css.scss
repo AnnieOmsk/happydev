@@ -212,7 +212,6 @@
 
 @mixin input-placeholder {
   color:    #000;
-  padding-left: 10px;
 }
 
 .b-landing-form__input::-webkit-input-placeholder { /* WebKit browsers */
@@ -270,4 +269,44 @@
 
 .b-landing-speaking {
   margin: 94px 0 0 !important;
+}
+
+
+/*bootstrap styles*/
+.alert-success, .alert-success .alert-heading {
+  color: #468847;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
 }

@@ -27,4 +27,9 @@ class Mailer < Devise::Mailer
          :subject => 'Твой заказ на конференцию HappyDev')
   end
 
+  def send_success_subscription(email)
+    mail(:to => email,
+         :subject => 'Теперь вы подписаны на новости о HappyDev!')
+  end
+
 end

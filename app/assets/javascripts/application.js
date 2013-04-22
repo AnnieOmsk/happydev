@@ -24,6 +24,7 @@
 //= require blocks/b-tikets/slider_run
 //= require blocks/b-reporters/carousel-run
 //= require blocks/b-members/b-members-carousel-run
+//= require blocks/b-landing/landing
 //= require plugins
 //= require invoice
 //= require register
