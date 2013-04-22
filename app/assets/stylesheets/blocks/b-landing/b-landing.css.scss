@@ -182,7 +182,7 @@
 }
 
 .b-landing-form-item {
-  margin: auto;
+  margin: 0 auto;
   margin-top: 15px;
   display: block;
 }
@@ -250,6 +250,7 @@
     border: none;
     font-size: 23px;
     font-family: 'pf_din_text_cond_proregular';
+    display: table-cell;
 }
 
 .b-landing-social-links {

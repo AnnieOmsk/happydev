@@ -4,6 +4,8 @@ $(document).ready(function() {
       scrollWithAnimation($(this).attr('href'), 50, 1000);
       changeUrlAnchor($(this).attr('href'));
   });
+
+//   $('#tweets').carousel({interval: 5000})
 });
 
 function scrollWithAnimation(anchor, offset, delay) {
