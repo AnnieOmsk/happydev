@@ -1,7 +1,7 @@
 %article.l-page_gap-top-out_50.clearfix
   #carousel-logos.b-photos.b-photos__carousel.slide
     .b-photos-carousel-inner
-      - photos = Dir.glob("app/assets/images/photos/*")
+      - photos = Dir.glob("app/assets/images/photos/*").sort
       .item.active
         = image_tag "photos/#{photos[0].split('/').last}", :class => 'b-landing-photo'
       - photos.slice(1, photos.size).each do |photo|
