@@ -1,5 +1,9 @@
 class ApplicationController < ActionController::Base
-  include HttpAuthenticable if Rails.env = 'staging'
+  if Rails.env = 'staging'
+    include HttpAuthenticable
+    before_filter :authenticate
+  end
+  
   layout 'design_2.0'
   protect_from_forgery
   ensure_security_headers
