@@ -3,8 +3,8 @@ require "rvm/capistrano"
 require 'capistrano/ext/multistage'
 load 'deploy/assets'
 
-set :rvm_path,     '$HOME/.rvm'
-set :rvm_bin_path, '$HOME/.rvm/bin'
+set :rvm_path,     '/home/happydev/.rvm'
+set :rvm_bin_path, '/home/happyde/home/happydevm/bin'
 set :repository,  'git@github.com:inem/happydev.git'
 
 set :scm,         :git

@@ -9,4 +9,4 @@ role :web,        host
 role :db,         host, :primary => true
 
 set :branch,    'master'
-set :deploy_to, '$HOME/www/happydev'
+set :deploy_to, '/home/happydev/www/happydev'
