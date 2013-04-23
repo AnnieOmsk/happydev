@@ -1,5 +1,5 @@
 module HttpAuthenticable
-  USERNAME, PASSWORD = "earlybird", "e8193999646fd6ec6204c66c97005326" 
+  USERNAME, PASSWORD = "earlybird", "a8d6e1cf0e253c60a98b846e2966bed7" 
 
   private
   def authenticate

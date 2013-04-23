@@ -4,7 +4,7 @@ require 'capistrano/ext/multistage'
 load 'deploy/assets'
 
 set :rvm_path,     '/home/happydev/.rvm'
-set :rvm_bin_path, '/home/happyde/home/happydevm/bin'
+set :rvm_bin_path, '/home/happydev/.rvm/bin'
 set :repository,  'git@github.com:inem/happydev.git'
 
 set :scm,         :git
