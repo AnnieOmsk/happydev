@@ -25,6 +25,8 @@ gem 'rich'
 gem 'wicked_pdf', :github => "mileszs/wicked_pdf"
 gem 'wkhtmltopdf-binary'
 
+gem 'mobylette'
+
 group :assets do
   gem 'sass-rails',               '~> 3.2.3'
   gem 'coffee-rails',             '~> 3.2.1'

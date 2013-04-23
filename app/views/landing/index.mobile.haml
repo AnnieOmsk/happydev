@@ -1,0 +1,72 @@
+= javascript_include_tag 'scrollspy'
+= javascript_include_tag 'scroll'
+
+.l-page_width_page
+  %section
+    .l-page_width_page.l-page_gap-bottom_25
+      .b-logo
+        %p.b-logo__image
+          = image_tag 'blocks/b-logo/HD.png', :alt => "HappyDEV 2012"
+    %h1.b-landing-sections__title
+      Это было что-то!
+    .l-page_width_page
+      = render :partial => 'photos'
+
+    .b-landing-links
+      %a.b-link.b-landing-links__link{:href => "http://happydev.ru"}
+        Сайт HappyDev'12
+      %a.b-link.b-landing-links__link{:href => "http://happydev.tumblr.com"}
+        Блог HappyDev
+
+    %section.clearfix.b-speaking.b-landing-speaking
+      .b-speaking__title-inner
+        %h2.b-speaking__title
+          Говорят
+
+      #tweets
+        %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+        - for tweet in @tweets
+          %blockquote.twitter-tweet{:align=>"center"}
+            %p
+              = tweet.text.html_safe
+              %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+
+%hr.l-page-hr
+
+.l-page_width_page
+  %section.b-landing-sections
+    .l-page_width_page.l-page_gap-bottom_25
+      .b-logo
+        %p.b-logo__image
+          = image_tag 'blocks/b-logo/HD_new.png', :alt => "HappyDEV 2.0"
+
+    %h1.b-landing-sections__title
+      То ли еще будет!
+    .b-landing-sections__text
+      IT-Конференция 2.0
+    .b-landing-red-text
+      ОМСК, сентябрь 2013
+
+    .b-landing-subscribe
+      .clearfix
+        .b-landing-subscribe__title-small
+          Не хочу пропустить что-то важное.
+        .b-landing-subscribe__title
+          Держите меня в курсе!
+
+      %form.b-landing-form{:action => "subscribe", :method => "POST"}
+        .b-landing-inputs
+          %input.b-landing-form__input.b-landing-form-item{:type => "text", :placeholder => "   e-mail", :name => "email", :onfocus=>"this.placeholder = ''", :onblur=>"this.placeholder = '   e-mail'"}
+          %button.b-landing-form-item.b-landing-subscribe__button
+            Подписаться
+
+  %footer.b-landing-footer
+    .b-foot-text
+      Читать в соцсетях:
+      .b-landing-social-links
+        %a.b-landing-social__link{:href => '#', :target => '_blank'}
+          = image_tag 'sites-icons/vk.png', :class => "b-landing-social-image"
+        %a.b-landing-social__link{:href => 'https://twitter.com/_HappyDev', :target => '_blank'}
+          = image_tag 'sites-icons/twitter.png', :class => "b-landing-social-image"
+        %a.b-landing-social__link{:href => 'http://www.facebook.com/groups/112210215595021/', :target => '_blank'}
+          = image_tag 'sites-icons/facebook.png', :class => "b-landing-social-image"

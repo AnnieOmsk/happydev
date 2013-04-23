@@ -120,6 +120,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
+    mobylette (3.3.2)
+      actionpack (>= 3.0)
     money (5.0.0)
       i18n (~> 0.4)
       json
@@ -265,6 +267,7 @@ DEPENDENCIES
   jquery-rails (~> 2.1.1)
   json (~> 1.7.5)
   libv8 (~> 3.11.8)
+  mobylette
   mysql2 (~> 0.3.11)
   quiet_assets (~> 1.0.1)
   rails (= 3.2.11)
