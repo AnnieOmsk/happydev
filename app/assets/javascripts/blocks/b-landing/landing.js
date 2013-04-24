@@ -18,6 +18,7 @@ $(function() {
                     //TODO:: reload to new page
                     window.location.reload();
                 } else {
+                    $('.ajax-loader').hide()
                     $('.b-landing-form__error').html(json.error)
                 }
             }
