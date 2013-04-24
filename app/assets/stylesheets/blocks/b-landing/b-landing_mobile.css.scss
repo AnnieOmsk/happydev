@@ -210,6 +210,13 @@
   height: 45px;
   font-family: 'pf_din_text_cond_proregular';
   font-size: 23px;
+  display: inline;
+  margin-right: 10px;
+
+}
+
+.b-landing-form__error {
+  color: rgb(158, 0, 0);
 }
 
 @mixin input-placeholder {

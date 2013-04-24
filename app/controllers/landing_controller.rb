@@ -11,14 +11,17 @@ class LandingController < ApplicationController
 
   def subscribe
     @subscription = Subscription.new(email: params[:email])
+    response_json = {:success => true}
 
     if @subscription.save
       Mailer.send_success_subscription(@subscription.email).deliver
-      flash[:notice] = "Теперь вы подписаны на новости о HappyDev!"
+      #flash[:notice] = "Теперь вы подписаны на новости о HappyDev!"
     else
-      flash[:error] = "Неверный формат email!"
+      #flash[:error] = "Неверный формат email!"
+      response_json = {:success => false, :error => "Неверный формат email!"}
     end
 
-    redirect_to landing_path
+    #redirect_to landing_path
+    render :json => response_json
   end
 end
