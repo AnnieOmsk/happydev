@@ -2,7 +2,8 @@
 class LandingController < ApplicationController
   def index
     @tweets = Tweet.order("RAND()").first(3)
-    #render :layout => 'landing'
+    #@tweets = []
+        #render :layout => 'landing'
     respond_to do |format|
       format.html   { render :layout => 'landing.html' }
       format.mobile { render :layout => 'landing.mobile' }

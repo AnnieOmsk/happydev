@@ -28,7 +28,10 @@
   margin-top: 0px;
   margin-bottom: 76px;
   text-transform: uppercase;
-  margin-left: -100px;
+  clear: both;
+  &.new {
+    margin-bottom: 28px;
+  }
 }
 
 .b-logo-tip {
@@ -46,12 +49,16 @@
   left: -178px;
   top: -29px;
   p {
-    color:rgb(13, 93, 175);
+
     font-size: 16px;
     margin: 0;
     font-family: 'PT Sans Regular';
     span {
       border-bottom: 1px solid rgb(137, 194, 247);
+      a {
+        text-decoration: none;
+        color:rgb(13, 93, 175);
+      }
     }
   }
 }
@@ -63,10 +70,39 @@
   border-left:10px solid rgb(13, 93, 175);
 }
 
+
+
+.b-new-logo-tip {
+  color: white;
+  background: #BD3248;;
+  font-size: 23px;
+  width: 280px;
+  text-align: center;
+  padding: 6px;
+}
+
+.b-new-logo-tip-wrap {
+  float: right;
+  position: relative;
+  left: 19px;
+  top: -109px;
+}
+
+.b-new-logo-tip-triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid transparent;
+  border-left:10px solid #BD3248;;
+}
+
 .b-landing-sections__date {
   font-family: 'PT Sans Regular';
   font-size: 14px;
   color: rgb(160, 160, 160);
+  &.new-date {
+    position: relative;
+    top: -35px;
+  }
 }
 
 .b-landing-sections__text-section {
@@ -175,8 +211,7 @@
 }
 
 .b-landing-links {
-  font-size: 33px;
-  margin-top: 44px;
+  font-size: 26px;
   color: #3362AE;
   text-align: center;
   font-family: 'pf_din_text_cond_prothin';
@@ -205,6 +240,7 @@
     -webkit-box-shadow: -1px 12px 46px -7px rgba(67, 86, 100, .4);
     box-shadow: -1px 12px 46px -7px rgba(67, 86, 100, .4);
     padding: 60px;
+    text-align: center;
 }
 
 .b-landing-subscribe__title-small {
@@ -297,7 +333,6 @@
     border: none;
     font-size: 23px;
     font-family: 'pf_din_text_cond_proregular';
-    width: 200px;
 }
 
 .b-landing-social-links {
@@ -372,8 +407,51 @@
 
 .b-tweets-wrap {
   overflow: hidden;
-  background-color: rgb(226, 226, 226);
-  width: 650px;
+  background-color: #e9e9e9;
+  width: 700px;
   margin: 10px;
   padding: 10px;
+  float: left;
+  margin-top: 0;
+}
+
+
+.b-landing-links {
+  float: right;
+}
+
+.link-wrap-triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid transparent;
+  border-left:10px solid #e9e9e9;
+  margin-bottom: 15px;
+}
+
+.link-wrap {
+  background-color: #e9e9e9;
+  padding: 2px 33px;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.landing-speaking {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.b-page {
+  background-color: white;
+}
+
+section#old, section#new {
+  background-color: #f1f1f3;
+  padding-bottom: 30px;
+  margin-bottom: -100px;
+}
+
+#new {
+  border-top: 1px solid rgb(196, 196, 196);
 }

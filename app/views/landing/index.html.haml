@@ -1,78 +1,88 @@
 = javascript_include_tag 'scrollspy'
 = javascript_include_tag 'scroll'
 
-.l-page_width_page
-  %section
-    .l-page_width_page.l-page_gap-bottom_15
-      .b-logo
-        .b-logo-tip-wrap
-          .b-logo-tip
-            Это было что-то!
-          .b-logo-tip-triangle
-          %p
-            \-
-            %span
+%section#old
+  .l-page_width_page.l-page_gap-bottom_15
+    .b-logo
+      .b-logo-tip-wrap
+        .b-logo-tip
+          Это было что-то!
+        .b-logo-tip-triangle
+        %p
+          \-
+          %span
+            %a{:href => "#new"}
               А ещё лучше будет?
-        %p.b-logo__image
-          = image_tag 'blocks/b-logo/HD12.png', :alt => "HappyDEV 2012"
-    %h1.b-landing-sections__title
-      .b-landing-sections__date
-        29-30 сентября 2012, омск
-      IT-конференция
-    .l-page_width_page
-      = render :partial => 'photos'
-
-    -#.b-landing-links
-    -#  %a.b-link.b-landing-links__link{:href => "http://happydev.ru"}
-    -#    Сайт HappyDev'12
-    -#  %a.b-link.b-landing-links__link{:href => "http://happydev.tumblr.com"}
-    -#    Блог HappyDev
-
-    %section.clearfix
-      .b-tweets-wrap
-        #tweets
-          %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
-          - for tweet in @tweets
-            %blockquote.twitter-tweet{:align=>"center"}
-              %p
-                = tweet.text.html_safe
-                %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
-
-%hr.l-page-hr
+      %p.b-logo__image
+        = image_tag 'blocks/b-logo/HD12.png', :alt => "HappyDEV 2012"
+  %h1.b-landing-sections__title
+    .b-landing-sections__date
+      29-30 сентября 2012, омск
+    IT-конференция
 
 .l-page_width_page
-  %section.b-landing-sections
-    .l-page_width_page.l-page_gap-bottom_25
-      .b-logo
-        %p.b-logo__image
-          = image_tag 'blocks/b-logo/HD_new.png', :alt => "HappyDEV 2.0"
+  .l-page_width_page
+    = render :partial => 'photos'
 
-    %h1.b-landing-sections__title
-      То ли еще будет!
-    .b-landing-sections__text
-      IT-Конференция 2.0
-    .b-landing-red-text
-      ОМСК, сентябрь 2013
+  -#.b-landing-links
+  -#  %a.b-link.b-landing-links__link{:href => "http://happydev.ru"}
+  -#    Сайт HappyDev'12
+  -#  %a.b-link.b-landing-links__link{:href => "http://happydev.tumblr.com"}
+  -#    Блог HappyDev
 
-    .b-landing-subscribe
-      .clearfix
-        .b-landing-subscribe__title-small
-          Не хочу пропустить что-то важное.
-        .b-landing-subscribe__title
-          Держите меня в курсе!
+  %section.clearfix.landing-speaking
+    .b-tweets-wrap
+      #tweets
+        %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+        - for tweet in @tweets
+          %blockquote.twitter-tweet{:align=>"center"}
+            %p
+              = tweet.text.html_safe
+              %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+    .b-landing-links
+      .link-wrap
+        %a{:href => "http://happydev.ru"}
+          Сайт HappyDev'12
+      .link-wrap-triangle
+      .link-wrap
+        %a{:href => "http://happydev.tumblr.com"}
+          Блог HappyDev
+      .link-wrap-triangle
 
-      %form.b-landing-form{:action => "subscribe", :method => "POST"}
-        .b-landing-inputs
-          %span.b-landing-form__error
-          .b-landing-form__input-wrap
-            %input.b-landing-form__input.b-landing-form-item{:type => "text", :placeholder => "   e-mail", :name => "email", :onfocus=>"this.placeholder = ''", :onblur=>"this.placeholder = '   e-mail'"}
-            = image_tag('ajax-loader.gif', :style => 'display: none;', :class => 'ajax-loader')
-          %button.b-landing-form-item.b-landing-subscribe__button
+
+%section.b-landing-sections#new
+  .l-page_width_page.l-page_gap-bottom_15
+    .b-logo
+      %p.b-logo__image
+        = image_tag 'blocks/b-logo/HD13.png', :alt => "HappyDEV'13"
+    .b-new-logo-tip-wrap
+      .b-new-logo-tip
+        \- Больше, чем конференция!
+      .b-new-logo-tip-triangle
+  %h1.b-landing-sections__title.new
+    .b-landing-sections__date.new-date
+      омск, сентябрь 3013
+
+.l-page_width_page
+  .b-landing-subscribe
+    .clearfix
+      .b-landing-subscribe__title-small
+        Не хочу пропустить ничего важного.
+      .b-landing-subscribe__title
+        Держите меня в курсе!
+
+    %form.b-landing-form{:action => "subscribe", :method => "POST"}
+      .b-landing-inputs
+        %span.b-landing-form__error
+        .b-landing-form__input-wrap
+          %input.b-landing-form__input.b-landing-form-item{:type => "text", :placeholder => "   e-mail", :name => "email", :onfocus=>"this.placeholder = ''", :onblur=>"this.placeholder = '   e-mail'"}
+          = image_tag('ajax-loader.gif', :style => 'display: none;', :class => 'ajax-loader')
+          %button.b-landing-subscribe__button
             Подписаться
 
   %footer.b-landing-footer
     .b-foot-text
-      Читать в соцсетях:
+      Happydev в соцсетях:
       .b-landing-social-links
         %a.b-landing-social__link{:href => 'http://vk.com/happydev', :target => '_blank'}
           = image_tag 'sites-icons/vk.png', :class => "b-landing-social-image"
