@@ -3,33 +3,40 @@
 
 .l-page_width_page
   %section
-    .l-page_width_page.l-page_gap-bottom_25
+    .l-page_width_page.l-page_gap-bottom_15
       .b-logo
+        .b-logo-tip-wrap
+          .b-logo-tip
+            Это было что-то!
+          .b-logo-tip-triangle
+          %p
+            \-
+            %span
+              А ещё лучше будет?
         %p.b-logo__image
-          = image_tag 'blocks/b-logo/HD.png', :alt => "HappyDEV 2012"
+          = image_tag 'blocks/b-logo/HD12.png', :alt => "HappyDEV 2012"
     %h1.b-landing-sections__title
-      Это было что-то!
+      .b-landing-sections__date
+        29-30 сентября 2012, омск
+      IT-конференция
     .l-page_width_page
       = render :partial => 'photos'
 
-    .b-landing-links
-      %a.b-link.b-landing-links__link{:href => "http://happydev.ru"}
-        Сайт HappyDev'12
-      %a.b-link.b-landing-links__link{:href => "http://happydev.tumblr.com"}
-        Блог HappyDev
+    -#.b-landing-links
+    -#  %a.b-link.b-landing-links__link{:href => "http://happydev.ru"}
+    -#    Сайт HappyDev'12
+    -#  %a.b-link.b-landing-links__link{:href => "http://happydev.tumblr.com"}
+    -#    Блог HappyDev
 
-    %section.clearfix.b-speaking.b-landing-speaking
-      .b-speaking__title-inner
-        %h2.b-speaking__title
-          Говорят
-
-      #tweets
-        %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
-        - for tweet in @tweets
-          %blockquote.twitter-tweet{:align=>"center"}
-            %p
-              = tweet.text.html_safe
-              %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+    %section.clearfix
+      .b-tweets-wrap
+        #tweets
+          %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+          - for tweet in @tweets
+            %blockquote.twitter-tweet{:align=>"center"}
+              %p
+                = tweet.text.html_safe
+                %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
 
 %hr.l-page-hr
 

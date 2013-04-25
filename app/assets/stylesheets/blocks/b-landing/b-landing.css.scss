@@ -22,12 +22,51 @@
 }
 
 .b-landing-sections__title {
-    font-weight: bold;
-    color: #000;
-    font-size: 85px;
-    text-align: center;
+  color: rgb(63, 63, 63);
+  font-size: 28px;
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 76px;
+  text-transform: uppercase;
+  margin-left: -100px;
+}
+
+.b-logo-tip {
+  color: white;
+  background: rgb(13, 93, 175);
+  font-size: 23px;
+  width: 180px;
+  text-align: center;
+  padding: 6px;
+}
+
+.b-logo-tip-wrap {
+  float: right;
+  position: relative;
+  left: -178px;
+  top: -29px;
+  p {
+    color:rgb(13, 93, 175);
+    font-size: 16px;
+    margin: 0;
+    font-family: 'PT Sans Regular';
+    span {
+      border-bottom: 1px solid rgb(137, 194, 247);
+    }
+  }
+}
+
+.b-logo-tip-triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid transparent;
+  border-left:10px solid rgb(13, 93, 175);
+}
+
+.b-landing-sections__date {
+  font-family: 'PT Sans Regular';
+  font-size: 14px;
+  color: rgb(160, 160, 160);
 }
 
 .b-landing-sections__text-section {
@@ -328,4 +367,13 @@
 
 .twitter-tweet {
   width: 900px;
+}
+
+
+.b-tweets-wrap {
+  overflow: hidden;
+  background-color: rgb(226, 226, 226);
+  width: 650px;
+  margin: 10px;
+  padding: 10px;
 }
