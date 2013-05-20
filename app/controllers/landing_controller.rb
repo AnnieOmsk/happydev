@@ -12,7 +12,7 @@ class LandingController < ApplicationController
 
   def subscribe
     @subscription = Subscription.new(email: params[:email])
-    response_json = {:success => true}
+    response_json = {:success => true, :msg => "Теперь вы подписаны на новости о HappyDev!"}
 
     if @subscription.save
       Mailer.send_success_subscription(@subscription.email).deliver

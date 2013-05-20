@@ -15,8 +15,9 @@ $(function() {
             success: function (json) {
                 if (json.success) {
 
-                    //TODO:: reload to new page
-                    window.location.reload();
+                    //window.location.reload();
+                    $('.ajax-loader').hide()
+                    $('.b-landing-form__error').html(json.msg)
                 } else {
                     $('.ajax-loader').hide()
                     $('.b-landing-form__error').html(json.error)
