@@ -1,2 +1,24 @@
-%p
-  Теперь вы подписаны на новости о HappyDev!
+-if @user
+  %p== Привет, #{@user.first_name} :) Рады видеть тебя снова!
+
+  %p
+    Мы записали твой email в свою базу.
+    Обещаем не отвлекать по мелочам, но оперативно сообщать о важном.
+-else
+  %p
+    Спасибо за интерес к конференции!
+  %p
+    Мы записали ваш email в свою базу.
+    Обещаем не отвлекать по мелочам, но оперативно сообщать о важном.
+
+%footer.b-landing-footer
+  .b-foot-text
+    Мы в соцсетях:
+    .b-landing-social-links
+      %a.b-landing-social__link{:href => 'http://vk.com/happydev', :target => '_blank'}
+        = image_tag 'sites-icons/vk.png', :class => "b-landing-social-image"
+      %a.b-landing-social__link{:href => 'https://twitter.com/_HappyDev', :target => '_blank'}
+        = image_tag 'sites-icons/twitter.png', :class => "b-landing-social-image"
+      %a.b-landing-social__link{:href => 'http://www.facebook.com/groups/112210215595021/', :target => '_blank'}
+        = image_tag 'sites-icons/facebook.png', :class => "b-landing-social-image"
+

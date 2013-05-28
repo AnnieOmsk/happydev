@@ -28,8 +28,9 @@ class Mailer < Devise::Mailer
   end
 
   def send_success_subscription(email)
+    @user = User.find_by_email(email)
     mail(:to => email,
-         :subject => 'Теперь вы подписаны на новости о HappyDev!')
+         :subject => "Подписка на новости HappyDev'13")
   end
 
 end
