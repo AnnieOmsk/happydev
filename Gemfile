@@ -39,6 +39,7 @@ group :development do
   gem 'thin',                     '~> 1.4.1'
   #gem 'debugger'
   gem 'quiet_assets',             '~> 1.0.1'
+  gem 'letter_opener'
 end
 
 gem 'capistrano'

@@ -46,6 +46,7 @@ GEM
     activesupport (3.2.11)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    addressable (2.3.4)
     airbrake (3.1.2)
       activesupport
       builder
@@ -109,11 +110,15 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kgio (2.7.4)
+    launchy (2.3.0)
+      addressable (~> 2.3)
     less (2.2.1)
       commonjs (~> 0.2.6)
     less-rails (2.2.3)
       actionpack (>= 3.1)
       less (~> 2.2.0)
+    letter_opener (1.1.1)
+      launchy (~> 2.2)
     libv8 (3.11.8.3)
     mail (2.4.4)
       i18n (>= 0.4.0)
@@ -266,6 +271,7 @@ DEPENDENCIES
   hpricot
   jquery-rails (~> 2.1.1)
   json (~> 1.7.5)
+  letter_opener
   libv8 (~> 3.11.8)
   mobylette
   mysql2 (~> 0.3.11)
