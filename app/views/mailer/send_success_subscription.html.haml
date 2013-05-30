@@ -1,20 +1,20 @@
 = stylesheet_link_tag 'success_subscription'
 
 -if @user
-  %p== Привет, #{@user.first_name} :) Рады видеть тебя снова!
+  %p{:style => "font-family: 'Arial';"}== Привет, #{@user.first_name} :) Рады видеть тебя снова!
 
-  %p
+  %p{:style => "font-family: 'Arial';"}
     Мы записали твой email в свою базу.
     Обещаем не отвлекать по мелочам, но оперативно сообщать о важном.
 -else
-  %p
+  %p{:style => "font-family: 'Arial';"}
     Спасибо за интерес к конференции!
-  %p
+  %p{:style => "font-family: 'Arial';"}
     Мы записали ваш email в свою базу.
     Обещаем не отвлекать по мелочам, но оперативно сообщать о важном.
 
 %footer.b-landing-footer
-  .b-foot-text
+  .b-foot-text{:style => "font-family: 'Arial';"}
     Мы в соцсетях:
     .b-landing-social-links
       %a.b-landing-social__link{:href => 'http://vk.com/happydev', :target => '_blank'}

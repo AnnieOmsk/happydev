@@ -1,7 +1,8 @@
 #coding: utf-8
 class LandingController < ApplicationController
   def index
-    @tweets = Tweet.order("RAND()").first(9)
+    #@tweets = Tweet.order("RAND()").first(9)
+    @tweets = Tweet.find(:all)
     #@tweets = []
         #render :layout => 'landing'
     respond_to do |format|
