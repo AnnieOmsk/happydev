@@ -17,7 +17,9 @@ $(function() {
 
                     //window.location.reload();
                     $('.ajax-loader').hide()
-                    $('.b-landing-form__error').html(json.msg)
+                    //$('.b-landing-form__error').html(json.msg)
+                    $('.b-landing-form__success').html(json.msg)
+                    $('.b-landing-form__input-wrap').hide()
                 } else {
                     $('.ajax-loader').hide()
                     $('.b-landing-form__error').html(json.error)

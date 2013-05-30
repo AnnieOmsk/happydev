@@ -10,7 +10,7 @@
           Это было что-то :)
         .b-logo-tip-triangle
         %p
-          \-
+          \—
           %span
             %a{:href => "#new"}
               То ли ещё будет!
@@ -53,7 +53,7 @@
       %br
     
 
-      %H4 Отзывы участников:
+      %h4 Отзывы участников:
       .link-wrap
         %a{:href => "http://www.mahog.ru/blogs/konferentsiya-happydev"}
           Махогани
@@ -96,6 +96,7 @@
 
     %form.b-landing-form{:action => "subscribe", :method => "POST"}
       .b-landing-inputs
+        .b-landing-form__success
         %span.b-landing-form__error
         .b-landing-form__input-wrap
           %input.b-landing-form__input.b-landing-form-item{:type => "text", :placeholder => "   e-mail", :name => "email", :onfocus=>"this.placeholder = ''", :onblur=>"this.placeholder = '   e-mail'"}
