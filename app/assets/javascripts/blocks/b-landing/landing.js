@@ -29,4 +29,19 @@ $(function() {
         return false;
     });
 
+    $('.three-tweets-block').first().show();
+    $('.three-tweets-block').first().addClass('current');
+
+    $(document).on('click', '#refresh-tweets a', function() {
+        var current = $('.three-tweets-block.current');
+        current.hide();
+        current.removeClass('current');
+        var next = current.next();
+        if (next.length === 0) {
+            next = $('.three-tweets-block').first();
+        }
+        next.show();
+        next.addClass('current');
+        return false;
+    })
 });

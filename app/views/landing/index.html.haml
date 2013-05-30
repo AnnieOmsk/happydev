@@ -35,11 +35,16 @@
     .b-tweets-wrap
       #tweets
         %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
-        - for tweet in @tweets
-          %blockquote.twitter-tweet{:align=>"center"}
-            %p
-              = tweet.text.html_safe
-              %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+        - @tweets.in_groups_of(3) do |three_tweets|
+          .three-tweets-block
+            - for tweet in three_tweets
+              %blockquote.twitter-tweet{:align=>"center"}
+                %p
+                  = tweet.text.html_safe
+                  %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+      #refresh-tweets
+        %a{:href => "#"}
+          Обновить
     .b-landing-links
       .link-wrap
         %a{:href => "http://happydev.ru"}
