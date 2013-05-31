@@ -1,12 +1,14 @@
 = javascript_include_tag 'scrollspy'
 = javascript_include_tag 'scroll'
+= stylesheet_link_tag 'fotorama'
+= javascript_include_tag 'fotorama'
 
 .l-page_width_page
   %section
     .l-page_width_page.l-page_gap-bottom_25
       .b-logo
         %p.b-logo__image
-          = image_tag 'blocks/b-logo/HD.png', :alt => "HappyDEV 2012"
+          = image_tag 'blocks/b-logo/HD12.png', :alt => "HappyDEV 2012"
     %h1.b-landing-sections__title
       Это было что-то!
     .l-page_width_page
@@ -23,13 +25,19 @@
         %h2.b-speaking__title
           Говорят
 
-      #tweets
-        %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
-        - for tweet in @tweets
-          %blockquote.twitter-tweet{:align=>"center"}
-            %p
-              = tweet.text.html_safe
-              %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+      .b-tweets-wrap
+        #tweets
+          %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+          - @tweets.in_groups_of(3) do |three_tweets|
+            .three-tweets-block
+              - for tweet in three_tweets
+                %blockquote.twitter-tweet{:align=>"center"}
+                  %p
+                    = tweet.text.html_safe
+                    %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+        #refresh-tweets
+          %a{:href => "#"}
+            Обновить
 
 %hr.l-page-hr
 
@@ -38,7 +46,7 @@
     .l-page_width_page.l-page_gap-bottom_25
       .b-logo
         %p.b-logo__image
-          = image_tag 'blocks/b-logo/HD_new.png', :alt => "HappyDEV 2.0"
+          = image_tag 'blocks/b-logo/HD13.png', :alt => "HappyDEV 2.0"
 
     %h1.b-landing-sections__title
       То ли еще будет!
