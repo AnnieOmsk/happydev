@@ -212,7 +212,7 @@
   font-size: 23px;
   display: inline;
   margin-right: 10px;
-
+  padding: 0 5px;
 }
 
 .b-landing-form__error {
@@ -335,5 +335,12 @@
 
 #refresh-tweets a{
   color: #333;
+}
+
+#refresh-tweets {
+  text-align: right;
+  img {
+    margin-right: 5px;
+  }
 }
 

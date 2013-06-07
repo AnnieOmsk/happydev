@@ -288,7 +288,7 @@
   font-size: 23px;
   display: inline;
   margin-right: 10px;
-
+  padding: 0 5px;
 }
 
 .b-landing-form__error {
@@ -432,6 +432,9 @@
   border-bottom: 12px solid transparent;
   border-left:10px solid #e9e9e9;
   margin-bottom: 15px;
+  &.blue {
+    border-left:10px solid #255aab;
+  }
 }
 
 .link-wrap {
@@ -440,6 +443,12 @@
   a {
     color: black;
     text-decoration: none;
+  }
+  &.blue {
+    background-color: #255aab;
+    a {
+      color: white;
+    }
   }
 }
 
@@ -464,6 +473,12 @@ section#old, section#new {
 
 .three-tweets-block {
   display: none;
+}
+#refresh-tweets {
+  text-align: right;
+  img {
+    margin-right: 7px;
+  }
 }
 
 #refresh-tweets a{

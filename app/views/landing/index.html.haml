@@ -10,7 +10,7 @@
           Это было что-то :)
         .b-logo-tip-triangle
         %p
-          \—
+          &mdash;
           %span
             %a{:href => "#new"}
               То ли ещё будет!
@@ -44,19 +44,20 @@
                   %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
       #refresh-tweets
         %a{:href => "#"}
-          Обновить
+          = image_tag("refresh_icon.png")
+          Еще твитов!
     .b-landing-links
-      .link-wrap
+      .link-wrap.blue
         %a{:href => "http://happydev.ru"}
           Сайт HappyDev'12
-      .link-wrap-triangle
-      .link-wrap
+      .link-wrap-triangle.blue
+      .link-wrap.blue
         %a{:href => "http://happydev.tumblr.com"}
           Блог HappyDev
-      .link-wrap-triangle
+      .link-wrap-triangle.blue
 
       %br
-    
+
 
       %h4 Отзывы участников:
       .link-wrap
@@ -85,7 +86,7 @@
         = image_tag 'blocks/b-logo/HD13.png', :alt => "HappyDev'13"
     .b-new-logo-tip-wrap
       .b-new-logo-tip
-        \- Больше, чем конференция!
+        &mdash; Больше, чем конференция!
       .b-new-logo-tip-triangle
   %h1.b-landing-sections__title.new
     .b-landing-sections__date.new-date
