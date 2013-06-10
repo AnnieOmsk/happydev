@@ -1,6 +1,6 @@
 Happydev::Application.routes.draw do
   get "landing/index", :as => "landing"
-  post "landing/subscribe"
+  post "landing/subscribe", :as => :subscribe_email
 
   get "home/index"
   get "programs/program29"
