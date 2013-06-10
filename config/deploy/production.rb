@@ -3,6 +3,7 @@ set :rails_env,   "production"
 set :host,        'happydev.ru'
 set :user,        'happydev'
 set :application, "happydev"
+set :unicorn_env, "production"
 
 role :app,        host  
 role :web,        host
