@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  if Rails.env = 'staging'
+  if Rails.env == 'staging'
     include HttpAuthenticable
     before_filter :authenticate
   end
