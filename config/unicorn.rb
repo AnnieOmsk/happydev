@@ -12,6 +12,7 @@ worker_processes 1 # increase or decrease
 listen socket_file, :backlog => 1024
 
 pid pid_file
+rails_env = 'production'
 stderr_path err_log
 stdout_path log_file
 
