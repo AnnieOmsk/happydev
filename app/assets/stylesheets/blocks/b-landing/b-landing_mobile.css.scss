@@ -326,7 +326,9 @@
 
 
 .three-tweets-block {
-  display: none;
+  /*display: none;*/
+  visibility: hidden;
+  height: 0px;
 }
 .b-landing-form__success {
   color: #257439;
