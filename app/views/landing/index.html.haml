@@ -21,7 +21,7 @@
       29-30 сентября 2012, омск
     IT-конференция
 
-.l-page_width_page
+.l-page_width_page.page-small
   .l-page_width_page
     = render :partial => 'photos'
 
@@ -34,14 +34,13 @@
   %section.clearfix.landing-speaking
     .b-tweets-wrap
       #tweets
-        %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
         - @tweets.in_groups_of(3) do |three_tweets|
           .three-tweets-block
             - for tweet in three_tweets
               %blockquote.twitter-tweet{:align=>"center"}
                 %p
                   = tweet.text.html_safe
-                  %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+        %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
       #refresh-tweets
         %a{:href => "#"}
           = image_tag("refresh_icon.png")
@@ -92,7 +91,7 @@
     .b-landing-sections__date.new-date
       омск, сентябрь 2013
 
-.l-page_width_page
+.l-page_width_page.page-small
   .b-landing-subscribe
     .clearfix
       .b-landing-subscribe__title-small

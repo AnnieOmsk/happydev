@@ -1,3 +1,12 @@
+
+html, body {
+  min-width: 1080px;
+  width: 100%;
+}
+.page-small {
+  width: 880px;
+}
+
 .b-landing-sections {
   text-align: center;
 }
@@ -154,7 +163,6 @@
     margin: 0 auto;
     position: relative;
     width: 750px;
-    padding-left: 10px !important;
 }
 
 /* Carousel */
@@ -231,7 +239,7 @@
 }
 
 .b-landing-subscribe {
-    width: 858px;
+    width: 758px;
     margin: auto;
     margin-top: 60px;
     left: 0;
@@ -414,8 +422,7 @@
 .b-tweets-wrap {
   overflow: hidden;
   background-color: #e9e9e9;
-  width: 640px;
-  margin: 10px;
+  width: 540px;
   padding: 10px;
   float: left;
   margin-top: 0;
