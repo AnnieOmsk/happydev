@@ -1,11 +1,11 @@
 .l-page_width_page {
-    width: 980px;
+    max-width: 980px;
     margin: auto;
 }
 
 @media (max-width: 1024px) {
   .l-page_width_page {
-      width: 960px;
+      max-width: 960px;
       padding: 0 10px;
   }
 }

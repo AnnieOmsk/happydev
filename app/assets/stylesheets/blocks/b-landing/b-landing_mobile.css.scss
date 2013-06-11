@@ -78,7 +78,8 @@
 .b-photos {
   margin: 0 auto;
   position: relative;
-  width: 750px;
+  /*width: 750px;*/
+  max-width: 100%;
 }
 
 /* Carousel */
@@ -346,4 +347,6 @@
   }
 }
 
-
+.b-photos {
+  margin: -10px !important;
+}
