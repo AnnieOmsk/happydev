@@ -28,6 +28,10 @@ class Mailer < Devise::Mailer
   end
 
   def send_success_subscription(email)
+    attachments.inline['logo.png'] = File.read("#{Rails.root.to_s + '/app/assets/images/blocks/b-logo/HD13.png'}")
+    attachments.inline['vk.png'] = File.read("#{Rails.root.to_s + '/app/assets/images/sites-icons/vk.png'}")
+    attachments.inline['fb.png'] = File.read("#{Rails.root.to_s + '/app/assets/images/sites-icons/facebook.png'}")
+    attachments.inline['tw.png'] = File.read("#{Rails.root.to_s + '/app/assets/images/sites-icons/twitter.png'}")
     @user = User.find_by_email(email)
     mail(:to => email,
          :subject => "Подписка на новости HappyDev'13")
