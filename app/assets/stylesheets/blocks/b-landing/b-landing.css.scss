@@ -479,7 +479,9 @@ section#old, section#new {
 }
 
 .three-tweets-block {
-  display: none;
+  /*display: none;*/
+  visibility: hidden;
+  height: 0px;
 }
 #refresh-tweets {
   text-align: right;

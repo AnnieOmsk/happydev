@@ -33,6 +33,7 @@
 
   %section.clearfix.landing-speaking
     .b-tweets-wrap
+      %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
       #tweets
         - @tweets.in_groups_of(3) do |three_tweets|
           .three-tweets-block
@@ -40,7 +41,7 @@
               %blockquote.twitter-tweet{:align=>"center"}
                 %p
                   = tweet.text.html_safe
-        %script{:async=>true, :src=>"//platform.twitter.com/widgets.js", :charset=>"utf-8"}
+
       #refresh-tweets
         %a{:href => "#"}
           = image_tag("refresh_icon.png")

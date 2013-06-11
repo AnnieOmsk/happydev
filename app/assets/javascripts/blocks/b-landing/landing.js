@@ -31,18 +31,29 @@ $(function() {
         return false;
     });
 
-    $('.three-tweets-block').first().show();
+    //$('.three-tweets-block').first().show();
+    $('.three-tweets-block').first().css('visibility', 'visible')
+    $('.three-tweets-block').first().css('height', 'auto')
     $('.three-tweets-block').first().addClass('current');
 
     $(document).on('click', '#refresh-tweets a', function() {
         var current = $('.three-tweets-block.current');
-        current.hide();
+
+        //current.hide();
+        current.css('visibility', 'hidden')
+        current.css('height', '0px')
+
         current.removeClass('current');
         var next = current.next();
         if (next.length === 0) {
             next = $('.three-tweets-block').first();
         }
-        next.show();
+
+        //next.show();
+        next.css('visibility', 'visible')
+        next.css('height', 'auto')
+
+
         next.addClass('current');
         return false;
     })
