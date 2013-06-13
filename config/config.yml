@@ -13,6 +13,11 @@ development:
   vkontakte:
     AppID: 3104899
   2gis_map_id: 'd263f13b06daad57b9f5061d74b42311'
+  redis:
+    host: localhost
+    port: 6379
+    db: 3
+    password:
 
 staging:
   domain: http://office.7bits.it:21780
@@ -29,6 +34,11 @@ staging:
   vkontakte:
     AppID: 3104899
   2gis_map_id: '1a231b1f06c4f241c7d630691756a3b7'
+  redis:
+    host: localhost
+    port: 6379
+    db: 3
+    password:
 
 production:
   domain: http://happydev.ru
@@ -49,3 +59,8 @@ production:
   vkontakte:
     AppID: 3104781
   2gis_map_id: '398515700752a255c6f4ba03702e376e'
+  redis:
+    host: localhost
+    port: 6379
+    db: 3
+    password:
