@@ -68,7 +68,7 @@
           .b-landing-form__success
           %span.b-landing-form__error
           .b-landing-form__input-wrap
-            %input.b-landing-form__input.b-landing-form-item{:type => "text", :placeholder => "   e-mail", :name => "email", :onfocus=>"this.placeholder = ''", :onblur=>"this.placeholder = '   e-mail'"}
+            %input.b-landing-form__input.b-landing-form-item{:type => "email", :placeholder => "   e-mail", :name => "email", :onfocus=>"this.placeholder = ''", :onblur=>"this.placeholder = '   e-mail'"}
             = image_tag('ajax-loader.gif', :style => 'display: none;', :class => 'ajax-loader')
             %button.b-landing-subscribe__button
               Подписаться
