@@ -41,6 +41,13 @@ end
 #   run "mkdir -p #{deploy_to}/shared/pids && mkdir -p #{deploy_to}/shared/config && mkdir -p #{deploy_to}/shared/var"
 # end
 
+namespace :sidekiq do
+  task :start do
+    run "bundle exec sidekiq"
+  end
+end
+
+
 namespace :unicorn do
   task :start do
     run "cd #{deploy_to}/current && unicorn_rails -c #{deploy_to}/current/config/unicorn.rb -E #{rails_env} -D"
@@ -66,7 +73,7 @@ end
 # end
 
 before 'deploy:assets:precompile', 'deploy:sql_symlink'
-after 'deploy:update', 'unicorn:restart', 'deploy:cleanup'
+after 'deploy:update', 'unicorn:restart', 'sidekiq:restart', 'deploy:cleanup'
 # deploy:migrate
 
 # require './config/boot'
