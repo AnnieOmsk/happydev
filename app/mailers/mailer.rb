@@ -1,5 +1,6 @@
 # encoding: utf-8
 class Mailer < Devise::Mailer
+  include Sidekiq::Mailer
   # helper :application # gives access to all helpers defined within `application_helper`.
   default :from => "HappyDev <org@happydev.ru>"
 
