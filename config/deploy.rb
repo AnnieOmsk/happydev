@@ -1,6 +1,7 @@
 require 'bundler/capistrano'
 require "rvm/capistrano"
 require 'capistrano/ext/multistage'
+require 'sidekiq/capistrano'
 load 'deploy/assets'
 
 set :rvm_path,     '/home/happydev/.rvm'
@@ -40,13 +41,6 @@ end
 # after "deploy:setup" do
 #   run "mkdir -p #{deploy_to}/shared/pids && mkdir -p #{deploy_to}/shared/config && mkdir -p #{deploy_to}/shared/var"
 # end
-
-namespace :sidekiq do
-  task :start do
-    run "bundle exec sidekiq"
-  end
-end
-
 
 namespace :unicorn do
   task :start do
