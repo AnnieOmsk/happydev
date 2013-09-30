@@ -1,0 +1,902 @@
+/* 
+    Document   : happydev
+    Created on : Sep 28, 2013, 1:35:16 PM
+    Author     : Ivan Pastushenko @sevenbits
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #3BB4E3;
+}
+
+form {
+    display: block;
+}
+
+div.clear {
+    clear: both;
+}
+
+div.top-last-waved {
+    margin-top: 2px;
+}
+
+div.bottom-last-waved {
+    margin-top: 1px;
+}
+
+div.social {
+    margin-top: 63px;
+    padding-left: 9px;
+    width: 351px;
+}
+
+div.social-ref {
+    margin-top: 19px;
+}
+
+a.left-social-ref {
+    padding-right: 36px;
+}
+
+a.right-social-ref {
+    padding-left: 29px;
+}
+
+div.background-footer,
+div.snowflakes-last,
+div.top-last-waved,
+div.bottom-last-waved,
+div.background-last-conference,
+div.background-main,
+div.bottom-waved,
+div.top-waved,
+div.background-header,
+div.lights-header {
+    min-width: 360px;
+}
+
+div.title-contacts {
+    padding-top: 192px;
+    margin-top: -60px;
+}
+
+div.title-contacts,
+div.background-footer,
+div.title-block,
+div.ribbon,
+div.snowflakes-last,
+div.top-last-waved,
+div.bottom-last-waved,
+div.background-last-conference,
+div.new-format,
+div.background-main,
+div.bottom-waved,
+div.top-waved,
+div.lights-header,
+div.background-header {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.background-footer {
+    height: 764px;
+    background-image: url(/Happydev/resources/img/lights_footer.png);
+    background-size: 1594px 764px;
+}
+
+div.ribbon {
+    width: 332px;
+    height: 48px;
+    background-image: url(/Happydev/resources/img/ribbon.png);
+    background-size: 340px 55px;
+}
+
+div.snowflakes-last {
+    margin-top: -2px;
+    height: 109px;
+    background-image: url(/Happydev/resources/img/snowflakes_last.png);
+    background-size: 1830px 109px;
+}
+
+div.background-last-conference {
+    margin-top: 35px;
+    padding-top: 89px;
+    height: 222px;
+    background-image: url(/Happydev/resources/img/lights_last.png);
+    background-size: 1496px 311px;
+}
+
+div.background-header {    
+    height: 352px;
+    background-image: url(/Happydev/resources/img/snowflakes.png);    
+    background-size: 1786px 352px;
+}
+
+div.lights-header {    
+    height: 249px;
+    background-image: url(/Happydev/resources/img/lights_header.png);        
+    background-size: 818px 249px;
+}
+
+div.background-main {
+    margin-top: -87px;
+    height: 779px;
+    background-image: url(/Happydev/resources/img/lights_main.png);        
+    background-size: 1616px 779px;
+}
+
+div.top-waved {
+    margin-top: 35px;
+}
+
+div.bottom-waved {
+    margin-top: 64px;
+}
+
+div.top-last-waved,
+div.bottom-last-waved,
+div.bottom-waved,
+div.top-waved {        
+    height: 2px;
+    background-image: url(/Happydev/resources/img/waved.png);    
+    background-size: 1920px 2px;
+}
+
+div.block div.info,
+div.info-first-block {
+    height: 289px;
+}
+
+div.info-first-footer,
+div.info-footer {
+    height: 220px;
+}
+
+div.info-first-footer,
+div.info-footer,
+div.info-first-block,
+div.info-first,
+div.info {
+    width: 229px;    
+}
+div.info-first,
+div.info {
+    height: 420px;
+}
+
+img.line-block {
+    display: block;
+    margin-top: 2px;
+}
+
+img.line-footer {
+    display: block;
+    margin-left: -1px;
+    margin-top: -96px;
+}
+
+img.line {
+    margin-top: -1px;
+}
+
+img.main-image {
+    margin-top: 42px;
+    margin-left: -20px;
+}
+
+div.last-conference {    
+    margin-top: -222px;
+}
+
+input.btn-email-submit:hover, input.btn-email-submit:focus {
+    cursor: pointer;    
+}
+
+input.btn-go-subscribe:hover, input.btn-go-subscribe:focus, input.btn-go-subscribe:active{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #3BC4E4;
+}
+
+input.email-text {
+    padding: 0px 0px 0px 10px;
+    font-family:  tAgoraSansPro;
+    display: block;
+}
+
+input.btn-email-submit { 
+    border: 0;
+    display: block;
+    background-color: #3BC4E4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3BC4E4), to(#5AC9E7));
+    background: -moz-linear-gradient(top, #3BC4E4, #5AC9E7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3BC4E4', endColorstr='#5AC9E7');
+}
+
+form.go-subscribe {
+    background-color: #33ACDE;
+    border: 7px solid #FFFFFF;
+}
+
+div.subscribe {
+    background-color: #FFFFFF;
+    box-shadow: 0 20px 60px -20px #4E4364;
+}
+
+input.btn-go-subscribe {
+    padding: 0px;
+    border: 2px solid #FFFFFF;
+    background-color: #3BC4E4;
+}
+
+div.block {
+    margin-top: 146px;
+}
+
+div.background-footer {
+    margin-top: -177px;
+}
+
+div.snow-footer {
+    margin-top: 264px;
+}
+
+@media screen and (max-width: 905px) {
+    div.title-block {
+        height: 48px;
+        background-size: 328px 48px;
+        background-image: url(/Happydev/resources/img/block_title_small.png);
+    }
+    
+    div.background-subscribe {
+        margin-top: 150px;
+    }
+    
+    div.title-subscribe {            
+        font-size: 20px;
+    }
+    
+    div.subtitle-subscribe {
+        font-size: 26px;
+    }
+    
+    input.email-text {
+        margin-left: 5px;
+        font-size: 22px;
+        width: 338px;
+        height: 38px;
+        border: 1px solid #9E9E9E;
+    }
+    
+    input.btn-email-submit { 
+        margin-top: 5px;
+        margin-right: 5px;
+        float: right;
+        padding-top: 2px;        
+        font-size: 17px;
+        width: 173px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    
+    form.subscribe-form {
+        margin-top: 12px;        
+    }
+    
+    form.go-subscribe {
+        margin-top: -228px;
+        margin-left: 5px;
+        width: 335px;
+        height: 91px;
+        border-radius: 60px;
+    }
+    
+    input.btn-go-subscribe {        
+        font-size: 40px;
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 331px;
+        height: 87px;
+        border-radius: 60px;
+    }
+    
+    div.subscribe {
+        padding-top: 30px;        
+        height: 175px;
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        box-shadow: 0 20px 60px -20px #4E4364;
+    }
+    
+    div.ribbon {
+        margin-top: 4px;
+        height: 55px;
+    }    
+    
+    div.link-site,
+    div.link-blog {
+        margin-top: -2px;
+        height: 24px;
+        font-size: 18px;
+    }
+    
+    div.arrows {
+        display: none;
+    }
+    
+    div.contacts,
+    div.subscribe,
+    div.block,
+    div.last-conference,
+    div.main {
+        width: 360px;
+    }
+    
+    div.title-contacts {
+        height: 43px;
+        background-image: url(/Happydev/resources/img/title_footer_small.png);
+        background-size: 314px 43px;
+    }
+    
+    div.new-format {
+        margin-top: 25px;
+        height: 45px;
+        background-image: url(/Happydev/resources/img/new_format_small.png);
+        background-size: 358px 45px;
+    }
+    
+    div.title-main {
+        margin-top: 90px;
+        height: 199px;
+    }
+        
+    div.title-main {
+        width: 360px;
+    }    
+    
+    div.info-first-footer,
+    div.info-footer,
+    div.info-first-block,
+    div.info-first,
+    div.info {        
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 910px) { 
+    div.background-subscribe {
+        margin-top: 183px;
+    }
+    
+    div.title-subscribe {    
+        margin-left: 11px;
+        font-size: 32px;
+    }
+
+    div.subtitle-subscribe {
+        margin-left: 6px;
+        margin-top: -13px;
+        font-size: 51px;
+    }
+    
+    input.email-text {
+        margin-right: 16px;
+        float: left;        
+        font-size: 22px;
+        width: 338px;
+        height: 38px;
+        border: 1px solid #9E9E9E;
+    }
+
+    input.btn-email-submit { 
+        padding-top: 2px;        
+        font-size: 17px;
+        width: 173px;
+        height: 40px;
+        margin-left: 15px;
+        border-radius: 20px;            
+    }
+
+    form.subscribe-form {
+        padding-left: 8px;    
+        margin-top: 41px;    
+        width: 540px;    
+    }
+
+    form.go-subscribe {
+        margin-top: -334px;
+        margin-left: 243px;
+        width: 409px;
+        height: 91px;        
+        border-radius: 60px;        
+    }
+    
+    input.btn-go-subscribe {        
+        font-size: 40px;        
+        margin-top: 2px;
+        margin-left: 0px;
+        width: 405px;
+        height: 87px;        
+        border-radius: 60px;
+    }
+    
+    div.subscribe {
+        padding-top: 77px;        
+        height: 287px;        
+        border-radius: 15px;        
+    }
+    
+    div.title-block {
+        height: 119px;
+        background-size: 846px 119px;
+        background-image: url(/Happydev/resources/img/block_title.png);
+    }
+    
+    div.background-subscribe {        
+        width: 910px;
+        height: 47px; 
+        background-repeat: no-repeat;
+        background-image: url(/Happydev/resources/img/snow_subscribe.png);
+        background-size: 185px 47px;
+        background-position: 98px 0px;
+    }
+        
+    div.background-subscribe {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    div.link-site,
+    div.link-blog {
+        font-size: 26px;
+    }
+    
+    span.left-arrow {
+        padding-right: 356px;
+    }
+    
+    div.arrows {
+        padding-left: 5px;
+        margin-top: -46px;
+    }
+    
+    div.link-blog,
+    div.link-site {
+        height: 33px;
+        margin-top: -48px;
+    }
+    
+    div.link-site {
+        float: left;
+    }
+    
+    div.link-blog {
+        margin-right: 30px;
+        float: right;
+    }
+    
+    div.ribbon {
+        margin-top: 37px
+    }
+    
+    div.info-first-footer,
+    div.info-first-block {
+        margin-left: 46px;
+    }
+    
+    div.info-first {
+        margin-left: 43px;
+    }
+        
+    div.info-footer,
+    div.info {
+        margin-left: 88px;
+    }
+    
+    div.info-first-footer,
+    div.info-footer,
+    div.info-first-block,
+    div.info-first,
+    div.info {
+        float: left;
+    }
+    
+    div.title-contacts {
+        height: 93px;
+        background-image: url(/Happydev/resources/img/title_footer.png);
+        background-size: 844px 93px;
+    }
+    
+    div.new-format {
+        margin-top: 39px;
+        height: 100px;
+        background-image: url(/Happydev/resources/img/new_format.png);
+        background-size: 852px 100px;
+    }
+    
+    div.title-main {
+        margin-top: 115px;
+        height: 105px;
+    }
+        
+    div.contacts,
+    div.subscribe,
+    div.block,
+    div.last-conference,
+    div.main {
+        width: 910px;
+    }    
+    div.left {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    div.snow {
+        padding-top: 105px;
+    }
+    
+    div.lights-header {
+        margin-top: -351px;
+    }
+    
+    div.snow-footer {
+        height: 292px;
+        background-image: url(/Happydev/resources/img/snow_footer.png);        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1920px 292px;
+    }
+}
+
+@media screen and (max-width: 1584px) and (min-width : 360px) {
+    div.snow {                
+        height: 246px;
+        background-image: url(/Happydev/resources/img/snow.png);        
+        background-repeat: no-repeat;
+        background-position: center 105px;
+        background-size: 1584px 246px;
+    }
+}
+
+@media screen and (min-width: 1585px) {    
+    div.snow {        
+        height: 246px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1920px;
+    }
+    
+    div.right-snow,
+    div.left-snow {
+        width: 612px;
+        background-repeat: no-repeat;
+    }
+    
+    div.left-snow {
+        margin-top: 12px;
+        float: left;
+        height: 234px;
+        background-image: url(/Happydev/resources/img/snow_left.png);        
+        background-size: 612px 234px;
+    }
+
+    div.right-snow {
+        float: right;
+        height: 246px;
+        background-image: url(/Happydev/resources/img/snow_right.png);
+        background-size: 612px 246px;
+    }
+}
+
+div.contacts {
+    background-color: #FFFFFF;
+}
+
+div.footer {
+    margin-top: -721px;
+}
+
+div.contacts,
+div.footer,
+div.title-block,
+div.block,
+div.social,
+div.subscribe,
+form.subscribe-form,
+div.ribbon,
+div.last-conference,
+div.title-main,
+div.main,
+div.social-header,
+div.header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding-top: 47px;
+    margin-top: -352px;   
+    width: 360px;
+}
+
+div.main {    
+    margin-top: -692px;
+}
+
+@font-face {
+    font-family: biAgoraSlabPro;
+    src: url(/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: bliAgoraSlabPro;
+    src: url(/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-BlackItal.ttf);
+}
+
+@font-face {
+    font-family: rAgoraSansPro;
+    src: url(/Happydev/resources/fonts/AgoraSansPro/PFAgoraSansPro-Reg.ttf);
+}
+
+@font-face {
+    font-family: tAgoraSansPro;
+    src: url(/Happydev/resources/fonts/AgoraSansPro/PFAgoraSansPro-Thin.ttf);
+}
+
+@font-face {
+    font-family: rAgoraSlabPro;
+    src: url(/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-Reg.ttf);
+}
+
+@font-face {
+    font-family: iAgoraSlabPro;
+    src: url(/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: ubAgoraSlabPro;
+    src: url('/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-UltraBlack.ttf');
+}
+
+@font-face {
+    font-family: bAgoraSlabPro;
+    src: url('/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-Bold.ttf');
+}
+
+div.info-first-footer,
+div.info-footer,
+div.info-first-block,
+div.info-first,
+div.info {
+    text-align: left;
+}
+
+div.context-text-footer,
+div.title-text-footer{
+    color: #3BC4E4;
+}
+
+div.title-text-block,
+div.title-text {
+    font-size: 28px;    
+    margin-left: -5px;
+    height: 36px;
+}
+div.title-text-block {
+    margin-top: 14px;
+}
+
+div.context-text-block {
+    margin-top: 17px;
+    margin-left: -4px;
+    line-height: 1.24;
+}
+
+div.context-text-footer {
+    margin-left: -5px;
+    margin-top: 5px;
+    line-height: 1.33;
+}
+
+div.context-text-footer,
+div.context-text-block,
+div.context-text {
+    font-size: 18px;
+    font-family: rAgoraSlabPro;    
+}
+
+div.context-text {
+    margin-top: 13px;
+    margin-left: -5px;
+    line-height: 1.17;
+    height: 63px;
+}
+
+span.logo-text {
+    font-family: rAgoraSansPro;
+}
+
+span.dev-text {
+    font-family: ubAgoraSlabPro;
+}
+
+span.dev-text,
+span.logo-text {
+    font-size: 56px;
+}
+
+div.logo-text {
+    padding-right: 5px;
+    margin-top: 2px;
+    height: 75px;
+}
+
+div.beginn-date {
+    height: 33px;
+    margin-top: 80px;
+}
+
+div.context-text-block a,
+div.context-text-block,
+div.title-text-block,
+div.social-text,
+input.btn-go-subscribe,
+input.btn-email-submit,
+div.arrows,
+div.link-site a,
+div.link-blog a,
+div.link-site,
+div.link-blog,
+div.ribbon,
+div.context-text,
+div.title-text,
+div.title-main a,
+div.logo-text,
+div.under-logo-text,
+div.beginn-date {
+    color: #FFFFFF;
+}
+
+div.social-text,
+input.btn-email-submit,
+div.title-subscribe,
+div.arrows,
+div.link-site,
+div.link-blog,
+div.under-logo-text {
+    font-family: rAgoraSansPro;
+}
+
+div.under-logo-text {
+    height: 25px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+div.title-main {    
+    line-height: 1.11;
+    padding-left: 3px;    
+    font-size: 43px;
+}
+
+div.title-main,
+input.btn-go-subscribe {
+    font-family: bAgoraSlabPro;
+}
+
+div.social-text,
+div.arrows,
+span.date-text,
+span.place-text {
+    font-size: 26px;
+}
+
+div.ribbon,
+span.place-text {
+    font-family: iAgoraSlabPro;
+}
+
+span.date-text {
+    font-family: biAgoraSlabPro;
+}
+
+div.subtitle-subscribe,
+div.title-subscribe {
+    color: #3BC4E4;    
+}
+
+div.title-text-footer,
+div.title-text-block,
+div.title-text,
+div.subtitle-subscribe {
+    font-family: bliAgoraSlabPro;
+}
+
+div.title-text-footer {
+    margin-left: -24px;
+    margin-top: 4px;
+    font-size: 28px;
+    width: 260px;
+}
+
+div.ribbon {
+    padding-left: 8px;
+    padding-top: 7px;
+    font-size: 16px;
+}
+
+div.social-header {
+    width: 118px;
+    margin-top: 42px;
+}
+
+a.left-social {
+    margin-right: 7px;
+}
+
+a.right-social {
+    margin-left: 6px;
+}
+
+div.title-main a {
+    border-bottom: 3px solid #FFFFFF;
+}
+
+a img {    
+    border: none;
+}
+
+div.context-text-block a {    
+    display: block;
+    margin-top: 10px;
+}
+
+div.context-text-block a span {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+div.link-site a,
+div.link-blog a {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+div.context-text-block a,
+div.title-main a,
+div.link-site a,
+div.link-blog a {
+    text-decoration: none;
+}
+
+img.image3-block,
+img.image2-block,
+img.image1-block {
+    display: block;
+    float: left;
+    margin-right: 14px;
+}
+
+img.image1-block {
+    margin-top: 21px;
+    margin-left: -43px;
+}
+
+img.image2-block {
+    margin-top: 25px;
+    margin-left: -46px;
+}
+
+img.image3-block {
+    margin-top: 26px;
+    margin-left: -45px;
+}
+
+div.snow-color {    
+    background-color: #FFFFFF;
+}
