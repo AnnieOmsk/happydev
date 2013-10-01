@@ -1,0 +1,31 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: happydev_development
+  pool: 5
+  username: root
+  password:
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: happydev_production
+  pool: 5
+  username: root
+  password:
+
+staging:
+  adapter: mysql2
+  encoding: utf8
+  database: happydev_production
+  pool: 5
+  username: root
+  password:
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: happydev_test
+  pool: 5
+  username: root
+  password:
