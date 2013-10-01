@@ -11,7 +11,7 @@ body {
     margin: 0;
     text-align: center;
     background-repeat: repeat;
-    background-image: url(/Happydev/resources/img/pattern.png);
+    background-image: url(../img/pattern.png);
 }
 
 form {
@@ -31,7 +31,7 @@ div.bottom-last-waved {
 }
 
 div.social {
-    margin-top: 390px;
+    margin-top: 162px;
     padding-left: 8px;
     width: 351px;
 }
@@ -90,21 +90,21 @@ div.background-header {
 
 div.background-footer {
     height: 764px;
-    background-image: url(/Happydev/resources/img/lights_footer.png);
+    background-image: url(../img/lights_footer.png);
     background-size: 1594px 764px;
 }
 
 div.ribbon {
     width: 332px;
     height: 48px;
-    background-image: url(/Happydev/resources/img/ribbon.png);
+    background-image: url(../img/ribbon.png);
     background-size: 340px 55px;
 }
 
 div.snowflakes-last {
     margin-top: -2px;
     height: 109px;
-    background-image: url(/Happydev/resources/img/snowflakes_last.png);
+    background-image: url(../img/snowflakes_last.png);
     background-size: 1830px 109px;
 }
 
@@ -112,26 +112,26 @@ div.background-last-conference {
     margin-top: 41px;
     padding-top: 89px;
     height: 222px;
-    background-image: url(/Happydev/resources/img/lights_last.png);
+    background-image: url(../img/lights_last.png);
     background-size: 1496px 311px;
 }
 
 div.background-header {    
     height: 352px;
-    background-image: url(/Happydev/resources/img/snowflakes_header.png);    
+    background-image: url(../img/snowflakes_header.png);    
     background-size: 1786px 352px;
 }
 
 div.lights-header {    
     height: 249px;
-    background-image: url(/Happydev/resources/img/lights_header.png);        
+    background-image: url(../img/lights_header.png);        
     background-size: 818px 249px;
 }
 
 div.background-main {
     margin-top: -87px;
     height: 779px;
-    background-image: url(/Happydev/resources/img/lights_main.png);        
+    background-image: url(../img/lights_main.png);        
     background-size: 1616px 779px;
 }
 
@@ -148,7 +148,7 @@ div.bottom-last-waved,
 div.bottom-waved,
 div.top-waved {        
     height: 2px;
-    background-image: url(/Happydev/resources/img/waved.png);    
+    background-image: url(../img/waved.png);    
     background-size: 1920px 2px;
 }
 
@@ -309,14 +309,14 @@ div.subscribe {
 div.title-block {
     height: 119px;
     background-size: 846px 119px;
-    background-image: url(/Happydev/resources/img/block_title.png);
+    background-image: url(../img/block_title.png);
 }
 
 div.background-subscribe {        
     width: 910px;
     height: 47px; 
     background-repeat: no-repeat;
-    background-image: url(/Happydev/resources/img/snow_subscribe.png);
+    background-image: url(../img/snow_subscribe.png);
     background-size: 185px 47px;
     background-position: 98px 0px;
 }
@@ -370,14 +370,14 @@ div.info-footer-3 {
 
 div.title-contacts {
     height: 93px;
-    background-image: url(/Happydev/resources/img/title_footer.png);
+    background-image: url(../img/title_footer.png);
     background-size: 844px 93px;
 }
 
 div.new-format {
     margin-top: 38px;
     height: 100px;
-    background-image: url(/Happydev/resources/img/new_format.png);
+    background-image: url(../img/new_format.png);
     background-size: 852px 100px;
 }
 
@@ -408,7 +408,7 @@ div.lights-header {
 
 div.snow-footer {
     height: 292px;
-    background-image: url(/Happydev/resources/img/snow_footer.png);        
+    background-image: url(../img/snow_footer.png);        
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1920px 292px;
@@ -417,7 +417,7 @@ div.snow-footer {
 @media screen and (max-width: 1584px) {
     div.snow {                
         height: 246px;
-        background-image: url(/Happydev/resources/img/snow.png);        
+        background-image: url(../img/snow.png);        
         background-repeat: no-repeat;
         background-position: center 105px;
         background-size: 1584px 246px;
@@ -442,14 +442,14 @@ div.snow-footer {
         margin-top: 12px;
         float: left;
         height: 234px;
-        background-image: url(/Happydev/resources/img/snow_left.png);        
+        background-image: url(../img/snow_left.png);        
         background-size: 612px 234px;
     }
 
     div.right-snow {
         float: right;
         height: 246px;
-        background-image: url(/Happydev/resources/img/snow_right.png);
+        background-image: url(../img/snow_right.png);
         background-size: 612px 246px;
     }
 }
@@ -503,42 +503,42 @@ div.main {
 
 @font-face {
     font-family: biAgoraSlabPro;
-    src: url(/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-BoldItalic.ttf);
+    src: url(../fonts/AgoraSlabPro/PFAgoraSlabPro-BoldItalic.ttf);
 }
 
 @font-face {
     font-family: bliAgoraSlabPro;
-    src: url(/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-BlackItal.ttf);
+    src: url(../fonts/AgoraSlabPro/PFAgoraSlabPro-BlackItal.ttf);
 }
 
 @font-face {
     font-family: rAgoraSansPro;
-    src: url(/Happydev/resources/fonts/AgoraSansPro/PFAgoraSansPro-Reg.ttf);
+    src: url(../fonts/AgoraSansPro/PFAgoraSansPro-Reg.ttf);
 }
 
 @font-face {
     font-family: tAgoraSansPro;
-    src: url(/Happydev/resources/fonts/AgoraSansPro/PFAgoraSansPro-Thin.ttf);
+    src: url(../fonts/AgoraSansPro/PFAgoraSansPro-Thin.ttf);
 }
 
 @font-face {
     font-family: rAgoraSlabPro;
-    src: url(/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-Reg.ttf);
+    src: url(../fonts/AgoraSlabPro/PFAgoraSlabPro-Reg.ttf);
 }
 
 @font-face {
     font-family: iAgoraSlabPro;
-    src: url(/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-Italic.ttf);
+    src: url(../fonts/AgoraSlabPro/PFAgoraSlabPro-Italic.ttf);
 }
 
 @font-face {
     font-family: ubAgoraSlabPro;
-    src: url('/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-UltraBlack.ttf');
+    src: url('../fonts/AgoraSlabPro/PFAgoraSlabPro-UltraBlack.ttf');
 }
 
 @font-face {
     font-family: bAgoraSlabPro;
-    src: url('/Happydev/resources/fonts/AgoraSlabPro/PFAgoraSlabPro-Bold.ttf');
+    src: url('../fonts/AgoraSlabPro/PFAgoraSlabPro-Bold.ttf');
 }
 
 div.context-text-footer,
@@ -622,6 +622,7 @@ div.begin-date {
     height: 113px;    
 }
 
+div.title-main,
 div.context-text a,
 div.social-text,
 button.btn-email-submit,
