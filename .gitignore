@@ -33,4 +33,5 @@ badges/tmp/*
 badges/final/*
 
 .idea/
-.idea/misc.xml
+*.iml
+.ruby-gemset
