@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'biAgoraSlabPro';
     src: url('../fonts/pfagoraslabpro-bolditalic.eot');
-    src: url('../fonts/pfagoraslabpro-bolditalic.eot') format('embedded-opentype'),
+    src: url('../fonts/pfagoraslabpro-bolditalic.eot?#iefix') format('embedded-opentype'),
          url('../fonts/pfagoraslabpro-bolditalic.woff') format('woff'),
          url('../fonts/pfagoraslabpro-bolditalic.ttf') format('truetype'),
          url('../fonts/pfagoraslabpro-bolditalic.svg#PFAgoraSlabProBoldItalic') format('svg');
@@ -18,7 +18,7 @@
 @font-face {
     font-family: 'bliAgoraSlabPro';
     src: url('../fonts/pfagoraslabpro-blackital.eot');
-    src: url('../fonts/pfagoraslabpro-blackital.eot') format('embedded-opentype'),
+    src: url('../fonts/pfagoraslabpro-blackital.eot?#iefix') format('embedded-opentype'),
          url('../fonts/pfagoraslabpro-blackital.woff') format('woff'),
          url('../fonts/pfagoraslabpro-blackital.ttf') format('truetype'),
          url('../fonts/pfagoraslabpro-blackital.svg#PFAgoraSlabProBlackItalic') format('svg');
@@ -27,7 +27,7 @@
 @font-face {
     font-family: 'rAgoraSansPro';
     src: url('../fonts/pfagorasanspro-reg.eot');
-    src: url('../fonts/pfagorasanspro-reg.eot') format('embedded-opentype'),
+    src: url('../fonts/pfagorasanspro-reg.eot?#iefix') format('embedded-opentype'),
          url('../fonts/pfagorasanspro-reg.woff') format('woff'),
          url('../fonts/pfagorasanspro-reg.ttf') format('truetype'),
          url('../fonts/pfagorasanspro-reg.svg#PFAgoraSansProRegular') format('svg');
@@ -36,7 +36,7 @@
 @font-face {
     font-family: 'tAgoraSansPro';
     src: url('../fonts/pfagorasanspro-thin.eot');
-    src: url('../fonts/pfagorasanspro-thin.eot') format('embedded-opentype'),
+    src: url('../fonts/pfagorasanspro-thin.eot?#iefix') format('embedded-opentype'),
          url('../fonts/pfagorasanspro-thin.woff') format('woff'),
          url('../fonts/pfagorasanspro-thin.ttf') format('truetype'),
          url('../fonts/pfagorasanspro-thin.svg#PFAgoraSansProThin') format('svg');
@@ -45,7 +45,7 @@
 @font-face {
     font-family: 'rAgoraSlabPro';
     src: url('../fonts/pfagoraslabpro-reg.eot');
-    src: url('../fonts/pfagoraslabpro-reg.eot') format('embedded-opentype'),
+    src: url('../fonts/pfagoraslabpro-reg.eot?#iefix') format('embedded-opentype'),
          url('../fonts/pfagoraslabpro-reg.woff') format('woff'),
          url('../fonts/pfagoraslabpro-reg.ttf') format('truetype'),
          url('../fonts/pfagoraslabpro-reg.svg#PFAgoraSlabProRegular') format('svg');
@@ -54,7 +54,7 @@
 @font-face {
     font-family: 'iAgoraSlabPro';
     src: url('../fonts/pfagoraslabpro-italic.eot');
-    src: url('../fonts/pfagoraslabpro-italic.eot') format('embedded-opentype'),
+    src: url('../fonts/pfagoraslabpro-italic.eot?#iefix') format('embedded-opentype'),
          url('../fonts/pfagoraslabpro-italic.woff') format('woff'),
          url('../fonts/pfagoraslabpro-italic.ttf') format('truetype'),
          url('../fonts/pfagoraslabpro-italic.svg#PFAgoraSlabProItalic') format('svg');
@@ -63,7 +63,7 @@
 @font-face {
     font-family: 'ubAgoraSlabPro';
     src: url('../fonts/pfagoraslabpro-ultrablack.eot');
-    src: url('../fonts/pfagoraslabpro-ultrablack.eot') format('embedded-opentype'),
+    src: url('../fonts/pfagoraslabpro-ultrablack.eot?#iefix') format('embedded-opentype'),
          url('../fonts/pfagoraslabpro-ultrablack.woff') format('woff'),
          url('../fonts/pfagoraslabpro-ultrablack.ttf') format('truetype'),
          url('../fonts/pfagoraslabpro-ultrablack.svg#PFAgoraSlabProUltraBlack') format('svg');
@@ -72,7 +72,7 @@
 @font-face {
     font-family: 'bAgoraSlabPro';
     src: url('../fonts/pfagoraslabpro-bold.eot');
-    src: url('../fonts/pfagoraslabpro-bold.eot') format('embedded-opentype'),
+    src: url('../fonts/pfagoraslabpro-bold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/pfagoraslabpro-bold.woff') format('woff'),
          url('../fonts/pfagoraslabpro-bold.ttf') format('truetype'),
          url('../fonts/pfagoraslabpro-bold.svg#PFAgoraSlabProBold') format('svg');
