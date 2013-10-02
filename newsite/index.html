@@ -7,6 +7,8 @@
         <!--[if lt IE 9]>
             <script type="text/javascript" src="resources/js/css3-mediaqueries.js"></script>
         <![endif]-->
+        <script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="resources/js/subscribe.js"></script>
     </head>
     <body>
         <div class="background-header">
@@ -20,17 +22,10 @@
         </div>
         <div class="header">
             <img src="resources/img/logo.png">
-            <div class="logo-text">
-                <div class="logo-text-out"><span class="logo-text">Happy</span></div>
-                <div class="logo-text-out"><span class="dev-text">Dev</span></div>
-                <div class="logo-text-out"><span class="logo-text-13">’13</span></div>
-            </div>
-            <div class="under-logo-text"><span class="under-logo-text">Больше чем конференция</span></div>
-            <div class="begin-date">
-                <div class="begin-date-out"><span class="date-text">7–8 декабря 2013.</span></div>
-                <div class="begin-date-out"><span class="place-text"> Омск</span></div>
-            </div>
-            <div class="social-header"><a class="left-social" href="http://vk.com/happydev" target="_blank"><img src="resources/img/vk_header.png"></a><a href="http://twitter.com/_HappyDev" target="_blank"><img src="resources/img/tw_header.png"></a><a class="right-social" href="http://www.facebook.com/groups/112210215595021/" target="_blank"><img src="resources/img/fb_header.png"></a></div>
+            <div class="logo-text"><span class="logo-text">Happy</span><span class="dev-text">Dev</span><span class="logo-text">’13</span></div>
+            <div class="under-logo-text">Больше чем конференция</div>
+            <div class="begin-date"><span class="date-text">7–8 декабря 2013.</span><span class="place-text"> Омск</span></div>
+            <div class="social-header"><a class="left-social" href="http://vk.com/happydev" target="_blank"><img src="resources/img/vk_header.png"></a><a href="http://twitter.com/_HappyDev" target="_blank"><img src="resources/img/tw_header.png"></a><a class="right-social" href="http://www.facebook.com/groups/112210215595021/" target="_blank"><img src="resources/img/fb_header.png"></a></div>        
         </div>
         <div class="background-main"></div>
         <div class="main">            
@@ -62,47 +57,45 @@
             <div class="bottom-last-waved"></div>
         </div>
         <div class="last-conference">            
-            <div class="ribbon"><span class="ribbon">А что было в прошлый раз?</span></div>
+            <div class="ribbon">А что было в прошлый раз?</div>
             <div class="link-site"><a href="http://2012.happydev.ru/" target="_blank">Посмотреть на сайте</a></div>
             <div class="link-blog"><a href="http://happydev.tumblr.com/" target="_blank">Почитать в блоге</a></div>
-            <div class="arrows"><span class="left-arrow">←</span><span class="right-arrow">→</span></div>
+            <div class="arrows"><span class="left-arrow">←</span>→</div>
         </div>
-        <!--<div class="background-subscribe"></div>-->
-        <!--<div class="subscribe">-->
-            <!--<div class="title-subscribe"><span class="title-subscribe">Не хочу пропустить ничего важного.</span></div>-->
-            <!--<div class="subtitle-subscribe"><span class="subtitle-subscribe">Держите меня в курсе!</span></div>-->
-            <!--<form class="subscribe-form">-->
-                <!--<input class="email-text" type="email" placeholder="e-mail" name="email"/>-->
-                <!--<button class="btn-email-submit" type="submit"><span class="btn-email-submit">ПОДПИСАТЬСЯ</span></button>-->
-            <!--</form>-->
-            <!---->
-        <!--</div>-->
-        <!--<form class="go-subscribe">                -->
-            <!--<button class="btn-go-subscribe"><span class="btn-go-subscribe">Хочу пойти!</span></button>-->
-        <!--</form>-->
-        <div class="social">
-            <div class="social-text"><span class="social-text">Happydev в соцсетях:</span></div>
-            <div class="social-ref">
-                <a class="left-social-ref" href="http://vk.com/happydev" target="_blank"><img src="resources/img/vk.png"></a><a href="http://twitter.com/_HappyDev" target="_blank"><img src="resources/img/tw.png"></a><a class="right-social-ref" href="http://www.facebook.com/groups/112210215595021/" target="_blank"><img src="resources/img/fb.png"></a></div>
+        <div id="background-subscribe" class="background-subscribe"></div>
+        <div id="subscribe" class="subscribe">
+            <div class="title-subscribe">Не хочу пропустить ничего важного.</div>
+            <div class="subtitle-subscribe">Держите меня в курсе!</div>
+            <form class="subscribe-form">
+                <input class="email-text" type="email" placeholder="e-mail" name="email"/>
+                <button class="btn-email-submit" type="submit">ПОДПИСАТЬСЯ</button>
+            </form>            
+        </div>
+        <!--<form id="go-subscribe" class="go-subscribe">
+            <button id="btn-go-subscribe" class="btn-go-subscribe">Хочу пойти!</button>
+        </form>-->
+        <div id="social" class="social">
+            <div class="social-text">Happydev в соцсетях:</div>
+            <div class="social-ref"><a class="left-social-ref" href="http://vk.com/happydev" target="_blank"><img src="resources/img/vk.png"></a><a href="http://twitter.com/_HappyDev" target="_blank"><img src="resources/img/tw.png"></a><a class="right-social-ref" href="http://www.facebook.com/groups/112210215595021/" target="_blank"><img src="resources/img/fb.png"></a></div>
         </div>
         <div class="block">
             <div class="title-block"></div>
             <div class="info-block-1">
                 <img class="line" src="resources/img/line.png">
                 <img class="image-block" src="resources/img/megaphone.png">
-                <div class="title-text"><span class="title-text">докладчикам</span></div>
+                <div class="title-text">докладчикам</div>
                 <div class="context-text">Если вы готовы делиться<br>знаниями по разработке,<br>дизайну или организации<br>процессов с благодарной<br>аудиторией,<br>милости просим!</div>
             </div>
             <div class="info-block-2">
                 <img class="line" src="resources/img/line.png">
                 <img class="image-block" src="resources/img/cap.png">
-                <div class="title-text"><span class="title-text">экспертам</span></div>
+                <div class="title-text">экспертам</div>
                 <div class="context-text">Нет желания / возможности<br>выступать с докладом,<br>но профессионализма хоть<br>отбавляй? Тогда ждём<br>на конференции в качестве<br>экперта-консультанта.</div>
             </div>
             <div class="info-block-3">
                 <img class="line" src="resources/img/line.png">
                 <img class="image-block" src="resources/img/briefcase.png">
-                <div class="title-text"><span class="title-text">спонсорам</span></div>
+                <div class="title-text">спонсорам</div>
                 <div class="context-text">Ваш брэнд войдет<br>в историю, фотографии<br>и видео с вашим<br>лого на фоне будут<br>растиражированы<br>по интернету и в СМИ.<br><a href="/resources/for_sponsors.pdf" target="_blank"><span>Скачать pdf-предложение</span></a></div>
             </div>
             <div class="clear"></div>
@@ -117,7 +110,7 @@
                     <div class="title-contacts"></div>
                     <div class="info-footer-1">
                         <img class="line-footer" src="resources/img/line_color.png">                    
-                        <div class="title-text-footer">+7 (909) 535 00 73</div>
+                        <div class="title-text-footer"><a href ="tel:+79095350073">+7 (909) 535 00 73</a></div>
                         <div class="context-text-footer">Анна Тарасенко</div>                
                     </div>
                     <div class="info-footer-2">
@@ -127,7 +120,7 @@
                     </div>
                     <div class="info-footer-3">
                         <img class="line-footer" src="resources/img/line_color.png">                    
-                        <div class="title-text-footer">+7 (908) 310 33 81</div>
+                        <div class="title-text-footer"><a href="tel:+79083103381">+7 (908) 310 33 81</a></div>
                         <div class="context-text-footer">Иван Немытченко</div>                
                     </div>
                     <div class="clear"></div>
