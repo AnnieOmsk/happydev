@@ -1,0 +1,7 @@
+app_name: happydev_2012
+
+deploy_path: "{{home_path}}/www/{{app_name}}"
+project_path: "{{deploy_path}}/current"
+project_shared_path: "{{deploy_path}}/shared"
+project_logs_path: "{{project_shared_path}}/log"
+project_pids_path: "{{project_shared_path}}/pids"

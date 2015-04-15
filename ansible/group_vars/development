@@ -1,0 +1,6 @@
+rails_env: development
+rails_workers_count: 1
+
+server_name: 0.0.0.0
+
+home_path: "/home/vagrant"

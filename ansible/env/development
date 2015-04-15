@@ -1,0 +1,5 @@
+[default]
+happydev2012 ansible_ssh_host=192.168.111.223
+
+[development:children]
+default

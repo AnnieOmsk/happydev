@@ -1,0 +1,104 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+    - name: configure locale
+      shell: locale-gen ru_RU.UTF-8
+    - name: apt-get update
+      apt: update_cache=yes
+    - name: install git
+      apt: name=git
+    - name: install curl
+      apt: name=curl
+    - name: install htop
+      apt: name=htop
+    - name: install vim
+      apt: name=vim
+    - name: install imagemagick
+      apt: name=imagemagick
+    - name: install imagemagick dev packages
+      apt: name=libmagickwand-dev
+    - name: install mysql ruby packages
+      apt: name=libmysql-ruby
+    - name: install mysql dev packages
+      apt: name=libmysqlclient-dev
+    - name: install nokogiri dev packages (zlib1g-dev)
+      apt: name=zlib1g-dev
+    - name: install nokogiri dev packages (libxml2)
+      apt: name=libxml2
+    - name: install nokogiri dev packages (libxslt1-dev)
+      apt: name=libxslt1-dev
+
+- hosts: all
+  sudo: yes
+  vars:
+    mysql_port: 3306
+    mysql_bind_address: "0.0.0.0"
+    mysql_root_password: "pass"
+    mysql_databases:
+      - name: happydev_2012
+        collation: "utf8_general_ci"
+        encoding: "utf8"
+    rvm1_rubies:
+        - 'ruby-1.9.3'
+    rvm1_install_path: '~/.rvm'
+    rvm1_install_flags: '--auto-dotfiles --user-install'
+    rvm1_user: "{{ current_user }}"
+    rvm1_rvm_version: 'stable'
+    rvm1_rvm_check_for_updates: False
+    rvm1_autolib_mode: 3
+    nginx_install_method: "package"
+  roles:
+    - { role: franklinkim.openssl }
+    - { role: ANXS.nginx }
+    - { role: ANXS.mysql }
+    - { role: rvm_io.rvm1-ruby, sudo: False }
+
+- hosts: all
+  tasks:
+    - name: bundle install
+      sudo_user: "{{ current_user }}"
+      shell: bash -lc "cd /app && bundle install"
+    # - name: run migrations
+    #   sudo_user: "{{ current_user }}"
+    #   shell: bash -lc "cd /app && rake db:migrate"
+    - name: create deploy directory
+      file: path="{{deploy_path}}" state=directory
+    - name: symlink /app to project_path
+      file: src="/app" dest="{{project_path}}" state=link
+      when: rails_env == "development"
+    - name: create directory structure
+      file: path="{{project_path}}" state=directory
+      when: rails_env == "staging" or rails_env == "production"
+    - name: create directory structure (project shared path)
+      file: path="{{project_shared_path}}" state=directory
+    - name: create directory structure (project pids path)
+      file: path="{{project_pids_path}}" state=directory
+    - name: create directory structure (project uploads path)
+      file: src="{{project_path}}/public/uploads/" dest="{{project_shared_path}}/uploads" state=link
+    - name: create directory structure (project logs path)
+      file: src="{{project_path}}/log/" dest="{{project_shared_path}}/log" state=link
+    - name: copy unicorn config
+      template: src=./templates/unicorn.rb.j2 dest="{{project_path}}/config/unicorn.rb"
+    - name: copy nginx config
+      template: src=./templates/nginx.conf.j2 dest="{{project_shared_path}}/nginx.conf"
+    - name: remove default nginx sites-enabled config
+      file: path=/etc/nginx/sites-enabled/default state=absent
+      sudo: yes
+    - name: remove default nginx sites-available config
+      file: path=/etc/nginx/sites-available/default state=absent
+      sudo: yes
+    - name: remove default nginx sites-available config
+      file: path=/etc/nginx/sites-available/default state=absent
+      sudo: yes
+    - name: symlink nginx config to sites-available
+      file: src="{{project_shared_path}}/nginx.conf" dest="/etc/nginx/sites-available/{{app_name}}" state=link
+      sudo: yes
+    - name: symlink nginx config to sites-enabled
+      file: src="/etc/nginx/sites-available/{{app_name}}" dest="/etc/nginx/sites-enabled/{{app_name}}" state=link
+      sudo: yes
+      notify:
+        - restart nginx
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted

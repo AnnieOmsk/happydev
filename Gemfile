@@ -46,7 +46,7 @@ end
 
 gem 'capistrano'
 gem 'capistrano-ext'
-gem 'rvm-capistrano',             '>= 1.1.0'
+gem 'rvm-capistrano',             '>= 1.1.0',       require: false
 
 group :production do
   gem 'unicorn',                  '~> 4.6.2'

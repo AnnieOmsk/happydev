@@ -1,0 +1,1 @@
+{"nfs":{"/app":{"type":"nfs","guestpath":"/app","hostpath":"/Users/ruslansharipov/rails/happydev","disabled":false,"map_uid":501,"map_gid":20,"nfs_udp":true,"nfs_version":3,"uuid":"1301311958"}}}

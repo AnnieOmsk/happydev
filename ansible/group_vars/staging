@@ -1,0 +1,4 @@
+rails_env: staging
+rails_workers_count: 1
+
+server_name: 2012.happydev.ru
